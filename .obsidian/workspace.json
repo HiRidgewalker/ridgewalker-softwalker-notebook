@@ -152,23 +152,14 @@
               "icon": "lucide-list",
               "title": "总览仓库 的大纲"
             }
-          },
-          {
-            "id": "c4f0f179550c4566",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 285.5
+    "width": 285.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,12 +168,10 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false
+      "graph:查看关系图谱": false
     }
   },
-  "active": "c4f0f179550c4566",
+  "active": "7a9cb32b037d1b07",
   "lastOpenFiles": [
     "template/info_template.md",
     "总览仓库.md",
