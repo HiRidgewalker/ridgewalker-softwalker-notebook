@@ -1,5 +1,6 @@
 {
   "alwaysUpdateLinks": true,
   "showLineNumber": false,
-  "spellcheck": false
+  "spellcheck": false,
+  "attachmentFolderPath": "image"
 }

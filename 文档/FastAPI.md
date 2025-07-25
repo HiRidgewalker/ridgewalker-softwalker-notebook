@@ -39,3 +39,8 @@ document: [fastapi在线文档](https://fastapi.tiangolo.com/zh/)
 
 [请求体-多个参数](https://fastapi.tiangolo.com/zh/tutorial/body-multiple-params/#_2)
 
+
+### 限流器: 下来了解下
+```text
+FastAPILimiter.init
+```
