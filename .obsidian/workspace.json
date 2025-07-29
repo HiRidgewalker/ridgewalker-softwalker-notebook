@@ -4,37 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7de9deeeb7e2342b",
+        "id": "ef2787e50cfb1d7c",
         "type": "tabs",
         "children": [
           {
-            "id": "64093805ecc5dcc0",
+            "id": "e7b26080dd98e8ae",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "未命名.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "未命名"
-            }
-          },
-          {
-            "id": "3e50aeec60566cb3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "文档/RAG.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "RAG"
+              "title": "新标签页"
             }
           }
         ],
@@ -95,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 507.5
+    "width": 302.5
   },
   "right": {
     "id": "6c407a039df8e0bb",
@@ -159,13 +139,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -173,8 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,16 +164,21 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "64093805ecc5dcc0",
+  "active": "e7b26080dd98e8ae",
   "lastOpenFiles": [
     "README.md",
+    "文档/文档导航.md",
+    "文档/Django+FastAPI秒杀系统课程.md",
     "文档/RAG.md",
-    "文档/技术文档导航.md",
+    "文档/Docker image, contrainer's common use command.md",
+    "文档/技术推文.md",
     "文档/优秀博客、博主收集(各个多媒体平台发现).md",
-    "未命名.md",
+    "学习计划.md",
+    "文档/RabbitMQ.md",
+    "文档/Docker.md",
+    "image/image.png",
     "文档/trae、cursor等工具提示词.md",
     "文档/快捷指令.md",
-    "文档/Docker image, contrainer's common use command.md",
     "文档/React.md",
     "文档/天纪—倪海厦.md",
     "文档/Supervisord.md",
@@ -205,8 +188,6 @@
     "文档/kubernetes.md",
     "文档/JavaScript.md",
     "文档/Docker Compose.md",
-    "文档/Docker.md",
-    "文档/Django+FastAPI秒杀系统课程.md",
     "文档/DevOps.md",
     "文档/AI、DeepLearning、MachineLearning零碎知识.md",
     "文档/VLLM.md",
@@ -218,12 +199,9 @@
     "image/image-6.png",
     "image/image-5.png",
     "image/image-4.png",
-    "文档/UV.md",
-    "文档/CSS.md",
     "image/image-3.png",
     "image/image-2.png",
     "image/image-1 1.png",
-    "image/image-1.png",
     "image",
     "文档/React",
     "template",
