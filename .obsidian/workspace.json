@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ef2787e50cfb1d7c",
+        "id": "bd421f84abbdd330",
         "type": "tabs",
         "children": [
           {
-            "id": "e7b26080dd98e8ae",
+            "id": "55898fceb135c1ed",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
         ],
@@ -75,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.5
+    "width": 200
   },
   "right": {
     "id": "6c407a039df8e0bb",
@@ -164,16 +164,28 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "e7b26080dd98e8ae",
+  "active": "55898fceb135c1ed",
   "lastOpenFiles": [
+    "文档/GO-BASIC-GRAMMAR.md",
     "README.md",
     "文档/文档导航.md",
-    "文档/Django+FastAPI秒杀系统课程.md",
-    "文档/RAG.md",
-    "文档/Docker image, contrainer's common use command.md",
-    "文档/技术推文.md",
-    "文档/优秀博客、博主收集(各个多媒体平台发现).md",
     "学习计划.md",
+    "文档/未命名",
+    "文档/VLLM.md",
+    "文档/LLM.md",
+    "文档/黑马程序员-SpringCloud微服务文档.md",
+    "文档/Ollama.md",
+    "123.md",
+    "文档/HuggingFace Transformers.md",
+    "文档/MCP.md",
+    "文档/Qdrant.md",
+    "文档/Prompt.md",
+    "文档/RAG.md",
+    "文档/优秀博客、博主收集(各个多媒体平台发现).md",
+    "文档/kubernetes.md",
+    "文档/技术推文.md",
+    "文档/Django+FastAPI秒杀系统课程.md",
+    "文档/Docker image, contrainer's common use command.md",
     "文档/RabbitMQ.md",
     "文档/Docker.md",
     "image/image.png",
@@ -182,17 +194,6 @@
     "文档/React.md",
     "文档/天纪—倪海厦.md",
     "文档/Supervisord.md",
-    "文档/Redis.md",
-    "文档/PostgreSQL.md",
-    "文档/MongoDB.md",
-    "文档/kubernetes.md",
-    "文档/JavaScript.md",
-    "文档/Docker Compose.md",
-    "文档/DevOps.md",
-    "文档/AI、DeepLearning、MachineLearning零碎知识.md",
-    "文档/VLLM.md",
-    "文档/Qdrant.md",
-    "文档/FastAPI.md",
     "image/image-9.png",
     "image/image-8.png",
     "image/image-7.png",

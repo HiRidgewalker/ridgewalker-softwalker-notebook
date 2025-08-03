@@ -14,8 +14,10 @@
 - [[React]]
 
 ## Golang
+- [[GO-BASIC-GRAMMAR]]
 
 ## Java
+- [[黑马程序员-SpringCloud微服务文档]]
 
 ## Python
 - [[UV | Python包管理器UV]]
@@ -29,10 +31,14 @@
 ## 深度学习和机器学习
 - [[AI、DeepLearning、MachineLearning零碎知识]]
 
-## LLM、RAG
+## LLM、RAG、Prompt
+- [[LLM]]
 - [[MCP]]
 - [[VLLM]]
 - [[RAG]]
+- [[Prompt]]
+- [[HuggingFace Transformers]]
+- [[Ollama]]
 
 ## 向量数据库
 - [[Qdrant]]

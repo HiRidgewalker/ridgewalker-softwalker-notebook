@@ -1,3 +1,6 @@
+## RAG微信推文号
+**介绍RAG企业落地非常全面**
+- 公众号名称: `AI探索时代`
 ## RAG框架
 Light-RAG
 [文章介绍](https://mp.weixin.qq.com/s/C-PoYhAbqlCACwBso8XFgg)
@@ -27,6 +30,9 @@ Light-RAG
 
 ### 相关文章
 [RAGFlow切片方法深度实测：Manual/Book/Laws等对比分析](https://mp.weixin.qq.com/s/MhH1zpI_GexOznKbrjBs2A)
+[关于一个RAG功能需求分析案例——、怎么优化RAG的检索精确度](https://mp.weixin.qq.com/s/JBRw78qs2IAl99bD2kNf7A)
+[关于在RAG检索增强中文档处理的解决方案——针对中小企业](https://mp.weixin.qq.com/s/WaQ0Ke-7e3ANVgweWWCyqQ)
+
 
 **txt文档切分总结**
 [文章链接]([https://zhuanlan.zhihu.com/p/19010809414](https://zhuanlan.zhihu.com/p/19010809414))
