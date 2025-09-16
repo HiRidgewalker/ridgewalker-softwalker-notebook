@@ -1,7 +1,7 @@
 一个python的包管理器: [UV](https://docs.astral.sh/uv/getting-started/installation/)
 
 ## 升级uv
-```shell
+```shelle
 uv self update
 ```
 ## uninstalltion
@@ -24,6 +24,7 @@ uv python install 3.12
 
 -- 安装多个版本
 uv python install 3.11, 3.12
-
--- 
 ```
+
+
+

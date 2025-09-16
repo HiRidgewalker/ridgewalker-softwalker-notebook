@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "bd421f84abbdd330",
+        "id": "f7267500d121044a",
         "type": "tabs",
         "children": [
           {
-            "id": "55898fceb135c1ed",
+            "id": "70f946b2ad21312a",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ],
@@ -139,12 +139,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "文档/Rerank.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Rerank 的大纲"
             }
           }
         ],
@@ -152,10 +153,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 394.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
@@ -164,45 +166,45 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "55898fceb135c1ed",
+  "active": "e7a9d7a251f92854",
   "lastOpenFiles": [
-    "文档/GO-BASIC-GRAMMAR.md",
     "README.md",
-    "文档/文档导航.md",
-    "学习计划.md",
-    "文档/未命名",
-    "文档/VLLM.md",
-    "文档/LLM.md",
-    "文档/黑马程序员-SpringCloud微服务文档.md",
-    "文档/Ollama.md",
-    "123.md",
-    "文档/HuggingFace Transformers.md",
-    "文档/MCP.md",
-    "文档/Qdrant.md",
+    "文档/Rerank.md",
+    "文档/linux命令.md",
+    "文档/web3知识.md",
+    "image/image-20230220231914358.png",
+    "image/image-20230220231839201.png",
+    "image/image-20230220231826719.png",
+    "image/image-20230220231731537.png",
+    "image/image-20230220231712920.png",
+    "image/image-20230220231631461.png",
+    "image/image-20230220231559197.png",
+    "image/image-20230220231519311.png",
+    "image/image-20230220231401752.png",
+    "image/image-20230220231336696.png",
+    "文档/go常见问题.md",
+    "文档/GO-BASIC-GRAMMAR.md",
     "文档/Prompt.md",
-    "文档/RAG.md",
-    "文档/优秀博客、博主收集(各个多媒体平台发现).md",
-    "文档/kubernetes.md",
-    "文档/技术推文.md",
-    "文档/Django+FastAPI秒杀系统课程.md",
+    "文档/代码规范和技巧.md",
+    "学习计划.md",
+    "image/web3知识.md",
+    "文档/Django.md",
+    "文档/Django Rest FrameWork.md",
+    "文档/文档导航.md",
     "文档/Docker image, contrainer's common use command.md",
-    "文档/RabbitMQ.md",
     "文档/Docker.md",
-    "image/image.png",
+    "文档/web3词汇.md",
+    "文档/工具教程.md",
+    "文档/经验总结.md",
+    "文档/c&c++.md",
+    "文档/虚拟银行卡使用.md",
+    "文档/DevOps.md",
+    "文档/Docker Compose.md",
+    "文档/kubernetes.md",
+    "文档/Prompt示例.md",
     "文档/trae、cursor等工具提示词.md",
-    "文档/快捷指令.md",
-    "文档/React.md",
-    "文档/天纪—倪海厦.md",
-    "文档/Supervisord.md",
-    "image/image-9.png",
-    "image/image-8.png",
-    "image/image-7.png",
-    "image/image-6.png",
-    "image/image-5.png",
-    "image/image-4.png",
-    "image/image-3.png",
-    "image/image-2.png",
-    "image/image-1 1.png",
+    "工作任务.md",
+    "文档/未命名",
     "image",
     "文档/React",
     "template",

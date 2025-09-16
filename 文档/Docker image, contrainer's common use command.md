@@ -44,3 +44,48 @@ docker start <container_name_or_id>
 ```shell
 docker restart $(docker ps -q)
 ```
+### docker 挂载多个数据卷
+```bash
+docker run -p 80:5000 \
+--mount type=bind,source=/home/user-one/pu-word-volume/docling-volume/tmp,target=/tmp \ 
+--mount type=bind,source=/home/user-one/pu-word-volume/docling-volume/models,target=/app/models \
+--mount type=bind,source=/home/user-one/pu-word-volume/static,target=/app/static \docling-basic-image:1.0 bash
+docke```
+
+/home/user-one/docker-file/docling/docling-volume
+```bash
+docling-tools models download -o /app/models
+```
+
+
+```bash
+sudo docker run -it --mount type=bind,source=/home/user-one/docker-file/docling/docling-volume/models,target=/tmp --mount type=bind,source=/home/user-one/docker-file/docling/docling-volume/tmp,target=/app/models docling-basic-image:1.0 bash
+```
+
+```bash
+sudo docker run -it --mount type=bind,source=/home/user-one/docker-file/docling/docling-volume/models,target=/tmp --mount type=bind,source=/home/user-one/docker-file/docling/docling-volume/tmp,target=/app/models docling-test:1.0 bash
+```
+
+
+libreoffice在容器中配置中文环境
+```bash
+# 更新包列表
+apt-get update
+
+# 安装中文字体包
+apt-get install -y fonts-wqy-zenhei fonts-wqy-microhei fonts-noto-cjk
+
+# 刷新字体缓存
+fc-cache -fv
+
+# 安装语言包
+apt-get install -y locales
+
+# 生成中文语言环境
+locale-gen zh_CN.UTF-8
+
+# 设置环境变量
+export LANG=zh_CN.UTF-8
+export LC_ALL=zh_CN.UTF-8
+
+```
