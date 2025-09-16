@@ -4,17 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "bd421f84abbdd330",
+        "id": "8e5f4874d5dcbbe0",
         "type": "tabs",
         "children": [
           {
-            "id": "55898fceb135c1ed",
+            "id": "8dd055d4cc9335e7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "bases",
+              "state": {
+                "file": "未命名.base",
+                "viewName": "表格"
+              },
+              "icon": "lucide-ghost",
+              "title": "bases"
             }
           }
         ],
@@ -62,7 +65,7 @@
             }
           },
           {
-            "id": "239755e56d7e6702",
+            "id": "bd23dbf0bbdcc8e3",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -152,10 +155,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 229.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
@@ -164,51 +168,54 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "55898fceb135c1ed",
+  "active": "e7a9d7a251f92854",
   "lastOpenFiles": [
-    "文档/GO-BASIC-GRAMMAR.md",
-    "README.md",
-    "文档/文档导航.md",
-    "学习计划.md",
-    "文档/未命名",
-    "文档/VLLM.md",
-    "文档/LLM.md",
-    "文档/黑马程序员-SpringCloud微服务文档.md",
-    "文档/Ollama.md",
-    "123.md",
-    "文档/HuggingFace Transformers.md",
-    "文档/MCP.md",
-    "文档/Qdrant.md",
-    "文档/Prompt.md",
-    "文档/RAG.md",
-    "文档/优秀博客、博主收集(各个多媒体平台发现).md",
-    "文档/kubernetes.md",
-    "文档/技术推文.md",
-    "文档/Django+FastAPI秒杀系统课程.md",
-    "文档/Docker image, contrainer's common use command.md",
-    "文档/RabbitMQ.md",
-    "文档/Docker.md",
-    "image/image.png",
-    "文档/trae、cursor等工具提示词.md",
+    "未命名.base",
+    "文档/代码规范和技巧.md",
+    "2025-11-08.md",
+    "未命名 3.base",
+    "未命名 2.base",
+    "未命名 1.base",
+    "未命名.canvas",
+    "草稿/工作任务.md",
+    "文档/投机感想和反思.md",
+    "投资知识目录导航.md",
+    "未归类知识目录导航.md",
+    "文档/Crypto总结.md",
+    "技术知识目录导航.md",
+    "文档/前后端常用鉴权方式总结.md",
+    "文档/sqlite.md",
+    "文档/MySQL.md",
+    "文档/jwt.md",
+    "文档/Celery.md",
+    "前后端鉴权方式总结.md",
+    "images/image-20241011231028626.png",
+    "images/image-20241011230908674.png",
+    "images/image-20241011230938850.png",
+    "images/image-20241011230704214.png",
+    "images/image-20241011230555580.png",
+    "images/image-20241011230008683.png",
+    "images/image-20241011230502904.png",
+    "images/image-20241011225946150.png",
+    "images/image-20241011225922622.png",
+    "images/image-20241011225817785.png",
+    "images",
+    "未命名 1",
+    "未命名",
+    "文档/工具教程.md",
+    "文档/web3知识.md",
+    "文档/web3词汇.md",
+    "文档/Django Rest FrameWork.md",
+    "文档/量化.md",
+    "文档/金融书籍.md",
+    "文档/虚拟银行卡使用.md",
     "文档/快捷指令.md",
-    "文档/React.md",
-    "文档/天纪—倪海厦.md",
-    "文档/Supervisord.md",
-    "image/image-9.png",
-    "image/image-8.png",
-    "image/image-7.png",
-    "image/image-6.png",
-    "image/image-5.png",
-    "image/image-4.png",
-    "image/image-3.png",
-    "image/image-2.png",
-    "image/image-1 1.png",
-    "image",
-    "文档/React",
-    "template",
-    "文档",
-    "草稿/None.canvas",
     "草稿",
-    "未命名.canvas"
+    "学习计划.md",
+    "文档/UV.md",
+    "文档/Django+FastAPI秒杀系统课程.md",
+    "文档/未命名",
+    "image",
+    "草稿/None.canvas"
   ]
 }

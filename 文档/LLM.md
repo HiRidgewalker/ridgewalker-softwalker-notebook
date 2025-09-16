@@ -3,3 +3,9 @@
 
 ## QWEN官方文档
 [QWEN官方文档](https://qwen.readthedocs.io/en/latest/getting_started/quickstart.html)
+
+## 阿里云百炼平台文档
+[阿里云百炼平台文档](https://help.aliyun.com/zh/model-studio/what-is-model-studio?spm=a2c4g.11174283.0.i1)
+
+
+## self-llm项目
