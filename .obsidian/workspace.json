@@ -144,16 +144,17 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "技术知识目录导航.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "技术知识目录导航 的大纲"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -168,10 +169,12 @@
   },
   "active": "f05afb1219b259c3",
   "lastOpenFiles": [
-    "文档/CSS.md",
+    "投资知识目录导航.md",
     "技术知识目录导航.md",
     "未归类知识目录导航.md",
-    "投资知识目录导航.md",
+    "文档/go常见问题.md",
+    "文档/快捷指令.md",
+    "文档/CSS.md",
     "学习计划.md",
     "工作任务.md",
     "文档/金融.md",
@@ -210,8 +213,6 @@
     "文档/web3知识.md",
     "文档/Django Rest FrameWork.md",
     "文档/量化.md",
-    "文档/金融书籍.md",
-    "文档/虚拟银行卡使用.md",
     "草稿",
     "文档/未命名",
     "image",
