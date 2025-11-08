@@ -7,6 +7,7 @@
 	- https://bscscan.com/
 
 网络、区块链和加密货币之间的区别
+<<<<<<< HEAD
 https://ethereumclassic.org/zh/blog/2022-11-29-the-difference-between-a-network-a-blockchain-and-a-cryptocurrency
 
 
@@ -74,3 +75,6 @@ DEX 是加密货币世界去中心化精神的体现。它不依赖于任何中�
 优点: 无托管风险（你的资产你自己掌控）、高隐私性、审查抗性强、代币上新快。
 缺点: 操作相对复杂、流动性可能较低（尤其是小币种）、容易遇到滑点、缺乏客户服务。
 
+=======
+https://ethereumclassic.org/zh/blog/2022-11-29-the-difference-between-a-network-a-blockchain-and-a-cryptocurrency
+>>>>>>> 1946ea1269de9303eae12ba81a2d87c383ff44be

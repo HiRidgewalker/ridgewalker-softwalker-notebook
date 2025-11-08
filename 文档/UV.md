@@ -26,6 +26,7 @@ uv python install 3.12
 uv python install 3.11, 3.12
 ```
 
+<<<<<<< HEAD
 **uv安装和管理python**
 `uv python install` ：安装 Python 版本。
 `uv python list` ：查看可用的 Python 版本。
@@ -398,5 +399,7 @@ uv 支持创建虚拟环境，例如在 `.venv` 创建虚拟环境：
 
 
 
+=======
+>>>>>>> 1946ea1269de9303eae12ba81a2d87c383ff44be
 
 
