@@ -4,20 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8e5f4874d5dcbbe0",
+        "id": "1d4944557a313e41",
         "type": "tabs",
         "children": [
           {
-            "id": "8dd055d4cc9335e7",
+            "id": "93fbc63bd4aaec3b",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "未命名.base",
-                "viewName": "表格"
+                "file": "未归类知识目录导航.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-ghost",
-              "title": "bases"
+              "icon": "lucide-file",
+              "title": "未归类知识目录导航"
             }
           }
         ],
@@ -142,12 +144,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "未归类知识目录导航.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "未归类知识目录导航 的大纲"
             }
           }
         ],
@@ -170,11 +173,12 @@
   },
   "active": "e7a9d7a251f92854",
   "lastOpenFiles": [
+    "学习计划.md",
+    "未归类知识目录导航.md",
+    "工作任务.md",
     "文档/金融.md",
     "文档/经验总结.md",
     "文档/web3词汇.md",
-    "工作任务.md",
-    "学习计划.md",
     "未命名.base",
     "文档/代码规范和技巧.md",
     "2025-11-08.md",
@@ -185,7 +189,6 @@
     "草稿/工作任务.md",
     "文档/投机感想和反思.md",
     "投资知识目录导航.md",
-    "未归类知识目录导航.md",
     "文档/Crypto总结.md",
     "技术知识目录导航.md",
     "文档/前后端常用鉴权方式总结.md",
