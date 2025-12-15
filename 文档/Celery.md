@@ -130,3 +130,155 @@ celery -A your_project control revoke <task_id>
 ```bash
 celery -A your_project control pool_restart
 ```
+
+
+Celery Redis配置
+```python
+#!/usr/bin/env python  
+# _*_ coding: utf-8 _*_  
+  
+import os  
+from email.policy import default  
+  
+from celery import Celery  
+from kombu import Queue  
+  
+from main.config import SYS_NAME  
+# Set the default Django settings module for the 'celery' program.  
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'main.settings')  
+  
+app = Celery('celery',  
+             broker="redis://:root@192.168.14.131:6379/0",  
+             # backend="",  
+             broker_transport_options={  
+                 'global_keyprefix': f"{SYS_NAME}_",  
+             },  
+             result_backend_transport_options={  
+                 'global_keyprefix': f"{SYS_NAME}_",  
+             })  
+  
+# Using a string here means the worker doesn't have to serialize  
+# the configuration object to child processes.  
+# - namespace='CELERY' means all celery-related configuration keys  
+#   should have a `CELERY_` prefix.  
+app.config_from_object('django.conf:settings', namespace='CELERY')  
+  
+# 默认配置  
+app.conf.update(  
+    # 任务的最大执行时间  
+    task_time_limit = 1 * 10 * 60, # 单个任务最多执行10分钟  
+  
+    # 任务结果过期时间  
+    result_expires=3600,  
+  
+    # 任务序列化方式  
+    task_serializer='json',  
+    result_serializer='json',  
+    accept_content=['json'],  
+  
+    # 时区设置  
+    timezone='Asia/Shanghai',  
+    enable_utc=True  
+)  
+  
+# 声明队列  
+app.conf.task_queues = {  
+    Queue('default'),  
+    Queue('queue_one'),  
+    Queue('queue_two')  
+}  
+  
+# 路由配置  
+app.conf.task_routes = {  
+    "apps.demo_app.tasks.timed_task_one": {  
+        "queue": "queue_one"  
+    },  
+    "apps.demo_app.tasks.async_task_one": {  
+        "queue": "queue_two"  
+    },  
+    "*": {  
+        "queue": "default"  
+    }  
+}  
+  
+# 定时任务  
+app.conf.beat_schedule = {  
+    "timed_task-every-5-second": {  
+        'task': "apps.demo_app.tasks.timed_task_one",  
+        'schedule': 5.0,  
+    }  
+}  
+  
+# Load task modules from all registered Django apps.  
+# app.autodiscover_tasks(["apps.demo_app"])  
+app.autodiscover_tasks()
+```
+
+Celery Rabbitmq配置
+配置参数
+```python
+#!/usr/bin/env python  
+# _*_ coding: utf-8 _*_  
+  
+from kombu import Exchange, Queue  
+  
+# 使用RabbitMQ作为broker  
+broker_url = "amqp://ingest:SobeyHive2016@172.16.151.202:6672//ingest"  
+  
+# 使用直接交换机  
+terminator_service_exchange = Exchange("terminator_service_exchange", type="direct", durable=True)  
+  
+# 声明队列，并绑定 routing_keytask_queues = (  
+    Queue(  
+        name="terminator_convert_service_pdf_queue",  
+        exchange=terminator_service_exchange,  
+        routing_key="tcs_pdf_key",  
+        durable=True,  # 队列持久化  
+    ),  
+    Queue(  
+        name="terminator_convert_service_txt_queue",  
+        exchange=terminator_service_exchange,  
+        routing_key="tcs_txt_key",  
+        durable=True,  
+    ),  
+    # Queue(  
+    #     name="docling_task_queue",    #     exchange=terminator_service_exchange,    #     routing_key="dt_key",    #     durable=True,    # ),)  
+  
+# 明确指定任务与 routing_key 的映射  
+task_routes = {  
+    "terminator.convert.service.pdf": {"queue": "terminator_convert_service_pdf_queue", "routing_key": "tcs_pdf_key"},  
+    "terminator.convert.service.txt": {"queue": "terminator_convert_service_txt_queue", "routing_key": "tcs_txt_key"},  
+}  
+  
+# 消息确认模式  
+task_acks_late = False  # worker 执行成功后才 acktask_reject_on_worker_lost = True  # worker 异常退出时重发任务  
+  
+# ========== 关键配置：一次只消费一个任务 ==========worker_prefetch_multiplier = 1  # 每个 worker 进程一次只预取 1 个任务  
+worker_max_tasks_per_child = None  # worker 不自动回收（可选）  
+  
+# 任务结果（可选）  
+# result_backend = "redis://localhost:6379/0"  # 推荐使用 Redis，或者完全删除此行  
+  
+# 任务与队列持久化  
+task_default_delivery_mode = "persistent"  
+  
+# 可选：时区与日志  
+timezone = "Asia/Shanghai"  
+enable_utc = False
+```
+实例化
+```python
+import os  
+from celery import Celery  
+from common.basics.logging import LOGGING  
+import logging.config  
+  
+logging.config.dictConfig(LOGGING)  
+  
+# Set the default Django settings module for the 'celery' program.  
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'main.settings')  
+  
+app = Celery("celery")  
+app.config_from_object("main.celery_config")  
+app.autodiscover_tasks()
+```

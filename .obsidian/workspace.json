@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "31fa900624c75aac",
+        "id": "6f82315164984c53",
         "type": "tabs",
         "children": [
           {
-            "id": "7720eed3ef4db8fe",
+            "id": "f2a975e705c7c7c2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "LLM Agent.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "LLM Agent"
             }
           }
         ],
@@ -75,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 601.5
+    "width": 200
   },
   "right": {
     "id": "6c407a039df8e0bb",
@@ -109,11 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "文档/Celery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "Celery 的出链列表"
             }
           },
           {
@@ -137,20 +143,21 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "LLM Agent.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "LLM Agent 的大纲"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 229.5
+    "width": 424.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,24 +166,32 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "7720eed3ef4db8fe",
+  "active": "f2a975e705c7c7c2",
   "lastOpenFiles": [
+    "celery workerpool.md",
+    "LLM Agent.md",
+    "image/Pasted image 20251211101505.png",
+    "image/Pasted image 20251211101452.png",
+    "image/Pasted image 20251211101439.png",
+    "image/Pasted image 20251211101429.png",
+    "技术知识目录导航.md",
+    "文档/go常见问题.md",
     "投资知识目录导航.md",
+    "文档/Celery.md",
+    "文档/快捷指令.md",
+    "文档/jwt.md",
+    "文档/前后端常用鉴权方式总结.md",
+    "文档/文档导航.md",
+    "未归类知识目录导航.md",
     "文档/金融书籍.md",
     "文档/金融.md",
     "文档/web3词汇.md",
     "文档/Prompt.md",
     "文档/Prompt示例.md",
-    "文档/jwt.md",
-    "技术知识目录导航.md",
-    "文档/前后端常用鉴权方式总结.md",
     "image/image-20241011225740160.png",
     "文档/GO-BASIC-GRAMMAR.md",
-    "未归类知识目录导航.md",
     "文档/优秀博客、博主收集(各个多媒体平台发现).md",
     "文档/代码规范和技巧.md",
-    "文档/go常见问题.md",
-    "文档/快捷指令.md",
     "文档/CSS.md",
     "学习计划.md",
     "工作任务.md",
@@ -189,19 +204,11 @@
     "未命名.canvas",
     "草稿/工作任务.md",
     "文档/投机感想和反思.md",
-    "文档/Crypto总结.md",
-    "文档/sqlite.md",
-    "文档/MySQL.md",
-    "文档/Celery.md",
     "image/image-20241011231028626.png",
     "image/image-20241011230908674.png",
     "image/image-20241011230938850.png",
     "image/image-20241011230704214.png",
     "image/image-20241011230555580.png",
-    "image/image-20241011230008683.png",
-    "image/image-20241011230502904.png",
-    "image/image-20241011225946150.png",
-    "image/image-20241011225922622.png",
     "images",
     "未命名 1",
     "未命名",
