@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM Agent.md",
+                "file": "大模型技术学习.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "LLM Agent"
+              "title": "大模型技术学习"
             }
           }
         ],
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLM Agent.md",
+                "file": "大模型技术学习.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "LLM Agent 的大纲"
+              "title": "大模型技术学习 的大纲"
             }
           }
         ],
@@ -169,20 +169,20 @@
   "active": "f2a975e705c7c7c2",
   "lastOpenFiles": [
     "celery workerpool.md",
-    "LLM Agent.md",
+    "投资知识目录导航.md",
+    "未归类知识目录导航.md",
+    "大模型技术学习.md",
     "image/Pasted image 20251211101505.png",
     "image/Pasted image 20251211101452.png",
     "image/Pasted image 20251211101439.png",
     "image/Pasted image 20251211101429.png",
     "技术知识目录导航.md",
     "文档/go常见问题.md",
-    "投资知识目录导航.md",
     "文档/Celery.md",
     "文档/快捷指令.md",
     "文档/jwt.md",
     "文档/前后端常用鉴权方式总结.md",
     "文档/文档导航.md",
-    "未归类知识目录导航.md",
     "文档/金融书籍.md",
     "文档/金融.md",
     "文档/web3词汇.md",
