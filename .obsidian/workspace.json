@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技术知识目录导航.md",
+                "file": "大模型技术学习.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "技术知识目录导航"
+              "title": "大模型技术学习"
             }
           },
           {
@@ -38,7 +38,6 @@
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -96,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 261.5
   },
   "right": {
     "id": "6c407a039df8e0bb",
@@ -159,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文档/Celery.md",
+                "file": "大模型技术学习.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Celery 的大纲"
+              "title": "大模型技术学习 的大纲"
             }
           }
         ],
@@ -182,11 +181,11 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "ea39bbbb26ccb5fa",
+  "active": "e7a9d7a251f92854",
   "lastOpenFiles": [
-    "celery workerpool.md",
-    "文档/Celery.md",
     "技术知识目录导航.md",
+    "文档/Celery.md",
+    "celery workerpool.md",
     "大模型技术学习.md",
     "投资知识目录导航.md",
     "未归类知识目录导航.md",
