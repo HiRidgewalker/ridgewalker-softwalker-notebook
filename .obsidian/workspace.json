@@ -1,74 +1,42 @@
 {
   "main": {
-    "id": "d73e79184fa2e269",
+    "id": "61d02a0e2b776133",
     "type": "split",
     "children": [
       {
-        "id": "1de75e2696fccbeb",
+        "id": "27af51e739294540",
         "type": "tabs",
         "children": [
           {
-            "id": "ce2c52c25d698fbb",
+            "id": "b58ee2e4fe4c5c8b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pytorch学习笔记.md",
+                "file": "claude code学习文档.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Pytorch学习笔记"
-              "title": "大模型技术学习"
-            }
-          },
-          {
-            "id": "40874e3cc3537f0f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "大模型技术学习.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "大模型技术学习"
-            }
-          },
-          {
-            "id": "ea39bbbb26ccb5fa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "文档/Celery.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Celery"
+              "title": "claude code学习文档"
             }
           }
-        ],
-        "stacked": true
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "f66c842ef544f235",
+    "id": "90b790b176cc6be5",
     "type": "split",
     "children": [
       {
-        "id": "4b446068b9a80df3",
+        "id": "89f9a37d6b82da7b",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a9d7a251f92854",
+            "id": "64eeefab33a3f3fa",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -81,13 +49,13 @@
             }
           },
           {
-            "id": "f7828bec8759bdd4",
+            "id": "ffee041e6bcc45ab",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -98,7 +66,7 @@
             }
           },
           {
-            "id": "bd23dbf0bbdcc8e3",
+            "id": "0ebc1eab965a6720",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -111,56 +79,57 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261.5
+    "width": 294.5
   },
   "right": {
-    "id": "6c407a039df8e0bb",
+    "id": "e2663ca616b5c517",
     "type": "split",
     "children": [
       {
-        "id": "49192541bae3683e",
+        "id": "881152f5bdf034f2",
         "type": "tabs",
         "children": [
           {
-            "id": "e74277d9be8c0aaf",
+            "id": "7f4976492899a6e7",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "技术知识目录导航.md",
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "技术知识目录导航 的反向链接列表"
             }
           },
           {
-            "id": "a0a762e831864440",
+            "id": "0fbede482d826ee3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "文档/Celery.md",
+                "file": "金融、投资、借贷、衍生品知识目录导航.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Celery 的出链列表"
+              "title": "金融、投资、借贷、衍生品知识目录导航 的出链列表"
             }
           },
           {
-            "id": "b75d7a33d6e01d19",
+            "id": "8283f84ccedc9bf9",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": false,
+                "useHierarchy": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -169,18 +138,18 @@
             }
           },
           {
-            "id": "8bf6bc8020600b13",
+            "id": "cad7bf33a52d1e1d",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pytorch学习笔记.md",
+                "file": "claude code学习文档.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Pytorch学习笔记 的大纲"
+              "title": "claude code学习文档 的大纲"
             }
           }
         ],
@@ -188,76 +157,38 @@
       }
     ],
     "direction": "horizontal",
-    "width": 424.5
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "command-palette:打开命令面板": false,
       "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false
+      "graph:查看关系图谱": false,
+      "command-palette:打开命令面板": false
     }
   },
-<<<<<<< HEAD
-  "active": "ce2c52c25d698fbb",
+  "active": "b58ee2e4fe4c5c8b",
   "lastOpenFiles": [
-    "markdown latex语法大全.md",
-=======
-<<<<<<< HEAD
-  "active": "e7a9d7a251f92854",
-  "lastOpenFiles": [
-=======
-  "active": "40874e3cc3537f0f",
-  "lastOpenFiles": [
-    "未归类知识目录导航.md",
-    "文档/Celery.md",
-    "celery workerpool.md",
->>>>>>> 6e94125b5b2fe1f3781430daf546e85a617f7c36
->>>>>>> 197de41d99c4d8950debc96e4dceac2b36ea6816
+    "image/Pasted image 20260210234139.png",
+    "image/Pasted image 20260210233811.png",
+    "image/Pasted image 20260210233427.png",
+    "image/Pasted image 20260210233038.png",
+    "image/Pasted image 20260210232459.png",
+    "image/Pasted image 20260210232134.png",
+    "image/Pasted image 20260210231521.png",
+    "image/Pasted image 20260210231345.png",
+    "image/Pasted image 20260210225948.png",
+    "image/Pasted image 20260210171858.png",
+    "image/Pasted image 20260210171045.png",
     "技术知识目录导航.md",
-    "大模型技术学习.md",
-    "Pytorch学习笔记.md",
-    "文档/Celery.md",
-    "celery workerpool.md",
-    "投资知识目录导航.md",
-    "image/Pasted image 20251211101505.png",
-    "image/Pasted image 20251211101452.png",
-    "image/Pasted image 20251211101439.png",
-    "image/Pasted image 20251211101429.png",
-    "文档/go常见问题.md",
-    "文档/快捷指令.md",
-    "文档/jwt.md",
-    "文档/前后端常用鉴权方式总结.md",
-    "文档/文档导航.md",
-    "文档/金融书籍.md",
-    "文档/金融.md",
-    "文档/web3词汇.md",
-    "文档/Prompt.md",
-    "文档/Prompt示例.md",
-    "image/image-20241011225740160.png",
+    "claude code学习文档.md",
+    "文档/LLM.md",
+    "大模型技术学习计划.md",
+    "名词.md",
+    "金融、投资、借贷、衍生品知识目录导航.md",
+    "未归类知识目录导航.md",
     "文档/GO-BASIC-GRAMMAR.md",
-    "文档/优秀博客、博主收集(各个多媒体平台发现).md",
-    "文档/代码规范和技巧.md",
-    "文档/CSS.md",
-    "学习计划.md",
-    "工作任务.md",
-    "文档/经验总结.md",
-    "未命名.base",
-    "2025-11-08.md",
-    "未命名 3.base",
-    "未命名 2.base",
-    "未命名 1.base",
-    "未命名.canvas",
-    "image/image-20241011231028626.png",
-    "image/image-20241011230908674.png",
-    "image/image-20241011230938850.png",
-    "image/image-20241011230704214.png",
-    "image/image-20241011230555580.png",
-    "images",
-    "未命名 1",
-    "未命名",
-    "草稿",
-    "文档/未命名",
-    "image",
-    "草稿/None.canvas"
+    "文档/Pytorch学习笔记.md",
+    "文档/markdown latex语法大全.md"
   ]
 }

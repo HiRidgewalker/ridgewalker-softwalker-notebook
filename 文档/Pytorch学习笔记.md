@@ -21,4 +21,11 @@ torch whl下载网址: [download.pytorch.org/whl/torch_stable.html](https://down
 CNN（卷积）
 - 卷积核
 - 池化
-- 
+
+
+## 网络模型的部位分类
+网络模型分为主干网络，颈部网络和头部网络
+![[Pasted image 20260206105625.png]]
+
+`__call__`方法
+
