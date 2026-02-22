@@ -99,6 +99,32 @@ tool
 plugin
 
 
+## 补充
+```python
+/exit | /quit 退出对话
+/resume 查看对话历史
+/model 查看当前使用的模型
+/compact 压缩对话
+/clear 清除对话记录
+！ 添加冒号可以执行命令
+```
+`!`: 输入执行命令
+![[Pasted image 20251215002534.png]]
+
+`#`:长期记忆
+![[Pasted image 20251215002636.png]]
+
+claude code教程文章和视频
+文章1: https://www.claude-cn.org/posts/Claude-code-commands-guide.html#_3%EF%B8%8F%E2%83%A3-mcp%E5%91%BD%E4%BB%A4-%E8%AE%A9claude-code%E5%BC%80%E6%8C%82-%E2%80%8B
+
+文章2:https://blog.csdn.net/weixin_52136627/article/details/149719262
+
+视频：[视频教程](https://www.bilibili.com/video/BV1XGbazvEuh/?spm_id_from=333.337.search-card.all.click&vd_source=f206e98233aae099adecce9377d98cc2)
+
+
+claude code mcp新手教程
+https://zhuanlan.zhihu.com/p/1933624323849032925
+
 
 
 ## 问题
