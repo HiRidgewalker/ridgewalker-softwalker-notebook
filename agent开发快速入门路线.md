@@ -35,3 +35,12 @@ langflow
 
 >我们团队也是差不多的思路了。不过现在进化到deepagents框架了，skills渐进式披露、中间件、虚拟文档系统，已经成为了智能体的核心点。
 
+Gartner 调研显示 68% 企业卡在智能体流程编排环节
+
+ango开发框架教程
+入门
+https://juejin.cn/post/7569960869960040494#heading-35
+[https://juejin.cn/post/7571650164843937826](https://juejin.cn/column/7569959427879043082)
+
+和豆包的对话，关于agent框架
+https://www.doubao.com/chat/38415263669765890

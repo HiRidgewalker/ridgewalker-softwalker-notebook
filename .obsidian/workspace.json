@@ -8,21 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "27c80aaee41157e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "最近/大模型技术学习计划.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "大模型技术学习计划"
-            }
-          },
-          {
             "id": "f11cd304324ee347",
             "type": "leaf",
             "state": {
@@ -36,9 +21,38 @@
               "icon": "lucide-file",
               "title": "agent开发快速入门路线"
             }
+          },
+          {
+            "id": "8782739c9da311eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "文档/AI、DeepLearning、MachineLearning零碎知识.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "AI、DeepLearning、MachineLearning零碎知识"
+            }
+          },
+          {
+            "id": "e1bf82e668778cd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "文档/Pytorch学习笔记.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Pytorch学习笔记"
+            }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -96,8 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "6c407a039df8e0bb",
@@ -185,8 +198,14 @@
   },
   "active": "f11cd304324ee347",
   "lastOpenFiles": [
-    "最近/大模型技术学习计划.md",
+    "做agent的一些思路.md",
     "agent开发快速入门路线.md",
+    "03-未归类知识目录导航.md",
+    "02-金融、投资、借贷、衍生品知识目录导航.md",
+    "01-技术知识目录导航.md",
+    "文档/AI、DeepLearning、MachineLearning零碎知识.md",
+    "文档/Pytorch学习笔记.md",
+    "最近/大模型技术学习计划.md",
     "文档/LLM.md",
     "文档/MCP.md",
     "文档/VLLM.md",
@@ -195,14 +214,11 @@
     "文档/HuggingFace Transformers.md",
     "文档/Ollama.md",
     "文档/Rerank.md",
-    "01-技术知识目录导航.md",
     "image/Pasted image 20260225232548.png",
     "image/Pasted image 20260225232536.png",
     "image/Pasted image 20260225232328.png",
     "image/Pasted image 20260225232223.png",
     "文档/claude code学习文档.md",
-    "02-金融、投资、借贷、衍生品知识目录导航.md",
-    "03-未归类知识目录导航.md",
     "最近",
     "归档(很少翻阅)",
     "归档(很少翻阅)/每日任务.md",
@@ -220,10 +236,7 @@
     "文档/open code学习文档.md",
     "最近/名词.md",
     "最近/有感.md",
-    "最近/草稿本.md",
-    "文档/mac磁盘修复.md",
     "claude code学习文档.md.orig",
-    "claude code学习文档_REMOTE_335.md",
     "images",
     "未命名.base",
     "未命名 3.base",
