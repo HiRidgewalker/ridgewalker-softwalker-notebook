@@ -26,7 +26,6 @@ uv python install 3.12
 uv python install 3.11, 3.12
 ```
 
-<<<<<<< HEAD
 **uv安装和管理python**
 `uv python install` ：安装 Python 版本。
 `uv python list` ：查看可用的 Python 版本。
@@ -277,7 +276,8 @@ uv 支持创建虚拟环境，例如在 `.venv` 创建虚拟环境：
 ## 使用uv创建一个python项目并执行python版本的步骤
 ✅ 推荐顺序
 1. **先 init**（初始化项目结构）
-    `uv init myproj cd myproj`
+    `uv init myproj `
+    `cd myproj`
 2. **再 pin**（锁定 Python 版本）
     `uv python pin 3.10`
 3. **最后 sync**（创建虚拟环境 + 装依赖）
@@ -294,7 +294,8 @@ uv 支持创建虚拟环境，例如在 `.venv` 创建虚拟环境：
 ## 好习惯: 调用uv里面的命令，比如pip之类的，永远是uv在前面
 🔹 最安全、最推荐的习惯
 - **安装依赖**：
-`uv add fastapi uv add pandas`
+`uv add fastapi `
+`uv add pandas`
 - **使用 pip**：
 `uv pip install requests uv pip list uv pip uninstall xxx`
 - **运行脚本**：
@@ -348,7 +349,8 @@ uv 支持创建虚拟环境，例如在 `.venv` 创建虚拟环境：
 ---
 3️⃣ 使用 `.python-version` + `--active`
 - 如果不想改默认虚拟环境，也可以临时使用当前激活的虚拟环境：
-`source venv/bin/activate uv add fastapi --active`
+`source venv/bin/activate `
+`uv add fastapi --active`
 - `--active` 会告诉 uv 使用当前 shell 激活的虚拟环境，无论名称是什么
 - 适合临时操作或测试环境
 ---
@@ -387,19 +389,5 @@ uv 支持创建虚拟环境，例如在 `.venv` 创建虚拟环境：
 |`uv sync`|✅ 会|同步依赖时需要虚拟环境|
 
 👉 所以：**只有涉及依赖安装的命令（`uv add`、`uv sync`）才会触发 `.venv` 自动创建**。
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> 1946ea1269de9303eae12ba81a2d87c383ff44be
 
 

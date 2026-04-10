@@ -1,3 +1,192 @@
+## Claude Code是如何工作的
+Claude Code 是一个在您的终端中运行的代理助手。虽然它在编码方面表现出色，但它可以帮助您完成从命令行可以做的任何事情：编写文档、运行构建、搜索文件、研究主题等。
+
+### /sandbox相关
+1. Claude Code 默认开启了 sandbox 吗？
+	>没有。 Claude Code 默认运行在基于权限的模式（permission-based model）下，默认是只读的，在进行修改或运行命令之前会询问权限。 [Anthropic](https://www.anthropic.com/engineering/claude-code-sandboxing) Sandbox 是一个需要主动开启的功能。需要在会话中输入 `/sandbox` 命令来启用它。 [GitHub](https://github.com/trailofbits/claude-code-config)
+
+2. 开启 auto-allow 模式后，默认授予写权限的是当前工作目录吗？
+	>是的。 在文件系统层面，写入权限默认限定在当前工作目录及其子目录；读取权限则覆盖整个系统（除了你明确拒绝的目录）。 [Claude Fast](https://claudefa.st/blog/guide/sandboxing-guide) 在 auto-allow 模式下，bash 命令会尝试在 sandbox 内运行并自动被允许，无需逐条询问权限；但对于无法在 sandbox 内执行的命令（例如需要访问未允许的网络主机），则会回退到常规的权限流程。 [Claude](https://code.claude.com/docs/en/sandboxing)
+
+3. 如果 agent 需要安装全局 Python 第三方包（sandbox 无法执行），会询问权限并在 sandbox 外执行吗？
+	>会的，这正是设计好的"逃生通道"机制。 Claude Code 内置了一个有意为之的逃生通道（escape hatch）机制，允许命令在必要时在 sandbox 外运行。当命令因 sandbox 限制失败时（例如网络连接问题或不兼容的工具），Claude 会被提示分析失败原因，并可能使用 `dangerouslyDisableSandbox` 参数重试该命令。 [Claude](https://code.claude.com/docs/en/sandboxing)
+
+安装全局包（如 `pip install -g` 或 `pip install --user` 到 sandbox 工作目录之外）因为需要写入 sandbox 边界之外的路径，属于这种情况。Claude 会识别失败、分析原因，然后请求在 sandbox 外执行，用户会看到权限提示并可以选择是否允许。
+
+### 代理循环
+当您给 Claude 一个任务时，它会经历三个阶段：**收集上下文**、**采取行动**和**验证结果**。这些阶段相互融合。Claude 始终使用工具，无论是搜索文件以了解您的代码、编辑以进行更改，还是运行测试以检查其工作。
+![[Pasted image 20260314184846.png]]
+循环会根据您的要求进行调整。关于您代码库的问题可能只需要收集上下文。错误修复会循环通过所有三个阶段多次。重构可能涉及广泛的验证。Claude 根据从前一步学到的内容决定每一步需要什么，将数十个操作链接在一起并沿途进行纠正。
+
+您也是这个循环的一部分。您可以在任何时刻中断以引导 Claude 朝不同方向发展、提供额外上下文或要求它尝试不同的方法。Claude 自主工作但对您的输入保持响应。
+
+代理循环由两个组件驱动：[推理的模型](https://code.claude.com/docs/zh-CN/how-claude-code-works#models)和[采取行动的工具](https://code.claude.com/docs/zh-CN/how-claude-code-works#tools)。Claude Code 充当围绕 Claude 的**代理工具**：它提供工具、上下文管理和执行环境，将语言模型转变为能够进行编码的代理。
+
+#### 模型
+Claude Code 使用 Claude 模型来理解您的代码并推理任务。Claude 可以读取任何语言的代码、理解组件如何连接，以及找出需要改变什么来实现您的目标。对于复杂任务，它将工作分解为步骤、执行它们，并根据学到的内容进行调整。
+
+[多个模型](https://code.claude.com/docs/zh-CN/model-config)可用，具有不同的权衡。Sonnet 可以很好地处理大多数编码任务。Opus 为复杂的架构决策提供更强的推理能力。在会话期间使用 `/model` 切换或使用 `claude --model <name>` 启动。
+
+当本指南说”Claude 选择”或”Claude 决定”时，是模型在进行推理。
+
+#### 工具
+工具是使 Claude Code 成为代理的原因。没有工具，Claude 只能用文本回应。有了工具，Claude 可以采取行动：读取您的代码、编辑文件、运行命令、搜索网络并与外部服务交互。每个工具使用都会返回信息，反馈到循环中，告知 Claude 的下一个决定。内置工具通常分为五类，每一类代表不同类型的代理能力。
+
+|类别|Claude 可以做什么|
+|---|---|
+|**文件操作**|读取文件、编辑代码、创建新文件、重命名和重新组织|
+|**搜索**|按模式查找文件、使用正则表达式搜索内容、探索代码库|
+|**执行**|运行 shell 命令、启动服务器、运行测试、使用 git|
+|**网络**|搜索网络、获取文档、查找错误消息|
+|**代码智能**|编辑后查看类型错误和警告、跳转到定义、查找引用（需要[代码智能插件](https://code.claude.com/docs/zh-CN/discover-plugins#code-intelligence)）|
+
+这些是主要功能。Claude 还有用于生成 subagents、询问您问题和其他编排任务的工具。有关完整列表，请参阅[Claude 可用的工具](https://code.claude.com/docs/zh-CN/settings#tools-available-to-claude)。Claude 根据您的提示和沿途学到的内容选择使用哪些工具。当您说”修复失败的测试”时，Claude 可能会：
+
+1. 运行测试套件以查看失败的内容
+2. 读取错误输出
+3. 搜索相关源文件
+4. 读取这些文件以理解代码
+5. 编辑文件以修复问题
+6. 再次运行测试以验证
+
+每个工具使用都给 Claude 新信息，告知下一步。这就是代理循环的实际应用。**扩展基本功能：** 内置工具是基础。您可以使用 [skills](https://code.claude.com/docs/zh-CN/skills) 扩展 Claude 知道的内容、使用 [MCP](https://code.claude.com/docs/zh-CN/mcp) 连接到外部服务、使用 [hooks](https://code.claude.com/docs/zh-CN/hooks) 自动化工作流，以及使用 [subagents](https://code.claude.com/docs/zh-CN/sub-agents) 卸载任务。这些扩展形成了核心代理循环之上的一层。有关为您的需求选择正确扩展的指导，请参阅[扩展 Claude Code](https://code.claude.com/docs/zh-CN/features-overview)。
+
+
+[claude code是如何工作的以及使用建议](https://code.claude.com/docs/zh-CN/how-claude-code-works)
+
+## 扩展Claude Code
+### claude.md vs skills vs rules
+
+![[Pasted image 20260314235621.png]]
+claude.md始终是加载到上下文的，而skills是按需加载的
+
+### 组合功能
+每个扩展解决不同的问题：CLAUDE.md 处理始终开启的上下文，skills 处理按需知识和工作流，MCP 处理外部连接，subagents 处理隔离，hooks 处理自动化。真实的设置根据您的工作流组合它们。
+![[Pasted image 20260314235955.png]]
+
+### 了解claude code各个功能的上下文成本
+您添加的每个功能都会消耗 Claude 的一些上下文。太多可能会填满您的上下文窗口，但它也可能增加噪音，使 Claude 效率降低；skills 可能无法正确触发，或 Claude 可能会失去对您的约定的跟踪。了解这些权衡有助于您构建有效的设置。
+
+**`每个功能都有不同的加载策略和上下文成本`**
+![[Pasted image 20260315000246.png]]
+
+### 了解功能如何加载
+[官方链接](https://code.claude.com/docs/zh-CN/features-overview#了解功能如何加载)
+![[Pasted image 20260315000508.png]]
+
+CLAUDE.md文件的位置
+![[Pasted image 20260315001138.png]]
+简单总结：
+项目级别： `./.claude/CLAUDE.md`
+用户级别： `~/.claude/CLAUDE.md`
+
+项目 CLAUDE.md 可以存储在 `./CLAUDE.md` 或 `./.claude/CLAUDE.md` 中。创建此文件并添加适用于在项目上工作的任何人的指令：构建和测试命令、编码标准、架构决策、命名约定和常见工作流。这些指令通过版本控制与您的团队共享，因此请关注项目级标准而不是个人偏好。
+
+运行 `/init` 自动生成起始 CLAUDE.md。Claude 分析您的代码库并创建一个包含构建命令、测试指令和它发现的项目约定的文件。如果 CLAUDE.md 已存在，`/init` 会建议改进而不是覆盖它。从那里进行细化，添加 Claude 不会自己发现的指令。
+
+CLAUDE.md文件中倒入其他文件
+CLAUDE.md 文件可以使用 `@path/to/import` 语法导入其他文件。导入的文件在启动时展开并加载到上下文中，与引用它们的 CLAUDE.md 一起。允许相对路径和绝对路径。相对路径相对于包含导入的文件解析，而不是工作目录。导入的文件可以递归导入其他文件，最大深度为五跳。要引入 README、package.json 和工作流指南，请在 CLAUDE.md 中的任何位置使用 `@` 语法引用它们：
+```md
+
+有关项目概述，请参阅 @README，有关此项目的可用 npm 命令，请参阅 @package.json。
+
+# 其他指令
+- git 工作流 @docs/git-instructions.md
+```
+
+claude code rules
+对于较大的项目，您可以使用 `.claude/rules/` 目录将指令组织到多个文件中。这使指令保持模块化并更容易让团队维护。规则也可以 [范围限定为特定文件路径](https://code.claude.com/docs/zh-CN/memory#path-specific-rules)，因此它们仅在 Claude 处理匹配文件时加载到上下文中，减少噪音并节省上下文空间。
+
+在项目的 `.claude/rules/` 目录中放置 markdown 文件。每个文件应涵盖一个主题，具有描述性文件名，如 `testing.md` 或 `api-design.md`。所有 `.md` 文件都被递归发现，因此您可以将规则组织到子目录中，如 `frontend/` 或 `backend/`：
+
+![[Pasted image 20260315002638.png]]
+
+没有 [`paths` frontmatter](https://code.claude.com/docs/zh-CN/memory#path-specific-rules) 的规则在启动时加载，优先级与 `.claude/CLAUDE.md` 相同。
+
+#### 特定路径的规则
+
+规则可以使用带有 `paths` 字段的 YAML frontmatter 范围限定为特定文件。这些条件规则仅在 Claude 处理与指定模式匹配的文件时适用。
+![[Pasted image 20260315002705.png]]
+
+## 常见的工作流程
+### 创建subagent
+![[Pasted image 20260315015430.png]]
+![[Pasted image 20260315015505.png]]
+
+
+Claude Code skills存放的位置
+![[Pasted image 20260315121344.png]]
+
+
+
+## Model Context Protocol
+安装MCP服务器
+添加远程http服务器
+HTTP 服务器是连接到远程 MCP 服务器的推荐选项。这是云服务最广泛支持的传输方式。
+```shell
+# 基本语法
+claude mcp add --transport http <name> <url>
+
+# 真实示例：连接到 Notion
+claude mcp add --transport http notion https://mcp.notion.com/mcp
+
+# 带有 Bearer 令牌的示例
+claude mcp add --transport http secure-api https://api.example.com/mcp \
+  --header "Authorization: Bearer your-token"
+```
+
+[添加本地stdio服务器](https://code.claude.com/docs/zh-CN/mcp#选项-3：添加本地-stdio-服务器)
+
+[管理服务器](https://code.claude.com/docs/zh-CN/mcp#管理您的服务器)
+![[Pasted image 20260315122926.png]]
+
+[mcp安装范围](https://code.claude.com/docs/zh-CN/mcp#mcp-安装范围)
+本地范围
+本地范围的服务器代表默认配置级别，存储在您项目路径下的 `~/.claude.json` 中。这些服务器对您保持私密，仅在当前项目目录中工作时可访问。此范围非常适合个人开发服务器、实验配置或包含不应共享的敏感凭据的服务器。
+
+```shell
+# 添加本地范围的服务器（默认）
+claude mcp add --transport http stripe https://mcp.stripe.com
+
+# 显式指定本地范围
+claude mcp add --transport http stripe --scope local https://mcp.stripe.com
+```
+
+项目范围
+项目范围的服务器通过在项目根目录中存储配置在 `.mcp.json` 文件中来启用团队协作。此文件设计为检入版本控制，确保所有团队成员都可以访问相同的 MCP 工具和服务。添加项目范围的服务器时，Claude Code 会自动创建或更新此文件，使用适当的配置结构。
+
+```shell
+# 添加项目范围的服务器
+claude mcp add --transport http paypal --scope project https://mcp.paypal.com/mcp
+```
+出于安全原因，Claude Code 在使用来自 `.mcp.json` 文件的项目范围的服务器之前会提示批准。如果您需要重置这些批准选择，请使用 `claude mcp reset-project-choices` 命令。
+
+用户范围
+用户范围的服务器存储在 `~/.claude.json` 中，并提供跨项目可访问性，使其在您机器上的所有项目中可用，同时对您的用户帐户保持私密。此范围适用于个人实用程序服务器、开发工具或您在不同项目中经常使用的服务。
+```shell
+# 添加用户服务器
+claude mcp add --transport http hubspot --scope user https://mcp.hubspot.com/anthropic
+```
+
+选择正确的范围
+
+根据以下条件选择您的范围：
+
+- **本地范围**：个人服务器、实验配置或特定于一个项目的敏感凭据
+- **项目范围**：团队共享的服务器、项目特定的工具或协作所需的服务
+- **用户范围**：跨多个项目需要的个人实用程序、开发工具或经常使用的服务
+
+> [!info] MCP 服务器存储在哪里？
+> - **用户和本地范围**：`~/.claude.json`（在 `mcpServers` 字段或项目路径下）
+> - **项目范围**：项目根目录中的 `.mcp.json`（检入源代码控制）
+> - **托管**：系统目录中的 `managed-mcp.json`（请参阅[托管 MCP 配置](https://code.claude.com/docs/zh-CN/mcp#managed-mcp-configuration)）
+
+
+
+
+
+
+
 ## 基本命令
 [快速入门](https://code.claude.com/docs/zh-CN/quickstart)
 ### 基本命令
@@ -138,7 +327,7 @@ claudia
 openclaw
 opencode
 openrouter
-
+cc switch
 ## CC plugin
 https://code.claude.com/docs/zh-CN/plugins
 ### 在anthripic官方插件市场安装插件
@@ -164,3 +353,8 @@ hook相关的参考：https://code.claude.com/docs/zh-CN/hooks
 claude code中的subagents、plugins
 
 ccusage查看模型使用量
+
+
+claude code资源
+https://easyclaude.com/
+

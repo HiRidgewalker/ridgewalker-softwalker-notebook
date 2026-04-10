@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "27c929b806f481e4",
+        "id": "60ee0f29f1e8ba04",
         "type": "tabs",
         "children": [
           {
-            "id": "49ff9db2b592e3f8",
+            "id": "bb745927c22a6b27",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "近期速记.md",
+                "file": "MACOS常用命令.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "近期速记"
+              "title": "MACOS常用命令"
             }
           }
         ],
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 200
   },
   "right": {
     "id": "6c407a039df8e0bb",
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "近期速记.md",
+                "file": "MACOS常用命令.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "近期速记 的大纲"
+              "title": "MACOS常用命令 的大纲"
             }
           }
         ],
@@ -166,46 +166,48 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "49ff9db2b592e3f8",
+  "active": "bb745927c22a6b27",
   "lastOpenFiles": [
-    "image/Pasted image 20260310233507.png",
-    "文档/claude code学习文档.md",
+    "TypeScript需要标注类型的情况及在React项目中常用的类型.md",
+    "react hooks useTransition() and useDeferredValue().md",
+    "hello.md",
+    "mini-agent 学习笔记.md",
+    "前端中，静态资源放public还是放src assets文件夹判断标准.md",
+    "Git.md",
+    "未命名.md",
+    "css margin折叠情况.md",
+    "css速记.md",
+    "js回调函数原理.md",
+    "javascript模块访问.md",
+    "文档/React.md",
     "01-技术知识目录导航.md",
-    "最近/调研、试用各类AI产品笔记记录.md",
-    "最近/大模型技术学习计划.md",
+    "MACOS常用命令.md",
+    "Agent开发技术栈总结.md",
+    "Agent 设计.md",
+    "数据库设计相关.md",
+    "权限控制模型.md",
     "近期速记.md",
-    "image/Pasted image 20260310112342.png",
-    "agent开发快速入门路线.md",
-    "做agent的一些思路.md",
-    "03-未归类知识目录导航.md",
+    "个人提升（方法论、复盘等）.md",
     "02-金融、投资、借贷、衍生品知识目录导航.md",
-    "文档/AI、DeepLearning、MachineLearning零碎知识.md",
-    "文档/Pytorch学习笔记.md",
-    "文档/LLM.md",
-    "文档/MCP.md",
-    "文档/VLLM.md",
-    "文档/RAG.md",
-    "文档/Prompt.md",
-    "文档/HuggingFace Transformers.md",
-    "文档/Ollama.md",
-    "文档/Rerank.md",
-    "image/Pasted image 20260225232548.png",
-    "image/Pasted image 20260225232536.png",
-    "image/Pasted image 20260225232328.png",
-    "image/Pasted image 20260225232223.png",
+    "03-未归类知识目录导航.md",
+    "文档/Pydantic.md",
+    "Pydantic.md",
+    "文档/UV.md",
+    "最近/UI专业术语扫盲及各类设计风格.md",
+    "非知识库本身",
+    "非知识库本身/企业协作管理平台",
+    "image/Pasted image 20260316163426.png",
+    "image/Pasted image 20260316155940.png",
+    "image/Pasted image 20260316155848.png",
+    "image/Pasted image 20260316155837.png",
+    "image/Pasted image 20260315122926.png",
+    "image/Pasted image 20260315121344.png",
+    "image/Pasted image 20260315015505.png",
+    "image/Pasted image 20260315015430.png",
+    "image/Pasted image 20260315002705.png",
+    "image/Pasted image 20260315002638.png",
     "最近",
     "归档(很少翻阅)",
-    "归档(很少翻阅)/每日任务.md",
-    "文档/文档导航.md",
-    "最近/figma学习.md",
-    "最近/穷鬼出海套餐.md",
-    "image/Pasted image 20260224114325.png",
-    "image/Pasted image 20260224114315.png",
-    "image/Pasted image 20260224114304.png",
-    "image/Pasted image 20260224114252.png",
-    "image/Pasted image 20260224114244.png",
-    "最近/UI专业术语扫盲及各类设计风格.md",
-    "文档/open code学习文档.md",
     "claude code学习文档.md.orig",
     "images",
     "未命名.base",
@@ -213,8 +215,6 @@
     "未命名 2.base",
     "未命名 1.base",
     "未命名.canvas",
-    "未命名 1",
-    "草稿",
     "草稿/None.canvas"
   ]
 }

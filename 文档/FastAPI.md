@@ -1,5 +1,5 @@
 document: [fastapi在线文档](https://fastapi.tiangolo.com/zh/)
-第三方： [[Pydantic]]
+第三方： [[文档/Pydantic]]
 ## fastapi函数参数识别规则
 - **路径**中声明了相同参数的参数，是路径参数
 - 类型是（`int`、`float`、`str`、`bool` 等）**单类型**的参数，是**查询**参数

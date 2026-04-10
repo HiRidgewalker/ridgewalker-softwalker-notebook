@@ -78,3 +78,14 @@
 [Docker 容器使用 | 菜鸟教程](https://www.runoob.com/docker/docker-container-usage.html)
 官方Docker CLI命令指南: [Docker CLI document](https://docs.docker.com/reference/)
 
+
+## Docker Volume相关问题
+
+1. docker容器被删除，容器挂载的数据卷默认行为
+	Docker 的数据卷默认都不会因为容器删除而删除，不管是匿名卷还是具名卷。即使是拉起容器的时候随容器创建的匿名卷，当删除容器的时候，数据卷仍然存在
+
+2. 同一个软件产品，第一次拉起创建的数据卷，第二次拉起一个同类的软件，数据卷不会被默认挂载
+	- 如果你重新启动一个新的 Redis 容器，必须显式把同一个数据卷挂载进去，Redis 才会读取之前持久化的数据。
+	- Docker 不会自动帮你“发现并加载旧的数据卷”。
+
+

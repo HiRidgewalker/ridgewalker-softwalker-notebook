@@ -2,32 +2,34 @@
 ![[Pasted image 20251211101429.png]]![[Pasted image 20251211101439.png]]![[Pasted image 20251211101452.png]]![[Pasted image 20251211101505.png]]
 ## Agent、大模型开发相关项目
 1. [hello agent](https://www.datawhale.cn/learn/summary/239)
-2. [ai-engineering-hub](https://github.com/patchy631/ai-engineering-hub)
+	- 之前过了一遍，比较基础，适合扫盲
+2. [ai-engineering-hub](https://github.com/patchy631/ai-engineering-hub)   
+	- 包含了很多ai项目
 3. [openmanus](https://github.com/FoundationAgents/OpenManus)
+	- 后续体验了manus后研究
 4. [deer-flow](https://github.com/bytedance/deer-flow)
-5. [mini-agent](https://github.com/bytedance/deer-flow)
+	- 自治理AI框架
+5. [mini-agent](https://github.com/MiniMax-AI/Mini-Agent)
+	- 可以研究下，代码量不是很大
 6. [genai-agent](https://github.com/NirDiamant/GenAI_Agents)
+	- 偏教程
 7. [smolagents](https://github.com/huggingface/smolagents)
+	- huggingface人工智能项目
 8. [500-AI-Agents-Projects](https://github.com/ashishpatel26/500-AI-Agents-Project)
-9. 
-
-## Agent项目设计需要考虑的点
-检索部分: rag、graphrag、多路召回
-设计模式：react、rewoo、reflextion
-工具调用：tool、skills
-记忆： memorybank、mem0
-
 
 ## LLM、Agent开发框架
 1. [adk-python](https://github.com/google/adk-python)
-2. agno
-3. pi
-4. langchain
+2. [agno](https://github.com/agno-agi/agno)
+3. [pi](https://github.com/badlogic/pi-mono)
+	- js开发语言
+4. [langchain](https://github.com/langchain-ai/langchain)
 5. langraph
-6. llamain		
-7. autogen
-8. agentscope
+6. [llamaindex](https://developers.llamaindex.ai/python/cloud/)		
+7. [autogen](https://github.com/microsoft/autogen)
+8. [agentscope](https://github.com/agentscope-ai/agentscope)
 
+可视化工具链路
+n8n
 dify
 fastgpt
 langflow
@@ -44,3 +46,10 @@ https://juejin.cn/post/7569960869960040494#heading-35
 
 和豆包的对话，关于agent框架
 https://www.doubao.com/chat/38415263669765890
+
+
+## Agent项目设计需要考虑的点
+检索部分: rag、graphrag、多路召回
+设计模式：react、rewoo、reflextion
+工具调用：tool、skills
+记忆： memorybank、mem0
