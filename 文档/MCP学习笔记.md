@@ -1,7 +1,6 @@
 ## MCP资源
-
 官方mcp文档： [https://github.com/modelcontextprotocol](https://github.com/modelcontextprotocol)
-官方mcp server收集平台： [https://github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
+官方mcp server收集平台： https://github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
 社区mcp收集平台
 - [https://bailian.console.aliyun.com/tab=mcp#/mcp-market](https://bailian.console.aliyun.com/tab=mcp#/mcp-market)
 - https://smithery.ai/servers
@@ -11,5 +10,3 @@
 
 MCP中文资源
 [MCPcn.com](https://mcpcn.com/)
-
-

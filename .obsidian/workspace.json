@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "60ee0f29f1e8ba04",
+        "id": "4df039dd4b0531a7",
         "type": "tabs",
         "children": [
           {
-            "id": "bb745927c22a6b27",
+            "id": "aefb08a6899e59d3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MACOS常用命令.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "MACOS常用命令"
+              "title": "新标签页"
             }
           }
         ],
@@ -80,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 341.5
   },
   "right": {
     "id": "6c407a039df8e0bb",
@@ -96,6 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "01-技术笔记目录导航.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +101,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "01-技术笔记目录导航 的反向链接列表"
             }
           },
           {
@@ -114,12 +110,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "文档/Celery.md",
+                "file": "01-技术笔记目录导航.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Celery 的出链列表"
+              "title": "01-技术笔记目录导航 的出链列表"
             }
           },
           {
@@ -143,13 +139,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MACOS常用命令.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "MACOS常用命令 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -157,7 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 264.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,36 +161,41 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "bb745927c22a6b27",
+  "active": "aefb08a6899e59d3",
   "lastOpenFiles": [
-    "TypeScript需要标注类型的情况及在React项目中常用的类型.md",
-    "react hooks useTransition() and useDeferredValue().md",
-    "hello.md",
-    "mini-agent 学习笔记.md",
-    "前端中，静态资源放public还是放src assets文件夹判断标准.md",
-    "Git.md",
-    "未命名.md",
-    "css margin折叠情况.md",
-    "css速记.md",
-    "js回调函数原理.md",
-    "javascript模块访问.md",
-    "文档/React.md",
-    "01-技术知识目录导航.md",
-    "MACOS常用命令.md",
-    "Agent开发技术栈总结.md",
-    "Agent 设计.md",
-    "数据库设计相关.md",
-    "权限控制模型.md",
+    "01-技术笔记目录导航.md",
+    "文档/文档导航.md",
+    "logi.md",
+    "文档/c&c++.md",
+    "04-新媒体笔记目录导航.md",
     "近期速记.md",
-    "个人提升（方法论、复盘等）.md",
-    "02-金融、投资、借贷、衍生品知识目录导航.md",
-    "03-未归类知识目录导航.md",
-    "文档/Pydantic.md",
-    "Pydantic.md",
-    "文档/UV.md",
-    "最近/UI专业术语扫盲及各类设计风格.md",
-    "非知识库本身",
-    "非知识库本身/企业协作管理平台",
+    "文档/anaconda笔记.md",
+    "文档/技术推文.md",
+    "文档/优秀博客、博主收集(各个多媒体平台发现).md",
+    "文档/代码规范和技巧.md",
+    "文档/javascirpt基础_day1.md",
+    "文档/javascript高级知识点.md",
+    "文档/Redux.md",
+    "文档/websocket.md",
+    "WSL2.md",
+    "文档/TCP_IP四层网络模型有哪几层.md",
+    "文档/git, github, gitee.md",
+    "文档/零碎的知识点.md",
+    "文档/从零训练一个大模型.md",
+    "文档/go常用命令.md",
+    "文档/go build慢.md",
+    "文档/fastapi常见问题.md",
+    "文档/python类、对像详解.md",
+    "文档/python---module.md",
+    "文档/python--异步编程（asyncio）.md",
+    "文档/python基础语言语法笔记.md",
+    "未命名",
+    "个人成长/复盘文件夹/2026.04.13-2026.04.19 1",
+    "个人成长/复盘文件夹/2026.04.13-2026.04.19-template",
+    "个人成长/复盘文件夹",
+    "个人成长",
+    "其他",
+    "其他/企业协作管理平台",
     "image/Pasted image 20260316163426.png",
     "image/Pasted image 20260316155940.png",
     "image/Pasted image 20260316155848.png",
@@ -209,11 +209,6 @@
     "最近",
     "归档(很少翻阅)",
     "claude code学习文档.md.orig",
-    "images",
-    "未命名.base",
-    "未命名 3.base",
-    "未命名 2.base",
-    "未命名 1.base",
     "未命名.canvas",
     "草稿/None.canvas"
   ]

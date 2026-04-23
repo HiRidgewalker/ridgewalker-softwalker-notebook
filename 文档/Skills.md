@@ -2,8 +2,8 @@
 Anthropic（就是提供claude、首次提出skills概念的公司）给 Skills 下的定义有一个关键特征：
 **AI 会自己判断什么时候该用这个技能，主动触发，而不是你手动去点选。**
 ## Skills资源
-anthropic skills官方仓库： https://github.com/anthropics/skills
 anthropic 官方构建指南： https://agentskills.io/home
+anthropic skills官方仓库： https://github.com/anthropics/skills
 anthropic 官方skills构建工具： [skill-creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator)
 其他skills资源平台：
 - [skills.sh](https://skills.sh/)
