@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "090d8ed608f711fe",
+        "id": "60ee0f29f1e8ba04",
         "type": "tabs",
         "children": [
           {
-            "id": "c12e40ac99052a3e",
+            "id": "bb745927c22a6b27",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "近期速记.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "近期速记"
+              "title": "新标签页"
             }
           }
         ],
@@ -80,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5
+    "width": 200
   },
   "right": {
     "id": "6c407a039df8e0bb",
@@ -96,7 +91,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-技术笔记目录导航.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "01-技术笔记目录导航 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -115,12 +109,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-技术笔记目录导航.md",
+                "file": "文档/Celery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "01-技术笔记目录导航 的出链列表"
+              "title": "Celery 的出链列表"
             }
           },
           {
@@ -144,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "近期速记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "近期速记 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -158,7 +151,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -167,43 +160,38 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "c12e40ac99052a3e",
+  "active": "bb745927c22a6b27",
   "lastOpenFiles": [
-    "Next.js.md",
-    "近期速记.md",
-    "名词.md",
-    "工具快捷键.md",
-    "常用.md",
-    "04-新媒体笔记目录导航.md",
-    "03-未归类知识笔记目录导航.md",
-    "02-金融-投资-借贷-衍生品笔记目录导航.md",
-    "01-技术笔记目录导航.md",
-    "每日任务.md",
-    "其他/企业协作管理平台/企业协作管理平台产品功能文档.md",
-    "其他/企业协作管理平台/企业协作管理平台数据库设计文档.md",
-    "其他/企业协作管理平台/企业协作管理平台系统架构及技术栈文档.md",
-    "其他/企业协作管理平台/项目开发阶段与进度控制.md",
-    "元素科技/试卷批改.md",
-    "元素科技/试卷批改当前版本问题.md",
-    "元素科技/自制demo.md",
-    "image/Pasted image 20260310233507.png",
-    "Prompt管理/接口助手.md",
-    "Prompt管理",
-    "元素科技",
-    "文档/MACOS常用命令.md",
-    "文档/macos快捷键.md",
-    "文档/前后端常用鉴权方式总结.md",
-    "文档/前端中，静态资源放public还是放src assets文件夹判断标准.md",
+    "nextjs.md",
+    "MACOS常用命令.md",
     "文档/零碎的知识点.md",
-    "文档/量化.md",
-    "文档/快捷指令.md",
-    "文档/经验总结.md",
-    "个人成长/复盘文件夹/2026.04.13-2026.04.19 1",
-    "个人成长/复盘文件夹/2026.04.13-2026.04.19-template",
-    "个人成长/复盘文件夹",
+    "文档/调研、试用各类AI产品笔记记录.md",
+    "文档/网关(gateway).md",
+    "文档/穷鬼出海套餐.md",
+    "文档/权限控制模型.md",
+    "文档/数据库设计相关.md",
+    "文档/大模型技术学习计划.md",
+    "文档/前端中，静态资源放public还是放src assets文件夹判断标准.md",
+    "文档/从零训练一个大模型.md",
+    "文档/websocket.md",
+    "文档/systemd.md",
+    "文档/react hooks useTransition() and useDeferredValue().md",
+    "文档/python类、对像详解.md",
+    "文档/python基础语言语法笔记.md",
+    "文档/python--异步编程（asyncio）.md",
+    "文档/python---module.md",
+    "文档/pm2.md",
+    "文档/opencompass学习教程.md",
+    "文档/mini-agent 学习笔记.md",
+    "文档/logi.md",
+    "文档/jupyter笔记.md",
+    "文档/js回调函数原理.md",
+    "文档/javascript高级知识点.md",
+    "文档/javascript模块访问.md",
     "个人成长",
-    "其他",
-    "其他/企业协作管理平台",
+    "Prompt管理",
+    "非知识库本身",
+    "非知识库本身/企业协作管理平台",
     "image/Pasted image 20260316163426.png",
     "image/Pasted image 20260316155940.png",
     "image/Pasted image 20260316155848.png",
@@ -213,8 +201,13 @@
     "image/Pasted image 20260315015505.png",
     "image/Pasted image 20260315015430.png",
     "image/Pasted image 20260315002705.png",
+    "image/Pasted image 20260315002638.png",
     "最近",
     "归档(很少翻阅)",
+    "claude code学习文档.md.orig",
+    "images",
+    "未命名.base",
+    "未命名 3.base",
     "未命名.canvas",
     "草稿/None.canvas"
   ]
