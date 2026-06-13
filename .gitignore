@@ -1,3 +1,8 @@
 # Obsidian local workspace state
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+
+# Python virtual environment (uv)
+workspace/.venv/
+__pycache__/
+*.pyc
