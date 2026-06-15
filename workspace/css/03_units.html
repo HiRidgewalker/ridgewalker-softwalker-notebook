@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>CSS 单位 + 函数式值演示</title>
+<style>
+    * { box-sizing: border-box; }
+    body {
+        font: 14px/1.6 system-ui, -apple-system, "PingFang SC", sans-serif;
+        color: #333;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 24px;
+    }
+    h1, h2 { color: #2c3e50; }
+    h2 { margin-top: 40px; border-bottom: 2px solid #3498db; padding-bottom: 8px; }
+    h3 { color: #16a085; margin-top: 24px; }
+    .note { color: #7f8c8d; font-size: 12px; margin-bottom: 8px; }
+    code { background: #ecf0f1; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+
+    .section {
+        background: white;
+        border: 1px solid #e0e0e0;
+        padding: 16px;
+        margin: 12px 0;
+        border-radius: 4px;
+    }
+    .box {
+        display: inline-block;
+        background: #3498db;
+        color: white;
+        margin: 4px;
+        padding: 6px 10px;
+        border-radius: 3px;
+        vertical-align: bottom;
+    }
+    .box.red   { background: #e74c3c; }
+    .box.green { background: #27ae60; }
+    .box.purple{ background: #9b59b6; }
+    .box.orange{ background: #e67e22; }
+    .box.gray  { background: #7f8c8d; }
+
+    /* 模拟父元素不同 font-size */
+    .parent-20 { font-size: 20px; }
+    .parent-30 { font-size: 30px; }
+
+    /* 视口单位演示容器 */
+    .vh-box { height: 50vh; min-height: 200px; }
+    .svh-box { height: 50svh; min-height: 200px; }
+    .dvh-box { height: 50dvh; min-height: 200px; }
+    .vh-box, .svh-box, .dvh-box {
+        background: #3498db;
+        color: white;
+        padding: 16px;
+        margin: 6px 0;
+        border-radius: 4px;
+    }
+
+    /* clamp 演示 */
+    .clamp-text {
+        font-size: clamp(14px, 2vw, 32px);
+        background: #fff3cd;
+        padding: 12px;
+        border-radius: 4px;
+    }
+
+    /* 颜色展示 */
+    .color-row { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+    .swatch {
+        width: 60px; height: 60px; border-radius: 4px;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 10px; color: white; text-align: center;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    }
+
+    /* 函数式值 */
+    .calc-box  { width: calc(100% - 40px);  background: #d4f1d4; padding: 8px; }
+    .min-box   { width: min(500px, 100%);   background: #fde3a7; padding: 8px; }
+    .max-box   { width: max(300px, 50%);    background: #a7e8fd; padding: 8px; }
+</style>
+</head>
+<body>
+
+<h1>CSS 单位 + 函数式值演示</h1>
+<p class="note">对应笔记：<a href="#">Hub/05_CSS单位与值笔记.md</a>。改浏览器窗口大小、看视口单位/响应式文字变化。</p>
+
+<!-- =========================================== -->
+<h2>1. px vs em vs rem</h2>
+<p class="note">html 根元素 font-size = 16px，下面看 em / rem 在不同父元素下的差异。</p>
+
+<div class="section">
+    <h3>html { font-size: 16px; } 时</h3>
+    <div class="box" style="font-size: 16px;">16px 文字</div>
+    <div class="box" style="font-size: 1em;">1em（基于父 = 16px）</div>
+    <div class="box" style="font-size: 1rem;">1rem（基于 html = 16px）</div>
+    <div class="box" style="font-size: 2em;">2em（基于父 = 32px）</div>
+    <div class="box" style="font-size: 2rem;">2rem（基于 html = 32px）</div>
+</div>
+
+<div class="section parent-20">
+    <h3>父元素 { font-size: 20px; } — 嵌套场景</h3>
+    <div class="box" style="font-size: 1em;">1em（基于父 = 20px）</div>
+    <div class="box" style="font-size: 1rem;">1rem（基于 html = 16px）</div>
+    <div class="box" style="font-size: 2em;">2em（基于父 = 40px）</div>
+    <div class="box" style="font-size: 2rem;">2rem（基于 html = 32px）</div>
+    <p class="note">→ em 跟着父走，rem 永远跟 html。em 嵌套会叠加，rem 不会。</p>
+</div>
+
+<div class="section">
+    <h3>rem 套路：1rem = 10px（计算方便）</h3>
+    <code>html { font-size: 62.5%; }</code> &nbsp;→ 1rem = 10px
+    <div style="font-size: 62.5%; margin-top: 8px;">
+        <div class="box" style="width: 10rem;">10rem = 100px</div>
+        <div class="box" style="width: 20rem;">20rem = 200px</div>
+        <div class="box" style="width: 30rem;">30rem = 300px</div>
+    </div>
+</div>
+
+<!-- =========================================== -->
+<h2>2. 视口单位 vh / svh / dvh</h2>
+<p class="note">桌面浏览器三个值几乎一样（看不到差异）。<b>移动端地址栏收起/展开时</b>差距明显——实际部署到手机看效果。</p>
+
+<div class="vh-box">50vh（传统视口高度的一半）</div>
+<div class="svh-box">50svh（最小视口高度的一半，最安全）</div>
+<div class="dvh-box">50dvh（动态视口高度的一半，会随地址栏变）</div>
+
+<p class="note">手机场景下 <code>100vh</code> 会被地址栏遮挡，建议改用 <code>100dvh</code> 或 <code>100svh</code>。</p>
+
+<!-- =========================================== -->
+<h2>3. 颜色 4 种写法</h2>
+<p class="note">下面 4 个色块是同一种红（#e74c3c / rgb / hsl / color）。</p>
+
+<div class="color-row">
+    <div class="swatch" style="background: #e74c3c;">#e74c3c<br>hex</div>
+    <div class="swatch" style="background: rgb(231, 76, 60);">rgb(231,76,60)<br>rgb</div>
+    <div class="swatch" style="background: hsl(6, 78%, 57%);">hsl(6,78%,57%)<br>hsl</div>
+    <div class="swatch" style="background: color(display-p3 0.91 0.30 0.24);">color(display-p3...)<br>广色域</div>
+</div>
+
+<p class="note">用 HSL 时调饱和度/亮度比 RGB 直观，设计师友好。</p>
+
+<!-- =========================================== -->
+<h2>4. 透明色（alpha）</h2>
+<div class="color-row">
+    <div class="swatch" style="background: rgba(231, 76, 60, 1.0);">alpha=1.0</div>
+    <div class="swatch" style="background: rgba(231, 76, 60, 0.7);">alpha=0.7</div>
+    <div class="swatch" style="background: rgba(231, 76, 60, 0.4);">alpha=0.4</div>
+    <div class="swatch" style="background: rgba(231, 76, 60, 0.1);">alpha=0.1</div>
+</div>
+<p class="note">⚠️ rgba 是<b>与父背景叠加</b>，不是覆盖！和 <code>opacity</code> 行为不同。</p>
+
+<!-- =========================================== -->
+<h2>5. 系统色（自动跟随深浅模式）</h2>
+<div class="section" style="background: Canvas; color: CanvasText; border: 1px solid #ccc;">
+    这块背景用 <code>background: Canvas</code> + <code>color: CanvasText</code>。<br>
+    切到系统深色模式时自动反色——不用写两套样式。
+</div>
+
+<!-- =========================================== -->
+<h2>6. 函数式值：calc / min / max / clamp</h2>
+
+<h3>calc() — 任意算术</h3>
+<div class="calc-box">width: calc(100% - 40px) — 父容器减去 40px</div>
+<p class="note">场景：<code>height: calc(100vh - 60px)</code> 全屏减去导航高度。</p>
+
+<h3>min() — 取最小</h3>
+<div class="min-box">width: min(500px, 100%) — 不超过 500px，但不超过父容器</div>
+
+<h3>max() — 取最大</h3>
+<div class="max-box">width: max(300px, 50%) — 至少 300px，但不少于一半</div>
+
+<h3>clamp() — 三段式（响应式神器）</h3>
+<p class="note">下面这段文字的 font-size 随窗口大小变化：<code>clamp(14px, 2vw, 32px)</code></p>
+<div class="clamp-text">我是 clamp 文字，缩窗口我会变小，放大窗口我会变大，但不会小于 14px 也不会大于 32px。</div>
+
+<!-- =========================================== -->
+<h2>7. 现代响应式：clamp 替代媒体查询</h2>
+<div class="section">
+    <p>传统写法要写两套 <code>@media</code>：</p>
+    <pre style="background: #f8f8f8; padding: 8px; border-radius: 4px;">
+.title { font-size: 16px; }
+@media (min-width: 768px) {
+    .title { font-size: 24px; }
+}
+    </pre>
+    <p>现代写法一行搞定：</p>
+    <pre style="background: #e8f5e9; padding: 8px; border-radius: 4px;">
+.title { font-size: clamp(16px, 2vw, 24px); }
+    </pre>
+</div>
+
+<!-- =========================================== -->
+<h2>8. 一句话速记</h2>
+<div class="section" style="font-family: monospace; line-height: 2;">
+    <div>rem：基于 html（响应式首选）</div>
+    <div>em：基于父（会叠加）</div>
+    <div>vh / svh / dvh：移动端优先 dvh/svh</div>
+    <div>clamp(min, 偏好, max)：流体排版</div>
+    <div>calc：加减乘除任意算</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>CSS Flex 布局速查演示</title>
+<style>
+    * { box-sizing: border-box; }
+    body {
+        font: 14px/1.6 system-ui, -apple-system, "PingFang SC", sans-serif;
+        color: #333;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 24px;
+    }
+    h1, h2 { color: #2c3e50; }
+    h2 { margin-top: 40px; border-bottom: 2px solid #3498db; padding-bottom: 8px; }
+    h3 { color: #16a085; margin-top: 24px; }
+    .note { color: #7f8c8d; font-size: 12px; margin-bottom: 8px; }
+    code { background: #ecf0f1; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+
+    .section {
+        background: white;
+        border: 1px solid #e0e0e0;
+        padding: 12px;
+        margin: 12px 0;
+        border-radius: 4px;
+    }
+    .label {
+        display: inline-block;
+        min-width: 160px;
+        font-family: monospace;
+        background: #2c3e50;
+        color: #fff;
+        padding: 2px 8px;
+        border-radius: 3px;
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+    .container {
+        background: #fafafa;
+        border: 1px dashed #aaa;
+        padding: 6px;
+        margin: 6px 0;
+        min-height: 60px;
+    }
+    .item {
+        background: #3498db;
+        color: white;
+        padding: 8px 14px;
+        margin: 2px;
+        border-radius: 3px;
+        font-size: 13px;
+    }
+    .item.red   { background: #e74c3c; }
+    .item.green { background: #27ae60; }
+    .item.purple{ background: #9b59b6; }
+    .item.orange{ background: #e67e22; }
+
+    /* 共享的 flex 容器 */
+    .row   { display: flex; }
+    .col   { display: flex; flex-direction: column; }
+    .wrap  { display: flex; flex-wrap: wrap; }
+    .center{ display: flex; justify-content: center; align-items: center; min-height: 100px; }
+
+    /* 单独样式 */
+    .jc-flex-end      { justify-content: flex-end; }
+    .jc-center        { justify-content: center; }
+    .jc-space-between { justify-content: space-between; }
+    .jc-space-around  { justify-content: space-around; }
+    .jc-space-evenly  { justify-content: space-evenly; }
+
+    .ai-flex-start   { align-items: flex-start; }
+    .ai-center       { align-items: center; min-height: 100px; }
+    .ai-flex-end     { align-items: flex-end; min-height: 100px; }
+    .ai-stretch      { align-items: stretch; min-height: 100px; }
+    .ai-baseline     { align-items: baseline; min-height: 100px; }
+
+    .grow-1 { flex: 1; }
+    .grow-2 { flex: 2; }
+    .grow-3 { flex: 3; }
+</style>
+</head>
+<body>
+
+<h1>CSS Flex 布局速查演示</h1>
+<p class="note">对应笔记：<a href="#">Hub/04_CSS布局笔记.md</a>。每个标题切换一个属性，看视觉变化。</p>
+
+<!-- =========================================== -->
+<h2>1. flex-direction（主轴方向）</h2>
+
+<h3>row（默认）— 水平从左到右</h3>
+<div class="container row">
+    <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+</div>
+
+<h3>row-reverse — 水平从右到左</h3>
+<div class="container row" style="flex-direction: row-reverse;">
+    <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+</div>
+
+<h3>column — 垂直从上到下</h3>
+<div class="container col">
+    <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+</div>
+
+<h3>column-reverse — 垂直从下到上</h3>
+<div class="container col" style="flex-direction: column-reverse;">
+    <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+</div>
+
+<!-- =========================================== -->
+<h2>2. flex-wrap（溢出换行）</h2>
+
+<h3>nowrap（默认）— 全部挤在一行</h3>
+<div class="container row" style="width: 300px;">
+    <div class="item" style="min-width: 100px;">1 100px</div>
+    <div class="item" style="min-width: 100px;">2 100px</div>
+    <div class="item" style="min-width: 100px;">3 100px</div>
+    <div class="item" style="min-width: 100px;">4 100px</div>
+</div>
+
+<h3>wrap — 自动换行</h3>
+<div class="container wrap" style="width: 300px;">
+    <div class="item" style="min-width: 100px;">1 100px</div>
+    <div class="item" style="min-width: 100px;">2 100px</div>
+    <div class="item" style="min-width: 100px;">3 100px</div>
+    <div class="item" style="min-width: 100px;">4 100px</div>
+</div>
+
+<!-- =========================================== -->
+<h2>3. justify-content（主轴对齐）</h2>
+<p class="note">假设主轴是水平方向（row）。</p>
+
+<div class="section">
+    <span class="label">flex-start</span>
+    <div class="container row jc-flex-start">
+        <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+    </div>
+</div>
+
+<div class="section">
+    <span class="label">flex-end</span>
+    <div class="container row jc-flex-end">
+        <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+    </div>
+</div>
+
+<div class="section">
+    <span class="label">center</span>
+    <div class="container row jc-center">
+        <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+    </div>
+</div>
+
+<div class="section">
+    <span class="label">space-between（两端对齐）</span>
+    <div class="container row jc-space-between">
+        <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+    </div>
+</div>
+
+<div class="section">
+    <span class="label">space-around（环绕分布）</span>
+    <div class="container row jc-space-around">
+        <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+    </div>
+</div>
+
+<div class="section">
+    <span class="label">space-evenly（完全均分）</span>
+    <div class="container row jc-space-evenly">
+        <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+    </div>
+</div>
+
+<!-- =========================================== -->
+<h2>4. align-items（交叉轴对齐）</h2>
+<p class="note">交叉轴是垂直方向（主轴为 row 时）。</p>
+
+<div class="section">
+    <span class="label">flex-start（顶对齐）</span>
+    <div class="container row ai-flex-start">
+        <div class="item" style="height: 30px;">1</div>
+        <div class="item" style="height: 60px;">2</div>
+        <div class="item" style="height: 45px;">3</div>
+    </div>
+</div>
+
+<div class="section">
+    <span class="label">center（垂直居中）</span>
+    <div class="container row ai-center">
+        <div class="item" style="height: 30px;">1</div>
+        <div class="item" style="height: 60px;">2</div>
+        <div class="item" style="height: 45px;">3</div>
+    </div>
+</div>
+
+<div class="section">
+    <span class="label">flex-end（底对齐）</span>
+    <div class="container row ai-flex-end">
+        <div class="item" style="height: 30px;">1</div>
+        <div class="item" style="height: 60px;">2</div>
+        <div class="item" style="height: 45px;">3</div>
+    </div>
+</div>
+
+<div class="section">
+    <span class="label">stretch（拉伸填满）</span>
+    <div class="container row ai-stretch">
+        <div class="item" style="height: 30px;">1（被拉伸到最高）</div>
+        <div class="item" style="height: 60px;">2</div>
+        <div class="item" style="height: 45px;">3</div>
+    </div>
+</div>
+
+<!-- =========================================== -->
+<h2>5. 居中三件套（最常用）</h2>
+<p class="note">水平 + 垂直居中单个元素，Flex 一行搞定。</p>
+<div class="container center">
+    <div class="item">居中我！</div>
+</div>
+<div class="note">CSS: <code>display: flex; justify-content: center; align-items: center;</code></div>
+
+<!-- =========================================== -->
+<h2>6. flex-grow（剩余空间分配）</h2>
+<p class="note">父容器有 600px 宽，子项 1/2/3 的 flex 比例 = 1:2:3，剩余空间按比例分配。</p>
+<div class="container row" style="width: 600px;">
+    <div class="item grow-1">1 (flex:1)</div>
+    <div class="item grow-2 red">2 (flex:2)</div>
+    <div class="item grow-3 green">3 (flex:3)</div>
+</div>
+
+<!-- =========================================== -->
+<h2>7. flex 子项被压成 0 怎么办？</h2>
+<p class="note">长文本子项默认 <code>min-width: auto</code> = 内容宽度，会撑爆容器。要加 <code>min-width: 0</code>。</p>
+
+<h3>❌ 不加 min-width: 0</h3>
+<div class="container row" style="width: 300px;">
+    <div class="item" style="flex: 1;">短</div>
+    <div class="item" style="flex: 1;">一段很长很长很长很长很长很长的中文文本会被撑爆</div>
+    <div class="item" style="flex: 1;">短</div>
+</div>
+
+<h3>✅ 加 min-width: 0</h3>
+<div class="container row" style="width: 300px;">
+    <div class="item" style="flex: 1; min-width: 0;">短</div>
+    <div class="item" style="flex: 1; min-width: 0;">一段很长很长很长很长很长很长的中文文本正常换行</div>
+    <div class="item" style="flex: 1; min-width: 0;">短</div>
+</div>
+
+<!-- =========================================== -->
+<h2>8. 简写口诀</h2>
+<div class="section" style="font-family: monospace; line-height: 2;">
+    <div>flex: 1     → flex: 1 1 0%   → 完美平均分配</div>
+    <div>flex: auto  → flex: 1 1 auto → 按内容比例分配</div>
+    <div>flex: none  → flex: 0 0 auto → 不放大不缩小，固定大小</div>
+</div>
+
+</body>
+</html>

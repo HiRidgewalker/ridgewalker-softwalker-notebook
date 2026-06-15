@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>CSS 盒模型 + margin 折叠演示</title>
+<style>
+    * { box-sizing: border-box; }
+    body {
+        font: 14px/1.6 system-ui, -apple-system, "PingFang SC", sans-serif;
+        color: #333;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 24px;
+    }
+    h1, h2 { color: #2c3e50; }
+    h2 { margin-top: 40px; border-bottom: 2px solid #3498db; padding-bottom: 8px; }
+    .note { color: #7f8c8d; font-size: 12px; margin-bottom: 12px; }
+    .row { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
+    .demo {
+        background: white;
+        border: 1px dashed #ccc;
+        padding: 12px;
+        margin: 12px 0;
+    }
+    .demo-title {
+        font-weight: bold;
+        color: #3498db;
+        margin-bottom: 8px;
+    }
+    .calc {
+        font-family: monospace;
+        background: #ecf0f1;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+
+    /* ====== 1. 盒模型两种模式 ====== */
+    .box-content {
+        background: #fde3a7;
+        width: 200px;
+        padding: 20px;
+        border: 10px solid #e67e22;
+        margin: 15px;
+    }
+    .box-border {
+        background: #a7e8fd;
+        width: 200px;
+        padding: 20px;
+        border: 10px solid #2980b9;
+        margin: 15px;
+        box-sizing: border-box;
+    }
+    .marker {
+        position: relative;
+        padding-top: 18px;
+    }
+    .marker::before {
+        content: "↑ 200px 起点（外边距外）";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 11px;
+        color: #95a5a6;
+    }
+
+    /* ====== 2. 同级兄弟 margin 折叠 ====== */
+    .sibling {
+        background: #d4f1d4;
+        padding: 10px;
+    }
+    .sibling .first  { margin-bottom: 50px; }
+    .sibling .second { margin-top: 30px; }
+    .sibling .neg1   { margin-bottom: 50px; }
+    .sibling .neg2   { margin-top: -20px; }
+
+    /* ====== 3. 父子 margin 折叠 ====== */
+    .parent-collapse {
+        background: #ffe0e0;
+        margin-top: 50px;
+    }
+    .parent-collapse .child {
+        margin-top: 30px;
+        background: #fff;
+        padding: 10px;
+    }
+    .parent-block {
+        background: #e0f0ff;
+        margin-top: 50px;
+        padding: 1px;   /* ✅ 阻止折叠 */
+    }
+    .parent-block .child {
+        margin-top: 30px;
+        background: #fff;
+        padding: 10px;
+    }
+    .parent-overflow {
+        background: #f0e0ff;
+        margin-top: 50px;
+        overflow: hidden;  /* ✅ 阻止折叠 */
+    }
+    .parent-overflow .child {
+        margin-top: 30px;
+        background: #fff;
+        padding: 10px;
+    }
+
+    /* ====== 4. 脱离文档流后不折叠 ====== */
+    .abs-parent {
+        position: relative;
+        background: #fff5d6;
+        margin: 30px 0;
+        height: 80px;
+    }
+    .abs-child {
+        position: absolute;
+        margin-top: 20px;
+        background: #ffcccc;
+        padding: 6px;
+    }
+</style>
+</head>
+<body>
+
+<h1>CSS 盒模型 + margin 折叠演示</h1>
+<p class="note">对应笔记：<a href="#">Hub/03_CSS盒模型笔记.md</a>。配合 DevTools 看真实占位。</p>
+
+<!-- =========================================== -->
+<h2>1. 盒模型两种模式对比</h2>
+<p class="note">两个 div 都写了 <code>width: 200px; padding: 20px; border: 10px;</code>，但实际占位不一样。</p>
+
+<div class="row">
+    <div class="demo">
+        <div class="demo-title">content-box（默认）</div>
+        <div class="marker">
+            <div class="box-content">content-box<br>实际占位 = 200 + 40 + 20 + 30 = <b>290px</b></div>
+        </div>
+        <div class="calc">width: 200 + padding×2 + border×2 + margin×2 = 200+40+20+30</div>
+    </div>
+
+    <div class="demo">
+        <div class="demo-title">border-box（推荐）</div>
+        <div class="marker">
+            <div class="box-border">border-box<br>实际占位 = 200 + 30 = <b>230px</b></div>
+        </div>
+        <div class="calc">width 已含 content+padding+border，只剩 margin×2</div>
+    </div>
+</div>
+
+<!-- =========================================== -->
+<h2>2. 同级兄弟 margin 折叠</h2>
+<p class="note">两个 div 上下相邻，垂直 margin <b>取最大值</b>，不是相加。</p>
+
+<div class="sibling">
+    <div class="first">第 1 个（margin-bottom: 50px）</div>
+    <div class="second">第 2 个（margin-top: 30px）</div>
+    <div class="calc">实际间距 = max(50, 30) = 50px（不是 80px！）</div>
+</div>
+
+<h3>特殊情况：正负 margin 相加</h3>
+<div class="sibling">
+    <div class="neg1">第 1 个（margin-bottom: 50px）</div>
+    <div class="neg2">第 2 个（margin-top: -20px）</div>
+    <div class="calc">实际间距 = 50 + (-20) = 30px</div>
+</div>
+
+<!-- =========================================== -->
+<h2>3. 父子 margin 折叠（重点）</h2>
+<p class="note">父元素的 margin 会和<b>第一个子元素</b>的 margin 折叠。给父元素加 padding/border/overflow 可阻止。</p>
+
+<div class="row">
+    <div class="parent-collapse">
+        <div class="child">无 padding/border/overflow → 父子 margin 折叠</div>
+        <div class="calc">整体向上 50px（取 max）</div>
+    </div>
+
+    <div class="parent-block">
+        <div class="child">父有 <b>padding: 1px</b> → 不折叠</div>
+        <div class="calc">父 50 + 子 30 = 80px（不合并）</div>
+    </div>
+
+    <div class="parent-overflow">
+        <div class="child">父有 <b>overflow: hidden</b> → 不折叠</div>
+        <div class="calc">父 50 + 子 30 = 80px（不合并）</div>
+    </div>
+</div>
+
+<!-- =========================================== -->
+<h2>4. 脱离文档流 → margin 不折叠</h2>
+<p class="note">子元素 <code>position: absolute</code> 时，它不参与文档流排版，父子 margin 折叠失效。</p>
+
+<div class="abs-parent">
+    <div class="abs-child">我是 absolute（margin-top: 20px）</div>
+    <div style="padding-top: 30px;">父元素内其他内容（看，absolute 子元素不占空间）</div>
+</div>
+<div class="calc">absolute 子元素不参与排版，margin 不再与父折叠</div>
+
+<!-- =========================================== -->
+<h2>5. 一句话总结</h2>
+<div class="calc" style="font-size: 14px; padding: 12px;">
+    margin 折叠 = 普通文档流 + 块级 + 垂直方向。<br>
+    破坏任一条件就不折叠（脱离文档流 / 行内 / 水平 margin）。
+</div>
+
+</body>
+</html>
