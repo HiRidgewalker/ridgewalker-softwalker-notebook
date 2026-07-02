@@ -1,0 +1,33 @@
+# =============================================================================
+# K8s Ingress + TLS（cert-manager 自动签发）
+# 对应：Hub/16_Jenkins_CICD实战笔记.md 的 5.3
+# =============================================================================
+# 依赖：
+#   - 已装 cert-manager + ClusterIssuer letsencrypt-prod
+#   - 已装 Nginx Ingress Controller
+# =============================================================================
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: webapi
+  namespace: myapp
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/proxy-body-size: 10m
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - api.example.com
+      secretName: webapi-tls
+  rules:
+    - host: api.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: webapi
+                port:
+                  number: 80

@@ -1,0 +1,103 @@
+# =============================================================================
+# jenkinsci/jenkins Helm 自定义 values
+# 对应：Hub/15_Jenkins基础笔记.md 的 3.3
+# =============================================================================
+# 用法：
+#   helm repo add jenkins https://charts.jenkins.io
+#   helm repo update
+#   kubectl create namespace jenkins
+#   kubectl create -n jenkins -f - <<EOF
+#   apiVersion: v1
+#   kind: PersistentVolumeClaim
+#   metadata: { name: jenkins-pvc }
+#   spec:
+#     accessModes: [ReadWriteOnce]
+#     storageClassName: longhorn
+#     resources: { requests: { storage: 20Gi } }
+#   EOF
+#   helm install jenkins jenkins/jenkins -n jenkins -f jenkins-values.yaml
+# =============================================================================
+
+controller:
+  image: jenkins/jenkins:2.462.3-lts
+  tag: 2.462.3-lts
+  adminPassword: "REPLACE_WITH_INIT_PASSWORD"
+
+  # 数据持久化
+  persistence:
+    enabled: true
+    size: 20Gi
+    storageClass: longhorn
+    accessMode: ReadWriteOnce
+
+  resources:
+    requests:
+      cpu: 500m
+      memory: 1Gi
+    limits:
+      cpu: 2
+      memory: 4Gi
+
+  # JCasC：Configuration as Code
+  JCasC:
+    enabled: true
+    configScripts:
+      jenkins.yaml: |
+        jenkins:
+          systemMessage: "Production Jenkins (managed by JCasC)"
+          numExecutors: 0   # 0 表示 controller 不直接 build，全靠 agent
+          mode: EXCLUSIVE
+        credentials:
+          system:
+            domainCredentials:
+              - credentials:
+                  - usernamePassword:
+                      scope: GLOBAL
+                      id: harbor-robot
+                      username: 'robot$myproj+robot-ci'
+                      password: '${HARBOR_ROBOT_PASSWORD}'
+                      description: "Harbor robot account for CI"
+                  - file:
+                      scope: GLOBAL
+                      id: kubeconfig-prod
+                      fileName: 'kubeconfig'
+                      secretBytes: '${KUBECONFIG_PROD_B64}'
+        security:
+          globalJobDslJobConfigurationSecurity:
+            useJobDslSecurity: false
+
+  serviceType: ClusterIP
+  servicePort: 80
+
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    hostName: jenkins.example.com
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt-prod
+    tls:
+      - secretName: jenkins-tls
+        hosts:
+          - jenkins.example.com
+
+# 关键插件
+plugins:
+  - kubernetes
+  - workflow-aggregator
+  - git
+  - configuration-as-code
+  - configuration-as-code-groovy
+  - credentials-binding
+  - generic-webhook-trigger
+  - pipeline-stage-view
+  - timestamper
+  - ws-cleanup
+  - docker-workflow
+
+# Agent 侧（这里只配置 default K8s cloud）
+agent:
+  enabled: false  # disable 默认 JNLP agent；用 K8s plugin 动态拉
+
+# NetworkPolicy 推荐开启（限制 controller 只接受 ingress/clusterIP）
+networkPolicy:
+  enabled: false

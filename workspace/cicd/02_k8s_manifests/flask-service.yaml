@@ -1,0 +1,17 @@
+# =============================================================================
+# K8s Service 示例
+# 对应：Hub/16_Jenkins_CICD实战笔记.md 的 5.2
+# =============================================================================
+apiVersion: v1
+kind: Service
+metadata:
+  name: webapi
+  namespace: myapp
+spec:
+  selector:
+    app: webapi
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+      name: http

@@ -1,0 +1,62 @@
+# =============================================================================
+# 单机 Harbor（demo 环境）docker-compose 部署参考
+# 对应：Hub/14_Harbor笔记.md 的 3.2
+# =============================================================================
+# 实际生产推荐用 Helm chart：
+#   helm install harbor harbor/harbor --namespace harbor ...
+# 这里只是 docker-compose 形式的 demo。
+# =============================================================================
+version: '3.8'
+
+services:
+  registry:
+    image: goharbor/registry-photon:v2.11.0
+    container_name: registry
+    restart: unless-stopped
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+    volumes:
+      - ./common/config/registry/:/etc/registry/
+      - /data/registry:/storage/
+    networks:
+      - harbor
+
+  redis:
+    image: goharbor/redis-photon:v2.11.0
+    container_name: redis
+    restart: unless-stopped
+    volumes:
+      - /data/redis:/data
+    networks:
+      - harbor
+
+  trivy:
+    image: goharbor/trivy-adapter-photon:v2.11.0
+    container_name: trivy
+    restart: unless-stopped
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+    volumes:
+      - /data/trivy-adapter:/.local/share/trivy
+      - ./common/config/trivy-adapter/:/etc/trivy-adapter/
+    networks:
+      - harbor
+
+  portal:
+    image: goharbor/harbor-portal:v2.11.0
+    container_name: portal
+    restart: unless-stopped
+    networks:
+      - harbor
+
+networks:
+  harbor:
+    driver: bridge
