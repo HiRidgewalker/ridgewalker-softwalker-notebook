@@ -1,0 +1,67 @@
+# =============================================================================
+# K8s Deployment 示例（与 Jenkinsfile 中的 IMAGE_NAME 一致，此处简称 webapi）
+# 对应：Hub/16_Jenkins_CICD实战笔记.md 的 5.1
+# =============================================================================
+# 部署：
+#   kubectl -n myapp apply -f flask-deployment.yaml
+# 占位 IMAGE 占位待 Jenkins set image 替换。
+# =============================================================================
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapi
+  namespace: myapp
+  labels:
+    app: webapi
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: webapi
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: webapi
+    spec:
+      imagePullSecrets:
+        - name: harbor-pull
+      containers:
+        - name: webapi
+          image: harbor.example.com/myproj/webapi:PLACEHOLDER
+          ports:
+            - containerPort: 8080
+          env:
+            - name: TZ
+              value: Asia/Shanghai
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 1000m
+              memory: 1Gi
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 1000
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities:
+              drop:
+                - ALL
