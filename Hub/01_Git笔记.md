@@ -453,3 +453,11 @@ Git 核心：add → commit → push
 3. **危险命令前先想清楚**（`reset --hard` / `clean -fd` / `push -f`）
 4. **已 push 的 commit 用 revert 撤销**，别 reset
 5. **写好 commit message**，未来你会感谢现在的自己
+
+---
+
+## 相关笔记
+
+- [[Hub/02_Git命令速查笔记]] — 命令速查表
+- [[Hub/03_Git回滚决策笔记]] — 回滚场景决策
+- [[Hub/Git Worktree 笔记]] — 多分支并行 / 多 agent 隔离

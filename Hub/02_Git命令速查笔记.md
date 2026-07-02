@@ -363,3 +363,5 @@ git commit -m "retrack files based on .gitignore"
 | 打标签 | `git tag v1.0 && git push origin v1.0` |
 
 > 详细回滚决策见 [[Hub/03_Git回滚决策笔记]]。
+
+> 多分支并行 / 多 agent 隔离：见 [[Hub/Git Worktree 笔记]]。
