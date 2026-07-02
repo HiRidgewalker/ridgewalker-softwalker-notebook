@@ -1,0 +1,48 @@
+name: volume-mount-demo
+
+# 对比 3 种挂载方式：
+#   - bind mount：bind-data:/container/in
+#   - named volume：namedv:/container/data
+#   - tmpfs       ：tmpfsmount:/container/tmpfs
+#
+# 在容器里执行小脚本，写文件到三个位置，
+# 然后看分别落在哪里、删除容器后是否还在。
+
+services:
+  tester:
+    image: alpine:3.20
+    container_name: volume-tester
+    command: ["sh", "-c", "/scripts/run.sh"]
+    volumes:
+      # bind mount - 绑定宿主机 ./bind-data 目录
+      - type: bind
+        source: ./bind-data
+        target: /in-bind
+      # named volume - 自动创建
+      - namedv:/in-volume
+      # tmpfs - 内存级
+      - type: tmpfs
+        target: /in-tmpfs
+    environment:
+      TZ: Asia/Shanghai
+    networks:
+      - demo-net
+
+  inspector:
+    image: alpine:3.20
+    container_name: volume-inspector
+    entrypoint: ["sh", "-c", "sleep 3600"]
+    volumes:
+      - type: bind
+        source: ./bind-data
+        target: /inspect-bind
+      - namedv:/inspect-volume
+    networks:
+      - demo-net
+
+volumes:
+  namedv:
+
+networks:
+  demo-net:
+    driver: bridge
