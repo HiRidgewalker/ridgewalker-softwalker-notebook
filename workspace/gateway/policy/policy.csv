@@ -1,0 +1,27 @@
+# Casbin 策略示例（含角色继承）
+#
+# 格式：p, sub, obj, act
+# 角色继承：g, user, role
+
+# ===== user 资源 =====
+p, alice, /api/users/123, GET
+p, alice, /api/users/123, PUT
+p, bob,   /api/users/456, GET
+p, carol, /api/users/789, GET
+
+# ===== order 资源 =====
+p, bob,   /api/orders/*, GET
+p, bob,   /api/orders/*, POST
+p, alice, /api/orders/1, GET
+p, carol, /api/orders/*, GET
+
+# ===== admin 通用权限（通过角色继承赋予 alice + bob）=====
+p, admin, /api/users/*, ANY
+p, admin, /api/orders/*, ANY
+
+# ===== 角色继承 =====
+# alice 和 bob 是 admin（继承 admin 的所有权限）
+g, alice, admin
+g, bob, admin
+# carol 是普通 member
+g, carol, member
