@@ -1,0 +1,62 @@
+# =============================================================================
+# Kustomize base 模板：通用 base，overlay 改环境差异
+# 对应：Hub/19_小企业DevOps方案笔记.md 中提到 Kustomize + GitOps
+# =============================================================================
+# 使用方式：
+#   kustomize build base/                    # 渲染 base
+#   kustomize build overlays/staging/        # 渲染 + overlay 覆盖
+#   kustomize build overlays/prod/ > deploy.yaml
+#
+# 仓库结构：
+#   gitops-config/
+#   ├── base/
+#   │   ├── kustomization.yaml
+#   │   ├── deployment.yaml
+#   │   ├── service.yaml
+#   │   └── ingress.yaml
+#   └── overlays/
+#       ├── staging/
+#       │   ├── kustomization.yaml
+#       │   └── patch-replicas.yaml
+#       └── prod/
+#           ├── kustomization.yaml
+#           ├── patch-replicas.yaml
+#           ├── patch-resources.yaml
+#           └── patch-ingress-host.yaml
+# =============================================================================
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# 元信息
+namePrefix: webapi-
+namespace: myapp
+labels:
+  - pairs:
+      app.kubernetes.io/name: webapi
+      app.kubernetes.io/version: v1
+    includeSelectors: true
+
+# 资源列表
+resources:
+  - deployment.yaml
+  - service.yaml
+  - ingress.yaml
+  - hpa.yaml
+
+# 镜像固定（base 用占位，overlay 改）
+images:
+  - name: webapi
+    newName: harbor.example.com/myproj/webapi
+    newTag: latest          # overlay 中替换为具体 tag
+
+# ConfigMap / Secret 来自外部生成
+configMapGenerator:
+  - name: webapi-config
+    literals:
+      - TZ=Asia/Shanghai
+      - LOG_LEVEL=info
+
+# 通用 annotation
+commonAnnotations:
+  app.kubernetes.io/managed-by: kustomize
+  app.kubernetes.io/created-by: platform-team

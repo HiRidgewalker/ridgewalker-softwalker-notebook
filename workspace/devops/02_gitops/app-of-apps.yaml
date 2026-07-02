@@ -1,0 +1,122 @@
+# =============================================================================
+# ArgoCD App-of-Apps Pattern 示例
+# 对应：Hub/19_小企业DevOps方案笔记.md 的多集群管理 + Hub/16 中 GitOps 部分
+# =============================================================================
+# 思路：
+#   - 一个 root Application（app-of-apps.yaml），仓库根目录同步
+#   - 每个子目录是一个 child Application
+#   - 子目录之间相对独立 → 多个团队不会相互打架
+# =============================================================================
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: root
+  namespace: argocd
+  labels:
+    app: root
+spec:
+  project: default
+  # Root 同步整个仓库
+  source:
+    repoURL: git@git.example.com:platform/gitops-config.git
+    targetRevision: HEAD
+    path: apps/                  # apps/ 目录下的每个子目录都是一个 App
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+    automated:
+      prune: true                # 自动删除孤儿
+      selfHeal: true             # 集群漂移时自动修复
+    syncOptions:
+      - CreateNamespace=true
+    retry:
+      limit: 5
+      backoff:
+        duration: 5s
+        factor: 2
+        maxDuration: 3m
+
+---
+# =============================================================================
+# 子应用示例：infrastructure 目录（基础设施组件）
+# 平台团队管
+# =============================================================================
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: infrastructure
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: git@git.example.com:platform/gitops-config.git
+    targetRevision: HEAD
+    path: apps/infrastructure   # 子目录
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
+---
+# =============================================================================
+# 子应用示例：team-a 业务（业务团队管自己目录）
+# =============================================================================
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: team-a
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: git@git.example.com:platform/gitops-config.git
+    targetRevision: HEAD
+    path: apps/team-a
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: team-a
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
+---
+# =============================================================================
+# 子应用示例：ApplicationSet（多集群同一应用）
+# 常用在 staging/prod-east/prod-west 同时部署相同应用
+# =============================================================================
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: team-a-multienv
+  namespace: argocd
+spec:
+  generators:
+    - list:
+        elements:
+          - cluster: https://kubernetes.default.svc
+            url: https://staging.kubeconfig.local
+            valuesFrom: staging/secrets
+          - cluster: https://kubernetes.default.svc
+            url: https://prod-east.kubeconfig.local
+            valuesFrom: prod-east/secrets
+  template:
+    metadata:
+      name: 'team-a-{{cluster}}'
+    spec:
+      project: default
+      source:
+        repoURL: git@git.example.com:platform/gitops-config.git
+        targetRevision: HEAD
+        path: apps/team-a/overlays/{{cluster}}
+      destination:
+        server: '{{url}}'
+        namespace: team-a
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
