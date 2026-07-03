@@ -1,0 +1,6 @@
+{
+  "name": "js-module-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ES Module 演示，运行方式：node 06_module/app.js"
+}
