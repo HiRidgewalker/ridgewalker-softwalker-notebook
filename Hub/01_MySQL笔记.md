@@ -8,7 +8,7 @@ source: 文档/MySQL.md
 # MySQL 笔记
 
 > 原 `文档/MySQL.md` 的重新整理版本。聚焦 MySQL 核心特性、事务与隔离、存储引擎速览。
-> 对比与选型见 [[Hub/04_关系型数据库对比与选型笔记]]，PostgreSQL 见 [[Hub/02_PostgreSQL笔记]]，SQLite 见 [[Hub/03_SQLite笔记]]。
+> 对比与选型见 [[04_关系型数据库对比与选型笔记]]，PostgreSQL 见 [[02_PostgreSQL笔记]]，SQLite 见 [[03_SQLite笔记]]。
 > 原笔记保留在 `文档/MySQL.md` 供回溯。
 
 ## 目录
@@ -111,13 +111,13 @@ MySQL 的核心特性很大程度由存储引擎决定。最常见两个：
 
 - **默认字符集**：建库时显式指定 `utf8mb4` + `utf8mb4_unicode_ci`，不要用老的 `utf8`（实际是 3 字节，不能存 emoji）。
 - **避免 `SELECT \*`**：列出字段，方便加索引、改 schema。
-- **小表不一定用 MySQL**：单文件、本地工具类场景优先 SQLite，见 [[Hub/03_SQLite笔记]]。
-- **复杂类型 / JSON / GIS**：考虑 PostgreSQL，见 [[Hub/02_PostgreSQL笔记]]。
+- **小表不一定用 MySQL**：单文件、本地工具类场景优先 SQLite，见 [[03_SQLite笔记]]。
+- **复杂类型 / JSON / GIS**：考虑 PostgreSQL，见 [[02_PostgreSQL笔记]]。
 
 ---
 
 ## 关联笔记
 
-- PostgreSQL：[[Hub/02_PostgreSQL笔记]]
-- SQLite：[[Hub/03_SQLite笔记]]
-- 横向对比与选型：[[Hub/04_关系型数据库对比与选型笔记]]
+- PostgreSQL：[[02_PostgreSQL笔记]]
+- SQLite：[[03_SQLite笔记]]
+- 横向对比与选型：[[04_关系型数据库对比与选型笔记]]

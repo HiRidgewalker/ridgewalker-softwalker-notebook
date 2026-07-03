@@ -152,7 +152,7 @@ const theme = useContext(ThemeContext);
 
 ## 6. 路由相关 Hook（Router Hooks）
 
-> 完整路由笔记见 [[Hub/04_React Router笔记]]。这里只列 API 速查。
+> 完整路由笔记见 [[04_React Router笔记]]。这里只列 API 速查。
 
 | Hook | 作用 |
 |---|---|
@@ -355,6 +355,6 @@ export default function Demo() {
 
 ## 关联笔记
 
-- React 核心：[[Hub/01_React笔记]]
-- 状态管理：[[Hub/03_Zustand状态管理笔记]]
-- 路由：[[Hub/04_React Router笔记]]
+- React 核心：[[01_React笔记]]
+- 状态管理：[[03_Zustand状态管理笔记]]
+- 路由：[[04_React Router笔记]]

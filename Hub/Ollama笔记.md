@@ -6,7 +6,7 @@
 
 **Ollama** 是一个开源的**本地大模型运行工具**，主打"一条命令跑起开源 LLM"。无需自己处理 Python 环境、CUDA、模型权重转换，跨 macOS / Linux / Windows 提供一致体验。
 
-与 [[Hub/HuggingFaceTransformers笔记]] 的区别：
+与 [[HuggingFaceTransformers笔记]] 的区别：
 
 - Transformers：库级别，偏开发 / 微调 / 研究
 - Ollama：CLI + 服务级别，偏本地快速体验 / 个人开发 / 小规模部署
@@ -136,7 +136,7 @@ ollama run my-assistant
 
 ## 九、相关笔记
 
-- 模型库 / 训练库：[[Hub/HuggingFaceTransformers笔记]]
+- 模型库 / 训练库：[[HuggingFaceTransformers笔记]]
 - 高吞吐推理：[[VLLM]]
 - LLM 基础：[[LLM]]
-- Agent 系统结构：[[Hub/Agent总览笔记]]
+- Agent 系统结构：[[Agent总览笔记]]

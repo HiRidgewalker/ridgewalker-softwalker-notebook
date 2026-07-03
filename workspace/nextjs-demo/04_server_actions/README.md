@@ -45,4 +45,4 @@ npm run dev
 
 ## 对应笔记
 
-- [[Hub/04_Next.js 数据获取与Server Actions笔记]]
+- [[04_Next.js 数据获取与Server Actions笔记]]

@@ -325,7 +325,7 @@ export const dynamic = 'force-static'
 export const revalidate = 60
 ```
 
-详见 [[Hub/05_Next.js 渲染模式笔记]]。
+详见 [[05_Next.js 渲染模式笔记]]。
 
 ---
 

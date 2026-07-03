@@ -1,6 +1,6 @@
 # workspace/ws —— WebSocket Demo 总索引
 
-对应笔记：`[[Hub/websocket笔记]]`
+对应笔记：`[[websocket笔记]]`
 
 ## 文件
 

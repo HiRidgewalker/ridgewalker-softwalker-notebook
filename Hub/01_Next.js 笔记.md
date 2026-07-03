@@ -13,11 +13,11 @@
 
 ## 目录结构
 
-- [[Hub/02_Next.js 路由笔记]]
-- [[Hub/03_Next.js Server与Client组件笔记]]
-- [[Hub/04_Next.js 数据获取与Server Actions笔记]]
-- [[Hub/05_Next.js 渲染模式笔记]]
-- [[Hub/06_Next.js 常见问题笔记]]
+- [[02_Next.js 路由笔记]]
+- [[03_Next.js Server与Client组件笔记]]
+- [[04_Next.js 数据获取与Server Actions笔记]]
+- [[05_Next.js 渲染模式笔记]]
+- [[06_Next.js 常见问题笔记]]
 
 ---
 
@@ -123,15 +123,15 @@ Next.js 也可以在特定路由下用 `"use client"` 退化成纯 SPA 风格，
 
 | 特性 | 用途 | 详见 |
 |------|------|------|
-| App Router | 文件式路由 + 嵌套布局 + loading/error | [[Hub/02_Next.js 路由笔记]] |
-| Server Components | 默认在服务端渲染、减少 JS 体积 | [[Hub/03_Next.js Server与Client组件笔记]] |
-| Client Components | 交互组件用 `"use client"` 标记 | [[Hub/03_Next.js Server与Client组件笔记]] |
-| Server-side Fetch | `await fetch()` 在 Server Component | [[Hub/04_Next.js 数据获取与Server Actions笔记]] |
-| Server Actions | 服务端函数直接当 `<form action>` | [[Hub/04_Next.js 数据获取与Server Actions笔记]] |
-| 渲染模式 | SSR / SSG / ISR / Streaming / PPR | [[Hub/05_Next.js 渲染模式笔记]] |
-| Image / Link / Font | 资源优化内置组件 | [[Hub/06_Next.js 常见问题笔记]] |
-| Middleware | 在请求到达页面之前跑代码 | [[Hub/06_Next.js 常见问题笔记]] |
-| Route Handlers | 写 API 端点（`route.ts`） | [[Hub/04_Next.js 数据获取与Server Actions笔记]] |
+| App Router | 文件式路由 + 嵌套布局 + loading/error | [[02_Next.js 路由笔记]] |
+| Server Components | 默认在服务端渲染、减少 JS 体积 | [[03_Next.js Server与Client组件笔记]] |
+| Client Components | 交互组件用 `"use client"` 标记 | [[03_Next.js Server与Client组件笔记]] |
+| Server-side Fetch | `await fetch()` 在 Server Component | [[04_Next.js 数据获取与Server Actions笔记]] |
+| Server Actions | 服务端函数直接当 `<form action>` | [[04_Next.js 数据获取与Server Actions笔记]] |
+| 渲染模式 | SSR / SSG / ISR / Streaming / PPR | [[05_Next.js 渲染模式笔记]] |
+| Image / Link / Font | 资源优化内置组件 | [[06_Next.js 常见问题笔记]] |
+| Middleware | 在请求到达页面之前跑代码 | [[06_Next.js 常见问题笔记]] |
+| Route Handlers | 写 API 端点（`route.ts`） | [[04_Next.js 数据获取与Server Actions笔记]] |
 
 ---
 

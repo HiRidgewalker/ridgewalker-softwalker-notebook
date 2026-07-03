@@ -1,6 +1,6 @@
 # DevOps 基础与文化
 
-> 原 `文档/DevOps.md` 的重新整理版本。DevOps 系列共 3 篇：本文是**概念与文化**；[[Hub/19_小企业DevOps方案笔记]] 是**50~500 人企业主流方案**；[[Hub/20_DevOps工具链对比笔记]] 是**工具链横向选型参考**。原笔记保留在 `文档/DevOps.md` 供回溯。
+> 原 `文档/DevOps.md` 的重新整理版本。DevOps 系列共 3 篇：本文是**概念与文化**；[[02_小企业DevOps方案笔记]] 是**50~500 人企业主流方案**；[[03_DevOps工具链对比笔记]] 是**工具链横向选型参考**。原笔记保留在 `文档/DevOps.md` 供回溯。
 
 ---
 
@@ -166,7 +166,7 @@ CALMS 是 Damon Edwards 提出的 DevOps 文化框架：
 - **Continuous Deployment**：自动化通过所有测试后**自动发布**到生产
 - 与 CI 是同源概念
 
-### 6.5 GitOps（详见 [[Hub/16_Jenkins_CICD实战笔记]] / [[Hub/19_小企业DevOps方案笔记]]）
+### 6.5 GitOps（详见 [[07_Jenkins_CICD实战笔记]] / [[02_小企业DevOps方案笔记]]）
 
 - 以 Git 为单一真相源
 - 通过 PR/MR 改动生产环境

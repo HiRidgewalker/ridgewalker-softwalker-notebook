@@ -8,7 +8,7 @@ Python WebSocket 客户端示例。
 - 心跳
 - 优雅断开
 
-对应笔记：[[Hub/websocket笔记]] 第 6.2 节
+对应笔记：[[websocket笔记]] 第 6.2 节
 
 启动：
     .venv/bin/python workspace/ws/client_python.py

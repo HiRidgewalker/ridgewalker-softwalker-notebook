@@ -7,7 +7,7 @@ Milvus demo —— 需要 docker-compose 起 standalone（端口 19530）。
 - 单独 dense 搜 / 单独 sparse 搜
 - 混合检索（RRFRanker / WeightedRanker）
 
-对应笔记：[[Hub/01_Milvus笔记]]
+对应笔记：[[01_Milvus笔记]]
 """
 from pymilvus import (
     MilvusClient,

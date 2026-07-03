@@ -1,6 +1,6 @@
 # 01_tensor_and_autograd · Tensor 与自动求导 demo
 
-演示 [[Hub/02_PyTorch笔记]] 中**前两章**的核心内容：
+演示 [[02_PyTorch笔记]] 中**前两章**的核心内容：
 - Tensor 的创建、属性、形状操作、运算
 - 设备切换（CPU / CUDA / MPS）
 - autograd：`requires_grad` + `backward()` + `.grad`
@@ -60,5 +60,5 @@ no_grad 下计算: tensor(7.)  requires_grad=False
 
 ## 对应笔记
 
-- [[Hub/02_PyTorch笔记]] — Tensor 基础、autograd
-- [[Hub/03_深度学习环境安装笔记]] — torch 安装（CPU 版够用）
+- [[02_PyTorch笔记]] — Tensor 基础、autograd
+- [[03_深度学习环境安装笔记]] — torch 安装（CPU 版够用）

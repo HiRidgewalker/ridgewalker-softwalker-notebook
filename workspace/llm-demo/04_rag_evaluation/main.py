@@ -1,7 +1,7 @@
 """
 04_rag_evaluation · RAG 评测 Demo
 
-演示 [[Hub/RAG工业方案笔记]] / [[Hub/Rerank笔记]] 中 RAG 评测体系的可执行部分。
+演示 [[RAG工业方案笔记]] / [[Rerank笔记]] 中 RAG 评测体系的可执行部分。
 覆盖 RAGAS 4 大核心指标（context_precision / context_recall / faithfulness /
 answer_relevancy）+ mock RAG pipeline + 阈值调优。
 

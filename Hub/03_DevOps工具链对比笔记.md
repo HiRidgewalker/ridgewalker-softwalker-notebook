@@ -1,6 +1,6 @@
 # DevOps 工具链对比笔记
 
-> 来自 [[Hub/19_小企业DevOps方案笔记]] 的延伸：按领域横向对比 8 个细分赛道的开源与商业选型。
+> 来自 [[02_小企业DevOps方案笔记]] 的延伸：按领域横向对比 8 个细分赛道的开源与商业选型。
 
 ---
 
@@ -100,7 +100,7 @@
 
 | 工具 | 类型 | 简介 | 适用 |
 | --- | --- | --- | --- |
-| **Harbor** | 开源/CNCF | 容器镜像 + 漏洞扫描 + 复制 | **首选**（见 [[Hub/14_Harbor笔记]]） |
+| **Harbor** | 开源/CNCF | 容器镜像 + 漏洞扫描 + 复制 | **首选**（见 [[05_Harbor笔记]]） |
 | **AWS ECR** | 商业 | AWS 容器镜像 | AWS 单云 |
 | **Azure ACR** | 商业 | Azure 容器镜像 | Azure 单云 |
 | **GCP Artifact Registry** | 商业 | GCP 镜像 | GCP 单云 |
@@ -282,7 +282,7 @@
 
 | 工具 | 类型 | 简介 |
 | --- | --- | --- |
-| **Rancher** | 开源/商业 | 见 [[Hub/13_Rancher笔记]] |
+| **Rancher** | 开源/商业 | 见 [[04_Rancher笔记]] |
 | **Cluster API** | 开源/K8s sig | 声明式 K8s 集群生命周期 |
 | **Clusterpedia** | 开源 | 跨集群查询 |
 | **ArgoCD ApplicationSet** | 开源 | ArgoCD 多集群部署 |

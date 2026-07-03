@@ -1,6 +1,6 @@
 # =============================================================================
 # K8s HPA 示例（autoscaling/v2 支持多指标）
-# 对应：Hub/16_Jenkins_CICD实战笔记.md 的 5.4
+# 对应：Hub/07_Jenkins_CICD实战笔记.md 的 5.4
 # =============================================================================
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler

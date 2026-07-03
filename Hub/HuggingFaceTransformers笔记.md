@@ -9,7 +9,7 @@
 - 加载/使用/微调数千种预训练 Transformer 模型（BERT、GPT、T5、LLaMA、Qwen 等）
 - 统一的 API 抽象（pipeline / AutoModel / AutoTokenizer）
 - 与 PyTorch / TensorFlow / JAX 无缝集成
-- 与 [[Hub/Ollama笔记]] 等本地运行时互补（Transformers 偏开发 / 微调，Ollama 偏本地推理服务）
+- 与 [[Ollama笔记]] 等本地运行时互补（Transformers 偏开发 / 微调，Ollama 偏本地推理服务）
 
 ## 二、核心能力
 
@@ -72,7 +72,7 @@ print(tokenizer.decode(outputs[0]))
 | 工具 | 定位 |
 | --- | --- |
 | **Transformers** | 训练 + 推理全流程，主打开发 |
-| **Ollama**（[[Hub/Ollama笔记]]） | 本地一键跑开源模型，主打推理 |
+| **Ollama**（[[Ollama笔记]]） | 本地一键跑开源模型，主打推理 |
 | **VLLM** | 高吞吐推理服务 |
 | **PEFT / LoRA** | 参数高效微调 |
 | **trl** | SFT / DPO / RLHF 训练 |
@@ -91,10 +91,10 @@ print(tokenizer.decode(outputs[0]))
 
 ## 六、相关笔记
 
-- 本地模型运行：[[Hub/Ollama笔记]]
+- 本地模型运行：[[Ollama笔记]]
 - 高吞吐推理：[[VLLM]]
 - LLM 基础：[[LLM]]
-- AI 编程助手：[[Hub/ClaudeCode笔记]]
+- AI 编程助手：[[ClaudeCode笔记]]
 
 ## 七、配套 demo
 

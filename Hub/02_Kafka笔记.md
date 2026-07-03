@@ -15,7 +15,7 @@ sources:
 # Kafka 笔记（生产级）
 
 > 工业生产环境下的 Kafka 使用：架构 / KRaft / Producer+Consumer 生产配置 / EOS / HA / Docker 部署 / 监控与常见生产坑。
-> 配套笔记：[[Hub/06_RabbitMQ笔记]] · [[Hub/08_消息队列对比与选型笔记]]。
+> 配套笔记：[[01_RabbitMQ笔记]] · [[03_消息队列对比与选型笔记]]。
 > Demo 代码示例在 `workspace/mq/`（docker-compose + 生产级 Producer/Consumer + 事务示例）。
 
 ## 目录
@@ -556,6 +556,6 @@ consumer.commit()  # 整批处理完一次性提交
 
 ## 关联笔记
 
-- RabbitMQ 详情：[[Hub/06_RabbitMQ笔记]]
-- 消息队列对比：[[Hub/08_消息队列对比与选型笔记]]
+- RabbitMQ 详情：[[01_RabbitMQ笔记]]
+- 消息队列对比：[[03_消息队列对比与选型笔记]]
 - Demo：`workspace/mq/`（docker-compose + 生产级 Producer/Consumer + 事务示例）

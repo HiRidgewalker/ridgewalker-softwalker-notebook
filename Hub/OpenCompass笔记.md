@@ -7,7 +7,7 @@ type: hub
 # OpenCompass 评测框架笔记
 
 > **本文目的**：补全 `目录.md` 中评测章节的 OpenCompass 部分。覆盖框架定位、本地与远程模型评测流程、内置数据集清单、自定义数据集方式、评测指标、生产特性。
-> 对比框架笔记：[[Hub/EvalScope笔记]]、[[Hub/评测框架对比笔记]]
+> 对比框架笔记：[[EvalScope笔记]]、[[评测框架对比笔记]]
 > 原 `文档/opencompass学习教程.md` 仅 27 行外部链接 + 两个 CLI 片段，重构后已迁移至此。
 
 ## 阅读地图
@@ -277,7 +277,7 @@ python run.py configs/eval_claude.py -w outputs/claude --max-num-workers 1
 
 ### 4.4 流式 vs 非流式
 
-OpenCompass 默认非流式（`stream=False`）。如需流式以统计 TTFT，需自定义 Inferencer 或改用 EvalScope（见 [[Hub/EvalScope笔记]] §5）。
+OpenCompass 默认非流式（`stream=False`）。如需流式以统计 TTFT，需自定义 Inferencer 或改用 EvalScope（见 [[EvalScope笔记]] §5）。
 
 ---
 
@@ -340,7 +340,7 @@ OpenCompass 本身**纯文本**，多模态需通过外部后端：
 | MathVista | 第三方 |
 | OCRBench | 第三方 |
 
-> 强烈建议多模态评测直接用 [[Hub/EvalScope笔记]]（Native 后端开箱支持 40+ VLM benchmark）。
+> 强烈建议多模态评测直接用 [[EvalScope笔记]]（Native 后端开箱支持 40+ VLM benchmark）。
 
 ### 5.6 指令遵循
 

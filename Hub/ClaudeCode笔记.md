@@ -2,7 +2,7 @@
 
 > 原 `文档/ClaudeCode学习笔记.md`（360 行）的重新整理版本。原笔记按时间顺序记录了大量学习截图，本版本删除截图引用、按主题分组重排、补充结构化说明。原笔记保留在原位置供回溯。
 >
-> 涉及 MCP / Skills / Subagents / Hooks 等概念时，与 [[Hub/MCP笔记]] / [[Hub/Skills笔记]] / [[Hub/Agent总览笔记]] 交叉引用。
+> 涉及 MCP / Skills / Subagents / Hooks 等概念时，与 [[MCP笔记]] / [[Skills笔记]] / [[Agent总览笔记]] 交叉引用。
 
 ## 一、是什么
 
@@ -224,7 +224,7 @@ Windows 切换模式快捷键：`alt + m`。
 
 ### 12.1 Skills
 
-Claude Code 原生支持 Skills 机制，与 [[Hub/Skills笔记]] 中描述的规范一致：description 决定模型何时主动触发，按需加载内容。
+Claude Code 原生支持 Skills 机制，与 [[Skills笔记]] 中描述的规范一致：description 决定模型何时主动触发，按需加载内容。
 
 官方文档：[注入动态上下文](https://code.claude.com/docs/zh-CN/skills)
 
@@ -268,7 +268,7 @@ Claude Code 原生支持 Skills 机制，与 [[Hub/Skills笔记]] 中描述的�
 
 ## 十四、相关笔记
 
-- MCP 协议详解：[[Hub/MCP笔记]]
-- Skills 概念与构建：[[Hub/Skills笔记]]
-- Agent 系统结构：[[Hub/Agent总览笔记]]
-- Codex 对比参考：[[Hub/Codex笔记]]
+- MCP 协议详解：[[MCP笔记]]
+- Skills 概念与构建：[[Skills笔记]]
+- Agent 系统结构：[[Agent总览笔记]]
+- Codex 对比参考：[[Codex笔记]]

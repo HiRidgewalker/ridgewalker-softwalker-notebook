@@ -16,6 +16,6 @@
 
 ## 相关笔记
 
-- ClaudeCode 详解：[[Hub/ClaudeCode笔记]]
-- Codex 详解：[[Hub/Codex笔记]]
-- Openclaw：[[Hub/Openclaw笔记]]
+- ClaudeCode 详解：[[ClaudeCode笔记]]
+- Codex 详解：[[Codex笔记]]
+- Openclaw：[[Openclaw笔记]]

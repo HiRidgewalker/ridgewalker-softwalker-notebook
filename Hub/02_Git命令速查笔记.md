@@ -1,7 +1,7 @@
 # Git 命令速查笔记
 
-> 从 [[Hub/01_Git笔记]] 第 2 章速查表展开，补全所有常用参数与坑点。按"主题 + 命令"分组，每条格式：**语法 → 行为 → 关键参数 → 坑点 → 官方文档链接**。
-> 关联笔记：[[Hub/01_Git笔记]]、[[Hub/03_Git回滚决策笔记]]
+> 从 [[01_Git笔记]] 第 2 章速查表展开，补全所有常用参数与坑点。按"主题 + 命令"分组，每条格式：**语法 → 行为 → 关键参数 → 坑点 → 官方文档链接**。
+> 关联笔记：[[01_Git笔记]]、[[03_Git回滚决策笔记]]
 > 原笔记保留在 `文档/Git常用命令.md` 供回溯。
 
 ---
@@ -287,7 +287,7 @@ git stash drop stash@{0}         # 删除某个 stash
 git stash clear                  # 清空所有 stash
 ```
 
-> 详细使用场景见 [[Hub/03_Git回滚决策笔记#2-5-git-stash-临时存储改动]]。
+> 详细使用场景见 [[03_Git回滚决策笔记#2-5-git-stash-临时存储改动]]。
 
 > 官方文档：<https://git-scm.com/docs/git-stash>
 
@@ -362,6 +362,6 @@ git commit -m "retrack files based on .gitignore"
 | 删未跟踪 | `git clean -fd` |
 | 打标签 | `git tag v1.0 && git push origin v1.0` |
 
-> 详细回滚决策见 [[Hub/03_Git回滚决策笔记]]。
+> 详细回滚决策见 [[03_Git回滚决策笔记]]。
 
-> 多分支并行 / 多 agent 隔离：见 [[Hub/Git Worktree 笔记]]。
+> 多分支并行 / 多 agent 隔离：见 [[Git Worktree 笔记]]。

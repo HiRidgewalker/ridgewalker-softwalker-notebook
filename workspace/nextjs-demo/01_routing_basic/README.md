@@ -40,4 +40,4 @@ npm run dev
 
 ## 对应笔记
 
-- [[Hub/02_Next.js 路由笔记]]
+- [[02_Next.js 路由笔记]]

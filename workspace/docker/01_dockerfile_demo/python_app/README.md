@@ -1,6 +1,6 @@
 # Python 应用 Dockerfile Demo
 
-对应：[[Hub/04_Dockerfile笔记]] 中的完整 Python 示例。
+对应：[[04_Dockerfile笔记]] 中的完整 Python 示例。
 
 ## 文件
 

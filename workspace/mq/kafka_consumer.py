@@ -8,7 +8,7 @@ Kafka 生产级 Consumer 示例。
 - 失败处理：不 commit，下次重投
 - 静态成员（group.instance.id）减少 rebalance
 
-对应笔记：[[Hub/07_Kafka笔记]] 5 节
+对应笔记：[[02_Kafka笔记]] 5 节
 
 启动：
     workspace/.venv/bin/python workspace/mq/kafka_consumer.py

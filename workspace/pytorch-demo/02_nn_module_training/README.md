@@ -1,6 +1,6 @@
 # 02_nn_module_training · nn.Module 与训练范式 demo
 
-演示 [[Hub/02_PyTorch笔记]] 中**训练相关**章节的核心内容：
+演示 [[02_PyTorch笔记]] 中**训练相关**章节的核心内容：
 - `nn.Module` 子类写法、`__init__`、`forward`
 - `model(x)` 与 `model.forward(x)` 的差异（前者触发 hooks）
 - `nn.Linear`、`nn.ReLU`、`nn.MSELoss` 等常用模块
@@ -71,5 +71,5 @@ model.forward(x)-> OK（跳过 hooks，不推荐）
 
 ## 对应笔记
 
-- [[Hub/02_PyTorch笔记]] — nn.Module、优化器、训练范式
-- [[Hub/01_ML与DL基础概念笔记]] — 标准训练流程、Backbone/Neck/Head
+- [[02_PyTorch笔记]] — nn.Module、优化器、训练范式
+- [[01_ML与DL基础概念笔记]] — 标准训练流程、Backbone/Neck/Head

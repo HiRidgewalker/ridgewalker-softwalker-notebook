@@ -1,6 +1,6 @@
 # 04_rag_evaluation · RAG 评测 Demo
 
-演示 [[Hub/RAG工业方案笔记]] / [[Hub/Rerank笔记]] 中 RAG 评测体系的可执行部分。覆盖 **Mock RAG pipeline 全链路 + RAGAS 4 大核心指标 + 阈值调优**。
+演示 [[RAG工业方案笔记]] / [[Rerank笔记]] 中 RAG 评测体系的可执行部分。覆盖 **Mock RAG pipeline 全链路 + RAGAS 4 大核心指标 + 阈值调优**。
 
 **默认 mock 模式运行，全程不联网、不需要 GPU、不需要真实模型或 API。**
 
@@ -82,7 +82,7 @@ workspace/.venv/bin/python workspace/llm-demo/04_rag_evaluation/main.py
 
 ## 对应笔记
 
-- [[Hub/RAG工业方案笔记]] — RAG 范式、9 大框架、文档解析、Embedding、向量库、评测体系
-- [[Hub/Rerank笔记]] — 4 种重排序范式、5 大模型系列、LLM-based 重排序、工业部署
-- [[Hub/Prompt工程笔记]] — Prompt 工程原则、DSPy 编译器范式、结构化输出
-- [[Hub/上下文工程与Agent笔记]] — Context Engineering、Agent 框架、记忆系统、MCP
+- [[RAG工业方案笔记]] — RAG 范式、9 大框架、文档解析、Embedding、向量库、评测体系
+- [[Rerank笔记]] — 4 种重排序范式、5 大模型系列、LLM-based 重排序、工业部署
+- [[Prompt工程笔记]] — Prompt 工程原则、DSPy 编译器范式、结构化输出
+- [[上下文工程与Agent笔记]] — Context Engineering、Agent 框架、记忆系统、MCP

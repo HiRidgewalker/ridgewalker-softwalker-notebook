@@ -2,9 +2,9 @@
 
 对应笔记：
 
-- [[Hub/01_Milvus笔记]]
-- [[Hub/02_Qdrant笔记]]
-- [[Hub/03_zvec笔记]]
+- [[01_Milvus笔记]]
+- [[02_Qdrant笔记]]
+- [[03_zvec笔记]]
 
 ## 文件
 

@@ -12,7 +12,7 @@ sources:
 # Milvus 笔记
 
 > 本笔记基于 Milvus 官方文档（standalone docker、hybrid search、reranking、index 章节）整理。
-> 对比见 [[Hub/02_Qdrant笔记]] 和 [[Hub/03_zvec笔记]]。
+> 对比见 [[02_Qdrant笔记]] 和 [[03_zvec笔记]]。
 > 配套 demo：[workspace/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/vector-db)
 
 ## 目录
@@ -343,8 +343,8 @@ print(res)
 
 ## 关联笔记
 
-- Qdrant：[[Hub/02_Qdrant笔记]]
-- zvec：[[Hub/03_zvec笔记]]
-- 关系型 + pgvector：[[Hub/02_PostgreSQL笔记]]
+- Qdrant：[[02_Qdrant笔记]]
+- zvec：[[03_zvec笔记]]
+- 关系型 + pgvector：[[02_PostgreSQL笔记]]
 - 检索 / RAG 概念：[[RAG]]、[[Rerank]]
 - Demo：`workspace/vector-db/milvus_demo.py`

@@ -1,6 +1,6 @@
 # Jenkins CI/CD 实战笔记
 
-> 来自 [[Hub/15_Jenkins基础笔记]] 的延伸：完整企业级流水线。Jenkinsfile 模板见 `workspace/cicd/01_jenkinsfile/`，K8s 部署 manifest 模板见 `workspace/cicd/02_k8s_manifests/`。
+> 来自 [[06_Jenkins基础笔记]] 的延伸：完整企业级流水线。Jenkinsfile 模板见 `workspace/cicd/01_jenkinsfile/`，K8s 部署 manifest 模板见 `workspace/cicd/02_k8s_manifests/`。
 
 ---
 
@@ -429,7 +429,7 @@ spec:
 kubectl patch serviceaccount default -n myapp -p '{"imagePullSecrets":[{"name":"harbor-pull"}]}'
 ```
 
-详细见 [[Hub/14_Harbor笔记]] 的 6.3。
+详细见 [[05_Harbor笔记]] 的 6.3。
 
 ---
 

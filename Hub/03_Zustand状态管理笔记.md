@@ -313,6 +313,6 @@ const increment = useStore((s) => s.increment);
 
 ## 关联笔记
 
-- React 核心：[[Hub/01_React笔记]]
-- Hooks：[[Hub/02_React Hooks笔记]]
-- 路由：[[Hub/04_React Router笔记]]
+- React 核心：[[01_React笔记]]
+- Hooks：[[02_React Hooks笔记]]
+- 路由：[[04_React Router笔记]]

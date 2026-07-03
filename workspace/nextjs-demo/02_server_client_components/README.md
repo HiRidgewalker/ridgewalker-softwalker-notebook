@@ -37,4 +37,4 @@ npm run dev
 
 ## 对应笔记
 
-- [[Hub/03_Next.js Server与Client组件笔记]]
+- [[03_Next.js Server与Client组件笔记]]

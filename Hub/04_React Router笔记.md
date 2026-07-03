@@ -342,6 +342,6 @@ export const ROUTES = {
 
 ## 关联笔记
 
-- React 核心：[[Hub/01_React笔记]]
-- Hooks：[[Hub/02_React Hooks笔记]]
-- 状态管理：[[Hub/03_Zustand状态管理笔记]]
+- React 核心：[[01_React笔记]]
+- Hooks：[[02_React Hooks笔记]]
+- 状态管理：[[03_Zustand状态管理笔记]]

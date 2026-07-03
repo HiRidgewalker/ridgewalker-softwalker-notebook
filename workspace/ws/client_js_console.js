@@ -6,7 +6,7 @@
  * - 发送 + 接收消息
  * - 心跳
  *
- * 对应笔记：[[Hub/websocket笔记]] 第 6.3 节
+ * 对应笔记：[[websocket笔记]] 第 6.3 节
  *
  * 安装：
  *   npm install ws

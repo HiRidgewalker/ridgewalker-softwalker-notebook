@@ -13,7 +13,7 @@ Openclaw 是**开源 AI 编程助手生态**项目，主打开放可扩展的 AI
 
 ## 三、相关笔记
 
-- ClaudeCode 详解：[[Hub/ClaudeCode笔记]]
-- Codex 详解：[[Hub/Codex笔记]]
-- OpenCode：[[Hub/OpenCode笔记]]
-- Skills 资源平台：[[Hub/Skills笔记#五、资源平台]]
+- ClaudeCode 详解：[[ClaudeCode笔记]]
+- Codex 详解：[[Codex笔记]]
+- OpenCode：[[OpenCode笔记]]
+- Skills 资源平台：[[Skills笔记#五、资源平台]]

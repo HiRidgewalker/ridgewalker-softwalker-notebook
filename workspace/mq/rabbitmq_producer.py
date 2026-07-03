@@ -8,7 +8,7 @@ RabbitMQ 生产级 Producer 示例。
 - mandatory 标志 + on_return callback（路由不到处理）
 - 持久化消息（delivery_mode=2）
 
-对应笔记：[[Hub/06_RabbitMQ笔记]] 5、6、7 节
+对应笔记：[[01_RabbitMQ笔记]] 5、6、7 节
 
 启动：
     docker compose --profile dev up -d rabbitmq

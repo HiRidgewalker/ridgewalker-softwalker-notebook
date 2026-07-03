@@ -1,6 +1,6 @@
 # Rancher 笔记
 
-> 来自 [[Hub/12_K3s笔记]] 的延伸：「K3s 跑起来了，怎么可视化管起来」——Rancher 是答案。
+> 来自 [[03_K3s笔记]] 的延伸：「K3s 跑起来了，怎么可视化管起来」——Rancher 是答案。
 
 ---
 
@@ -250,7 +250,7 @@ Rancher 把所有配置存到 **cattle-system namespace** 的一个 secret + 集
 
 ### 8.2 Rancher 部署的集群备份
 
-每个被纳管的 K3s 集群用 [[Hub/12_K3s笔记]] 的 `k3s etcd-snapshot` 机制备份（自身配置）。
+每个被纳管的 K3s 集群用 [[03_K3s笔记]] 的 `k3s etcd-snapshot` 机制备份（自身配置）。
 
 ### 8.3 Rancher 服务器自身的备份（Rancher Backup Operator）
 

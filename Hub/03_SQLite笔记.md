@@ -8,7 +8,7 @@ source: 文档/sqlite.md
 # SQLite 笔记
 
 > 原 `文档/sqlite.md` 的重新整理版本。聚焦 SQLite 嵌入式特点、命令与语法、数据类型。
-> 对比与选型见 [[Hub/04_关系型数据库对比与选型笔记]]，MySQL 见 [[Hub/01_MySQL笔记]]，PostgreSQL 见 [[Hub/02_PostgreSQL笔记]]。
+> 对比与选型见 [[04_关系型数据库对比与选型笔记]]，MySQL 见 [[01_MySQL笔记]]，PostgreSQL 见 [[02_PostgreSQL笔记]]。
 > 原笔记保留在 `文档/sqlite.md` 供回溯。
 
 ## 目录
@@ -159,6 +159,6 @@ conn.close()
 
 ## 关联笔记
 
-- MySQL：[[Hub/01_MySQL笔记]]
-- PostgreSQL：[[Hub/02_PostgreSQL笔记]]
-- 横向对比与选型：[[Hub/04_关系型数据库对比与选型笔记]]
+- MySQL：[[01_MySQL笔记]]
+- PostgreSQL：[[02_PostgreSQL笔记]]
+- 横向对比与选型：[[04_关系型数据库对比与选型笔记]]

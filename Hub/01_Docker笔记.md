@@ -1,6 +1,6 @@
 # Docker 笔记（总览）
 
-> 原 `文档/Docker.md` + `文档/Docker Compose.md` + `文档/Docker image, contrainer's common use command.md` 的重新整理版本。结构上分 5 个 Hub 文件：本文是**总览与 CLI 速查**；[[Hub/02_Docker镜像与容器笔记]] 是**镜像/容器/网络命令详解**；[[Hub/03_Docker数据卷与挂载笔记]] 是**挂载方案专题**（bind/volume/tmpfs 对比与选型）；[[Hub/04_Dockerfile笔记]] 是**Dockerfile 编写**；[[Hub/05_Docker Compose笔记]] 是**Compose 编排**。原笔记保留在 `文档/` 供回溯。
+> 原 `文档/Docker.md` + `文档/Docker Compose.md` + `文档/Docker image, contrainer's common use command.md` 的重新整理版本。结构上分 5 个 Hub 文件：本文是**总览与 CLI 速查**；[[02_Docker镜像与容器笔记]] 是**镜像/容器/网络命令详解**；[[03_Docker数据卷与挂载笔记]] 是**挂载方案专题**（bind/volume/tmpfs 对比与选型）；[[04_Dockerfile笔记]] 是**Dockerfile 编写**；[[05_Docker Compose笔记]] 是**Compose 编排**。原笔记保留在 `文档/` 供回溯。
 
 ---
 
@@ -116,7 +116,7 @@ docker run hello-world  # 跑一个测试容器
 
 ## 4. CLI 速查总表
 
-> 完整参数与坑点见 [[Hub/02_Docker镜像与容器笔记]]、[[Hub/03_Docker数据卷与挂载笔记]]。
+> 完整参数与坑点见 [[02_Docker镜像与容器笔记]]、[[03_Docker数据卷与挂载笔记]]。
 
 ### 4.1 镜像（image）
 

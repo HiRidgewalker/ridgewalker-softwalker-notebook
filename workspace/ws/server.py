@@ -8,7 +8,7 @@ WebSocket 生产级服务端示例（FastAPI）。
 - 群发排除发送者（聊天群常用）
 - 心跳（应用层 ping/pong）
 
-对应笔记：[[Hub/websocket笔记]] 第 4-5 节
+对应笔记：[[websocket笔记]] 第 4-5 节
 
 启动：
     cd workspace

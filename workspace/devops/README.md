@@ -1,6 +1,6 @@
 # workspace/devops
 
-DevOps 配套演示，对应 [[Hub/18_DevOps基础与文化笔记]] / [[Hub/19_小企业DevOps方案笔记]] / [[Hub/20_DevOps工具链对比笔记]]。
+DevOps 配套演示，对应 [[01_DevOps基础与文化笔记]] / [[02_小企业DevOps方案笔记]] / [[03_DevOps工具链对比笔记]]。
 
 ## 目录
 

@@ -7,7 +7,7 @@ Kafka 生产级 Producer 示例。
 - 异步发送 + callback
 - 失败重试（delivery_timeout_ms 控制上限）
 
-对应笔记：[[Hub/07_Kafka笔记]] 4 节
+对应笔记：[[02_Kafka笔记]] 4 节
 
 启动：
     docker compose --profile dev up -d kafka
@@ -31,7 +31,7 @@ logger = logging.getLogger(__name__)
 
 
 # ============================================================
-# 生产级配置（按 [[Hub/07_Kafka笔记]] 4 节配）
+# 生产级配置（按 [[02_Kafka笔记]] 4 节配）
 # ============================================================
 PRODUCER_CONFIG = {
     "bootstrap.servers": "localhost:9092",

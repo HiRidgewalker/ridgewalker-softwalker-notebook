@@ -1,6 +1,6 @@
 # =============================================================================
 # K8s Deployment 示例（与 Jenkinsfile 中的 IMAGE_NAME 一致，此处简称 webapi）
-# 对应：Hub/16_Jenkins_CICD实战笔记.md 的 5.1
+# 对应：Hub/07_Jenkins_CICD实战笔记.md 的 5.1
 # =============================================================================
 # 部署：
 #   kubectl -n myapp apply -f flask-deployment.yaml

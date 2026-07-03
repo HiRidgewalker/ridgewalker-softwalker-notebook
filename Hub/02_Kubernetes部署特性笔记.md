@@ -1,6 +1,6 @@
 # Kubernetes 部署特性笔记
 
-> 来自 [[Hub/10_Kubernetes基础笔记]] 的延伸：部署一个 K8s 应用到底需要哪些对象与机制。
+> 来自 [[01_Kubernetes基础笔记]] 的延伸：部署一个 K8s 应用到底需要哪些对象与机制。
 
 ---
 
@@ -348,7 +348,7 @@ spec:
 
 ### 4.3 自动证书：cert-manager
 
-见后续 [[Hub/13_Rancher笔记]] 中的"应用商店装 cert-manager"。
+见后续 [[04_Rancher笔记]] 中的"应用商店装 cert-manager"。
 
 ---
 
@@ -433,7 +433,7 @@ spec:
     - name: harbor-pull-secret
 ```
 
-> 详细见 [[Hub/14_Harbor笔记]]。
+> 详细见 [[05_Harbor笔记]]。
 
 ---
 

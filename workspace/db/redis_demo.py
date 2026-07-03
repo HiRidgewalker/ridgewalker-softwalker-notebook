@@ -1,7 +1,7 @@
 """
 redis-py demo —— 需要本地 Redis 服务（默认 localhost:6379）。
 
-对应笔记：[[Hub/02_Redis笔记]]
+对应笔记：[[02_Redis笔记]]
 """
 import uuid
 import redis

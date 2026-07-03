@@ -8,7 +8,7 @@ source: 文档/Redis.md
 # Redis 笔记
 
 > 原 `文档/Redis.md` 的重新整理版本（原文件以骨架标题为主，本笔记在其基础上**完善**）。
-> MongoDB 见 [[Hub/01_MongoDB笔记]]，关系型对比与选型见 [[Hub/04_关系型数据库对比与选型笔记]]。
+> MongoDB 见 [[01_MongoDB笔记]]，关系型对比与选型见 [[04_关系型数据库对比与选型笔记]]。
 > 原笔记保留在 `文档/Redis.md` 供回溯。
 
 ## 目录
@@ -302,7 +302,7 @@ with r.pipeline(transaction=False) as p:
 
 ## 关联笔记
 
-- MongoDB：[[Hub/01_MongoDB笔记]]
-- 关系型对比与选型：[[Hub/04_关系型数据库对比与选型笔记]]
-- 消息队列：[[Hub/06_RabbitMQ笔记]]
+- MongoDB：[[01_MongoDB笔记]]
+- 关系型对比与选型：[[04_关系型数据库对比与选型笔记]]
+- 消息队列：[[01_RabbitMQ笔记]]
 - Demo：`workspace/db/redis_demo.py`

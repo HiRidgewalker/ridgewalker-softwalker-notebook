@@ -1,7 +1,7 @@
 """
 pymongo demo —— 需要本地 MongoDB 服务（默认 localhost:27017）。
 
-对应笔记：[[Hub/01_MongoDB笔记]]
+对应笔记：[[01_MongoDB笔记]]
 """
 from pymongo import MongoClient
 from pymongo.errors import DuplicateKeyError

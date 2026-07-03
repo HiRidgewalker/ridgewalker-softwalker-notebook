@@ -12,7 +12,7 @@ sources:
 # zvec 笔记
 
 > 本笔记基于 zvec 官方仓库与文档整理。**zvec 是进程内（in-process）向量数据库**，设计目标与 Milvus / Qdrant 不同——它不是一个独立服务，而是像 SQLite 一样嵌入到应用进程里运行。
-> 对比见 [[Hub/01_Milvus笔记]] 和 [[Hub/02_Qdrant笔记]]。
+> 对比见 [[01_Milvus笔记]] 和 [[02_Qdrant笔记]]。
 > 配套 demo：[workspace/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/vector-db)
 
 ## 目录
@@ -327,8 +327,8 @@ for r in results:
 
 ## 关联笔记
 
-- Milvus：[[Hub/01_Milvus笔记]]
-- Qdrant：[[Hub/02_Qdrant笔记]]
-- 关系型 + pgvector：[[Hub/02_PostgreSQL笔记]]
+- Milvus：[[01_Milvus笔记]]
+- Qdrant：[[02_Qdrant笔记]]
+- 关系型 + pgvector：[[02_PostgreSQL笔记]]
 - 检索 / RAG 概念：[[RAG]]、[[Rerank]]
 - Demo：`workspace/vector-db/zvec_demo.py`

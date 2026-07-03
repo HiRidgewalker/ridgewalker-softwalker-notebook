@@ -8,7 +8,7 @@ Qdrant demo —— 需要 docker-compose 起 Qdrant（端口 6333）。
 - 混合检索（Prefetch + Fusion.RRF）
 - HNSW + Scalar Quantization 配置示例
 
-对应笔记：[[Hub/02_Qdrant笔记]]
+对应笔记：[[02_Qdrant笔记]]
 """
 from qdrant_client import QdrantClient
 from qdrant_client.http import models

@@ -1,6 +1,6 @@
 # LLM Demo
 
-演示 [[Hub/01_大语言模型笔记]] 中可执行代码部分。
+演示 [[01_大语言模型笔记]] 中可执行代码部分。
 
 ## Demo 列表
 
@@ -40,14 +40,14 @@ python3 workspace/llm-demo/04_rag_evaluation/main.py --demo pipeline
 
 ## 对应笔记
 
-- [[Hub/01_大语言模型笔记]] — LLM 架构、训练流程、推理部署
-- [[Hub/02_推理部署笔记]] — vLLM / SGLang 生产环境的显存/并发/指标/日志/选型对比
-- [[Hub/OpenCompass笔记]] — OpenCompass v0.5.3 评测框架（架构 / 本地 / 远程 / 60+ 数据集 / 自定义 / 指标）
-- [[Hub/EvalScope笔记]] — EvalScope v1.8.1 评测框架（四大后端 / 191 benchmark / CollectionSchema / Arena / 压测）
-- [[Hub/评测框架对比笔记]] — 选型决策树 + 10 维度差异表 + 7 步标准生产流程 + 8 项报告指标
-- [[Hub/RAG工业方案笔记]] — RAG 范式、9 大框架、文档解析、Embedding、向量库、评测体系
-- [[Hub/Rerank笔记]] — 4 种重排序范式、5 大模型系列、LLM-based 重排序、工业部署
-- [[Hub/Prompt工程笔记]] — Anthropic 原则、DSPy 编译器范式、结构化输出、模板管理
-- [[Hub/上下文工程与Agent笔记]] — Context Engineering 四大策略、Manus 经验、Agent 框架、Memory 系统、MCP
-- [[Hub/02_PyTorch笔记]] — PyTorch 基础（demo 底层依赖）
-- [[Hub/03_深度学习环境安装笔记]] — CUDA / PyTorch 环境配置
+- [[01_大语言模型笔记]] — LLM 架构、训练流程、推理部署
+- [[02_推理部署笔记]] — vLLM / SGLang 生产环境的显存/并发/指标/日志/选型对比
+- [[OpenCompass笔记]] — OpenCompass v0.5.3 评测框架（架构 / 本地 / 远程 / 60+ 数据集 / 自定义 / 指标）
+- [[EvalScope笔记]] — EvalScope v1.8.1 评测框架（四大后端 / 191 benchmark / CollectionSchema / Arena / 压测）
+- [[评测框架对比笔记]] — 选型决策树 + 10 维度差异表 + 7 步标准生产流程 + 8 项报告指标
+- [[RAG工业方案笔记]] — RAG 范式、9 大框架、文档解析、Embedding、向量库、评测体系
+- [[Rerank笔记]] — 4 种重排序范式、5 大模型系列、LLM-based 重排序、工业部署
+- [[Prompt工程笔记]] — Anthropic 原则、DSPy 编译器范式、结构化输出、模板管理
+- [[上下文工程与Agent笔记]] — Context Engineering 四大策略、Manus 经验、Agent 框架、Memory 系统、MCP
+- [[02_PyTorch笔记]] — PyTorch 基础（demo 底层依赖）
+- [[03_深度学习环境安装笔记]] — CUDA / PyTorch 环境配置

@@ -1,7 +1,7 @@
 """
 pymysql demo —— 需要本地 MySQL 服务（默认 localhost:3306, user=root, pass=root, db=demo）。
 
-对应笔记：[[Hub/01_MySQL笔记]]
+对应笔记：[[01_MySQL笔记]]
 """
 import pymysql
 

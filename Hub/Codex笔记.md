@@ -38,7 +38,7 @@ Codex 提供三种沙箱模式，按权限递增：
 | 用户级别 | `~/.codex/config.toml` |
 | 项目级别 | `.codex/config.toml` |
 
-详见 [[Hub/MCP笔记]]。
+详见 [[MCP笔记]]。
 
 ## 五、Tools
 
@@ -66,6 +66,6 @@ Codex 自带原生网络搜索工具。本地任务中默认启用 web 搜索，
 
 ## 七、相关笔记
 
-- ClaudeCode 详解：[[Hub/ClaudeCode笔记]]
-- MCP 协议：[[Hub/MCP笔记]]
-- Skills 概念：[[Hub/Skills笔记]]
+- ClaudeCode 详解：[[ClaudeCode笔记]]
+- MCP 协议：[[MCP笔记]]
+- Skills 概念：[[Skills笔记]]

@@ -1,6 +1,6 @@
 # workspace/pytorch-demo · PyTorch 演示项目集合
 
-> 这里放着与 [[Hub/02_PyTorch笔记]] 配套的 **2 个独立可运行的 PyTorch demo**。
+> 这里放着与 [[02_PyTorch笔记]] 配套的 **2 个独立可运行的 PyTorch demo**。
 > 每个 demo 都是单文件 Python 脚本，可直接 `python main.py` 跑起来（CPU 即可）。
 > 对应说明见 `Hub/` 下的总览笔记，笔记中通过本 README 链接引用 demo。
 
@@ -43,6 +43,6 @@ workspace/.venv/bin/python workspace/pytorch-demo/02_nn_module_training/main.py
 
 ## 对应笔记
 
-- [[Hub/01_ML与DL基础概念笔记]] — ML/DL 基础概念
-- [[Hub/02_PyTorch笔记]] — PyTorch 核心 API
-- [[Hub/03_深度学习环境安装笔记]] — CUDA / cuDNN / PyTorch 安装
+- [[01_ML与DL基础概念笔记]] — ML/DL 基础概念
+- [[02_PyTorch笔记]] — PyTorch 核心 API
+- [[03_深度学习环境安装笔记]] — CUDA / cuDNN / PyTorch 安装

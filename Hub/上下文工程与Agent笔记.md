@@ -7,7 +7,7 @@ type: hub
 # 上下文工程与 Agent 笔记
 
 > **本文目的**：替换 `上下文工程异常问题总结` 原笔记（原 557 行 20 类问题，内容质量尚可但缺 Prompt Engineering vs Context Engineering 边界、Manus 经验、Agent 框架对比、Memory 系统、MCP，已删除）。覆盖 2026 年工业级 Context Engineering + Agent 全栈。
-> 配套笔记：[[Hub/RAG工业方案笔记]]、[[Hub/Prompt工程笔记]]、[[Hub/Rerank笔记]]
+> 配套笔记：[[RAG工业方案笔记]]、[[Prompt工程笔记]]、[[Rerank笔记]]
 > 配套 demo：[workspace/llm-demo/04_rag_evaluation](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/llm-demo/04_rag_evaluation)
 
 ## 阅读地图

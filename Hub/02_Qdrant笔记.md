@@ -14,7 +14,7 @@ sources:
 
 > 原 `文档/Qdrant.md` 的重新整理版本（原文件只有一行 dashboard URL，本笔记**大幅完善**）。
 > 本笔记基于 Qdrant 官方文档（quickstart、hybrid-queries、indexing、quantization 章节）整理。
-> 对比见 [[Hub/01_Milvus笔记]] 和 [[Hub/03_zvec笔记]]。
+> 对比见 [[01_Milvus笔记]] 和 [[03_zvec笔记]]。
 > 配套 demo：[workspace/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/vector-db)
 > 原笔记保留在 `文档/Qdrant.md` 供回溯。
 
@@ -417,7 +417,7 @@ client.query_points(
 
 ## 关联笔记
 
-- Milvus：[[Hub/01_Milvus笔记]]
-- zvec：[[Hub/03_zvec笔记]]
+- Milvus：[[01_Milvus笔记]]
+- zvec：[[03_zvec笔记]]
 - 检索 / RAG 概念：[[RAG]]、[[Rerank]]
 - Demo：`workspace/vector-db/qdrant_demo.py`

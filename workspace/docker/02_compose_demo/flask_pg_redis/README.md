@@ -1,6 +1,6 @@
 # Compose Demo：flask + postgres + redis
 
-对应：[[Hub/05_Docker Compose笔记]] 的"实战案例：web + postgres + redis"。
+对应：[[05_Docker Compose笔记]] 的"实战案例：web + postgres + redis"。
 
 ## 文件
 

@@ -7,7 +7,7 @@ type: hub
 # RAG 工业方案笔记
 
 > **本文目的**：替换 `RAG` 原笔记（原 `文档/RAG.md` 只有 64 行文章链接，严重过时，已删除）。覆盖 2026 年工业级 RAG 全栈：范式演进、开源框架对比、文档解析、Embedding、向量数据库、评测体系、完整工业链路、场景化选型决策树。
-> 配套笔记：[[Hub/Prompt工程笔记]]、[[Hub/Rerank笔记]]、[[Hub/上下文工程与Agent笔记]]
+> 配套笔记：[[Prompt工程笔记]]、[[Rerank笔记]]、[[上下文工程与Agent笔记]]
 > 配套 demo：[workspace/llm-demo/04_rag_evaluation](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/llm-demo/04_rag_evaluation)
 
 ## 阅读地图
@@ -286,7 +286,7 @@ BAAI 的 [FlagEmbedding v1.4.0](https://github.com/FlagOpen/FlagEmbedding)（202
 | **4. Embedding** | BGE-M3 / Qwen3-Embedding / bce | batch_size 32~128、归一化 |
 | **5. 索引** | Qdrant / Milvus / pgvector | HNSW ef_construction 200、M 16 |
 | **6. 检索** | dense + BM25 + RRF | top_k 20~100、加 metadata 过滤 |
-| **7. 重排序** | BGE-reranker-v2-m3 / Cohere v3.5 | 取 top 5~10，详见 [[Hub/Rerank笔记]] |
+| **7. 重排序** | BGE-reranker-v2-m3 / Cohere v3.5 | 取 top 5~10，详见 [[Rerank笔记]] |
 | **8. 生成** | Claude Sonnet 5 / GPT / Qwen3 | 温度 0、引用标注、拒绝回答机制 |
 | **9. 评测** | RAGAS / DeepEval | 4 大指标 + 回归集 + A/B |
 
