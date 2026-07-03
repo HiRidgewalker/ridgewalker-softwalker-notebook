@@ -57,4 +57,4 @@
 
 ## 引用本规则的入口
 
-详见 `CLAUDE.md` 中的"代码演示外置 workspace 模式"小节。
+详见根目录 `AGENTS.md` / `CLAUDE.md` 中的"代码演示外置 workspace 模式"小节。

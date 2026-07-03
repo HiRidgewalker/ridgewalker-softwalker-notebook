@@ -64,4 +64,4 @@ workspace/.venv/bin/python workspace/python/<模块>/<demo>.py
 
 ## 引用本规则的入口
 
-详见 `CLAUDE.md` 中的 "Python 虚拟环境（uv）" 小节。
+详见根目录 `AGENTS.md` / `CLAUDE.md` 中的 "Python 虚拟环境（uv）" 小节。
