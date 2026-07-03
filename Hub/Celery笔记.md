@@ -26,44 +26,48 @@
 
 ### 0.2 一次任务调用，数据走过的路径
 
-```
-业务进程 (Producer)                                  Worker 进程
-─────────────────                                   ────────────
-task.delay(arg)                                                  
-  └─ 序列化 (json/pickle)              ┌─ 进程隔离，prefork 池多进程
-  └─ 发到 Broker  ◀───── Redis/RabbitMQ ─────▶ Worker 从 Broker 拉取
-       (消息体: task_name, args, kwargs,                  │
-        task_id, eta, countdown, ...)                    ▼
-  └─ 返回 AsyncResult (task_id)         │   加载 Task 模板，按名字 dispatch
-                                          │   触发 task_prerun 信号
-       (可选) 任务结束                   ▼
-       Backend ◀─── 写状态 + 返回值 ──── 执行 task 主体
-       Redis/DB
-                                          │   触发 task_postrun / task_failure 信号
-                                          ▼
-       业务进程 .get() ◀─── 读 backend ────  返回 AsyncResult
+```mermaid
+flowchart LR
+    subgraph Producer["业务进程 Producer"]
+        A["task.delay(arg)"]
+        B["序列化<br/>json / pickle"]
+        C["发送任务消息<br/>task_name / args / kwargs / task_id / eta"]
+        D["返回 AsyncResult(task_id)"]
+        E["业务进程 .get() 读取结果"]
+        A --> B --> C --> D
+    end
+
+    Broker["Broker<br/>Redis / RabbitMQ"]
+
+    subgraph Worker["Worker 进程"]
+        W1["从 Broker 拉取任务"]
+        W2["加载 Task 模板<br/>按任务名 dispatch"]
+        W3["触发 task_prerun 信号"]
+        W4["执行 task 主体<br/>prefork 池多进程隔离"]
+        W5["触发 task_postrun / task_failure 信号"]
+        W1 --> W2 --> W3 --> W4 --> W5
+    end
+
+    Backend["Backend<br/>Redis / DB<br/>状态 + 返回值"]
+
+    C --> Broker --> W1
+    W4 --> Backend
+    Backend --> E
 ```
 
 ### 0.3 任务状态机（重点：判读 `.state` 的返回值）
 
-```
-              发到 broker 但 worker 还没拿到
-                          │
-                          ▼
-                      PENDING
-                          │
-                  worker 拿到 / 开始执行
-                          ▼
-                       STARTED
-                          │
-              ┌───────────┼─────────────┐
-              ▼           ▼             ▼
-          SUCCESS     FAILURE        RETRY ────▶ (回 STARTED)
-              │           │             │
-              │           │             └─▶ REVOKED（被撤销）
-              │           └────────▶ REVOKED
-              ▼
-        (Backend 存结果)
+```mermaid
+flowchart TD
+    A["发到 broker<br/>但 worker 还没拿到"] --> P[PENDING]
+    P -->|"worker 拿到 / 开始执行"| S[STARTED]
+    S --> OK[SUCCESS]
+    S --> FAIL[FAILURE]
+    S --> RETRY[RETRY]
+    RETRY -->|"重新调度"| S
+    RETRY --> REVOKED[REVOKED<br/>被撤销]
+    FAIL --> REVOKED
+    OK --> BACKEND["Backend 存结果"]
 ```
 
 补充说明：
@@ -74,37 +78,30 @@ task.delay(arg)
 
 ### 0.4 进程拓扑（生产怎么部署）
 
-```
-┌─────────────┐    ┌─────────────┐
-│ Web 进程 #1 │    │ Web 进程 #2 │   …  多个 producer，水平扩展
-│ (FastAPI)   │    │             │
-└──────┬──────┘    └──────┬──────┘
-       │ task.delay()      │
-       └────────┬──────────┘
-                ▼
-        ┌───────────────┐
-        │   Broker      │   Redis / RabbitMQ，单点或集群
-        └──────┬────────┘
-               │ 拉取
-       ┌───────┴────────┐
-       ▼                ▼
-┌──────────────┐  ┌──────────────┐
-│ Worker #1    │  │ Worker #2    │  …  独立进程，可多机
-│ (prefork 池) │  │              │
-└──────┬───────┘  └──────┬───────┘
-       │ 写结果          │
-       └───────┬─────────┘
-               ▼
-        ┌───────────────┐
-        │   Backend     │   Redis / DB
-        └───────────────┘
+```mermaid
+flowchart TD
+    subgraph Producers["多个 Producer，水平扩展"]
+        Web1["Web 进程 #1<br/>FastAPI"]
+        Web2["Web 进程 #2"]
+    end
 
-       ┌──────────────┐
-       │ Beat 调度器   │   多机部署时只能起一个；用 celery-redbeat 解决高可用
-       └──────┬───────┘
-              │ 定时触发
-              ▼
-           Broker
+    Broker["Broker<br/>Redis / RabbitMQ<br/>单点或集群"]
+
+    subgraph Workers["Worker 独立进程，可多机"]
+        Worker1["Worker #1<br/>prefork 池"]
+        Worker2["Worker #2"]
+    end
+
+    Backend["Backend<br/>Redis / DB"]
+    Beat["Beat 调度器<br/>多机部署时只能起一个<br/>可用 celery-redbeat 做高可用"]
+
+    Web1 -->|"task.delay()"| Broker
+    Web2 -->|"task.delay()"| Broker
+    Broker -->|"拉取"| Worker1
+    Broker -->|"拉取"| Worker2
+    Worker1 -->|"写结果"| Backend
+    Worker2 -->|"写结果"| Backend
+    Beat -->|"定时触发"| Broker
 ```
 
 ### 0.5 容易混淆的几对概念
@@ -262,11 +259,16 @@ print(r2.state)
 
 ### 2.4 任务状态机速查
 
-```
-PENDING → STARTED → SUCCESS
-                   → FAILURE
-                   → RETRY → ... → RETRY → SUCCESS / FAILURE
-                   → REVOKED（被撤销）
+```mermaid
+flowchart LR
+    P[PENDING] --> S[STARTED]
+    S --> OK[SUCCESS]
+    S --> FAIL[FAILURE]
+    S --> R[RETRY]
+    R -->|"继续重试"| R
+    R --> OK
+    R --> FAIL
+    S --> V["REVOKED<br/>被撤销"]
 ```
 
 - **PENDING 不等于"没执行"**：broker 里还有，但 worker 还没拉到；判定"卡死"要结合 `task_id` 在 broker 是否存在。
