@@ -2,7 +2,7 @@
 type: hub
 topic: Qdrant
 status: refactored
-source: 文档/Qdrant.md
+source: legacy-note
 sources:
   - https://qdrant.tech/documentation/quickstart/
   - https://qdrant.tech/documentation/search/hybrid-queries/
@@ -12,11 +12,11 @@ sources:
 
 # Qdrant 笔记
 
-> 原 `文档/Qdrant.md` 的重新整理版本（原文件只有一行 dashboard URL，本笔记**大幅完善**）。
+> 由旧稿重新整理版本（原文件只有一行 dashboard URL，本笔记**大幅完善**）。
 > 本笔记基于 Qdrant 官方文档（quickstart、hybrid-queries、indexing、quantization 章节）整理。
 > 对比见 [[01_Milvus笔记]] 和 [[03_zvec笔记]]。
 > 配套 demo：[workspace/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/vector-db)
-> 原笔记保留在 `文档/Qdrant.md` 供回溯。
+> 旧稿目录已清理，当前以本文为准。
 
 ## 目录
 

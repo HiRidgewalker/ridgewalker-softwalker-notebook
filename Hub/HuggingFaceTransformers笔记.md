@@ -1,6 +1,6 @@
 # HuggingFace Transformers 笔记
 
-> 原 `文档/HuggingFace Transformers.md`（仅 2 行一个链接）的重新整理版本，从零补充了 Transformers 库的核心概念、快速开始、常用模式、Hub 生态。原笔记保留在原位置供回溯。
+> 由旧稿重新整理版本，从零补充了 Transformers 库的核心概念、快速开始、常用模式、Hub 生态。旧稿目录已清理，当前以本文为准。
 
 ## 一、定位
 
@@ -92,8 +92,8 @@ print(tokenizer.decode(outputs[0]))
 ## 六、相关笔记
 
 - 本地模型运行：[[Ollama笔记]]
-- 高吞吐推理：[[VLLM]]
-- LLM 基础：[[LLM]]
+- 高吞吐推理：[[02_推理部署笔记]]
+- LLM 基础：[[01_大语言模型笔记]]
 - AI 编程助手：[[ClaudeCode笔记]]
 
 ## 七、配套 demo

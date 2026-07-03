@@ -2,14 +2,14 @@
 type: hub
 topic: Redis
 status: refactored
-source: 文档/Redis.md
+source: legacy-note
 ---
 
 # Redis 笔记
 
-> 原 `文档/Redis.md` 的重新整理版本（原文件以骨架标题为主，本笔记在其基础上**完善**）。
+> 由旧稿重新整理版本（原文件以骨架标题为主，本笔记在其基础上**完善**）。
 > MongoDB 见 [[01_MongoDB笔记]]，关系型对比与选型见 [[04_关系型数据库对比与选型笔记]]。
-> 原笔记保留在 `文档/Redis.md` 供回溯。
+> 旧稿目录已清理，当前以本文为准。
 
 ## 目录
 

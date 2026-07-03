@@ -6,7 +6,7 @@ type: hub
 
 # Rerank 重排序笔记
 
-> **本文目的**：替换 `Rerank` 原笔记（原 `文档/Rerank.md` 仅 38 行 + 一段 Claude 回答，缺主流模型，已删除）。覆盖 2026 年工业级 Rerank：4 种范式对比、5 大模型系列对比、LLM-based 重排序、工业部署、选型决策树。
+> **本文目的**：替换 `Rerank` 原笔记（原 旧稿 仅 38 行 + 一段 Claude 回答，缺主流模型，已删除）。覆盖 2026 年工业级 Rerank：4 种范式对比、5 大模型系列对比、LLM-based 重排序、工业部署、选型决策树。
 > 配套笔记：[[RAG工业方案笔记]]、[[Prompt工程笔记]]、[[上下文工程与Agent笔记]]
 > 配套 demo：[workspace/llm-demo/04_rag_evaluation](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/llm-demo/04_rag_evaluation)
 

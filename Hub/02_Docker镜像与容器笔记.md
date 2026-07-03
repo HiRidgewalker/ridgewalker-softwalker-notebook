@@ -1,6 +1,6 @@
 # Docker 镜像、容器与网络
 
-> 来自 [[01_Docker笔记]] 的命令详解章节。原笔记保留在 `文档/Docker.md`、`文档/Docker Compose.md`、`文档/Docker image, contrainer's common use command.md` 供回溯。
+> 来自 [[01_Docker笔记]] 的命令详解章节。旧稿目录已清理，当前以本文为准。
 
 ---
 

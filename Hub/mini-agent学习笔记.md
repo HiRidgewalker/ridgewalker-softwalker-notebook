@@ -1,6 +1,6 @@
 # mini-agent 学习笔记
 
-> 原 `文档/mini-agent 学习笔记.md` 的重新整理版本，定位为**读 [MiniMax-AI/Mini-Agent](https://github.com/MiniMax-AI/Mini-Agent) 源码时记录的 OOP 设计模式笔记**。原笔记保留了 Python `ABC` + `@abstractmethod` 的标准用法，作为该项目的代码骨架模式参考。原笔记保留在原位置供回溯。
+> 由旧稿重新整理而来，定位为**读 [MiniMax-AI/Mini-Agent](https://github.com/MiniMax-AI/Mini-Agent) 源码时记录的 OOP 设计模式笔记**。旧稿中的 Python `ABC` + `@abstractmethod` 用法已整理到本文，当前以本文为准。
 
 ## 一、项目背景
 

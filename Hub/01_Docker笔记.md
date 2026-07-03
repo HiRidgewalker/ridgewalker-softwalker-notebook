@@ -1,6 +1,6 @@
 # Docker 笔记（总览）
 
-> 原 `文档/Docker.md` + `文档/Docker Compose.md` + `文档/Docker image, contrainer's common use command.md` 的重新整理版本。结构上分 5 个 Hub 文件：本文是**总览与 CLI 速查**；[[02_Docker镜像与容器笔记]] 是**镜像/容器/网络命令详解**；[[03_Docker数据卷与挂载笔记]] 是**挂载方案专题**（bind/volume/tmpfs 对比与选型）；[[04_Dockerfile笔记]] 是**Dockerfile 编写**；[[05_Docker Compose笔记]] 是**Compose 编排**。原笔记保留在 `文档/` 供回溯。
+> 原 旧稿 + 旧稿 + 旧稿 的重新整理版本。结构上分 5 个 Hub 文件：本文是**总览与 CLI 速查**；[[02_Docker镜像与容器笔记]] 是**镜像/容器/网络命令详解**；[[03_Docker数据卷与挂载笔记]] 是**挂载方案专题**（bind/volume/tmpfs 对比与选型）；[[04_Dockerfile笔记]] 是**Dockerfile 编写**；[[05_Docker Compose笔记]] 是**Compose 编排**。旧稿目录已清理，当前以本文为准。
 
 ---
 
@@ -87,7 +87,7 @@ sudo usermod -aG docker $USER   # 当前用户免 sudo
 
 ### 3.3 WSL2
 
-参考 [[WSL2]]。在 WSL2 里安装 Docker Engine（**不要**装 Docker Desktop），性能更好。
+参考 [[WSL笔记]]。在 WSL2 里安装 Docker Engine（**不要**装 Docker Desktop），性能更好。
 
 ### 3.4 验证
 

@@ -3,14 +3,14 @@ type: hub
 topic: React Hooks
 status: refactored
 source:
-  - 文档/React.md (hooks 列表)
-  - 文档/react hooks useTransition() and useDeferredValue().md
+  - 旧稿 (hooks 列表)
+  - 旧稿 hooks useTransition() and useDeferredValue().md
 ---
 
 # React Hooks 笔记
 
-> 原 `文档/React.md` 的 hooks 列表 + 原 `文档/react hooks useTransition() and useDeferredValue().md` 的合并精炼版。
-> 原笔记保留在 `文档/React.md` 和 `文档/react hooks useTransition() and useDeferredValue().md` 供回溯。
+> 由旧稿 hooks 列表 + 由旧稿合并精炼版。
+> 旧稿目录已清理，当前以本文为准。
 
 ## 目录
 

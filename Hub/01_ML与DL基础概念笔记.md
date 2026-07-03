@@ -1,6 +1,6 @@
 # 机器学习与深度学习基础概念笔记
 
-> 原 `文档/AI、DeepLearning、MachineLearning零碎知识.md` 与 `文档/Pytorch学习笔记.md` 的重新整理版本，补充大量基础概念内容。原笔记保留在 `文档/` 下供回溯。
+> 原 旧稿 与 旧稿 的重新整理版本，补充大量基础概念内容。旧稿目录已清理，当前以本文为准。
 >
 > 配套 demo：[workspace/pytorch-demo/](../workspace/pytorch-demo/)
 > 相关笔记：[[02_PyTorch笔记]] · [[03_深度学习环境安装笔记]]
@@ -409,5 +409,5 @@ LR 调度：Warmup + Cosine
 
 ## 历史笔记
 
-- [[AI、DeepLearning、MachineLearning零碎知识]] — 原零碎笔记，已被本篇替代
-- [[Pytorch学习笔记]] — 原 PyTorch 占位笔记，已被 [[02_PyTorch笔记]] 替代
+- 旧稿 AI、DeepLearning、MachineLearning零碎知识 — 原零碎笔记，已被本篇替代
+- 旧稿 Pytorch学习笔记 — 原 PyTorch 占位笔记，已被 [[02_PyTorch笔记]] 替代

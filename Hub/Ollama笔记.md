@@ -1,6 +1,6 @@
 # Ollama 笔记
 
-> 原 `文档/Ollama.md`（仅 3 行 3 个 URL）的重新整理版本，从零补充了 Ollama 的定位、特性、命令速查、API 接入、Modelfile。原笔记保留在原位置供回溯。
+> 由旧稿重新整理版本，从零补充了 Ollama 的定位、特性、命令速查、API 接入、Modelfile。旧稿目录已清理，当前以本文为准。
 
 ## 一、定位
 
@@ -137,6 +137,6 @@ ollama run my-assistant
 ## 九、相关笔记
 
 - 模型库 / 训练库：[[HuggingFaceTransformers笔记]]
-- 高吞吐推理：[[VLLM]]
-- LLM 基础：[[LLM]]
+- 高吞吐推理：[[02_推理部署笔记]]
+- LLM 基础：[[01_大语言模型笔记]]
 - Agent 系统结构：[[Agent总览笔记]]

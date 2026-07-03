@@ -1,6 +1,6 @@
 # Docker Compose 笔记
 
-> 来自 [[01_Docker笔记]] 的"Compose 编排"章节。原笔记保留在 `文档/Docker Compose.md` 供回溯。
+> 来自 [[01_Docker笔记]] 的"Compose 编排"章节。旧稿目录已清理，当前以本文为准。
 
 Docker Compose 用一个 YAML 文件定义**一组关联容器**（多服务网络 + 卷），一键启动。
 

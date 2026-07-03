@@ -3,7 +3,7 @@ type: hub
 topic: RabbitMQ 生产级
 status: created
 sources:
-  - 文档/RabbitMQ.md
+  - 旧稿
   - https://www.rabbitmq.com/docs/quorum-queues
   - https://www.rabbitmq.com/docs/dlx
   - https://www.rabbitmq.com/docs/confirms
@@ -16,7 +16,7 @@ sources:
 # RabbitMQ 笔记（生产级）
 
 > 工业生产环境下的 RabbitMQ 使用：核心角色 / 交换机 / 队列类型选型 / 可靠性机制 / 死信 / HA / Docker 部署 / 监控与常见生产坑。
-> 本笔记原 `文档/RabbitMQ.md` 仅含教程大纲（Hello World / 工作队列 / 发布订阅 / 路由 / 主题 / RPC 六章空壳），已完整重构；原文件保留在原位置供回溯。
+> 本笔记旧稿 仅含教程大纲（Hello World / 工作队列 / 发布订阅 / 路由 / 主题 / RPC 六章空壳），已完整重构；旧稿目录已清理，当前以本文为准。
 > 单库详情参考官方文档。Demo 代码示例在 `workspace/mq/`（docker-compose + Publisher Confirms + Consumer Acks + DLX 重试）。
 
 ## 目录

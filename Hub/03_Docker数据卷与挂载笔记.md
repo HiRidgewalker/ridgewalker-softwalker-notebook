@@ -1,6 +1,6 @@
 # Docker 数据卷与挂载专题
 
-> 来自 [[01_Docker笔记]] 的"卷"章节。原笔记保留在 `文档/Docker.md`、`文档/Docker image, contrainer's common use command.md` 供回溯。
+> 来自 [[01_Docker笔记]] 的"卷"章节。旧稿目录已清理，当前以本文为准。
 
 本篇专注于**容器数据持久化**——三种挂载方式的对比、选型决策、坑点。
 

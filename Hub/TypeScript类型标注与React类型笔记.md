@@ -4,7 +4,7 @@
 > 以及 React 项目里高频出现的类型写法（props、事件、Hooks、组件本身）。
 >
 > 配套可运行示例：[workspace/typescript-types/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/typescript-types)
-> 原稿归档：[文档/TypeScript需要标注类型的情况及在React项目中常用的类型.md](../文档/TypeScript需要标注类型的情况及在React项目中常用的类型.md)
+> 由旧稿整理而来；旧稿目录已清理，当前以本文为准。
 
 ---
 

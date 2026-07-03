@@ -2,14 +2,14 @@
 type: hub
 topic: SQLite
 status: refactored
-source: 文档/sqlite.md
+source: legacy-note
 ---
 
 # SQLite 笔记
 
-> 原 `文档/sqlite.md` 的重新整理版本。聚焦 SQLite 嵌入式特点、命令与语法、数据类型。
+> 由旧稿重新整理版本。聚焦 SQLite 嵌入式特点、命令与语法、数据类型。
 > 对比与选型见 [[04_关系型数据库对比与选型笔记]]，MySQL 见 [[01_MySQL笔记]]，PostgreSQL 见 [[02_PostgreSQL笔记]]。
-> 原笔记保留在 `文档/sqlite.md` 供回溯。
+> 旧稿目录已清理，当前以本文为准。
 
 ## 目录
 

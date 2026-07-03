@@ -1,1 +1,0 @@
-qdrant本地客户端默认访问url: http://localhost:6333/dashboard

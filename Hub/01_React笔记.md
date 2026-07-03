@@ -2,14 +2,14 @@
 type: hub
 topic: React
 status: refactored
-source: 文档/React.md
+source: legacy-note
 ---
 
 # React 笔记
 
-> 原 `文档/React.md` 的重新整理版本。聚焦 React 核心（组件、JSX、通信、更新规律）。
+> 由旧稿重新整理版本。聚焦 React 核心（组件、JSX、通信、更新规律）。
 > Hooks 已拆到 [[02_React Hooks笔记]]，状态管理见 [[03_Zustand状态管理笔记]]，路由见 [[04_React Router笔记]]。
-> 原笔记保留在 `文档/React.md` 供回溯。
+> 旧稿目录已清理，当前以本文为准。
 
 ## 目录
 

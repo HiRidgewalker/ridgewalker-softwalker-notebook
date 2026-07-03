@@ -2,14 +2,14 @@
 type: hub
 topic: PostgreSQL
 status: created
-source: 文档/PostgreSQL.md
+source: legacy-note
 ---
 
 # PostgreSQL 笔记
 
-> 原 `文档/PostgreSQL.md` 为空文件，本 Hub 笔记从零搭建。聚焦 PG 的核心特性、事务、JSONB、扩展机制与典型场景。
+> 原 旧稿 为空文件，本 Hub 笔记从零搭建。聚焦 PG 的核心特性、事务、JSONB、扩展机制与典型场景。
 > 对比与选型见 [[04_关系型数据库对比与选型笔记]]，MySQL 见 [[01_MySQL笔记]]，SQLite 见 [[03_SQLite笔记]]。
-> 原 `文档/PostgreSQL.md` 保留在原位置供回溯。
+> 原 旧稿 旧稿目录已清理，当前以本文为准。
 
 ## 目录
 
@@ -232,4 +232,4 @@ conn.close()
 - MySQL：[[01_MySQL笔记]]
 - SQLite：[[03_SQLite笔记]]
 - 横向对比与选型：[[04_关系型数据库对比与选型笔记]]
-- 向量检索（pgvector）：[[Qdrant]]（向量数据库章节）
+- 向量检索（pgvector）：[[02_Qdrant笔记]]（向量数据库章节）

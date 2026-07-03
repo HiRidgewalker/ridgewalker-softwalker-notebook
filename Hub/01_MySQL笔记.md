@@ -2,14 +2,14 @@
 type: hub
 topic: MySQL
 status: refactored
-source: 文档/MySQL.md
+source: legacy-note
 ---
 
 # MySQL 笔记
 
-> 原 `文档/MySQL.md` 的重新整理版本。聚焦 MySQL 核心特性、事务与隔离、存储引擎速览。
+> 由旧稿重新整理版本。聚焦 MySQL 核心特性、事务与隔离、存储引擎速览。
 > 对比与选型见 [[04_关系型数据库对比与选型笔记]]，PostgreSQL 见 [[02_PostgreSQL笔记]]，SQLite 见 [[03_SQLite笔记]]。
-> 原笔记保留在 `文档/MySQL.md` 供回溯。
+> 旧稿目录已清理，当前以本文为准。
 
 ## 目录
 

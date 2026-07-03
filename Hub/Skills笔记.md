@@ -1,6 +1,6 @@
 # Skills 笔记
 
-> 原 `文档/Skills.md` 的重新整理版本，补全了 Skills 核心特征、与 Tool/Subagent/MCP 的关系、典型结构、构建工具、资源平台。原笔记保留在原位置供回溯。
+> 由旧稿重新整理版本，补全了 Skills 核心特征、与 Tool/Subagent/MCP 的关系、典型结构、构建工具、资源平台。旧稿目录已清理，当前以本文为准。
 
 ## 一、Skills 的核心定义
 

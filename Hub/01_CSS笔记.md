@@ -1,7 +1,7 @@
 # CSS 笔记（总览）
 
-> 原 `文档/CSS.md` + `文档/css margin折叠情况.md` + `文档/css速记.md` 的整合重构版本，按知识体系拆成 6 个文件，**本文件是总览入口**。
-> 原稿保留：`文档/CSS.md`、`文档/css margin折叠情况.md`、`文档/css速记.md`。
+> 原 旧稿 + 旧稿 + 旧稿 的整合重构版本，按知识体系拆成 6 个文件，**本文件是总览入口**。
+> 旧稿目录已清理，当前以本文为准。
 > 可运行的 HTML+CSS 演示放 `workspace/css/`，本笔记通过 git 远程链接引用。
 > 概念长篇解释优先引 [MDN 中文文档](https://developer.mozilla.org/zh-CN/docs/Web/CSS)。
 

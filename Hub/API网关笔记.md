@@ -2,12 +2,12 @@
 type: hub
 topic: API 网关
 status: refactored
-source: 文档/网关(gateway).md
+source: legacy-note
 ---
 
 # API 网关笔记
 
-> 原 `文档/网关(gateway).md` 的重写。原笔记仅有 2 个外部链接，本笔记**系统介绍网关的定位、能力、与反向代理的区别**，并**给出一个可运行的 FastAPI 网关 Demo**（4 个中间件 + 路由转发 + 完整流程图）。
+> 由旧稿重写。原笔记仅有 2 个外部链接，本笔记**系统介绍网关的定位、能力、与反向代理的区别**，并**给出一个可运行的 FastAPI 网关 Demo**（4 个中间件 + 路由转发 + 完整流程图）。
 >
 > 鉴权与登录见 `[[鉴权与登录笔记]]`；权限模型（Casbin / RBAC / ReBAC）见 `[[权限模型笔记]]`。
 
@@ -398,8 +398,8 @@ LB ───► │             │ ──► 下游服务
 - 鉴权流程（JWT / OAuth2 / 扫码）：`[[鉴权与登录笔记]]`
 - 权限模型（拿到 token 后能做什么）：`[[权限模型笔记]]`
 - 反向代理 / TLS：`[[nginx]]`（如已收录）
-- 容器编排（Ingress）：`[[kubernetes]]`
-- 服务网格（Sidecar 形态的网关）：`[[DevOps]]`
+- 容器编排（Ingress）：`[[01_Kubernetes基础笔记]]`
+- 服务网格（Sidecar 形态的网关）：`[[01_DevOps基础与文化笔记]]`
 
 ## Demo
 

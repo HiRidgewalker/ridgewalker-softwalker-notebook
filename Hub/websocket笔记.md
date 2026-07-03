@@ -2,12 +2,12 @@
 type: hub
 topic: WebSocket
 status: refactored
-source: 文档/websocket.md
+source: legacy-note
 ---
 
 # WebSocket 笔记
 
-> 原 `文档/websocket.md` 的重写。原笔记是阮一峰风格的概念罗列，本笔记在此基础上**补全协议层细节**、**给出可运行的 Python / JS 代码**、并**直接回答「双向通信」到底是什么意思、服务端怎么主动推送、服务端怎么群发/单播、如何发现在线/离线客户端**。
+> 由旧稿重写。原笔记是阮一峰风格的概念罗列，本笔记在此基础上**补全协议层细节**、**给出可运行的 Python / JS 代码**、并**直接回答「双向通信」到底是什么意思、服务端怎么主动推送、服务端怎么群发/单播、如何发现在线/离线客户端**。
 >
 > 对应协议规范：[RFC 6455 — The WebSocket Protocol](https://datatracker.ietf.org/doc/html/rfc6455)。
 > Python 库：[websockets](https://websockets.readthedocs.io/) + [FastAPI WebSocket](https://fastapi.tiangolo.com/advanced/websockets/)。

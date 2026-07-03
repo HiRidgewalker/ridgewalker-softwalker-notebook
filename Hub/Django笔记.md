@@ -1,7 +1,7 @@
 # Django 笔记
 
-> 原 `文档/Django.md` + `文档/Django Rest FrameWork.md` 的合并重新整理版本，精炼为 4 章节：速查总览 / 常用模式速查表 / 实战代码片段（指向 workspace demo）/ 常见坑 + 官方文档链接。
-> 原笔记保留在 `文档/` 供回溯。
+> 原 旧稿 + 旧稿 的合并重新整理版本，精炼为 4 章节：速查总览 / 常用模式速查表 / 实战代码片段（指向 workspace demo）/ 常见坑 + 官方文档链接。
+> 旧稿目录已清理，当前以本文为准。
 > 演示代码统一放在 `workspace/python/django/`，本笔记通过 git 远程链接引用。完整可 runserver 的小型项目在 `workspace/python/django/full_app/`。
 
 ## 1. 速查总览

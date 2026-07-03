@@ -2,12 +2,12 @@
 type: hub
 topic: TCP/IP 四层网络模型
 status: refactored
-source: 文档/TCP_IP四层网络模型有哪几层.md
+source: legacy-note
 ---
 
 # TCP/IP 四层网络模型笔记
 
-> 原 `文档/TCP_IP四层网络模型有哪几层.md` 的重写。原笔记是图解风格但外部图片链接（nlark CDN）已失效，本笔记**重画所有图**（ASCII / Mermaid）、**补全 OSI 对应关系、IPv6、CIDR、NAT 等现代概念**，并把日常排查工具串起来。
+> 由旧稿重写。原笔记是图解风格但外部图片链接（nlark CDN）已失效，本笔记**重画所有图**（ASCII / Mermaid）、**补全 OSI 对应关系、IPv6、CIDR、NAT 等现代概念**，并把日常排查工具串起来。
 
 ## 目录
 
@@ -437,8 +437,8 @@ flowchart TB
 
 - 应用层协议 WebSocket：`[[websocket笔记]]`
 - 反向代理 / TLS 终止：`[[nginx]]`（如已收录）
-- 网络安全（TLS / HTTPS 握手）：`[[jwt]]` / `[[前后端常用鉴权方式总结]]`
-- 网关（更高层的网络入口）：`[[网关(gateway)]]`
+- 网络安全（TLS / HTTPS 握手）：`[[鉴权与登录笔记]]` / `[[鉴权与登录笔记]]`
+- 网关（更高层的网络入口）：`[[API网关笔记]]`
 
 ## 总结口诀
 

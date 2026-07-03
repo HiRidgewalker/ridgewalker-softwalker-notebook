@@ -1,6 +1,6 @@
 # Pydantic 笔记
 
-> 原 `文档/Pydantic.md` 的重新整理版本，专注 **Pydantic v2**，重点是 **Pydantic v2 在 FastAPI 框架中的实战常用特性**。原笔记保留在 `文档/Pydantic.md` 供回溯。
+> 由旧稿重新整理版本，专注 **Pydantic v2**，重点是 **Pydantic v2 在 FastAPI 框架中的实战常用特性**。旧稿目录已清理，当前以本文为准。
 > 演示代码统一放在 `workspace/python/pydantic/`，本笔记通过 git 远程链接引用。
 
 ## 1. 速查总览

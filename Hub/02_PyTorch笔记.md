@@ -1,6 +1,6 @@
 # PyTorch 笔记
 
-> 原 `文档/Pytorch学习笔记.md`（仅 1 行占位符）与 `文档/AI、DeepLearning、MachineLearning零碎知识.md` 中 `__call__` 等 PyTorch 相关内容的重新整理版本，补充完整的 PyTorch 核心 API 与训练范式。原笔记保留在 `文档/` 下供回溯。
+> 原 旧稿（仅 1 行占位符）与 旧稿 中 `__call__` 等 PyTorch 相关内容的重新整理版本，补充完整的 PyTorch 核心 API 与训练范式。旧稿目录已清理，当前以本文为准。
 >
 > 相关笔记：[[01_ML与DL基础概念笔记]] · [[03_深度学习环境安装笔记]]
 > 配套 demo：[workspace/pytorch-demo/](../workspace/pytorch-demo/)
@@ -568,7 +568,7 @@ torch.save(model.state_dict(), 'model.pth')
 - 任务：**检测** → 用预训练模型先跑一遍
 - 任务：**NLP** → TF-IDF + LR / SVM
 
-**参考文章：** [CSDN - baseline和pipeline](https://blog.csdn.net/qq_38463737/article/details/120743532)（原笔记保留）
+**参考文章：** [CSDN - baseline和pipeline](https://blog.csdn.net/qq_38463737/article/details/120743532)
 
 ### 11.2 pipeline（流水线）
 
@@ -623,5 +623,5 @@ Loss 默认：分类用 CrossEntropyLoss
 
 ## 历史笔记
 
-- [[Pytorch学习笔记]] — 原 PyTorch 占位笔记（基本为空），已被本篇替代
-- [[AI、DeepLearning、MachineLearning零碎知识]] — 原零碎笔记，`__call__` 等 PyTorch 相关内容已并入本篇
+- 旧稿 Pytorch学习笔记 — 原 PyTorch 占位笔记（基本为空），已被本篇替代
+- 旧稿 AI、DeepLearning、MachineLearning零碎知识 — 原零碎笔记，`__call__` 等 PyTorch 相关内容已并入本篇

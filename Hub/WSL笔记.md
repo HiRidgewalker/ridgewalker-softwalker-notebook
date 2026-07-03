@@ -1,6 +1,6 @@
 # WSL 笔记
 
-> 来自 [[WSL2]]。原笔记保留在 `文档/WSL2.md` 供回溯。
+> 来自 [[WSL笔记]]。旧稿目录已清理，当前以本文为准。
 
 WSL（Windows Subsystem for Linux）是 Windows 上运行 Linux 环境的子系统，不需要完整虚拟机，开发者最常用的 Windows + Linux 混合方案。
 
