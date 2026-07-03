@@ -2,3 +2,11 @@
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 *.pyc
+
+# Python virtual environment (uv)
+workspace/.venv/
+__pycache__/
+*.pyc
+
+# LLM demo outputs (demo 跑出来的临时 JSONL / 报告)
+workspace/llm-demo/**/_outputs/

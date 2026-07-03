@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>WebSocket Demo - 浏览器客户端</title>
+<style>
+    body { font-family: -apple-system, sans-serif; max-width: 900px; margin: 20px auto; padding: 0 16px; }
+    h1 { font-size: 18px; }
+    .row { display: flex; gap: 8px; margin: 8px 0; align-items: center; }
+    input, button { padding: 6px 10px; font-size: 14px; }
+    input { flex: 1; }
+    ul { list-style: none; padding: 0; max-height: 400px; overflow-y: auto; border: 1px solid #ddd; padding: 8px; }
+    li { padding: 4px 0; border-bottom: 1px solid #eee; font-family: monospace; font-size: 13px; }
+    .status { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 12px; }
+    .online { background: #d4edda; color: #155724; }
+    .offline { background: #f8d7da; color: #721c24; }
+    .hint { background: #fff3cd; padding: 10px; border-left: 3px solid #ffc107; margin: 10px 0; font-size: 13px; }
+    .me { color: #007bff; }
+</style>
+</head>
+<body>
+<h1>WebSocket Demo <span id="status" class="status offline">未连接</span></h1>
+
+<div class="row">
+    client_id: <input id="clientId" value="browser_alice">
+    token: <input id="token" value="demo_token_123">
+    <button onclick="connectWs()">连接</button>
+    <button onclick="disconnectWs()">断开</button>
+    <button onclick="queryOnline()">查在线列表</button>
+</div>
+
+<div class="hint">
+    提示：
+    <ul style="border:none; padding-left:20px;">
+        <li>开两个浏览器标签，分别连 <code>browser_alice</code> / <code>browser_bob</code></li>
+        <li>在其中一个发消息 → 另一个会收到（群发排除发送者）</li>
+        <li>关掉一个标签 → 服务器的在线列表会自动更新（检测离线）</li>
+        <li>curl 调用 <code>/push/{client_id}</code> 可以测试「服务端主动推送」</li>
+    </ul>
+</div>
+
+<div class="row">
+    <input id="input" placeholder="输入消息后回车" disabled>
+    <button onclick="sendMsg()" id="sendBtn" disabled>发送</button>
+</div>
+
+<ul id="messages"></ul>
+
+<script>
+let ws = null;
+let pingInterval = null;
+
+function setStatus(connected) {
+    const s = document.getElementById("status");
+    s.className = "status " + (connected ? "online" : "offline");
+    s.textContent = connected ? "已连接" : "未连接";
+    document.getElementById("input").disabled = !connected;
+    document.getElementById("sendBtn").disabled = !connected;
+}
+
+function appendMsg(text, isMe) {
+    const li = document.createElement("li");
+    if (isMe) li.className = "me";
+    li.textContent = (isMe ? "[me] " : "[recv] ") + text;
+    document.getElementById("messages").appendChild(li);
+}
+
+// 指数退避重连
+function connectWs() {
+    const clientId = document.getElementById("clientId").value.trim();
+    const token = document.getElementById("token").value.trim();
+    if (!clientId) { alert("client_id required"); return; }
+
+    const url = `ws://localhost:8000/ws/${clientId}?token=${token}`;
+    ws = new WebSocket(url);
+
+    ws.onopen = () => {
+        setStatus(true);
+        appendMsg(`connected as ${clientId}`);
+        // 应用层心跳（30s 一次）
+        pingInterval = setInterval(() => {
+            if (ws.readyState === WebSocket.OPEN) ws.send('{"type":"ping"}');
+        }, 30000);
+    };
+
+    ws.onmessage = (event) => {
+        const data = event.data;
+        // 区分心跳
+        if (data === '{"type":"pong"}') return;
+        appendMsg(data, false);
+    };
+
+    ws.onclose = (event) => {
+        setStatus(false);
+        appendMsg(`disconnected (code=${event.code})`);
+        if (pingInterval) { clearInterval(pingInterval); pingInterval = null; }
+        // 自动重连（demo 简化：5s 后重连；生产用指数退避 1s/2s/4s/8s/...）
+        setTimeout(() => {
+            if (document.getElementById("clientId").value === clientId) {
+                appendMsg("auto reconnecting...");
+                connectWs();
+            }
+        }, 5000);
+    };
+
+    ws.onerror = () => appendMsg("[error] connection error");
+}
+
+function disconnectWs() {
+    if (ws) ws.close();
+}
+
+function sendMsg() {
+    const input = document.getElementById("input");
+    if (input.value && ws && ws.readyState === WebSocket.OPEN) {
+        ws.send(input.value);
+        appendMsg(input.value, true);
+        input.value = "";
+    }
+}
+
+async function queryOnline() {
+    const res = await fetch("http://localhost:8000/online");
+    const data = await res.json();
+    appendMsg(`[online list] count=${data.count}, clients=${JSON.stringify(data.online)}`);
+}
+
+// 回车发送
+document.getElementById("input").addEventListener("keydown", (e) => {
+    if (e.key === "Enter") sendMsg();
+});
+
+// 自动连接一次
+window.addEventListener("load", () => {
+    document.getElementById("clientId").value =
+        "browser_" + Math.random().toString(36).slice(2, 8);
+});
+</script>
+</body>
+</html>

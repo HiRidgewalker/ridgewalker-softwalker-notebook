@@ -1,0 +1,9 @@
+# 04_rag_evaluation demo 依赖
+#
+# 整个 demo 基于 Python 标准库（json / time / statistics / re / argparse / dataclasses）
+# 默认无需安装任何第三方包即可运行。
+#
+# 仅当需要 live 模式（真实跑 RAGAS + OpenAI）时才需要装：
+# ragas>=0.4
+# datasets>=2.0
+# openai>=1.0
