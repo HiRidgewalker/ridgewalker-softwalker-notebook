@@ -303,6 +303,46 @@ git tag -d v1.0                  # 删除本地标签
 git push origin v1.0             # 推送单个标签
 git push origin --tags           # 推送所有标签
 git push origin :refs/tags/v1.0  # 删除远程标签
+
+# 补充
+# 查看所有本地 Tag
+git tag
+
+# 给当前 commit 创建带说明的 Tag
+git tag -a v1.0.0 -m "Release v1.0.0"
+
+# 给当前 commit 创建轻量 Tag
+git tag v1.0.0
+
+# 给指定历史 commit 创建 Tag
+git tag -a v1.0.0 <commit-id> -m "Release v1.0.0"
+
+# 查看 Tag 详细信息
+git show v1.0.0
+
+# 推送指定 Tag 到远程
+git push origin v1.0.0
+
+# 推送所有本地 Tag 到远程
+git push origin --tags
+
+# 拉取远程所有 Tag
+git fetch --tags
+
+# 切换到指定 Tag
+git switch --detach v1.0.0
+
+# 基于指定 Tag 创建新分支
+git switch -c dev-v1.0.0 v1.0.0
+
+# 删除本地 Tag
+git tag -d v1.0.0
+
+# 删除远程 Tag
+git push origin --delete v1.0.0
+
+# 直接克隆指定 Tag，只下载最少 Git 历史
+git clone --branch v1.0.0 --depth 1 <repository-url>
 ```
 
 > 官方文档：<https://git-scm.com/docs/git-tag>

@@ -157,7 +157,7 @@ asyncio 的优势在于**单线程内高并发**，避免线程切换开销和 G
 
 ## 运行约定
 
-所有 demo 使用 `workspace/.venv/` 下的 Python 3.12，详见 [rules/04-python虚拟环境.md](../rules/04-python虚拟环境.md)。
+所有 demo 使用 `workspace/.venv/` 下的 Python 3.12，详见 [rules/04-python虚拟环境.md](04-python虚拟环境.md)。
 
 ```bash
 workspace/.venv/bin/python workspace/python/asyncio/coroutines_basics.py

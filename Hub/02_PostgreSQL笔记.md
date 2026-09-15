@@ -69,12 +69,12 @@ PostgreSQL（简称 PG）是**功能最强大的开源关系型数据库**，社
 
 PG 完整支持 SQL 标准的 4 个隔离级别，**默认是 READ COMMITTED**（与 MySQL 默认 REPEATABLE READ 不同）：
 
-| 隔离级别 | 脏读 | 不可重复读 | 幻读 |
-|---|---|---|---|
-| READ UNCOMMITTED* | ❌（PG 内部视作 READ COMMITTED） | ✅ | ✅ |
-| READ COMMITTED（默认） | ❌ | ✅ | ✅ |
-| REPEATABLE READ | ❌ | ❌ | ✅（PG 中同样会出现） |
-| SERIALIZABLE | ❌ | ❌ | ❌ |
+| 隔离级别               | 脏读                        | 不可重复读 | 幻读           |
+| ------------------ | ------------------------- | ----- | ------------ |
+| READ UNCOMMITTED*  | ❌（PG 内部视作 READ COMMITTED） | ✅     | ✅            |
+| READ COMMITTED（默认） | ❌                         | ✅     | ✅            |
+| REPEATABLE READ    | ❌                         | ❌     | ✅（PG 中同样会出现） |
+| SERIALIZABLE       | ❌                         | ❌     | ❌            |
 
 > *PG 不允许真正的 READ UNCOMMITTED，会被静默提升为 READ COMMITTED。
 

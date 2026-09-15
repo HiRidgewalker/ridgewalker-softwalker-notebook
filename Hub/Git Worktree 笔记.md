@@ -17,18 +17,18 @@ worktree 是**复用 `.git` 存储**到新工作区，省空间、实时同步�
 
 ## 2. 命令速查
 
-| 命令 | 用途 |
-|---|---|
-| `git worktree add <path> [<branch>]` | 新增 worktree，checkout 到指定分支（分支必须已存在） |
-| `git worktree add -b <new-branch> <path> <start-point>` | 在新 worktree 里建并 checkout 新分支 |
-| `git worktree add --detach <path> <commit>` | 创建一个 detached HEAD 的临时 worktree（看老 commit 不污染分支） |
-| `git worktree list` | 列出所有 worktree（包含主仓，标记 `bare` / `detached`） |
-| `git worktree remove <path>` | 移除 worktree（工作区要干净；可用 `--force` 强删） |
-| `git worktree move <old> <new>` | 移动 worktree 路径 |
-| `git worktree lock [--reason <text>] <path>` | 锁定 worktree，防止被 `git worktree remove` / `prune` 误删 |
-| `git worktree unlock <path>` | 解锁 |
-| `git worktree prune` | 清理元数据中指向已不存在路径的 stale 记录 |
-| `git worktree repair <path>` | 修复元数据（手动移动 worktree 目录后用） |
+| 命令                                                      | 用途                                                 |
+| ------------------------------------------------------- | -------------------------------------------------- |
+| `git worktree add <path> [<branch>]`                    | 新增 worktree，checkout 到指定分支（分支必须已存在）                |
+| `git worktree add -b <new-branch> <path> <start-point>` | 在新 worktree 里建并 checkout 新分支                       |
+| `git worktree add --detach <path> <commit>`             | 创建一个 detached HEAD 的临时 worktree（看老 commit 不污染分支）   |
+| `git worktree list`                                     | 列出所有 worktree（包含主仓，标记 `bare` / `detached`）         |
+| `git worktree remove <path>`                            | 移除 worktree（工作区要干净；可用 `--force` 强删）                |
+| `git worktree move <old> <new>`                         | 移动 worktree 路径                                     |
+| `git worktree lock [--reason <text>] <path>`            | 锁定 worktree，防止被 `git worktree remove` / `prune` 误删 |
+| `git worktree unlock <path>`                            | 解锁                                                 |
+| `git worktree prune`                                    | 清理元数据中指向已不存在路径的 stale 记录                           |
+| `git worktree repair <path>`                            | 修复元数据（手动移动 worktree 目录后用）                          |
 
 > **主仓也是一个 worktree**：`git worktree list` 第一行总是仓库根目录本身。
 >

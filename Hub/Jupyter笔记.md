@@ -127,4 +127,4 @@ VS Code 内置的 notebook 支持现在体验已经很好，多数情况下可�
 
 ## 运行约定
 
-所有 demo 使用 `workspace/.venv/` 下的 Python 3.12，详见 [rules/04-python虚拟环境.md](../rules/04-python虚拟环境.md)。
+所有 demo 使用 `workspace/.venv/` 下的 Python 3.12，详见 [rules/04-python虚拟环境.md](04-python虚拟环境.md)。
