@@ -1,6 +1,6 @@
 # Jenkins 基础笔记
 
-> 来自 [[07_Jenkins_CICD实战笔记]] 的前半段基础铺垫。完整流水线范例见实战篇。
+> 来自 [[II_Jenkins_CICD实战笔记]] 的前半段基础铺垫。完整流水线范例见实战篇。
 
 ---
 
@@ -182,7 +182,7 @@ spec:
 
 > 每个 stage 的 `container('maven')` 切换到 Pod 内对应容器跑命令。
 >
-> 配置方法：`Manage Jenkins → Cloud → Kubernetes Cloud → Configure`，也是 JCasC 里写死。详见 [[07_Jenkins_CICD实战笔记]]。
+> 配置方法：`Manage Jenkins → Cloud → Kubernetes Cloud → Configure`，也是 JCasC 里写死。详见 [[II_Jenkins_CICD实战笔记]]。
 
 ### 4.1 自动 Agent Pod 行为
 

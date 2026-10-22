@@ -1,7 +1,7 @@
 # Next.js 笔记 · 常见问题
 
 > 收录 Next.js App Router 开发中最容易踩的坑与对应的速查。
-> 详细概念见 [[02_Next.js 路由笔记]] / [[03_Next.js Server与Client组件笔记]] / [[05_Next.js 渲染模式笔记]]
+> 详细概念见 [[II_Next.js 路由笔记]] / [[III_Next.js Server与Client组件笔记]] / [[V_Next.js 渲染模式笔记]]
 
 ---
 

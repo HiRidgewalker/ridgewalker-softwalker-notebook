@@ -137,6 +137,6 @@ ollama run my-assistant
 ## 九、相关笔记
 
 - 模型库 / 训练库：[[HuggingFaceTransformers笔记]]
-- 高吞吐推理：[[02_推理部署笔记]]
-- LLM 基础：[[01_大语言模型笔记]]
+- 高吞吐推理：[[II_推理部署笔记]]
+- LLM 基础：[[I_大语言模型笔记]]
 - Agent 系统结构：[[Agent总览笔记]]

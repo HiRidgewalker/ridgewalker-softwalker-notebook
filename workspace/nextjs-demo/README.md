@@ -1,6 +1,6 @@
 # workspace/nextjs-demo · Next.js 演示项目集合
 
-> 这里放着与 [[01_Next.js 笔记]] 系列配套的 **4 个独立可运行的 Next.js 14 demo 子项目**。
+> 这里放着与 [[I_Next.js 笔记]] 系列配套的 **4 个独立可运行的 Next.js 14 demo 子项目**。
 > 每个子项目可以单独 `npm install && npm run dev` 跑起来。
 
 ## 子项目列表
@@ -37,9 +37,9 @@ npm run dev
 
 ## 对应笔记
 
-- [[01_Next.js 笔记]] — 总览
-- [[02_Next.js 路由笔记]]
-- [[03_Next.js Server与Client组件笔记]]
-- [[04_Next.js 数据获取与Server Actions笔记]]
-- [[05_Next.js 渲染模式笔记]]
-- [[06_Next.js 常见问题笔记]]
+- [[I_Next.js 笔记]] — 总览
+- [[II_Next.js 路由笔记]]
+- [[III_Next.js Server与Client组件笔记]]
+- [[IV_Next.js 数据获取与Server Actions笔记]]
+- [[V_Next.js 渲染模式笔记]]
+- [[VI_Next.js 常见问题笔记]]

@@ -1,6 +1,6 @@
 # Kubernetes 基础笔记
 
-> 由旧稿重新整理版本。K8s 系列新笔记共 8 篇：本文是**基础与速查**；[[02_Kubernetes部署特性笔记]] 是**部署相关对象**（Deployment/StatefulSet/Ingress/PV/HPA/RBAC 等）；[[03_K3s笔记]] 是**K3s 实战**；[[04_Rancher笔记]] 是**集群管理 UI**；[[05_Harbor笔记]] 是**镜像仓库**；[[06_Jenkins基础笔记]] 是**CI 引擎基础**；[[07_Jenkins_CICD实战笔记]] 是**全链路流水线**；[[08_运维生产方案总览]] 是**架构师视角总览**。旧稿目录已清理，当前以本文为准。
+> 由旧稿重新整理版本。K8s 系列新笔记共 8 篇：本文是**基础与速查**；[[II_Kubernetes部署特性笔记]] 是**部署相关对象**（Deployment/StatefulSet/Ingress/PV/HPA/RBAC 等）；[[III_K3s笔记]] 是**K3s 实战**；[[IV_Rancher笔记]] 是**集群管理 UI**；[[05_Harbor笔记]] 是**镜像仓库**；[[I_Jenkins基础笔记]] 是**CI 引擎基础**；[[II_Jenkins_CICD实战笔记]] 是**全链路流水线**；[[08_运维生产方案总览]] 是**架构师视角总览**。旧稿目录已清理，当前以本文为准。
 
 ---
 
@@ -84,7 +84,7 @@ Kubernetes（K8s）是 Google 开源的**容器编排平台**，用于自动化�
 | **ServiceAccount** | Pod 用的身份 |
 | **RBAC（Role / ClusterRole / Binding）** | 权限控制 |
 
-> 详细对象在 [[02_Kubernetes部署特性笔记]]。
+> 详细对象在 [[II_Kubernetes部署特性笔记]]。
 
 ---
 
@@ -269,7 +269,7 @@ kubectl get pods -l app=nginx
 | **minikube** | 本地学 | 最低 |
 | **kind** | 本地学，K8s in Docker | 低 |
 | **k3d** | 本地/小型，K3s in Docker | 低 |
-| **K3s** | 边缘 / 小型企业生产 | 低（见 [[03_K3s笔记]]） |
+| **K3s** | 边缘 / 小型企业生产 | 低（见 [[III_K3s笔记]]） |
 | **kubeadm** | 自建集群 | 中 |
 | **RKE / RKE2** | Rancher 出品 | 中 |
 | **EKS / AKS / GKE** | 公有云托管 | 中 |

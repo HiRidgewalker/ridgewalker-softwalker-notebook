@@ -1,6 +1,6 @@
 # Git 笔记
 
-> 原 旧稿 + 旧稿 的重新整理版本。结构上分 3 个 Hub 文件：本文是**总览**，[[02_Git命令速查笔记]] 是**全参数速查**（命令多时翻这里），[[03_Git回滚决策笔记]] 是**回滚专题**（restore / reset / revert / stash / clean 的决策树）。旧稿目录已清理，当前以本文为准。
+> 原 旧稿 + 旧稿 的重新整理版本。结构上分 3 个 Hub 文件：本文是**总览**，[[II_Git命令速查笔记]] 是**全参数速查**（命令多时翻这里），[[III_Git回滚决策笔记]] 是**回滚专题**（restore / reset / revert / stash / clean 的决策树）。旧稿目录已清理，当前以本文为准。
 
 ---
 
@@ -32,7 +32,7 @@ add → commit → push
 - `git commit`：暂存区 → 提交历史
 - `git push`：本地历史 → 远程仓库
 
-> **一句话总结 Git 核心**：add → commit → push。**出问题就三招**：restore → reset → revert（详细决策见 [[03_Git回滚决策笔记]]）。
+> **一句话总结 Git 核心**：add → commit → push。**出问题就三招**：restore → reset → revert（详细决策见 [[III_Git回滚决策笔记]]）。
 
 ### 1.4 安装与配置
 
@@ -44,7 +44,7 @@ Git 官网下载：<https://git-scm.com/downloads>
 
 ## 2. 命令速查表
 
-> 完整参数与坑点见 [[02_Git命令速查笔记]]。
+> 完整参数与坑点见 [[II_Git命令速查笔记]]。
 
 ```bash
 # ===== 信息查看 =====
@@ -93,7 +93,7 @@ git reset HEAD~1                        # 回退 commit，清空暂存（默认�
 git reset --hard HEAD~1                 # 回退 commit + 暂存 + 工作区（⚠️ 危险）
 git revert <commit_id>                  # 生成反向提交（已 push 用）
 git clean -fd                           # 删除未跟踪文件
-# 详细决策见 [[03_Git回滚决策笔记]]
+# 详细决策见 [[III_Git回滚决策笔记]]
 
 # ===== Stash =====
 git stash                               # 暂存当前改动
@@ -151,7 +151,7 @@ git clean -fd
 git reset --hard HEAD~1
 ```
 
-> ⚠️ 会丢所有未提交改动，慎用。详细见 [[03_Git回滚决策笔记#2-2-git-reset-移动-head必要时同步状态]]。
+> ⚠️ 会丢所有未提交改动，慎用。详细见 [[III_Git回滚决策笔记#2-2-git-reset-移动-head必要时同步状态]]。
 
 ### 🔵 4. 开安全分支试验
 
@@ -179,7 +179,7 @@ git add <想提交的文件>
 git commit -m "重组后提交"
 ```
 
-详细见 [[03_Git回滚决策笔记#5-soft-vs-mixed-决策详解]]。
+详细见 [[III_Git回滚决策笔记#5-soft-vs-mixed-决策详解]]。
 
 ### ⚪ 7. 完全不想改了，回到干净状态
 
@@ -192,7 +192,7 @@ git clean -fd
 
 ## 4. 命令详解
 
-> 每条命令格式：**行为 → 关键参数 → 坑点 → 官方文档链接**。完整参数见 [[02_Git命令速查笔记]]。
+> 每条命令格式：**行为 → 关键参数 → 坑点 → 官方文档链接**。完整参数见 [[II_Git命令速查笔记]]。
 
 ### 4.1 信息查看
 
@@ -318,7 +318,7 @@ git stash pop                           # 恢复最近一次并删除记录
 git stash apply                         # 恢复但不删除记录
 ```
 
-> 适用场景：正在改代码要切分支修 bug；改到一半想临时保存进度。详见 [[03_Git回滚决策笔记#2-5-git-stash-临时存储改动]]。
+> 适用场景：正在改代码要切分支修 bug；改到一半想临时保存进度。详见 [[III_Git回滚决策笔记#2-5-git-stash-临时存储改动]]。
 
 > 官方文档：<https://git-scm.com/docs/git-stash>
 
@@ -437,7 +437,7 @@ Git 核心：add → commit → push
 
 ### 5.3 何时用哪个回滚命令
 
-> 详细决策表见 [[03_Git回滚决策笔记#3-核心对比表一张记所有回滚命令]]。
+> 详细决策表见 [[III_Git回滚决策笔记#3-核心对比表一张记所有回滚命令]]。
 
 ```text
 撤销文件内容    → git restore
@@ -458,6 +458,6 @@ Git 核心：add → commit → push
 
 ## 相关笔记
 
-- [[02_Git命令速查笔记]] — 命令速查表
-- [[03_Git回滚决策笔记]] — 回滚场景决策
+- [[II_Git命令速查笔记]] — 命令速查表
+- [[III_Git回滚决策笔记]] — 回滚场景决策
 - [[Git Worktree 笔记]] — 多分支并行 / 多 agent 隔离

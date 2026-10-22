@@ -282,7 +282,7 @@
 
 | 工具 | 类型 | 简介 |
 | --- | --- | --- |
-| **Rancher** | 开源/商业 | 见 [[04_Rancher笔记]] |
+| **Rancher** | 开源/商业 | 见 [[IV_Rancher笔记]] |
 | **Cluster API** | 开源/K8s sig | 声明式 K8s 集群生命周期 |
 | **Clusterpedia** | 开源 | 跨集群查询 |
 | **ArgoCD ApplicationSet** | 开源 | ArgoCD 多集群部署 |
@@ -348,3 +348,5 @@ IDP：   Backstage
   2. 自托管 vs SaaS 看团队规模与合规
   3. 工具要**统一生态**（如 Grafana 全家桶 / Datadog 一体化）
   4. **可替换性**：每层解耦，避免绑死某家
+
+标签：#git #docker #kubernetes #jenkins

@@ -8,7 +8,7 @@ source: legacy-note
 # React 笔记
 
 > 由旧稿重新整理版本。聚焦 React 核心（组件、JSX、通信、更新规律）。
-> Hooks 已拆到 [[02_React Hooks笔记]]，状态管理见 [[03_Zustand状态管理笔记]]，路由见 [[04_React Router笔记]]。
+> Hooks 已拆到 [[II_React Hooks笔记]]，状态管理见 [[III_Zustand状态管理笔记]]，路由见 [[IV_React Router笔记]]。
 > 旧稿目录已清理，当前以本文为准。
 
 ## 目录
@@ -91,7 +91,7 @@ function MyComponent() {
 | 异步副作用（useEffect） | ❌ | ✅（DOM 更新后） |
 | ref 暴露（useImperativeHandle） | ❌ | ✅（forwardRef 内） |
 
-完整 Hook 体系见 [[02_React Hooks笔记]]。
+完整 Hook 体系见 [[II_React Hooks笔记]]。
 
 ---
 
@@ -156,7 +156,7 @@ function App() {
 更复杂的场景（深层嵌套）使用：
 
 - `useContext`（React 内置）
-- 状态管理库（项目用 zustand，见 [[03_Zustand状态管理笔记]]）
+- 状态管理库（项目用 zustand，见 [[III_Zustand状态管理笔记]]）
 
 ---
 
@@ -235,7 +235,7 @@ function Parent() {
 
 ## 关联笔记
 
-- Hooks 完整指南：[[02_React Hooks笔记]]
-- 状态管理：[[03_Zustand状态管理笔记]]
-- 路由：[[04_React Router笔记]]
+- Hooks 完整指南：[[II_React Hooks笔记]]
+- 状态管理：[[III_Zustand状态管理笔记]]
+- 路由：[[IV_React Router笔记]]
 - TypeScript 类型：[[TypeScript类型标注与React类型笔记]]

@@ -1,6 +1,6 @@
 # Docker Compose 笔记
 
-> 来自 [[01_Docker笔记]] 的"Compose 编排"章节。旧稿目录已清理，当前以本文为准。
+> 来自 [[I_Docker笔记]] 的"Compose 编排"章节。旧稿目录已清理，当前以本文为准。
 
 Docker Compose 用一个 YAML 文件定义**一组关联容器**（多服务网络 + 卷），一键启动。
 
@@ -120,7 +120,7 @@ POSTGRES_PASSWORD=secret
 
 > Compose 会自动加载项目根目录的 `.env` 文件到环境变量。
 
-### 3.4 数据卷挂载（参见 [[03_Docker数据卷与挂载笔记]]）
+### 3.4 数据卷挂载（参见 [[III_Docker数据卷与挂载笔记]]）
 
 ```yaml
 volumes:
@@ -433,7 +433,7 @@ POSTGRES_PASSWORD=your-strong-password
 
 ### 7.4 `app/Dockerfile`
 
-参见 [[04_Dockerfile笔记]] 中的 Python 应用示例。
+参见 [[IV_Dockerfile笔记]] 中的 Python 应用示例。
 
 ### 7.5 操作
 

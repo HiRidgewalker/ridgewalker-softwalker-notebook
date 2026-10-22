@@ -6,7 +6,7 @@ type: hub
 
 # 推理部署（vLLM + SGLang）生产笔记
 
-> **本文目的**：补全 [[01_大语言模型笔记]] §7 推理部署的"原理 → 生产"缺口。**原理**（自回归循环、KV cache 结构、PagedAttention 思想）已在 `Hub/01_大语言模型笔记` §7.1-§7.7 覆盖；本文专注于：**怎么把模型启动成一个生产可观测、可调优的服务**。
+> **本文目的**：补全 [[I_大语言模型笔记]] §7 推理部署的"原理 → 生产"缺口。**原理**（自回归循环、KV cache 结构、PagedAttention 思想）已在 `Hub/01_大语言模型笔记` §7.1-§7.7 覆盖；本文专注于：**怎么把模型启动成一个生产可观测、可调优的服务**。
 > 由旧稿重构而来；旧稿仅是外部链接清单，当前以本文为准。
 
 ## 阅读地图
@@ -661,4 +661,4 @@ examples/monitoring/
 ## 配套 demo
 
 - [[workspace/llm-demo/02_inference_serving/README]]：OpenAI SDK 打本地/远程 vLLM/SGLang 服务 + Prometheus 指标解析 + benchmark JSON 模拟（无需 GPU）。
-- [[01_大语言模型笔记]] §7：原理（自回归循环 / KV cache / 连续 batching / PagedAttention 思想）。
+- [[I_大语言模型笔记]] §7：原理（自回归循环 / KV cache / 连续 batching / PagedAttention 思想）。

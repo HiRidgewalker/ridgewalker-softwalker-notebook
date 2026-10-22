@@ -34,3 +34,5 @@
 | --- | --- |
 | 链接 | <https://pan.baidu.com/s/19Pg3LWTjoqYhjRl1kWcjpw?pwd=gxem> |
 | 提取码 | `gxem` |
+
+标签：#django #fastapi #redis #celery

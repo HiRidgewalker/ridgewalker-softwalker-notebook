@@ -1,6 +1,6 @@
 # Harbor 笔记
 
-> 来自 [[04_Rancher笔记]] 的延伸：「CI/CD 的镜像要落到哪里」——Harbor 是企业级答案。
+> 来自 [[IV_Rancher笔记]] 的延伸：「CI/CD 的镜像要落到哪里」——Harbor 是企业级答案。
 
 ---
 
@@ -201,7 +201,7 @@ docker buildx build \
 # 直接 docker login + push 即可
 ```
 
-> Jenkins Pipeline 用 Kaniko / buildx 都好，详见 [[07_Jenkins_CICD实战笔记]]。
+> Jenkins Pipeline 用 Kaniko / buildx 都好，详见 [[II_Jenkins_CICD实战笔记]]。
 
 ---
 
@@ -268,7 +268,7 @@ sh """
 """
 ```
 
-> 详见 [[07_Jenkins_CICD实战笔记]]。
+> 详见 [[II_Jenkins_CICD实战笔记]]。
 
 ---
 

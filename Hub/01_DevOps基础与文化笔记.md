@@ -166,7 +166,7 @@ CALMS 是 Damon Edwards 提出的 DevOps 文化框架：
 - **Continuous Deployment**：自动化通过所有测试后**自动发布**到生产
 - 与 CI 是同源概念
 
-### 6.5 GitOps（详见 [[07_Jenkins_CICD实战笔记]] / [[02_小企业DevOps方案笔记]]）
+### 6.5 GitOps（详见 [[II_Jenkins_CICD实战笔记]] / [[02_小企业DevOps方案笔记]]）
 
 - 以 Git 为单一真相源
 - 通过 PR/MR 改动生产环境
@@ -254,3 +254,5 @@ DevOps 时代常**反向**：先决定系统/团队结构，反过来调整组�
 - 目标：DORA 4 指标达到 Elite（部署频率高 / 前置时间短 / 变更失败率低 / MTTR 短）
 - 区分 DevOps / SRE / Platform Engineering：文化 / 可靠性 / 自服务
 - 小企业落地分阶段，从痛点切入（CI + 监控），再演进到 L3~L4（IaC + GitOps）
+
+标签：#docker #kubernetes #jenkins #git

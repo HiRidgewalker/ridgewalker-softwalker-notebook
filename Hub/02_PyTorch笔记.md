@@ -2,7 +2,7 @@
 
 > 原 旧稿（仅 1 行占位符）与 旧稿 中 `__call__` 等 PyTorch 相关内容的重新整理版本，补充完整的 PyTorch 核心 API 与训练范式。旧稿目录已清理，当前以本文为准。
 >
-> 相关笔记：[[01_ML与DL基础概念笔记]] · [[03_深度学习环境安装笔记]]
+> 相关笔记：[[I_ML与DL基础概念笔记]] · [[II_深度学习环境安装笔记]]
 > 配套 demo：[workspace/pytorch-demo/](../workspace/pytorch-demo/)
 
 ## 目录
@@ -36,7 +36,7 @@
 
 ### 1.3 安装与版本
 
-详见 [[03_深度学习环境安装笔记]]。验证安装：
+详见 [[II_深度学习环境安装笔记]]。验证安装：
 
 ```python
 import torch
@@ -616,8 +616,8 @@ Loss 默认：分类用 CrossEntropyLoss
 
 ## 对应笔记
 
-- [[01_ML与DL基础概念笔记]] — ML/DL 基础概念与训练流程
-- [[03_深度学习环境安装笔记]] — CUDA / cuDNN / PyTorch 安装
+- [[I_ML与DL基础概念笔记]] — ML/DL 基础概念与训练流程
+- [[II_深度学习环境安装笔记]] — CUDA / cuDNN / PyTorch 安装
 - [workspace/pytorch-demo/01_tensor_and_autograd/](../workspace/pytorch-demo/01_tensor_and_autograd/README.md) — Tensor / autograd 可运行 demo
 - [workspace/pytorch-demo/02_nn_module_training/](../workspace/pytorch-demo/02_nn_module_training/README.md) — nn.Module 训练可运行 demo
 

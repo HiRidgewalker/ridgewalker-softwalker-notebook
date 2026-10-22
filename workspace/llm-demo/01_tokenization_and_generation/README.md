@@ -1,6 +1,6 @@
 # 01_tokenization_and_generation · Tokenizer + 自回归生成 demo
 
-演示 [[01_大语言模型笔记]] 中**推理相关**章节的核心内容：
+演示 [[I_大语言模型笔记]] 中**推理相关**章节的核心内容：
 
 - **Tokenizer**：BPE 切分粒度可视化、encode/decode、特殊 token、词表大小
 - **Next token prediction**：手动 forward 一次看 logits 分布
@@ -96,7 +96,7 @@ vocab 大小: 50257
 
 ## 对应笔记
 
-- [[01_大语言模型笔记]] — LLM 架构、训练流程、推理部署
+- [[I_大语言模型笔记]] — LLM 架构、训练流程、推理部署
   - §2 Tokenization
   - §7.1 自回归推理循环
   - §7.2 KV cache 原理

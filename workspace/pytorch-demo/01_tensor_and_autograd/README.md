@@ -61,4 +61,4 @@ no_grad 下计算: tensor(7.)  requires_grad=False
 ## 对应笔记
 
 - [[02_PyTorch笔记]] — Tensor 基础、autograd
-- [[03_深度学习环境安装笔记]] — torch 安装（CPU 版够用）
+- [[II_深度学习环境安装笔记]] — torch 安装（CPU 版够用）

@@ -36,5 +36,5 @@ npm run dev
 
 ## 对应笔记
 
-- [[04_Next.js 数据获取与Server Actions笔记]]
-- [[05_Next.js 渲染模式笔记]]
+- [[IV_Next.js 数据获取与Server Actions笔记]]
+- [[V_Next.js 渲染模式笔记]]

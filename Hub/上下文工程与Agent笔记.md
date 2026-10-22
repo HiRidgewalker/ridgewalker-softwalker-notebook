@@ -405,3 +405,5 @@ Agent Engineering（编排多步推理 + 工具调用 + 记忆 + 多 agent 协�
 
 ### 9.5 历史归档
 - 原 `上下文工程异常问题总结.md`（项目根目录）已删除，核心 20 类问题提炼到本笔记 §7
+
+标签：#agent #mcp #prompt-engineering

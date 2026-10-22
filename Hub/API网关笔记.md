@@ -398,7 +398,7 @@ LB ───► │             │ ──► 下游服务
 - 鉴权流程（JWT / OAuth2 / 扫码）：`[[鉴权与登录笔记]]`
 - 权限模型（拿到 token 后能做什么）：`[[权限模型笔记]]`
 - 反向代理 / TLS：`[[nginx]]`（如已收录）
-- 容器编排（Ingress）：`[[01_Kubernetes基础笔记]]`
+- 容器编排（Ingress）：`[[I_Kubernetes基础笔记]]`
 - 服务网格（Sidecar 形态的网关）：`[[01_DevOps基础与文化笔记]]`
 
 ## Demo
@@ -412,3 +412,5 @@ LB ───► │             │ ──► 下游服务
 - [`workspace/gateway/scan_login_demo.py`](../workspace/gateway/scan_login_demo.py)
 - [`workspace/gateway/policy/`](../workspace/gateway/policy/)（Casbin 模型 + 策略）
 - [`workspace/gateway/README.md`](../workspace/gateway/README.md)
+
+标签：#fastapi

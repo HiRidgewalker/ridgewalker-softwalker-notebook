@@ -2,7 +2,7 @@
 
 > 旧稿中所有安装相关内容的系统化整理。补充了 CUDA Toolkit / Runtime / Driver 区别、版本对应关系、常见错误排错清单。旧稿目录已清理，当前以本文为准。
 >
-> 相关笔记：[[01_ML与DL基础概念笔记]] · [[02_PyTorch笔记]]
+> 相关笔记：[[I_ML与DL基础概念笔记]] · [[02_PyTorch笔记]]
 
 ## 目录
 
@@ -540,7 +540,7 @@ CPU-only：pip install torch 即可
 
 ## 对应笔记
 
-- [[01_ML与DL基础概念笔记]] — ML/DL 基础概念
+- [[I_ML与DL基础概念笔记]] — ML/DL 基础概念
 - [[02_PyTorch笔记]] — PyTorch 核心 API
 - [workspace/pytorch-demo/](../workspace/pytorch-demo/) — PyTorch 可运行 demo
 

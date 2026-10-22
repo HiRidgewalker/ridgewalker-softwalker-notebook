@@ -1,6 +1,6 @@
 # 02_inference_serving · OpenAI 客户端 + Prometheus 解析 + benchmark 模拟
 
-演示 [[02_推理部署笔记]] 中**生产调优侧**的可执行部分：
+演示 [[II_推理部署笔记]] 中**生产调优侧**的可执行部分：
 
 - **OpenAI 兼容客户端**：用 openai SDK（≥1.0）打本地/远程 vLLM / SGLang 服务（两者均暴露 `/v1/chat/completions`），流式响应中统计 TTFT / TPOT / 端到端吞吐
 - **Prometheus `/metrics` 解析**：拉服务端指标文本，按 Counter / Gauge / Histogram 三类分组打印关键指标（`vllm:` / `sglang:` 前缀）
@@ -125,7 +125,7 @@ METRICS_URL = http://localhost:8000/metrics
 
 ## 对应笔记
 
-- [[02_推理部署笔记]]
+- [[II_推理部署笔记]]
   - §2 vLLM 启动命令
   - §3 vLLM 显存优化（关键参数表）
   - §4 vLLM 并发与吞吐
@@ -134,4 +134,4 @@ METRICS_URL = http://localhost:8000/metrics
   - §9-§10 SGLang 显存 / 并发
   - §11 SGLang 可观测性
   - §12 vLLM vs SGLang 横向对比与选型
-- [[01_大语言模型笔记]] §7 推理部署（原理基础）
+- [[I_大语言模型笔记]] §7 推理部署（原理基础）

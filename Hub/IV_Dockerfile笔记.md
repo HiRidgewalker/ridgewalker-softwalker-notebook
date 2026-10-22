@@ -1,6 +1,6 @@
 # Dockerfile 笔记
 
-> 来自 [[01_Docker笔记]] 的"Dockerfile 编写"章节。旧稿目录已清理，当前以本文为准。
+> 来自 [[I_Docker笔记]] 的"Dockerfile 编写"章节。旧稿目录已清理，当前以本文为准。
 
 Dockerfile 是 Docker 镜像的"源文件"，通过 `docker build` 生成镜像。**生产环境容器应该全部由 Dockerfile 构建**，而不是 `docker commit`。
 

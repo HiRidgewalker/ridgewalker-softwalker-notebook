@@ -3,7 +3,7 @@
 > 原 旧稿 与 旧稿 的重新整理版本，补充大量基础概念内容。旧稿目录已清理，当前以本文为准。
 >
 > 配套 demo：[workspace/pytorch-demo/](../workspace/pytorch-demo/)
-> 相关笔记：[[02_PyTorch笔记]] · [[03_深度学习环境安装笔记]]
+> 相关笔记：[[02_PyTorch笔记]] · [[II_深度学习环境安装笔记]]
 
 ## 目录
 
@@ -403,7 +403,7 @@ LR 调度：Warmup + Cosine
 ## 对应笔记
 
 - [[02_PyTorch笔记]] — PyTorch 核心 API 实战
-- [[03_深度学习环境安装笔记]] — CUDA / cuDNN / PyTorch 安装
+- [[II_深度学习环境安装笔记]] — CUDA / cuDNN / PyTorch 安装
 - [workspace/pytorch-demo/01_tensor_and_autograd/](../workspace/pytorch-demo/01_tensor_and_autograd/README.md) — Tensor / autograd 可运行 demo
 - [workspace/pytorch-demo/02_nn_module_training/](../workspace/pytorch-demo/02_nn_module_training/README.md) — nn.Module 训练可运行 demo
 

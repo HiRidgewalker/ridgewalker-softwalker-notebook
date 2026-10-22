@@ -72,4 +72,4 @@ model.forward(x)-> OK（跳过 hooks，不推荐）
 ## 对应笔记
 
 - [[02_PyTorch笔记]] — nn.Module、优化器、训练范式
-- [[01_ML与DL基础概念笔记]] — 标准训练流程、Backbone/Neck/Head
+- [[I_ML与DL基础概念笔记]] — 标准训练流程、Backbone/Neck/Head

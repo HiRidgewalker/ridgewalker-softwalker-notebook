@@ -43,6 +43,6 @@ workspace/.venv/bin/python workspace/pytorch-demo/02_nn_module_training/main.py
 
 ## 对应笔记
 
-- [[01_ML与DL基础概念笔记]] — ML/DL 基础概念
+- [[I_ML与DL基础概念笔记]] — ML/DL 基础概念
 - [[02_PyTorch笔记]] — PyTorch 核心 API
-- [[03_深度学习环境安装笔记]] — CUDA / cuDNN / PyTorch 安装
+- [[II_深度学习环境安装笔记]] — CUDA / cuDNN / PyTorch 安装

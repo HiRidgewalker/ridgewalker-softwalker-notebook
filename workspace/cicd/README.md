@@ -1,6 +1,6 @@
 # workspace/cicd
 
-CI/CD 相关模板与示例，对应 [[06_Jenkins基础笔记]]、[[07_Jenkins_CICD实战笔记]]、[[05_Harbor笔记]]。
+CI/CD 相关模板与示例，对应 [[I_Jenkins基础笔记]]、[[II_Jenkins_CICD实战笔记]]、[[05_Harbor笔记]]。
 
 ## 目录
 

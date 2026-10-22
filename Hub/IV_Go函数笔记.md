@@ -3,7 +3,7 @@
 > 本篇覆盖 Go 的函数特性：定义、参数、多返回值、命名返回值、不定参数、闭包、`defer`、`panic`/`recover`。
 > 对应 demo：[03_functions](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/go/demos/03_functions/main.go)
 >
-> 范围说明：方法（method）见 [[05_Go面向对象笔记]]，本篇只讲"独立函数"。
+> 范围说明：方法（method）见 [[V_Go面向对象笔记]]，本篇只讲"独立函数"。
 
 ---
 
@@ -290,7 +290,7 @@ func max(a, b int) int { ... }
 func (p Person) Greet() string { ... }
 ```
 
-方法详见 [[05_Go面向对象笔记]]。
+方法详见 [[V_Go面向对象笔记]]。
 
 ---
 

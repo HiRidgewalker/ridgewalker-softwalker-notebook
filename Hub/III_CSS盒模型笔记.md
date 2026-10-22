@@ -203,7 +203,7 @@ border-radius: 8px 0 8px 0;               /* 顺时针 */
 | --- | --- |
 | 单行文字 | `line-height = height` |
 | 已知高度块 | `position: absolute; top: 50%; margin-top: -height/2;` |
-| 通用（推荐） | Flex，见 [[04_CSS布局笔记]] |
+| 通用（推荐） | Flex，见 [[IV_CSS布局笔记]] |
 
 ### 5.3 margin: auto 的妙用
 

@@ -1,6 +1,6 @@
 # Go 应用 Dockerfile Demo
 
-对应：[[04_Dockerfile笔记]] 的「多阶段构建」小节。
+对应：[[IV_Dockerfile笔记]] 的「多阶段构建」小节。
 
 ## 文件
 

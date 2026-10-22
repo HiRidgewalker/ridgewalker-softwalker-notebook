@@ -1,6 +1,6 @@
 # Docker 笔记（总览）
 
-> 原 旧稿 + 旧稿 + 旧稿 的重新整理版本。结构上分 5 个 Hub 文件：本文是**总览与 CLI 速查**；[[02_Docker镜像与容器笔记]] 是**镜像/容器/网络命令详解**；[[03_Docker数据卷与挂载笔记]] 是**挂载方案专题**（bind/volume/tmpfs 对比与选型）；[[04_Dockerfile笔记]] 是**Dockerfile 编写**；[[05_Docker Compose笔记]] 是**Compose 编排**。旧稿目录已清理，当前以本文为准。
+> 原 旧稿 + 旧稿 + 旧稿 的重新整理版本。结构上分 5 个 Hub 文件：本文是**总览与 CLI 速查**；[[II_Docker镜像与容器笔记]] 是**镜像/容器/网络命令详解**；[[III_Docker数据卷与挂载笔记]] 是**挂载方案专题**（bind/volume/tmpfs 对比与选型）；[[IV_Dockerfile笔记]] 是**Dockerfile 编写**；[[V_Docker Compose笔记]] 是**Compose 编排**。旧稿目录已清理，当前以本文为准。
 
 ---
 
@@ -116,7 +116,7 @@ docker run hello-world  # 跑一个测试容器
 
 ## 4. CLI 速查总表
 
-> 完整参数与坑点见 [[02_Docker镜像与容器笔记]]、[[03_Docker数据卷与挂载笔记]]。
+> 完整参数与坑点见 [[II_Docker镜像与容器笔记]]、[[III_Docker数据卷与挂载笔记]]。
 
 ### 4.1 镜像（image）
 

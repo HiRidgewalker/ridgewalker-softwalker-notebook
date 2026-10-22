@@ -103,3 +103,5 @@ hex
 允许使用的颜色（hex值）：
 背景色调：070707
 其他可选颜色：40a3cc、128c9f、574433、0e63a3
+
+标签：#ai-coding #model-serving

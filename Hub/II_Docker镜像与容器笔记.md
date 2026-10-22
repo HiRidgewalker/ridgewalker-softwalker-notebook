@@ -1,6 +1,6 @@
 # Docker 镜像、容器与网络
 
-> 来自 [[01_Docker笔记]] 的命令详解章节。旧稿目录已清理，当前以本文为准。
+> 来自 [[I_Docker笔记]] 的命令详解章节。旧稿目录已清理，当前以本文为准。
 
 ---
 
@@ -190,7 +190,7 @@ docker commit web myweb:v1     # 把容器当前状态保存为新镜像
 | --- | --- | --- |
 | 容器启动后立刻退出 | 前台进程（CMD）执行完即退出 | 加 `-d` 或确保 CMD 是前台服务 |
 | `docker exec` 报 `executable file not found` | 镜像里没有 `bash`（如 alpine） | 改用 `sh` |
-| 修改容器内文件，重启后丢失 | 容器可写层不持久化 | 用挂载卷（见 [[03_Docker数据卷与挂载笔记]]） |
+| 修改容器内文件，重启后丢失 | 容器可写层不持久化 | 用挂载卷（见 [[III_Docker数据卷与挂载笔记]]） |
 | 容器与宿主机时区不一致 | 默认 UTC | `-e TZ=Asia/Shanghai` 或挂载 `/etc/localtime` |
 | `cannot connect to the Docker daemon` | daemon 没启动或当前用户无权限 | `sudo systemctl start docker` + 加 docker 组 |
 
@@ -289,7 +289,7 @@ docker run -d --name api \
 # api 容器内用主机名 "db" 直接连 postgres
 ```
 
-> 多服务编排更推荐用 Docker Compose（见 [[05_Docker Compose笔记]]），但手写网络是这个的底子。
+> 多服务编排更推荐用 Docker Compose（见 [[V_Docker Compose笔记]]），但手写网络是这个的底子。
 
 ---
 

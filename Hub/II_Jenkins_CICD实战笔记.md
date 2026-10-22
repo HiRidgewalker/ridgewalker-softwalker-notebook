@@ -1,6 +1,6 @@
 # Jenkins CI/CD 实战笔记
 
-> 来自 [[06_Jenkins基础笔记]] 的延伸：完整企业级流水线。Jenkinsfile 模板见 `workspace/cicd/01_jenkinsfile/`，K8s 部署 manifest 模板见 `workspace/cicd/02_k8s_manifests/`。
+> 来自 [[I_Jenkins基础笔记]] 的延伸：完整企业级流水线。Jenkinsfile 模板见 `workspace/cicd/01_jenkinsfile/`，K8s 部署 manifest 模板见 `workspace/cicd/02_k8s_manifests/`。
 
 ---
 
