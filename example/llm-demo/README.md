@@ -15,26 +15,26 @@
 
 ```bash
 # 装依赖（统一 venv）
-uv pip install --python workspace/.venv/bin/python -r workspace/llm-demo/01_tokenization_and_generation/requirements.txt
-uv pip install --python workspace/.venv/bin/python -r workspace/llm-demo/02_inference_serving/requirements.txt
+uv pip install --python .venv/bin/python -r example/llm-demo/01_tokenization_and_generation/requirements.txt
+uv pip install --python .venv/bin/python -r example/llm-demo/02_inference_serving/requirements.txt
 
 # 跑 demo（首次会下载 GPT-2）
-workspace/.venv/bin/python workspace/llm-demo/01_tokenization_and_generation/main.py
+.venv/bin/python example/llm-demo/01_tokenization_and_generation/main.py
 
 # 跑 demo（无需服务，mock 模式即可；或加环境变量切到本地 vLLM/SGLang）
-workspace/.venv/bin/python workspace/llm-demo/02_inference_serving/main.py
+.venv/bin/python example/llm-demo/02_inference_serving/main.py
 
 # 跑评测框架 demo（无需任何依赖，标准库即可）
-python3 workspace/llm-demo/03_eval_frameworks/main.py
+python3 example/llm-demo/03_eval_frameworks/main.py
 # 或指定单个 demo：
-python3 workspace/llm-demo/03_eval_frameworks/main.py --demo custom_dataset
+python3 example/llm-demo/03_eval_frameworks/main.py --demo custom_dataset
 
 # 跑 RAG 评测 demo（mock 模式，无需任何依赖）
-python3 workspace/llm-demo/04_rag_evaluation/main.py
+python3 example/llm-demo/04_rag_evaluation/main.py
 # 或指定单个 demo：
-python3 workspace/llm-demo/04_rag_evaluation/main.py --demo pipeline
+python3 example/llm-demo/04_rag_evaluation/main.py --demo pipeline
 # 切到 live 模式（需要装 ragas + datasets + openai + OPENAI_API_KEY）：
-# uv pip install --python workspace/.venv/bin/python ragas datasets openai
+# uv pip install --python .venv/bin/python ragas datasets openai
 # export EVAL_MODE=live OPENAI_API_KEY=sk-xxx
 ```
 

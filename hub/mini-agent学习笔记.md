@@ -120,7 +120,7 @@ class OpenAIClient(LLMClientBase):
 3. 不实现 → 子类无法创建对象，启动即报错
 4. 异步方法也可以用 `@abstractmethod`
 
-> 配套 demo：[workspace/agent/abstract-base-class/abstraction_demo.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/agent/abstract-base-class/abstraction_demo.py)
+> 配套 demo：[example/agent/abstract-base-class/abstraction_demo.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/agent/abstract-base-class/abstraction_demo.py)
 
 ---
 

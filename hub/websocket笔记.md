@@ -196,7 +196,7 @@ Sec-WebSocket-Accept: s3pPLMBiTxaQ9kYGzzhZRbK+xOo=
 ### 4.2 完整实现（FastAPI 版）
 
 ```python
-# workspace/ws/server.py 核心片段
+# example/ws/server.py 核心片段
 from typing import Optional
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 
@@ -240,7 +240,7 @@ class ConnectionManager:
 ```
 
 > 完整可运行版本（含 REST 触发推送 endpoint、心跳、客户端断线清理）见
-> [`workspace/ws/server.py`](../workspace/ws/server.py)。
+> [`example/ws/server.py`](../example/ws/server.py)。
 
 ---
 
@@ -326,7 +326,7 @@ async def online_list():
 ### 6.1 浏览器 JavaScript（最常用）
 
 ```javascript
-// workspace/ws/client_browser.html 核心逻辑
+// example/ws/client_browser.html 核心逻辑
 const clientId = "browser_" + Math.random().toString(36).slice(2, 8);
 const ws = new WebSocket(`ws://localhost:8000/ws/${clientId}`);
 
@@ -348,7 +348,7 @@ function send() {
 ### 6.2 Python 客户端
 
 ```python
-# workspace/ws/client_python.py
+# example/ws/client_python.py
 import asyncio
 import websockets
 
@@ -368,7 +368,7 @@ asyncio.run(main())
 ### 6.3 Node.js 客户端
 
 ```javascript
-// workspace/ws/client_js_console.js
+// example/ws/client_js_console.js
 const WebSocket = require("ws");
 const clientId = "node_bob";
 const ws = new WebSocket(`ws://localhost:8000/ws/${clientId}`);
@@ -511,8 +511,8 @@ location /ws/ {
 
 完整可运行代码（服务端 + 3 种客户端 + REST 触发推送）：
 
-- [`workspace/ws/server.py`](../workspace/ws/server.py)
-- [`workspace/ws/client_browser.html`](../workspace/ws/client_browser.html)
-- [`workspace/ws/client_python.py`](../workspace/ws/client_python.py)
-- [`workspace/ws/client_js_console.js`](../workspace/ws/client_js_console.js)
-- [`workspace/ws/README.md`](../workspace/ws/README.md)
+- [`example/ws/server.py`](../example/ws/server.py)
+- [`example/ws/client_browser.html`](../example/ws/client_browser.html)
+- [`example/ws/client_python.py`](../example/ws/client_python.py)
+- [`example/ws/client_js_console.js`](../example/ws/client_js_console.js)
+- [`example/ws/README.md`](../example/ws/README.md)

@@ -17,7 +17,7 @@ name_collision/
 ## 复现方法
 
 ```bash
-cd workspace/python/modules/name_collision/project/module1/module1
+cd example/python/modules/name_collision/project/module1/module1
 python module2.py
 ```
 

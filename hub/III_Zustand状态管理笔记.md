@@ -7,7 +7,7 @@ status: created
 # Zustand 状态管理笔记
 
 > 替代 Redux 的轻量状态管理方案。本笔记为新建基础版（基于通用知识）。
-> 完整可运行 demo 见 [workspace/react/zustand-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/react/zustand-demo)。
+> 完整可运行 demo 见 [example/react/zustand-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/react/zustand-demo)。
 
 ## 目录
 

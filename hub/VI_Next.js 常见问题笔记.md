@@ -291,7 +291,7 @@ module.exports = {
 
 ## 十二、对应 demo
 
-- [01_routing_basic](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/nextjs-demo/01_routing_basic) — 文件式路由、layout、动态段
-- [02_server_client_components](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/nextjs-demo/02_server_client_components) — Server/Client 边界、误用对照
-- [03_data_fetching](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/nextjs-demo/03_data_fetching) — Server fetch、缓存、revalidate
-- [04_server_actions](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/nextjs-demo/04_server_actions) — Server Action + useActionState
+- [01_routing_basic](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/01_routing_basic) — 文件式路由、layout、动态段
+- [02_server_client_components](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/02_server_client_components) — Server/Client 边界、误用对照
+- [03_data_fetching](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/03_data_fetching) — Server fetch、缓存、revalidate
+- [04_server_actions](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/04_server_actions) — Server Action + useActionState

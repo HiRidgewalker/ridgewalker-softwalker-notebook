@@ -6,7 +6,7 @@
 - 返回模拟订单数据
 - 根据 X-User-Id 做简单的归属检查（演示 ABAC：只能看自己的订单）
 
-启动：.venv/bin/python workspace/gateway/service_orders.py
+启动：.venv/bin/python example/gateway/service_orders.py
 """
 from __future__ import annotations
 

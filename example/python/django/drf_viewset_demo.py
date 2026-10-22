@@ -2,7 +2,7 @@
 DRF ViewSet + Router + 权限示例：model + serializer + viewset + url 完整链路
 
 跑：
-    uv run python workspace/python/django/drf_viewset_demo.py
+    uv run python example/python/django/drf_viewset_demo.py
 """
 import django
 from django.conf import settings

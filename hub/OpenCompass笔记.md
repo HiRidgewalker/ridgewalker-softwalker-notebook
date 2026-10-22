@@ -555,8 +555,8 @@ python tools/review.py outputs/exp1 outputs/exp2 outputs/exp3
 ```dockerfile
 FROM nvcr.io/nvidia/pytorch:23.10-py3
 RUN pip install opencompass
-COPY configs /workspace/configs
-COPY data /workspace/data
+COPY configs /example/configs
+COPY data /example/data
 WORKDIR /workspace
 ENTRYPOINT ["python", "run.py", "configs/eval.py", "-w", "/outputs"]
 ```
@@ -618,4 +618,4 @@ ENTRYPOINT ["python", "run.py", "configs/eval.py", "-w", "/outputs"]
 
 ### 9.5 配套 demo
 
-- [[workspace/llm-demo/03_eval_frameworks]] — OpenCompass + EvalScope 双框架 mock 演示
+- [[example/llm-demo/03_eval_frameworks]] — OpenCompass + EvalScope 双框架 mock 演示

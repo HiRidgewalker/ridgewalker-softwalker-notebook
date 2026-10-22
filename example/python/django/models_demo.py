@@ -2,7 +2,7 @@
 Django 模型演示：字段类型 + 关系字段 + Meta 选项
 
 跑：
-    uv run python workspace/python/django/models_demo.py
+    uv run python example/python/django/models_demo.py
 """
 import django
 from django.conf import settings

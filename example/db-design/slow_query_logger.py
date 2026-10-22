@@ -10,7 +10,7 @@ FastAPI + SQLAlchemy 慢查询埋点示例。
 对应笔记：[[01_数据库设计相关笔记]]
 
 注意：本文件是「代码片段示例」，不需要真连数据库；如要实跑：
-    uv pip install --python workspace/.venv/bin/python sqlalchemy
+    uv pip install --python example/.venv/bin/python sqlalchemy
 """
 
 from __future__ import annotations

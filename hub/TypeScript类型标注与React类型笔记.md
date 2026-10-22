@@ -3,7 +3,7 @@
 > 适用场景：写 React + TS 项目时，判断**该让 TS 推断 vs 该手写类型**；
 > 以及 React 项目里高频出现的类型写法（props、事件、Hooks、组件本身）。
 >
-> 配套可运行示例：[workspace/typescript-types/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/typescript-types)
+> 配套可运行示例：[example/typescript-types/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/typescript-types)
 > 由旧稿整理而来；旧稿目录已清理，当前以本文为准。
 
 ---
@@ -415,7 +415,7 @@ const user = JSON.parse(json) as unknown as User   // 至少显式表达「我�
 
 ## 8. 配套 demo
 
-- [workspace/typescript-types/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/typescript-types)
+- [example/typescript-types/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/typescript-types)
   - 推断 vs 标注对比
   - React 常用类型全集示例
   - Hooks（useState / useReducer / useContext / useRef）类型实战

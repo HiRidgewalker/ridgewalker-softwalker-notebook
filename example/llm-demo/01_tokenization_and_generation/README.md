@@ -22,10 +22,10 @@
 
 ```bash
 # 装依赖
-uv pip install --python workspace/.venv/bin/python -r workspace/llm-demo/01_tokenization_and_generation/requirements.txt
+uv pip install --python .venv/bin/python -r example/llm-demo/01_tokenization_and_generation/requirements.txt
 
 # 跑（首次会从 HuggingFace 下载 GPT-2 模型 + tokenizer，约 500MB）
-workspace/.venv/bin/python workspace/llm-demo/01_tokenization_and_generation/main.py
+.venv/bin/python example/llm-demo/01_tokenization_and_generation/main.py
 ```
 
 ## 关键观察点

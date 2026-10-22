@@ -1,11 +1,11 @@
-# workspace/docker
+# example/docker
 
 Docker 相关的可运行 demo 集合，对应笔记见 `Hub/04_Dockerfile笔记`、`Hub/05_Docker Compose笔记`、`Hub/03_Docker数据卷与挂载笔记`。
 
 ## 目录结构
 
 ```
-workspace/docker/
+example/docker/
 ├── README.md                       ← 本文件
 ├── 01_dockerfile_demo/             ← Dockerfile 编写（含多阶段）
 │   ├── go_app/

@@ -17,7 +17,7 @@ sources:
 
 > 工业生产环境下的 RabbitMQ 使用：核心角色 / 交换机 / 队列类型选型 / 可靠性机制 / 死信 / HA / Docker 部署 / 监控与常见生产坑。
 > 本笔记旧稿 仅含教程大纲（Hello World / 工作队列 / 发布订阅 / 路由 / 主题 / RPC 六章空壳），已完整重构；旧稿目录已清理，当前以本文为准。
-> 单库详情参考官方文档。Demo 代码示例在 `workspace/mq/`（docker-compose + Publisher Confirms + Consumer Acks + DLX 重试）。
+> 单库详情参考官方文档。Demo 代码示例在 `example/mq/`（docker-compose + Publisher Confirms + Consumer Acks + DLX 重试）。
 
 ## 目录
 
@@ -448,7 +448,7 @@ services:
       RABBITMQ_DEFAULT_PASS: admin
 ```
 
-**3 节点集群**：需要共享 erlang cookie + 节点发现，详见 `workspace/mq/docker-compose.yml`。
+**3 节点集群**：需要共享 erlang cookie + 节点发现，详见 `example/mq/docker-compose.yml`。
 
 ### 9.3 启用 Prometheus 监控
 
@@ -510,4 +510,4 @@ rabbitmq-plugins enable rabbitmq_prometheus
 
 - Kafka 详情：[[02_Kafka笔记]]
 - 消息队列对比：[[03_消息队列对比与选型笔记]]
-- Demo：`workspace/mq/`（docker-compose + Publisher Confirms + Consumer Acks + DLX 重试）
+- Demo：`example/mq/`（docker-compose + Publisher Confirms + Consumer Acks + DLX 重试）

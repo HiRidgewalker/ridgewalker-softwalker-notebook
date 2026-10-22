@@ -146,7 +146,7 @@ def main() -> None:
         client.get_collections()  # 探活
     except Exception as e:
         print(f"[error] 连不上 Qdrant：{e}")
-        print("提示：在 workspace/vector-db/ 目录下运行 docker compose up -d qdrant")
+        print("提示：在 example/vector-db/ 目录下运行 docker compose up -d qdrant")
         return
 
     build_collection(client)

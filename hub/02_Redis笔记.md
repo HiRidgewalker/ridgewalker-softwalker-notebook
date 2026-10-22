@@ -305,4 +305,4 @@ with r.pipeline(transaction=False) as p:
 - MongoDB：[[01_MongoDB笔记]]
 - 关系型对比与选型：[[04_关系型数据库对比与选型笔记]]
 - 消息队列：[[01_RabbitMQ笔记]]
-- Demo：`workspace/db/redis_demo.py`
+- Demo：`example/db/redis_demo.py`

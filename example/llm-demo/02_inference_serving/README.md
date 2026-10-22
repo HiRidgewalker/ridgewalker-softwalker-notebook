@@ -22,10 +22,10 @@
 
 ```bash
 # 装依赖
-uv pip install --python workspace/.venv/bin/python -r workspace/llm-demo/02_inference_serving/requirements.txt
+uv pip install --python .venv/bin/python -r example/llm-demo/02_inference_serving/requirements.txt
 
 # 跑（mock 模式，无需启动 vLLM / SGLang）
-workspace/.venv/bin/python workspace/llm-demo/02_inference_serving/main.py
+.venv/bin/python example/llm-demo/02_inference_serving/main.py
 ```
 
 ### 切到 live 模式
@@ -37,7 +37,7 @@ vllm serve meta-llama/Meta-Llama-3-8B-Instruct --port 8000
 # 用环境变量指定，重跑 demo 即走 live 路径
 INFERENCE_BASE_URL=http://localhost:8000/v1 \
 INFERENCE_MODEL=meta-llama/Meta-Llama-3-8B-Instruct \
-workspace/.venv/bin/python workspace/llm-demo/02_inference_serving/main.py
+.venv/bin/python example/llm-demo/02_inference_serving/main.py
 ```
 
 ```bash
@@ -47,7 +47,7 @@ python3 -m sglang.launch_server --model-path meta-llama/Llama-3.1-8B-Instruct --
 # 用环境变量切到 SGLang
 INFERENCE_BASE_URL=http://localhost:30000/v1 \
 INFERENCE_MODEL=meta-llama/Llama-3.1-8B-Instruct \
-workspace/.venv/bin/python workspace/llm-demo/02_inference_serving/main.py
+.venv/bin/python example/llm-demo/02_inference_serving/main.py
 ```
 
 环境变量：

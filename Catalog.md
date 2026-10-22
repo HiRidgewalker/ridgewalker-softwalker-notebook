@@ -51,7 +51,7 @@
 - [[I_JavaScript笔记]] — 基础与 ES6+（语法 / 数据类型 / 运算符 / 数组方法 / 解构 / 模板字符串 / Set Map）
 - [[II_JavaScript进阶笔记]] — 作用域 / 闭包 / this / 构造函数 / 原型链 / class
 - [[III_JavaScript异步与模块笔记]] — 回调函数 / Promise / async-await / 事件循环 + ES Module
-- 配套 demo：[workspace/js-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/js-demo)（01_basics / 02_es6 / 03_scope_closure / 04_oop / 05_async / 06_module）
+- 配套 demo：[example/js-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/js-demo)（01_basics / 02_es6 / 03_scope_closure / 04_oop / 05_async / 06_module）
 
 ## TypeScript
 
@@ -65,7 +65,7 @@
 - [[IV_CSS布局笔记]]
 - [[V_CSS单位与值笔记]]
 - [[VI_CSS常见问题笔记]]
-- 配套 demo：[workspace/css/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/css)（01_box_model / 02_flex / 03_units）
+- 配套 demo：[example/css/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/css)（01_box_model / 02_flex / 03_units）
 
 ## React
 
@@ -82,7 +82,7 @@
 - [[IV_Next.js 数据获取与Server Actions笔记]]
 - [[V_Next.js 渲染模式笔记]]
 - [[VI_Next.js 常见问题笔记]]
-- 配套 demo：[workspace/nextjs-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/nextjs-demo)（01_routing_basic / 02_server_client_components / 03_data_fetching / 04_server_actions）
+- 配套 demo：[example/nextjs-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo)（01_routing_basic / 02_server_client_components / 03_data_fetching / 04_server_actions）
 
 ---
 
@@ -116,44 +116,44 @@
 ## MySQL
 
 - [[01_MySQL笔记]]
-- 配套 demo：[workspace/db/sql-tools-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/db/sql-tools-demo)（pymysql 驱动）
+- 配套 demo：[example/db/sql-tools-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/db/sql-tools-demo)（pymysql 驱动）
 
 ## PostgreSQL
 
 - [[02_PostgreSQL笔记]]
-- 配套 demo：[workspace/db/sql-tools-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/db/sql-tools-demo)（psycopg 驱动）
+- 配套 demo：[example/db/sql-tools-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/db/sql-tools-demo)（psycopg 驱动）
 
 ## SQLite
 
 - [[03_SQLite笔记]]
-- 配套 demo：[workspace/db/sql-tools-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/db/sql-tools-demo)（sqlite3 驱动）
+- 配套 demo：[example/db/sql-tools-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/db/sql-tools-demo)（sqlite3 驱动）
 
 ## MongoDB
 
 - [[01_MongoDB笔记]]
-- 配套 demo：[workspace/db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/db)（mongodb_demo）
+- 配套 demo：[example/db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/db)（mongodb_demo）
 
 ## Redis
 
 - [[02_Redis笔记]]
-- 配套 demo：[workspace/db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/db)（redis_demo）
+- 配套 demo：[example/db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/db)（redis_demo）
 
 ---
 
 ## Milvus
 
 - [[01_Milvus笔记]]
-- 配套 demo：[workspace/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/vector-db)（milvus_demo）
+- 配套 demo：[example/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/vector-db)（milvus_demo）
 
 ## Qdrant
 
 - [[02_Qdrant笔记]]
-- 配套 demo：[workspace/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/vector-db)（qdrant_demo）
+- 配套 demo：[example/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/vector-db)（qdrant_demo）
 
 ## zvec
 
 - [[03_zvec笔记]]
-- 配套 demo：[workspace/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/vector-db)（zvec_demo）
+- 配套 demo：[example/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/vector-db)（zvec_demo）
 
 ---
 
@@ -164,7 +164,7 @@
 ## Kafka
 
 - [[02_Kafka笔记]]
-- 配套 demo：[workspace/mq/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/mq)（dev/prod 双 profile docker-compose + RabbitMQ + Kafka 生产配置示例）
+- 配套 demo：[example/mq/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/mq)（dev/prod 双 profile docker-compose + RabbitMQ + Kafka 生产配置示例）
 
 ---
 
@@ -175,7 +175,7 @@
 - [[III_Docker数据卷与挂载笔记]] — bind / volume / tmpfs 挂载专题
 - [[IV_Dockerfile笔记]] — Dockerfile 编写
 - [[V_Docker Compose笔记]] — Compose 多服务编排
-- 配套 demo：[workspace/docker/](workspace/docker/)（01_dockerfile_demo / 02_compose_demo / 03_volume_demo）
+- 配套 demo：[example/docker/](example/docker/)（01_dockerfile_demo / 02_compose_demo / 03_volume_demo）
 
 ## Kubernetes
 
@@ -183,7 +183,7 @@
 - [[II_Kubernetes部署特性笔记]] — Deployment/StatefulSet/Ingress/PV/HPA/RBAC/NetworkPolicy
 - [[III_K3s笔记]] — K3s 单节点/HA 集群、内置组件
 - [[IV_Rancher笔记]] — Rancher 部署与多集群管理
-- 配套模板：[workspace/cicd/](workspace/cicd/)（K8s manifest）
+- 配套模板：[example/cicd/](example/cicd/)（K8s manifest）
 
 ## Harbor
 
@@ -193,7 +193,7 @@
 
 - [[I_Jenkins基础笔记]] — Jenkins 声明式 Pipeline
 - [[II_Jenkins_CICD实战笔记]] — Git+Jenkins+Harbor+K3s 全链路
-- 配套模板：[workspace/cicd/](workspace/cicd/)（Jenkinsfile + Harbor compose + Jenkins Helm values）
+- 配套模板：[example/cicd/](example/cicd/)（Jenkinsfile + Harbor compose + Jenkins Helm values）
 
 ## Linux
 
@@ -221,19 +221,19 @@
 ## PyTorch
 
 - [[02_PyTorch笔记]]
-- 配套 demo：[workspace/pytorch-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/pytorch-demo)（01_tensor_and_autograd / 02_nn_module_training）
+- 配套 demo：[example/pytorch-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/pytorch-demo)（01_tensor_and_autograd / 02_nn_module_training）
 
 ## Large Language Models
 
 - [[I_大语言模型笔记]]
 - [[II_推理部署笔记]] — vLLM + SGLang 显存/并发/Prometheus 指标/Grafana/日志全套生产调优
-- 配套 demo：[workspace/llm-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/llm-demo)（01_tokenization_and_generation · GPT-2 演示 tokenizer / KV cache / 采样策略）与 [02_inference_serving](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/llm-demo/02_inference_serving)（OpenAI 客户端 + Prometheus 解析，无需 GPU）
+- 配套 demo：[example/llm-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/llm-demo)（01_tokenization_and_generation · GPT-2 演示 tokenizer / KV cache / 采样策略）与 [02_inference_serving](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/llm-demo/02_inference_serving)（OpenAI 客户端 + Prometheus 解析，无需 GPU）
 
 ## LLM Evaluation
 
 - [[OpenCompass笔记]] — 上海 AI Lab / 书生·浦语，学术榜单权威，60+ 内置数据集
 - [[EvalScope笔记]] — 阿里魔搭，一站式：评测 + 压测 + Arena + 可视化 + 训练集成，191 个内置 benchmark
-- 配套 demo：[workspace/llm-demo/03_eval_frameworks](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/llm-demo/03_eval_frameworks)（双框架 mock，无需 GPU / 模型服务）
+- 配套 demo：[example/llm-demo/03_eval_frameworks](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/llm-demo/03_eval_frameworks)（双框架 mock，无需 GPU / 模型服务）
 
 ## Prompt Engineering
 
@@ -243,14 +243,14 @@
 
 - [[RAG工业方案笔记]] — 2026 最新 RAG 框架、文档解析、Embedding、向量库、评测体系
 - [[Rerank笔记]] — Cross-encoder / LLM-based 重排序 + BGE v2/v3 + Cohere / Jina / Qwen3-Reranker
-- 配套 demo：[workspace/llm-demo/04_rag_evaluation](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/llm-demo/04_rag_evaluation)（mock RAG + RAGAS 4 大指标，无需 GPU / 模型服务）
+- 配套 demo：[example/llm-demo/04_rag_evaluation](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/llm-demo/04_rag_evaluation)（mock RAG + RAGAS 4 大指标，无需 GPU / 模型服务）
 
 ## Agent
 
 - [[Agent总览笔记]]
 - [[Agent开源项目笔记]]
 - [[mini-agent学习笔记]]
-- 配套 demo：[workspace/agent/abstract-base-class/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/agent/abstract-base-class)（mini-agent 源码中的 ABC 抽象基类演示）
+- 配套 demo：[example/agent/abstract-base-class/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/agent/abstract-base-class)（mini-agent 源码中的 ABC 抽象基类演示）
 
 ## MCP
 
@@ -271,7 +271,7 @@
 
 - [[HuggingFaceTransformers笔记]]
 - [[Ollama笔记]]
-- 配套 demo：[workspace/ai-assistant/huggingface-pipeline-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/ai-assistant/huggingface-pipeline-demo)（HF Transformers pipeline 最小推理示例）
+- 配套 demo：[example/ai-assistant/huggingface-pipeline-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/ai-assistant/huggingface-pipeline-demo)（HF Transformers pipeline 最小推理示例）
 
 ---
 
@@ -289,7 +289,7 @@
 
 - [[websocket笔记]]
 - [[TCP_IP四层网络模型笔记]]
-- 配套 demo：[workspace/ws/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/ws)（FastAPI WebSocket 完整示例：服务端 + 浏览器 / Python / Node.js 三种客户端 + REST 触发推送）
+- 配套 demo：[example/ws/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/ws)（FastAPI WebSocket 完整示例：服务端 + 浏览器 / Python / Node.js 三种客户端 + REST 触发推送）
 
 ---
 
@@ -298,7 +298,7 @@
 跨技术主题，条目后括号内为关联主题。
 
 - [[01_数据库设计相关笔记]]（MySQL / PostgreSQL / Redis）
-- 配套 demo：[workspace/db-design/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/db-design)（慢查询埋点 + Alembic 加索引 + Redis key 模板）
+- 配套 demo：[example/db-design/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/db-design)（慢查询埋点 + Alembic 加索引 + Redis key 模板）
 - [[04_关系型数据库对比与选型笔记]]（MySQL / PostgreSQL / SQLite / MongoDB）
 - [[03_消息队列对比与选型笔记]]（RabbitMQ / Kafka）
 - [[评测框架对比笔记]]（OpenCompass / EvalScope）
@@ -307,11 +307,11 @@
 - [[01_DevOps基础与文化笔记]]（Docker / Kubernetes / Jenkins / Git）— DevOps 概念、CALMS、与 SRE/平台工程区别
 - [[02_小企业DevOps方案笔记]]（Docker / Kubernetes / Jenkins）— 50~500 人企业主流开源栈与商业栈
 - [[03_DevOps工具链对比笔记]]（Git / Docker / Kubernetes / Jenkins）— Git/CI/CD/IaC/可观测/安全/制品 选型参考
-- 配套 demo：[workspace/devops/](workspace/devops/)（branch strategy / GitOps / Terraform）
+- 配套 demo：[example/devops/](example/devops/)（branch strategy / GitOps / Terraform）
 - [[鉴权与登录笔记]]（FastAPI / Redis）
 - [[权限模型笔记]]（FastAPI / 鉴权）
 - [[API网关笔记]]（FastAPI / Nginx）
-- 配套 demo：[workspace/gateway/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/gateway)（FastAPI 网关 + JWT 鉴权 + Casbin 权限 + 扫码登录）
+- 配套 demo：[example/gateway/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/gateway)（FastAPI 网关 + JWT 鉴权 + Casbin 权限 + 扫码登录）
 - [[上下文工程与Agent笔记]]（Agent / MCP / Prompt Engineering）
 - [[前端工程笔记]]（JavaScript / CSS / Next.js）
 - [[调研、试用各类AI产品笔记记录]]（AI Coding Assistants / Model & Inference Platform）

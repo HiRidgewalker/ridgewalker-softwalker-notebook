@@ -1,6 +1,6 @@
 """HuggingFace Transformers pipeline 最小推理演示
 
-运行：workspace/.venv/bin/python pipeline_demo.py
+运行：example/.venv/bin/python pipeline_demo.py
 
 涵盖的知识点：
 1. pipeline 一行推理（情感分析、文本生成）

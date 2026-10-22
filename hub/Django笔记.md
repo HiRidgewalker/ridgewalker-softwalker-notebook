@@ -1,8 +1,8 @@
 # Django 笔记
 
-> 原 旧稿 + 旧稿 的合并重新整理版本，精炼为 4 章节：速查总览 / 常用模式速查表 / 实战代码片段（指向 workspace demo）/ 常见坑 + 官方文档链接。
+> 原 旧稿 + 旧稿 的合并重新整理版本，精炼为 4 章节：速查总览 / 常用模式速查表 / 实战代码片段（指向 example demo）/ 常见坑 + 官方文档链接。
 > 旧稿目录已清理，当前以本文为准。
-> 演示代码统一放在 `workspace/python/django/`，本笔记通过 git 远程链接引用。完整可 runserver 的小型项目在 `workspace/python/django/full_app/`。
+> 演示代码统一放在 `example/python/django/`，本笔记通过 git 远程链接引用。完整可 runserver 的小型项目在 `example/python/django/full_app/`。
 
 ## 1. 速查总览
 
@@ -33,12 +33,12 @@ python manage.py startapp myapp
 
 ### 1.3 一个最小 Django + DRF 项目
 
-完整可运行版本在 `workspace/python/django/full_app/`，涵盖模型 + 序列化器 + ViewSet + Router + 过滤 + Swagger UI + 单元测试。
+完整可运行版本在 `example/python/django/full_app/`，涵盖模型 + 序列化器 + ViewSet + Router + 过滤 + Swagger UI + 单元测试。
 
 跑起来：
 
 ```bash
-cd workspace/python/django/full_app
+cd example/python/django/full_app
 uv run python manage.py migrate
 uv run python manage.py test articles     # 跑测试
 uv run python manage.py runserver         # 启服务
@@ -295,20 +295,20 @@ class ArticleFilter(df_filters.FilterSet):
 
 ## 3. 实战代码片段
 
-所有 demo 在 `workspace/python/django/`，可独立运行；完整可 runserver 的小型项目在 `workspace/python/django/full_app/`。
+所有 demo 在 `example/python/django/`，可独立运行；完整可 runserver 的小型项目在 `example/python/django/full_app/`。
 
 | Demo | 涵盖 | 链接 |
 | --- | --- | --- |
-| `models_demo.py` | 字段类型 + 关系字段 + Meta + on_delete 决策 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/python/django/models_demo.py) |
-| `queryset_demo.py` | filter / 聚合 / F / Q / select_related / N+1 修复 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/python/django/queryset_demo.py) |
-| `drf_serializer_demo.py` | Serializer / ModelSerializer / 嵌套 / 校验三层次 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/python/django/drf_serializer_demo.py) |
-| `drf_viewset_demo.py` | ModelViewSet / Router / 权限 / @action | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/python/django/drf_viewset_demo.py) |
-| `full_app/` | 完整 Django+DRF 项目（可 runserver / 6 个测试用例） | [目录](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/python/django/full_app/) |
+| `models_demo.py` | 字段类型 + 关系字段 + Meta + on_delete 决策 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/django/models_demo.py) |
+| `queryset_demo.py` | filter / 聚合 / F / Q / select_related / N+1 修复 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/django/queryset_demo.py) |
+| `drf_serializer_demo.py` | Serializer / ModelSerializer / 嵌套 / 校验三层次 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/django/drf_serializer_demo.py) |
+| `drf_viewset_demo.py` | ModelViewSet / Router / 权限 / @action | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/django/drf_viewset_demo.py) |
+| `full_app/` | 完整 Django+DRF 项目（可 runserver / 6 个测试用例） | [目录](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/python/django/full_app/) |
 
 ### 3.1 完整项目的 curl 流程
 
 ```bash
-cd workspace/python/django/full_app
+cd example/python/django/full_app
 
 # 1. 准备
 uv run python manage.py migrate

@@ -2,7 +2,7 @@
 FastAPI 最小例子：路径参数 / 查询参数 / 请求体的识别规则
 
 启动：
-    uv run uvicorn workspace.python.fastapi.hello_world:app --reload
+    uv run uvicorn example.python.fastapi.hello_world:app --reload
 
 访问：
     http://127.0.0.1:8000/             # GET 根

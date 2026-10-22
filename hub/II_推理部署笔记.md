@@ -660,5 +660,5 @@ examples/monitoring/
 
 ## 配套 demo
 
-- [[workspace/llm-demo/02_inference_serving/README]]：OpenAI SDK 打本地/远程 vLLM/SGLang 服务 + Prometheus 指标解析 + benchmark JSON 模拟（无需 GPU）。
+- [[example/llm-demo/02_inference_serving/README]]：OpenAI SDK 打本地/远程 vLLM/SGLang 服务 + Prometheus 指标解析 + benchmark JSON 模拟（无需 GPU）。
 - [[I_大语言模型笔记]] §7：原理（自回归循环 / KV cache / 连续 batching / PagedAttention 思想）。

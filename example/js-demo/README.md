@@ -20,11 +20,11 @@ js-demo/
 
 ```bash
 # 单文件 demo（01~05 子目录下的 .js）
-node workspace/js-demo/01_basics/01_variables_and_types.js
-node workspace/js-demo/05_async/02_async_await_eventloop.js
+node example/js-demo/01_basics/01_variables_and_types.js
+node example/js-demo/05_async/02_async_await_eventloop.js
 
 # 06_module 必须以 ESM 模式运行（子目录已配 package.json 的 "type": "module"）
-cd workspace/js-demo/06_module && node app.js
+cd example/js-demo/06_module && node app.js
 ```
 
 ## 与 Hub 笔记的对应关系

@@ -1,4 +1,4 @@
-# workspace/vector-db —— 向量数据库 Demo 总索引
+# example/vector-db —— 向量数据库 Demo 总索引
 
 对应笔记：
 
@@ -18,7 +18,7 @@
 ## 启动服务（仅 Milvus / Qdrant 需要）
 
 ```bash
-cd workspace/vector-db
+cd example/vector-db
 
 # 起 Milvus（standalone）+ Qdrant
 docker compose up -d milvus qdrant
@@ -40,7 +40,7 @@ zvec 是 in-process 库，**不需要 docker**——直接 pip install 后即可
 
 ## 安装依赖
 
-按仓库规范，Python deps 装在 `workspace/.venv/`：
+按仓库规范，Python deps 装在 `example/.venv/`：
 
 ```bash
 uv pip install --python .venv/bin/python pymilvus qdrant-client zvec
@@ -50,13 +50,13 @@ uv pip install --python .venv/bin/python pymilvus qdrant-client zvec
 
 ```bash
 # Milvus（需要 docker）
-workspace/.venv/bin/python workspace/vector-db/milvus_demo.py
+.venv/bin/python example/vector-db/milvus_demo.py
 
 # Qdrant（需要 docker）
-workspace/.venv/bin/python workspace/vector-db/qdrant_demo.py
+.venv/bin/python example/vector-db/qdrant_demo.py
 
 # zvec（in-process，无需 docker）
-workspace/.venv/bin/python workspace/vector-db/zvec_demo.py
+.venv/bin/python example/vector-db/zvec_demo.py
 ```
 
 每个 demo 都包含：

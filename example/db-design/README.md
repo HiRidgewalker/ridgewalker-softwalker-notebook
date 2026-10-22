@@ -1,4 +1,4 @@
-# workspace/db-design —— 数据库设计演示示例
+# example/db-design —— 数据库设计演示示例
 
 对应笔记：
 
@@ -18,16 +18,16 @@
 
 ```bash
 # 看输出
-workspace/.venv/bin/python workspace/db-design/slow_query_logger.py
-workspace/.venv/bin/python workspace/db-design/alembic_add_index.py
-workspace/.venv/bin/python workspace/db-design/redis_key_examples.py
+.venv/bin/python example/db-design/slow_query_logger.py
+.venv/bin/python example/db-design/alembic_add_index.py
+.venv/bin/python example/db-design/redis_key_examples.py
 ```
 
 如果要让 `slow_query_logger.py` 真正工作（SQLite in-memory）：
 
 ```bash
-uv pip install --python workspace/.venv/bin/python sqlalchemy
-workspace/.venv/bin/python workspace/db-design/slow_query_logger.py
+uv pip install --python .venv/bin/python sqlalchemy
+.venv/bin/python example/db-design/slow_query_logger.py
 ```
 
 ## 注意事项
@@ -40,6 +40,6 @@ workspace/.venv/bin/python workspace/db-design/slow_query_logger.py
 
 ## 相关 demo
 
-- 关系型数据库连接示例：`workspace/db/sql-tools-demo/`（sqlite3 + pymysql + psycopg）
-- NoSQL 连接示例：`workspace/db/mongodb_demo.py` + `workspace/db/redis_demo.py`
-- 向量数据库示例：`workspace/vector-db/`（Milvus + Qdrant + zvec）
+- 关系型数据库连接示例：`example/db/sql-tools-demo/`（sqlite3 + pymysql + psycopg）
+- NoSQL 连接示例：`example/db/mongodb_demo.py` + `example/db/redis_demo.py`
+- 向量数据库示例：`example/vector-db/`（Milvus + Qdrant + zvec）

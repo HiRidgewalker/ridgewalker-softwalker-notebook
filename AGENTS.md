@@ -1,5 +1,5 @@
 # attention: following the rules
-- hiduck/general-rule/03-workspace演示模式
+- hiduck/general-rule/03-example演示模式
 - hiduck/general-rule/04-python虚拟环境
 - hiduck/general-rule/05-笔记重构默认模式
 - hiduck/general-rule/06-mermaid可视化表达规范
@@ -26,18 +26,19 @@
 - 新增项目级总规则时，同步更新 `AGENTS.md` 与 `CLAUDE.md`
 - 新增细化规则时，写入 `rules/`，并在两个总文件中添加引用
 
-## 代码演示外置 workspace 模式
+## 代码演示外置 example 模式
 
-- 可运行代码示例从笔记中提炼到 `workspace/` 目录下作为可执行 demo
+- 可运行代码示例从笔记中提炼到 `example/` 目录下作为可执行 demo
 - 原文通过 git 远程链接引用 demo，不保留大段代码块
 - 合并后的精炼总览文件放在 `hub/` 下
-- 详细规范见 [rules/03-workspace演示模式.md](03-workspace演示模式.md)
+- 详细规范见 [rules/03-example演示模式.md](03-example演示模式.md)
 
 ## Python 虚拟环境（uv）
 
-- `workspace/` 下所有 Python demo 使用统一的 `workspace/.venv/`
-- 运行 demo 必须用 `workspace/.venv/bin/python`，禁止系统全局 Python
-- 安装依赖用 `uv pip install --python workspace/.venv/bin/python <pkg>`
+- `example/` 下的每个 Python 项目是独立项目，各自维护 `requirements.txt` 与 `.venv/`
+- 运行 demo 使用该项目目录下的 `.venv/bin/python`，禁止系统全局 Python
+- 安装依赖用 `uv pip install --python .venv/bin/python <pkg>`
+- `.venv/`、`__pycache__/` 等安装产物不纳入版本控制
 - 详细规范见 [rules/04-python虚拟环境.md](04-python虚拟环境.md)
 
 ## 笔记重构默认模式

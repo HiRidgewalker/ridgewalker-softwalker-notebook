@@ -5,7 +5,7 @@
 - 适合 pytest
 
 跑测试：
-    uv run pytest workspace/python/fastapi/test_client.py -v
+    uv run pytest example/python/fastapi/test_client.py -v
 """
 from fastapi import FastAPI
 from fastapi.testclient import TestClient

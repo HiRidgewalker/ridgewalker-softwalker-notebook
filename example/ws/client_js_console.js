@@ -12,7 +12,7 @@
  *   npm install ws
  *
  * 启动：
- *   node workspace/ws/client_js_console.js
+ *   node example/ws/client_js_console.js
  */
 
 const WebSocket = require("ws");

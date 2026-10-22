@@ -1,4 +1,4 @@
-# workspace/mq —— 消息队列 Demo 总索引
+# example/mq —— 消息队列 Demo 总索引
 
 对应笔记：
 
@@ -21,7 +21,7 @@
 ### dev 模式（单节点，推荐本地/CI）
 
 ```bash
-cd workspace/mq
+cd example/mq
 
 # 只起 RabbitMQ
 docker compose --profile dev up -d rabbitmq
@@ -64,7 +64,7 @@ docker exec rabbitmq-3 rabbitmqctl start_app
 ## 安装 Python 依赖
 
 ```bash
-uv pip install --python workspace/.venv/bin/python pika confluent-kafka
+uv pip install --python .venv/bin/python pika confluent-kafka
 ```
 
 ## 运行 Demo
@@ -73,10 +73,10 @@ uv pip install --python workspace/.venv/bin/python pika confluent-kafka
 
 ```bash
 # 终端 1：生产者（发 5 条订单消息）
-workspace/.venv/bin/python workspace/mq/rabbitmq_producer.py
+.venv/bin/python example/mq/rabbitmq_producer.py
 
 # 终端 2：消费者（手动 ack + 业务异常分类）
-workspace/.venv/bin/python workspace/mq/rabbitmq_consumer.py
+.venv/bin/python example/mq/rabbitmq_consumer.py
 ```
 
 观察：
@@ -88,10 +88,10 @@ workspace/.venv/bin/python workspace/mq/rabbitmq_consumer.py
 
 ```bash
 # 终端 1：生产者（发 10 条订单事件）
-workspace/.venv/bin/python workspace/mq/kafka_producer.py
+.venv/bin/python example/mq/kafka_producer.py
 
 # 终端 2：消费者（手动 commit + 幂等）
-workspace/.venv/bin/python workspace/mq/kafka_consumer.py
+.venv/bin/python example/mq/kafka_consumer.py
 ```
 
 ## 三套生产配置对照
@@ -133,6 +133,6 @@ kafka-consumer-groups.sh --bootstrap-server localhost:9092 \
 
 ## 相关 demo
 
-- 数据库设计示例：`workspace/db-design/`（慢查询埋点 + Alembic）
-- 关系型数据库连接示例：`workspace/db/sql-tools-demo/`
-- 向量数据库示例：`workspace/vector-db/`
+- 数据库设计示例：`example/db-design/`（慢查询埋点 + Alembic）
+- 关系型数据库连接示例：`example/db/sql-tools-demo/`
+- 向量数据库示例：`example/vector-db/`

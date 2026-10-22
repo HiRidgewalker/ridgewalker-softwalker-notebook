@@ -276,4 +276,4 @@ export const experimental_ppr = true
 - 当前 demo 未专门展示渲染模式切换（每个 demo 都默认 SSG/SSR 按需），后续可补：
   - [ ] ISR 显式 revalidate 切换对照
   - [ ] PPR 实验性 demo
-- 相关数据获取 demo：[03_data_fetching](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/nextjs-demo/03_data_fetching)
+- 相关数据获取 demo：[03_data_fetching](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/03_data_fetching)

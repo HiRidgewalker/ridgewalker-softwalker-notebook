@@ -84,5 +84,5 @@ if __name__ == "__main__":
         main()
     except Exception as e:
         print(f"[error] {type(e).__name__}: {e}")
-        print("提示：检查本地 MongoDB 是否启动，或参考 workspace/db/README.md 用 docker 起一个：")
+        print("提示：检查本地 MongoDB 是否启动，或参考 example/db/README.md 用 docker 起一个：")
         print("  docker run -d -p 27017:27017 --name demo-mongo mongo:7")

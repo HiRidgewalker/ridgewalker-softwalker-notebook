@@ -23,7 +23,7 @@ for MOUNT in bind volume tmpfs; do
 done
 
 echo "sleeping 60s, do:"
-echo "  docker compose -f workspace/docker/03_volume_demo/compose.yml exec inspector sh"
+echo "  docker compose -f example/docker/03_volume_demo/compose.yml exec inspector sh"
 echo "  ls -l /inspect-bind /inspect-volume"
 
 sleep 60

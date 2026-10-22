@@ -24,23 +24,23 @@
 
 ```bash
 # 装依赖（标准库为主，无需第三方包）
-# 如需数据校验 pydantic 可选：uv pip install --python workspace/.venv/bin/python pydantic
+# 如需数据校验 pydantic 可选：uv pip install --python .venv/bin/python pydantic
 
 # 跑全部 demo（mock 模式，无需任何外部服务）
-workspace/.venv/bin/python workspace/llm-demo/03_eval_frameworks/main.py
+.venv/bin/python example/llm-demo/03_eval_frameworks/main.py
 
 # 跑单个 demo
-workspace/.venv/bin/python workspace/llm-demo/03_eval_frameworks/main.py --demo custom_dataset
-workspace/.venv/bin/python workspace/llm-demo/03_eval_frameworks/main.py --demo local_eval
-workspace/.venv/bin/python workspace/llm-demo/03_eval_frameworks/main.py --demo remote_eval
-workspace/.venv/bin/python workspace/llm-demo/03_eval_frameworks/main.py --demo dataset_selection
-workspace/.venv/bin/python workspace/llm-demo/03_eval_frameworks/main.py --demo metrics_report
+.venv/bin/python example/llm-demo/03_eval_frameworks/main.py --demo custom_dataset
+.venv/bin/python example/llm-demo/03_eval_frameworks/main.py --demo local_eval
+.venv/bin/python example/llm-demo/03_eval_frameworks/main.py --demo remote_eval
+.venv/bin/python example/llm-demo/03_eval_frameworks/main.py --demo dataset_selection
+.venv/bin/python example/llm-demo/03_eval_frameworks/main.py --demo metrics_report
 
 # 仅跑 OpenCompass 视角
-EVAL_BACKEND=opencompass workspace/.venv/bin/python workspace/llm-demo/03_eval_frameworks/main.py
+EVAL_BACKEND=opencompass .venv/bin/python example/llm-demo/03_eval_frameworks/main.py
 
 # 仅跑 EvalScope 视角
-EVAL_BACKEND=evalscope workspace/.venv/bin/python workspace/llm-demo/03_eval_frameworks/main.py
+EVAL_BACKEND=evalscope .venv/bin/python example/llm-demo/03_eval_frameworks/main.py
 ```
 
 环境变量：

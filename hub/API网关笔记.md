@@ -207,7 +207,7 @@ source: legacy-note
 
 ## 6. 关键中间件实现要点
 
-完整代码见 `workspace/gateway/gateway.py`。
+完整代码见 `example/gateway/gateway.py`。
 
 ### 6.1 RequestContextMiddleware（请求上下文）
 
@@ -405,12 +405,12 @@ LB ───► │             │ ──► 下游服务
 
 完整可运行代码（FastAPI 网关 + 2 个模拟下游服务 + JWT 鉴权 + Casbin 权限检查 + 扫码登录）：
 
-- [`workspace/gateway/gateway.py`](../workspace/gateway/gateway.py)
-- [`workspace/gateway/service_users.py`](../workspace/gateway/service_users.py)
-- [`workspace/gateway/service_orders.py`](../workspace/gateway/service_orders.py)
-- [`workspace/gateway/auth_demo.py`](../workspace/gateway/auth_demo.py)
-- [`workspace/gateway/scan_login_demo.py`](../workspace/gateway/scan_login_demo.py)
-- [`workspace/gateway/policy/`](../workspace/gateway/policy/)（Casbin 模型 + 策略）
-- [`workspace/gateway/README.md`](../workspace/gateway/README.md)
+- [`example/gateway/gateway.py`](../example/gateway/gateway.py)
+- [`example/gateway/service_users.py`](../example/gateway/service_users.py)
+- [`example/gateway/service_orders.py`](../example/gateway/service_orders.py)
+- [`example/gateway/auth_demo.py`](../example/gateway/auth_demo.py)
+- [`example/gateway/scan_login_demo.py`](../example/gateway/scan_login_demo.py)
+- [`example/gateway/policy/`](../example/gateway/policy/)（Casbin 模型 + 策略）
+- [`example/gateway/README.md`](../example/gateway/README.md)
 
 标签：#fastapi

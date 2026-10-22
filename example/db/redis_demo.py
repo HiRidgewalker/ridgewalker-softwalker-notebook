@@ -104,5 +104,5 @@ if __name__ == "__main__":
         main()
     except redis.exceptions.ConnectionError as e:
         print(f"[error] 连不上 Redis：{e}")
-        print("提示：检查本地 Redis 是否启动，或参考 workspace/db/README.md 用 docker 起一个：")
+        print("提示：检查本地 Redis 是否启动，或参考 example/db/README.md 用 docker 起一个：")
         print("  docker run -d -p 6379:6379 --name demo-redis redis:7-alpine")

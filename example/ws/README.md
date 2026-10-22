@@ -1,4 +1,4 @@
-# workspace/ws —— WebSocket Demo 总索引
+# example/ws —— WebSocket Demo 总索引
 
 对应笔记：`[[websocket笔记]]`
 
@@ -16,7 +16,7 @@
 ### 1. 准备 Python 虚拟环境
 
 ```bash
-cd workspace
+cd example
 
 # 首次：建虚拟环境
 uv venv .venv
@@ -26,7 +26,7 @@ uv pip install --python .venv/bin/python fastapi uvicorn websockets
 ### 2. 启动服务端
 
 ```bash
-cd workspace
+cd example
 .venv/bin/python ../ws/server.py
 # 监听 0.0.0.0:8000
 ```
@@ -50,7 +50,7 @@ xdg-open ../ws/client_browser.html # Linux
 #### Python 客户端
 
 ```bash
-.venv/bin/python workspace/ws/client_python.py
+.venv/bin/python example/ws/client_python.py
 ```
 
 - client_id 是 `py_alice`
@@ -61,7 +61,7 @@ xdg-open ../ws/client_browser.html # Linux
 ```bash
 # 首次：装 ws 库
 npm install ws --prefix /tmp/ws-demo
-NODE_PATH=/tmp/ws-demo/node_modules node workspace/ws/client_js_console.js
+NODE_PATH=/tmp/ws-demo/node_modules node example/ws/client_js_console.js
 ```
 
 - client_id 是 `node_bob`
@@ -147,11 +147,11 @@ curl -X POST http://localhost:8000/push/nonexistent \
 ## 常见问题
 
 - **浏览器连不上**：检查 token 是否为 `demo_token_123`；浏览器 DevTools → Console 看 1008 关闭码
-- **Python 客户端装不上**：`uv pip install --python workspace/.venv/bin/python websockets`
+- **Python 客户端装不上**：`uv pip install --python .venv/bin/python websockets`
 - **Node.js 找不到 ws**：`npm install ws --prefix /tmp/ws-demo`
 - **多 worker 看不到其他进程连接**：dev 用单进程即可；生产用 Redis pub/sub（见笔记第 7.1 节）
 
 ## 相关 demo
 
-- 消息队列（实时数据流的另一方案）：`workspace/mq/`
-- 关系型数据库连接示例：`workspace/db/sql-tools-demo/`
+- 消息队列（实时数据流的另一方案）：`example/mq/`
+- 关系型数据库连接示例：`example/db/sql-tools-demo/`

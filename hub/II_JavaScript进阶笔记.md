@@ -335,7 +335,7 @@ ES6 之后优先用 class 继承，底层依然是原型链。
 
 ## 八、配套 demo
 
-详见 [workspace/js-demo/03_scope_closure/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/js-demo/03_scope_closure) 和 [workspace/js-demo/04_oop/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/js-demo/04_oop)
+详见 [example/js-demo/03_scope_closure/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/js-demo/03_scope_closure) 和 [example/js-demo/04_oop/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/js-demo/04_oop)
 
 ---
 

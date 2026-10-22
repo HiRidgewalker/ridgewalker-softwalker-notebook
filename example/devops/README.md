@@ -1,11 +1,11 @@
-# workspace/devops
+# example/devops
 
 DevOps 配套演示，对应 [[01_DevOps基础与文化笔记]] / [[02_小企业DevOps方案笔记]] / [[03_DevOps工具链对比笔记]]。
 
 ## 目录
 
 ```
-workspace/devops/
+example/devops/
 ├── README.md                            ← 本文件
 ├── 01_branch_strategy/
 │   ├── trunk-based.md                   ← trunk-based 实践指南

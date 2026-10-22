@@ -1,4 +1,4 @@
-# workspace/db —— 数据库 Demo 总索引
+# example/db —— 数据库 Demo 总索引
 
 对应笔记：
 
@@ -17,16 +17,16 @@
 | `mongodb_demo.py` | `pymongo` | ✅ MongoDB 27017 | [[01_MongoDB笔记]] |
 | `redis_demo.py` | `redis-py` | ✅ Redis 6379 | [[02_Redis笔记]] |
 
-> `sqlite_demo.py` 在 `workspace/db/sql-tools-demo/` 子目录下，其他 demo 直接在 `workspace/db/` 下。
+> `sqlite_demo.py` 在 `example/db/sql-tools-demo/` 子目录下，其他 demo 直接在 `example/db/` 下。
 
 ## 环境准备
 
 ### 1. 虚拟环境
 
-按仓库规范，workspace 下所有 Python demo 统一使用 `workspace/.venv/`：
+本例是独立项目，在 `example/db/` 目录下创建自己的虚拟环境：
 
 ```bash
-cd workspace
+cd example/db
 uv venv .venv
 ```
 
@@ -74,13 +74,13 @@ docker run -d --name demo-redis -p 6379:6379 redis:7-alpine
 
 ```bash
 # 无需服务
-workspace/.venv/bin/python workspace/db/sql-tools-demo/sqlite_demo.py
+.venv/bin/python example/db/sql-tools-demo/sqlite_demo.py
 
 # 需要本地服务
-workspace/.venv/bin/python workspace/db/mysql_demo.py
-workspace/.venv/bin/python workspace/db/postgres_demo.py
-workspace/.venv/bin/python workspace/db/mongodb_demo.py
-workspace/.venv/bin/python workspace/db/redis_demo.py
+.venv/bin/python example/db/mysql_demo.py
+.venv/bin/python example/db/postgres_demo.py
+.venv/bin/python example/db/mongodb_demo.py
+.venv/bin/python example/db/redis_demo.py
 ```
 
 每个脚本都会：

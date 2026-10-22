@@ -1,6 +1,6 @@
 # Jenkins CI/CD 实战笔记
 
-> 来自 [[I_Jenkins基础笔记]] 的延伸：完整企业级流水线。Jenkinsfile 模板见 `workspace/cicd/01_jenkinsfile/`，K8s 部署 manifest 模板见 `workspace/cicd/02_k8s_manifests/`。
+> 来自 [[I_Jenkins基础笔记]] 的延伸：完整企业级流水线。Jenkinsfile 模板见 `example/cicd/01_jenkinsfile/`，K8s 部署 manifest 模板见 `example/cicd/02_k8s_manifests/`。
 
 ---
 
@@ -68,7 +68,7 @@
 
 ## 3. 完整 Jenkinsfile 模板（Python + Flask 示例）
 
-> 模板文件：`workspace/cicd/01_jenkinsfile/python_app.Jenkinsfile`
+> 模板文件：`example/cicd/01_jenkinsfile/python_app.Jenkinsfile`
 
 ```groovy
 pipeline {
@@ -296,7 +296,7 @@ ENTRYPOINT ["java", "-jar", "/app.jar"]
 
 ## 5. K8s 部署 manifest 模板
 
-> 见 `workspace/cicd/02_k8s_manifests/`
+> 见 `example/cicd/02_k8s_manifests/`
 
 ### 5.1 Deployment（无状态 Web）
 

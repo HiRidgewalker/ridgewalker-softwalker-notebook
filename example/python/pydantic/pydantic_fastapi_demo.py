@@ -3,7 +3,7 @@ Pydantic v2 在 FastAPI 中的实战演示（重点）
 - 请求体 / 响应模型 / 多态 / 字段别名 / 错误格式 / 嵌套 body
 
 启动：
-    uv run uvicorn workspace.python.pydantic.pydantic_fastapi_demo:app --reload
+    uv run uvicorn example.python.pydantic.pydantic_fastapi_demo:app --reload
 
 测：
     curl http://127.0.0.1:8000/docs        # Swagger UI 看所有示例

@@ -1,7 +1,7 @@
 # Next.js 笔记 · 数据获取与 Server Actions
 
 > Next.js 的数据获取**主要在 Server Component** 里完成，配合 **Server Actions** 处理服务端变更。
-> 配套 demo：[03_data_fetching](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/nextjs-demo/03_data_fetching) / [04_server_actions](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/nextjs-demo/04_server_actions)
+> 配套 demo：[03_data_fetching](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/03_data_fetching) / [04_server_actions](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/04_server_actions)
 
 ---
 
@@ -324,5 +324,5 @@ export default function ClientList() {
 
 ## 十一、对应 demo
 
-- [03_data_fetching](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/nextjs-demo/03_data_fetching) — Server Component 中 fetch、`Promise.all` 并行、`revalidateTag`
-- [04_server_actions](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/nextjs-demo/04_server_actions) — Server Action + `<form action>` + `useActionState`
+- [03_data_fetching](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/03_data_fetching) — Server Component 中 fetch、`Promise.all` 并行、`revalidateTag`
+- [04_server_actions](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/04_server_actions) — Server Action + `<form action>` + `useActionState`

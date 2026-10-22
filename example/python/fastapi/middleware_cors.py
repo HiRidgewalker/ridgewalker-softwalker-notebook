@@ -2,7 +2,7 @@
 中间件 + CORS
 
 启动：
-    uv run uvicorn workspace.python.fastapi.middleware_cors:app --reload
+    uv run uvicorn example.python.fastapi.middleware_cors:app --reload
 
 要点：
 - add_middleware 注册 CORS / GZip 等「类中间件」

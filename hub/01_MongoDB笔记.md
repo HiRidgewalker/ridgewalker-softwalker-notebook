@@ -307,4 +307,4 @@ with client.start_session() as s:
 - Redis：[[02_Redis笔记]]
 - 关系型对比与选型：[[04_关系型数据库对比与选型笔记]]
 - 向量检索：[[02_Qdrant笔记]]
-- Demo：`workspace/db/mongodb_demo.py`
+- Demo：`example/db/mongodb_demo.py`

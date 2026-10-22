@@ -1,6 +1,6 @@
 """抽象基类（ABC + @abstractmethod）演示
 
-运行：workspace/.venv/bin/python abstraction_demo.py
+运行：example/.venv/bin/python abstraction_demo.py
 （或任意 python3 解释器）
 
 涵盖的知识点：

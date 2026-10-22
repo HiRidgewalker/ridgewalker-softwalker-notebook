@@ -11,7 +11,7 @@ Redis 键设计模板示例。
 
 注意：本文件演示 key 构造模式与 Lua 脚本逻辑；
 如要实跑，需要 redis 服务或 fakeredis：
-    uv pip install --python workspace/.venv/bin/python redis fakeredis
+    uv pip install --python example/.venv/bin/python redis fakeredis
 """
 
 from __future__ import annotations

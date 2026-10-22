@@ -1,4 +1,4 @@
-# workspace/typescript-types
+# example/typescript-types
 
 TypeScript + React 类型笔记的配套 demo。所有文件都是**纯 TS 类型演示**，不依赖运行时。
 
@@ -20,7 +20,7 @@ TypeScript + React 类型笔记的配套 demo。所有文件都是**纯 TS 类�
 ### 方式 B：用 tsc 验证（推荐）
 
 ```bash
-cd workspace/typescript-types
+cd example/typescript-types
 npx -y typescript@5 --init --strict
 # 把 demo 文件加到 tsconfig 的 include，或者直接命令行编译
 npx tsc --noEmit 01_inference_vs_annotation.ts 02_react_hooks_types.ts 03_event_types.ts 04_common_pitfalls.ts

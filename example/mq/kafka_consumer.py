@@ -11,7 +11,7 @@ Kafka 生产级 Consumer 示例。
 对应笔记：[[02_Kafka笔记]] 5 节
 
 启动：
-    workspace/.venv/bin/python workspace/mq/kafka_consumer.py
+    example/.venv/bin/python example/mq/kafka_consumer.py
 """
 from __future__ import annotations
 

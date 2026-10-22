@@ -3,7 +3,7 @@ Celery × FastAPI 集成演示
 
 生产环境部署方式：
   1. 单独起 worker 进程：
-     uv run celery -A workspace.python.celery.celery_fastapi_integration worker -l info
+     uv run celery -A example.python.celery.celery_fastapi_integration worker -l info
   2. FastAPI 进程不跑任务，只通过 .delay() 发任务到 broker
   3. 客户端通过 GET /tasks/{task_id} 查状态
   4. 集成重试 / 监控 / 告警（参考 celery_robustness.py 的信号）

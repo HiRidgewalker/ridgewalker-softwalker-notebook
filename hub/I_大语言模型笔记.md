@@ -577,8 +577,8 @@ Aligned Chat Model（如 Claude、GPT-4、文心一言）
 
 ## 配套 demo
 
-- [[workspace/llm-demo/01_tokenization_and_generation/README]]：用 GPT-2 演示 tokenizer 切分、next token prediction 循环、KV cache 加速效果、采样策略对比。
-- [[workspace/llm-demo/02_inference_serving/README]]：OpenAI SDK 打本地/远程 vLLM/SGLang 服务 + Prometheus 指标解析 + benchmark JSON 模拟（无需 GPU）。
+- [[example/llm-demo/01_tokenization_and_generation/README]]：用 GPT-2 演示 tokenizer 切分、next token prediction 循环、KV cache 加速效果、采样策略对比。
+- [[example/llm-demo/02_inference_serving/README]]：OpenAI SDK 打本地/远程 vLLM/SGLang 服务 + Prometheus 指标解析 + benchmark JSON 模拟（无需 GPU）。
 - [[02_PyTorch笔记]]：底层 tensor / nn.Module / autograd 基础
 - [[II_深度学习环境安装笔记]]：CUDA / cuDNN / PyTorch 版本对应
 - [[II_推理部署笔记]]：vLLM / SGLang 生产环境的显存/并发/指标/日志/选型对比

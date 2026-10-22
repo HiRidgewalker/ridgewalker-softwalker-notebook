@@ -7,7 +7,7 @@
 - 校验 cell 类型 / 数量
 
 依赖：pip install nbformat
-运行：workspace/.venv/bin/python workspace/python/jupyter/nbformat_demo.py
+运行：example/.venv/bin/python example/python/jupyter/nbformat_demo.py
 """
 
 import nbformat
@@ -22,7 +22,7 @@ def build_notebook():
     nb.cells.append(new_code_cell("import sys\nprint(sys.version)"))
     nb.cells.append(new_code_cell("print('hello, jupyter')"))
 
-    path = "workspace/python/jupyter/demo.ipynb"
+    path = "example/python/jupyter/demo.ipynb"
     with open(path, "w", encoding="utf-8") as f:
         nbformat.write(nb, f)
     print(f"  已写入 {path}")

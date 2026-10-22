@@ -1,6 +1,6 @@
 # Python 异步编程（asyncio）
 
-> 原 `python--异步编程（asyncio）` 笔记的提炼与完善版本。可运行 demo 在 `workspace/python/asyncio/` 下，本文件通过 git 远程链接引用。
+> 原 `python--异步编程（asyncio）` 笔记的提炼与完善版本。可运行 demo 在 `example/python/asyncio/` 下，本文件通过 git 远程链接引用。
 
 ## 文档参考
 
@@ -28,7 +28,7 @@ asyncio 是 Python 内置的 **单线程协作式并发** 框架，由三部分�
 | **Task** | `asyncio.create_task` 包装的协程 | 高 |
 | **Future** | 底层异步结果占位符 | 低，一般作为库作者接口 |
 
-完整可运行示例：[workspace/python/asyncio/coroutines_basics.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/python/asyncio/coroutines_basics.py)
+完整可运行示例：[example/python/asyncio/coroutines_basics.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/asyncio/coroutines_basics.py)
 
 ## 关键字使用场景
 
@@ -62,7 +62,7 @@ asyncio 是 Python 内置的 **单线程协作式并发** 框架，由三部分�
 | 异步上下文管理器 | `async with ...:` | `with ...:` | 同步 `with` 不能管理异步对象 |
 | 异步迭代 | `async for x in ...:` | `for x in ...:` | 无法迭代异步生成器 |
 
-完整可运行示例：[workspace/python/asyncio/coroutines_basics.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/python/asyncio/coroutines_basics.py)
+完整可运行示例：[example/python/asyncio/coroutines_basics.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/asyncio/coroutines_basics.py)
 
 ## 常用 API
 
@@ -83,7 +83,7 @@ asyncio 是 Python 内置的 **单线程协作式并发** 框架，由三部分�
 - `await asyncio.sleep(n)`：异步睡眠，让出控制权
 - `asyncio.Queue`：异步队列，用于生产者/消费者
 
-完整可运行示例：[workspace/python/asyncio/concurrency.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/python/asyncio/concurrency.py)
+完整可运行示例：[example/python/asyncio/concurrency.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/asyncio/concurrency.py)
 
 ## 异步上下文与异步迭代
 
@@ -105,7 +105,7 @@ asyncio 是 Python 内置的 **单线程协作式并发** 框架，由三部分�
 - 异步分页 API 拉取
 - 异步文件逐行读取
 
-完整可运行示例：[workspace/python/asyncio/async_with_for.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/python/asyncio/async_with_for.py)
+完整可运行示例：[example/python/asyncio/async_with_for.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/asyncio/async_with_for.py)
 
 ## 异步生成器
 
@@ -113,7 +113,7 @@ asyncio 是 Python 内置的 **单线程协作式并发** 框架，由三部分�
 
 与普通生成器的区别：**每次 yield 之前可以 `await` 异步操作**，因此特别适合分页拉取、消息推送等流式场景。
 
-完整可运行示例：[workspace/python/asyncio/async_generators.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/python/asyncio/async_generators.py)
+完整可运行示例：[example/python/asyncio/async_generators.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/asyncio/async_generators.py)
 
 ## 串行 vs 并发对比
 
@@ -157,8 +157,8 @@ asyncio 的优势在于**单线程内高并发**，避免线程切换开销和 G
 
 ## 运行约定
 
-所有 demo 使用 `workspace/.venv/` 下的 Python 3.12，详见 [rules/04-python虚拟环境.md](04-python虚拟环境.md)。
+所有 demo 使用 `example/.venv/` 下的 Python 3.12，详见 [rules/04-python虚拟环境.md](04-python虚拟环境.md)。
 
 ```bash
-workspace/.venv/bin/python workspace/python/asyncio/coroutines_basics.py
+example/.venv/bin/python example/python/asyncio/coroutines_basics.py
 ```

@@ -5,7 +5,7 @@
 ## 目录结构
 
 ```
-workspace/react/
+example/react/
 ├── zustand-demo/          ← Zustand 状态管理演示
 │   ├── package.json
 │   ├── index.html
@@ -59,7 +59,7 @@ workspace/react/
 ### 准备
 
 ```bash
-cd workspace/react/zustand-demo   # 或 router-demo / hooks-demo
+cd example/react/zustand-demo   # 或 router-demo / hooks-demo
 npm install
 ```
 

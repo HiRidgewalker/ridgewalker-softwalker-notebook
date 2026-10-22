@@ -11,7 +11,7 @@ Python WebSocket 客户端示例。
 对应笔记：[[websocket笔记]] 第 6.2 节
 
 启动：
-    .venv/bin/python workspace/ws/client_python.py
+    .venv/bin/python example/ws/client_python.py
 """
 from __future__ import annotations
 

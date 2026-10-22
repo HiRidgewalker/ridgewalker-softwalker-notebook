@@ -13,7 +13,7 @@ sources:
 
 > 本笔记基于 zvec 官方仓库与文档整理。**zvec 是进程内（in-process）向量数据库**，设计目标与 Milvus / Qdrant 不同——它不是一个独立服务，而是像 SQLite 一样嵌入到应用进程里运行。
 > 对比见 [[01_Milvus笔记]] 和 [[02_Qdrant笔记]]。
-> 配套 demo：[workspace/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/vector-db)
+> 配套 demo：[example/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/vector-db)
 
 ## 目录
 
@@ -309,7 +309,7 @@ for r in results:
     print(r.id, r.score)
 ```
 
-> 完整 dense + sparse + 混合 + reranker 代码见 `workspace/vector-db/zvec_demo.py`。
+> 完整 dense + sparse + 混合 + reranker 代码见 `example/vector-db/zvec_demo.py`。
 > 实际字段类型名（`VECTOR_FP32` / `SPARSE` 等）与 `MultiQuery` 写法以官方 [docs/db](https://zvec.org/en/docs/db/) 当期版本为准，API 可能在小版本中调整。
 
 ---
@@ -331,4 +331,4 @@ for r in results:
 - Qdrant：[[02_Qdrant笔记]]
 - 关系型 + pgvector：[[02_PostgreSQL笔记]]
 - 检索 / RAG 概念：[[RAG]]、[[Rerank]]
-- Demo：`workspace/vector-db/zvec_demo.py`
+- Demo：`example/vector-db/zvec_demo.py`

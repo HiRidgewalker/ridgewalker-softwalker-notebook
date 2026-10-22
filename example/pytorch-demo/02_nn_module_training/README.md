@@ -24,10 +24,10 @@
 
 ```bash
 # 装 torch（CPU 版即可）
-uv pip install --python workspace/.venv/bin/python -r workspace/pytorch-demo/02_nn_module_training/requirements.txt
+uv pip install --python .venv/bin/python -r example/pytorch-demo/02_nn_module_training/requirements.txt
 
 # 跑
-workspace/.venv/bin/python workspace/pytorch-demo/02_nn_module_training/main.py
+.venv/bin/python example/pytorch-demo/02_nn_module_training/main.py
 ```
 
 ## 关键观察点

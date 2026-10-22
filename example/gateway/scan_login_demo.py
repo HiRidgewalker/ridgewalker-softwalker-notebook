@@ -8,10 +8,10 @@
 
 启动：
     # 终端 1：起服务端（PC 端 + App 端 API 都由它提供）
-    .venv/bin/python workspace/gateway/scan_login_demo.py
+    .venv/bin/python example/gateway/scan_login_demo.py
 
     # 终端 2：模拟 PC 端（生成 + 轮询）
-    .venv/bin/python -c "from workspace.gateway.scan_login_demo import demo_pc; demo_pc()"
+    .venv/bin/python -c "from example.gateway.scan_login_demo import demo_pc; demo_pc()"
 
 或者直接访问浏览器端（见 README）
 """

@@ -2,7 +2,7 @@
 
 > 原 旧稿 + 旧稿 + 旧稿 的整合重构版本，按知识体系拆成 6 个文件，**本文件是总览入口**。
 > 旧稿目录已清理，当前以本文为准。
-> 可运行的 HTML+CSS 演示放 `workspace/css/`，本笔记通过 git 远程链接引用。
+> 可运行的 HTML+CSS 演示放 `example/css/`，本笔记通过 git 远程链接引用。
 > 概念长篇解释优先引 [MDN 中文文档](https://developer.mozilla.org/zh-CN/docs/Web/CSS)。
 
 ## 1. 速查总览
@@ -49,9 +49,9 @@ CSS（Cascading Style Sheets，**层叠样式表**）是给 HTML 页面"穿衣�
 
 | Demo | 涵盖 | 链接 |
 | --- | --- | --- |
-| `01_box_model.html` | 盒模型结构 / margin 折叠（同级/父子/阻止折叠）/ `box-sizing` | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/css/01_box_model.html) |
-| `02_flex.html` | Flex 速查：`flex-direction` / `flex-wrap` / `justify-content` / `align-items` 各种值对比 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/css/02_flex.html) |
-| `03_units.html` | px / em / rem / vh / vw / svh / dvh / lvh 视觉对比 + 移动端地址栏场景 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/css/03_units.html) |
+| `01_box_model.html` | 盒模型结构 / margin 折叠（同级/父子/阻止折叠）/ `box-sizing` | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/css/01_box_model.html) |
+| `02_flex.html` | Flex 速查：`flex-direction` / `flex-wrap` / `justify-content` / `align-items` 各种值对比 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/css/02_flex.html) |
+| `03_units.html` | px / em / rem / vh / vw / svh / dvh / lvh 视觉对比 + 移动端地址栏场景 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/css/03_units.html) |
 
 打开方式：浏览器（Chrome / Firefox / Safari）双击 .html 文件即可，**不需要任何环境**。
 
@@ -72,10 +72,10 @@ CSS（Cascading Style Sheets，**层叠样式表**）是给 HTML 页面"穿衣�
 ## 3. 学习路径建议
 
 1. **第 1 步**：看 [MDN CSS 入门](https://developer.mozilla.org/zh-CN/docs/Learn/CSS) 前 4 章（"什么是 CSS"/"开始学习 CSS"/"文本样式"/"CSS 布局基础"）
-2. **第 2 步**：跑 [[II_CSS选择器与继承笔记]] + 跑 `workspace/css/02_flex.html`（把 90% 布局用熟）
-3. **第 3 步**：[[III_CSS盒模型笔记]] + 跑 `workspace/css/01_box_model.html`（margin 折叠是面试必问）
+2. **第 2 步**：跑 [[II_CSS选择器与继承笔记]] + 跑 `example/css/02_flex.html`（把 90% 布局用熟）
+3. **第 3 步**：[[III_CSS盒模型笔记]] + 跑 `example/css/01_box_model.html`（margin 折叠是面试必问）
 4. **第 4 步**：[[IV_CSS布局笔记]]（定位 + Grid）
-5. **第 5 步**：[[V_CSS单位与值笔记]] + 跑 `workspace/css/03_units.html`（响应式适配）
+5. **第 5 步**：[[V_CSS单位与值笔记]] + 跑 `example/css/03_units.html`（响应式适配）
 6. **第 6 步**：遇到坑就 append 到 [[VI_CSS常见问题笔记]]
 
 ---

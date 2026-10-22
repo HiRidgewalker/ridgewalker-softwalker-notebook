@@ -1,7 +1,7 @@
 # Go 包与工程笔记
 
 > 本篇覆盖 Go 的包管理（`import`、`init()`、`go.mod`）+ 常用标准库速查 + 错误处理。
-> 对应 demo：[05_packages](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/go/demos/05_packages/main.go)
+> 对应 demo：[05_packages](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/go/demos/05_packages/main.go)
 
 ---
 

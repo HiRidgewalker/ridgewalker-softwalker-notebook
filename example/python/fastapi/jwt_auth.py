@@ -2,7 +2,7 @@
 OAuth2 + JWT 鉴权完整流
 
 启动：
-    uv run uvicorn workspace.python.fastapi.jwt_auth:app --reload
+    uv run uvicorn example.python.fastapi.jwt_auth:app --reload
 
 测试：
     1. 拿 token（用户名 alice，密码 alice123）：

@@ -2,7 +2,7 @@
 数据校验：Path / Query / Body / Field 的常用校验项
 
 启动：
-    uv run uvicorn workspace.python.fastapi.params_demo:app --reload
+    uv run uvicorn example.python.fastapi.params_demo:app --reload
 
 测试：
     curl -X PUT http://127.0.0.1:8000/items/1?short=ok \

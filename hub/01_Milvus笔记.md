@@ -13,7 +13,7 @@ sources:
 
 > 本笔记基于 Milvus 官方文档（standalone docker、hybrid search、reranking、index 章节）整理。
 > 对比见 [[02_Qdrant笔记]] 和 [[03_zvec笔记]]。
-> 配套 demo：[workspace/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/vector-db)
+> 配套 demo：[example/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/vector-db)
 
 ## 目录
 
@@ -71,7 +71,7 @@ bash standalone_embed.sh delete
 - 修改配置：`user.yaml`，再 `restart`
 
 > **v3.0-beta 新架构**：Streaming Node + Woodpecker MQ（替代 Kafka/Pulsar）+ 合并架构。
-> 项目实战推荐 docker-compose 一键起 Milvus + etcd，见 `workspace/vector-db/docker-compose.yml`。
+> 项目实战推荐 docker-compose 一键起 Milvus + etcd，见 `example/vector-db/docker-compose.yml`。
 
 ---
 
@@ -347,4 +347,4 @@ print(res)
 - zvec：[[03_zvec笔记]]
 - 关系型 + pgvector：[[02_PostgreSQL笔记]]
 - 检索 / RAG 概念：[[RAG]]、[[Rerank]]
-- Demo：`workspace/vector-db/milvus_demo.py`
+- Demo：`example/vector-db/milvus_demo.py`

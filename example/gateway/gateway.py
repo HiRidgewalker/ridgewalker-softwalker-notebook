@@ -10,18 +10,18 @@ FastAPI 网关 Demo（生产级中间件链）。
 
 启动：
     # 终端 1：下游 user 服务
-    .venv/bin/python workspace/gateway/service_users.py
+    .venv/bin/python example/gateway/service_users.py
 
     # 终端 2：下游 order 服务
-    .venv/bin/python workspace/gateway/service_orders.py
+    .venv/bin/python example/gateway/service_orders.py
 
     # 终端 3：网关
-    .venv/bin/python workspace/gateway/gateway.py
+    .venv/bin/python example/gateway/gateway.py
     # 监听 0.0.0.0:8000
 
 测试：
     curl http://localhost:8000/health
-    TOKEN=$(.venv/bin/python workspace/gateway/auth_demo.py issue alice)
+    TOKEN=$(.venv/bin/python example/gateway/auth_demo.py issue alice)
     curl -H "Authorization: Bearer $TOKEN" http://localhost:8000/api/users/123
 """
 from __future__ import annotations

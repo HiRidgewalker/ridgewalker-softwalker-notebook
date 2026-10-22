@@ -833,4 +833,4 @@ evalscope service --outputs ./outputs
 
 ### 9.7 配套 demo
 
-- [[workspace/llm-demo/03_eval_frameworks]] — OpenCompass + EvalScope 双框架 mock 演示
+- [[example/llm-demo/03_eval_frameworks]] — OpenCompass + EvalScope 双框架 mock 演示

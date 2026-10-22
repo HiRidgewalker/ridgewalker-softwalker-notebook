@@ -1,8 +1,8 @@
-# 代码演示外置 workspace 模式
+# 代码演示外置 example 模式
 
 ## 规则
 
-知识库中涉及的代码示例，如果具备"可运行 + 有演示价值"的特征，应提炼到 `workspace/` 目录下作为可执行 demo，原文通过**远程 git 链接**引用，而非保留大段代码块。
+知识库中涉及的代码示例，如果具备"可运行 + 有演示价值"的特征，应提炼到 `example/` 目录下作为可执行 demo，原文通过**远程 git 链接**引用，而非保留大段代码块。
 
 ## 原因
 
@@ -22,7 +22,7 @@
 
 ### 2. demo 文件存放
 
-- 放 `workspace/<技术域>/<主题>/`
+- 放 `example/<技术域>/<主题>/`
 - 目录结构尽量贴近真实工程结构
 - 每个 demo 文件顶部 docstring 说明涵盖的知识点和运行方式
 - 文件命名使用小写 + 下划线（Python 风格）
@@ -30,7 +30,7 @@
 ### 3. 远程链接形式
 
 ```
-[workspace/.../demo.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/.../demo.py)
+[example/.../demo.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/.../demo.py)
 ```
 
 - 前缀固定为当前 git 仓库 URL
@@ -57,4 +57,4 @@
 
 ## 引用本规则的入口
 
-详见根目录 `AGENTS.md` / `CLAUDE.md` 中的"代码演示外置 workspace 模式"小节。
+详见根目录 `AGENTS.md` / `CLAUDE.md` 中的"代码演示外置 example 模式"小节。

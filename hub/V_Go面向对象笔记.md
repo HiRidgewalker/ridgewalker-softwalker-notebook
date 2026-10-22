@@ -2,7 +2,7 @@
 
 > Go **没有 class**，但用 `struct`（数据）+ `method`（行为）+ `interface`（多态）+ `embedding`（复用）四件套实现"面向对象"。
 > 这套设计是 Go 的精髓——比传统 OOP 简单，但需要换一种思维方式。
-> 对应 demo：[04_oop](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/go/demos/04_oop/main.go)
+> 对应 demo：[04_oop](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/go/demos/04_oop/main.go)
 
 ---
 

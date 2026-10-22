@@ -2,7 +2,7 @@
 Pydantic v2 基础演示：BaseModel + 字段 + 校验 + 嵌套 + 序列化
 
 跑：
-    uv run python workspace/python/pydantic/pydantic_basics.py
+    uv run python example/python/pydantic/pydantic_basics.py
 """
 from datetime import datetime
 from decimal import Decimal

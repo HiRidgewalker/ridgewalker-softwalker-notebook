@@ -8,7 +8,7 @@ type: hub
 
 > **本文目的**：替换 `Prompt` 原笔记（原 旧稿 仅 13 行，严重过简，已删除）。覆盖 2026 年工业级 Prompt 工程：Anthropic 官方原则、DSPy 编译器范式、结构化输出、优化工具、模板管理、注入防护、技术现状、工业流程。
 > 配套笔记：[[RAG工业方案笔记]]、[[Rerank笔记]]、[[上下文工程与Agent笔记]]
-> 配套 demo：[workspace/llm-demo/04_rag_evaluation](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/llm-demo/04_rag_evaluation)
+> 配套 demo：[example/llm-demo/04_rag_evaluation](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/llm-demo/04_rag_evaluation)
 
 ## 阅读地图
 

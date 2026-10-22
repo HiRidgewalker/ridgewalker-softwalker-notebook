@@ -2,7 +2,7 @@
 Django QuerySet 操作演示：过滤 / 聚合 / F / Q / select_related / N+1
 
 跑：
-    uv run python workspace/python/django/queryset_demo.py
+    uv run python example/python/django/queryset_demo.py
 """
 import django
 from django.conf import settings

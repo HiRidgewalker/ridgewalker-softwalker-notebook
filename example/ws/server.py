@@ -11,7 +11,7 @@ WebSocket 生产级服务端示例（FastAPI）。
 对应笔记：[[websocket笔记]] 第 4-5 节
 
 启动：
-    cd workspace
+    cd example
     uv venv .venv
     uv pip install --python .venv/bin/python fastapi uvicorn websockets
     .venv/bin/python ../ws/server.py

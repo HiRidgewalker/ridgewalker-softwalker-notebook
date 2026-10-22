@@ -1,4 +1,4 @@
-# workspace/nextjs-demo · Next.js 演示项目集合
+# example/nextjs-demo · Next.js 演示项目集合
 
 > 这里放着与 [[I_Next.js 笔记]] 系列配套的 **4 个独立可运行的 Next.js 14 demo 子项目**。
 > 每个子项目可以单独 `npm install && npm run dev` 跑起来。

@@ -2,7 +2,7 @@
 
 > 本篇覆盖 5 种布局方式：文档流（normal flow）、浮动（float）、定位（position）、Flex、Grid。
 > 详细规范：[MDN 文档流](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Normal_Flow)、[MDN Flex](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Flexbox)、[MDN Grid](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Grids)、[MDN 定位](https://developer.mozilla.org/zh-CN/docs/Web/CSS/position)
-> 配套 demo：[02_flex.html](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/css/02_flex.html)
+> 配套 demo：[02_flex.html](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/css/02_flex.html)
 
 ---
 

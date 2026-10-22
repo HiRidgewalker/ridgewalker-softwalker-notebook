@@ -20,13 +20,13 @@
 对应笔记：Hub/02_推理部署笔记.md（§2 / §5.3 / §8 / §11）
 
 运行：
-    workspace/.venv/bin/python workspace/llm-demo/02_inference_serving/main.py
+    example/.venv/bin/python example/llm-demo/02_inference_serving/main.py
     # 或带环境变量指定 vLLM：
-    INFERENCE_BASE_URL=http://localhost:8000/v1 workspace/.venv/bin/python \
-      workspace/llm-demo/02_inference_serving/main.py
+    INFERENCE_BASE_URL=http://localhost:8000/v1 example/.venv/bin/python \
+      example/llm-demo/02_inference_serving/main.py
     # 或带环境变量指定 SGLang：
-    INFERENCE_BASE_URL=http://localhost:30000/v1 workspace/.venv/bin/python \
-      workspace/llm-demo/02_inference_serving/main.py
+    INFERENCE_BASE_URL=http://localhost:30000/v1 example/.venv/bin/python \
+      example/llm-demo/02_inference_serving/main.py
 """
 
 from __future__ import annotations
@@ -496,7 +496,7 @@ def main() -> None:
     demo_bench_serve_runner()
 
     print("\n" + "=" * 60)
-    print("demo 跑完，参考 workspace/llm-demo/02_inference_serving/README.md")
+    print("demo 跑完，参考 example/llm-demo/02_inference_serving/README.md")
     print("=" * 60)
 
 

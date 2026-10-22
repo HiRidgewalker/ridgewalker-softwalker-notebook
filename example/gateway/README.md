@@ -1,4 +1,4 @@
-# workspace/gateway —— API 网关 + 鉴权 + 权限 Demo 总索引
+# example/gateway —— API 网关 + 鉴权 + 权限 Demo 总索引
 
 对应笔记：
 
@@ -44,7 +44,7 @@
 ## 准备环境
 
 ```bash
-cd workspace
+cd example
 
 # 虚拟环境（首次）
 uv venv .venv
@@ -104,7 +104,7 @@ curl -i http://localhost:8000/api/users/123
 ### 场景 3：颁发 alice 的 token
 
 ```bash
-cd workspace
+cd example
 TOKEN=$(.venv/bin/python ../gateway/auth_demo.py issue alice | grep ACCESS_TOKEN | cut -d= -f2)
 echo $TOKEN
 # eyJhbGciOiJIUzI1NiIs...
@@ -176,7 +176,7 @@ done
 .venv/bin/python ../gateway/scan_login_demo.py
 
 # 终端 B：命令行模拟 PC 端
-.venv/bin/python -c "from workspace.gateway.scan_login_demo import demo_pc; demo_pc()"
+.venv/bin/python -c "from example.gateway.scan_login_demo import demo_pc; demo_pc()"
 ```
 
 ## 关键代码位置
@@ -191,6 +191,6 @@ done
 
 ## 相关 demo
 
-- WebSocket demo：`workspace/ws/`
-- 消息队列 demo：`workspace/mq/`
-- 数据库设计 demo：`workspace/db-design/`
+- WebSocket demo：`example/ws/`
+- 消息队列 demo：`example/mq/`
+- 数据库设计 demo：`example/db-design/`

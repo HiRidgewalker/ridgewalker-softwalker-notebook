@@ -11,7 +11,7 @@ RabbitMQ 生产级 Consumer 示例。
 对应笔记：[[01_RabbitMQ笔记]] 6、7 节
 
 启动：
-    workspace/.venv/bin/python workspace/mq/rabbitmq_consumer.py
+    example/.venv/bin/python example/mq/rabbitmq_consumer.py
 """
 from __future__ import annotations
 

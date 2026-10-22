@@ -1,4 +1,4 @@
-# workspace/pytorch-demo · PyTorch 演示项目集合
+# example/pytorch-demo · PyTorch 演示项目集合
 
 > 这里放着与 [[02_PyTorch笔记]] 配套的 **2 个独立可运行的 PyTorch demo**。
 > 每个 demo 都是单文件 Python 脚本，可直接 `python main.py` 跑起来（CPU 即可）。
@@ -19,15 +19,15 @@
 
 ## 统一运行方式
 
-按 `rules/04-python虚拟环境.md`，使用 `workspace/.venv/` 内的 Python 解释器：
+按 `rules/04-python虚拟环境.md`，使用 `example/.venv/` 内的 Python 解释器：
 
 ```bash
 # 一次性：把 torch 装到统一 venv（CPU 版即可，体积约 200MB）
-uv pip install --python workspace/.venv/bin/python -r workspace/pytorch-demo/01_tensor_and_autograd/requirements.txt
+uv pip install --python .venv/bin/python -r example/pytorch-demo/01_tensor_and_autograd/requirements.txt
 
 # 运行
-workspace/.venv/bin/python workspace/pytorch-demo/01_tensor_and_autograd/main.py
-workspace/.venv/bin/python workspace/pytorch-demo/02_nn_module_training/main.py
+.venv/bin/python example/pytorch-demo/01_tensor_and_autograd/main.py
+.venv/bin/python example/pytorch-demo/02_nn_module_training/main.py
 ```
 
 > **CPU-only 即可**：所有 demo 不依赖 GPU，只是用来观察 API 行为、打印张量形状与梯度值。

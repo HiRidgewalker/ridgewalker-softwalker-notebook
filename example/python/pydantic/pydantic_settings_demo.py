@@ -5,7 +5,7 @@ pydantic-settings 演示：从 .env / 环境变量加载配置
     uv add pydantic-settings
 
 跑：
-    uv run python workspace/python/pydantic/pydantic_settings_demo.py
+    uv run python example/python/pydantic/pydantic_settings_demo.py
 """
 import os
 from typing import Optional

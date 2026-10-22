@@ -2,7 +2,7 @@
 articles app 的单元测试
 
 跑：
-    cd workspace/python/django/full_app
+    cd example/python/django/full_app
     uv run python manage.py test articles
 """
 from django.test import TestCase

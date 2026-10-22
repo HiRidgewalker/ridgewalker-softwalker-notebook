@@ -1,4 +1,4 @@
-# workspace/mq —— 消息队列 Demo 总索引
+# example/mq —— 消息队列 Demo 总索引
 #
 # 包含两套服务（dev 单节点 + production 3 节点 profile）：
 #   1. RabbitMQ 4.x（带 Management UI + Prometheus）

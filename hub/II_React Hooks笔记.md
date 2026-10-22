@@ -320,7 +320,7 @@ export default function Demo() {
 }
 ```
 
-完整可运行 demo 见 [workspace/react/hooks-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/react/hooks-demo)。
+完整可运行 demo 见 [example/react/hooks-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/react/hooks-demo)。
 
 ---
 

@@ -542,7 +542,7 @@ CPU-only：pip install torch 即可
 
 - [[I_ML与DL基础概念笔记]] — ML/DL 基础概念
 - [[02_PyTorch笔记]] — PyTorch 核心 API
-- [workspace/pytorch-demo/](../workspace/pytorch-demo/) — PyTorch 可运行 demo
+- [example/pytorch-demo/](../example/pytorch-demo/) — PyTorch 可运行 demo
 
 ## 历史笔记
 

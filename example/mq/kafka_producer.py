@@ -11,8 +11,8 @@ Kafka 生产级 Producer 示例。
 
 启动：
     docker compose --profile dev up -d kafka
-    uv pip install --python workspace/.venv/bin/python confluent-kafka
-    workspace/.venv/bin/python workspace/mq/kafka_producer.py
+    uv pip install --python example/.venv/bin/python confluent-kafka
+    example/.venv/bin/python example/mq/kafka_producer.py
 """
 from __future__ import annotations
 

@@ -2,7 +2,7 @@
 
 > App Router 是 Next.js 13+ 引入的**文件式路由系统**。
 > 核心思想：**文件夹 = URL 段，文件 = 路由角色**。
-> 配套 demo：[01_routing_basic](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/nextjs-demo/01_routing_basic)
+> 配套 demo：[01_routing_basic](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/01_routing_basic)
 
 ## 一、文件即路由：约定文件
 
@@ -361,5 +361,5 @@ export async function POST(request: Request) {
 
 ## 十四、对应 demo
 
-- [01_routing_basic](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/nextjs-demo/01_routing_basic) — 文件式路由 + 嵌套布局 + 动态段 + 路由组
+- [01_routing_basic](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/01_routing_basic) — 文件式路由 + 嵌套布局 + 动态段 + 路由组
 - 路由组 `(group)` 与平行路由 `@slot` 在主线 demo 里没全展开，需要时单独起 demo

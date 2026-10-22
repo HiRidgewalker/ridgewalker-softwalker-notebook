@@ -2,7 +2,7 @@
 依赖注入 + 异常处理
 
 启动：
-    uv run uvicorn workspace.python.fastapi.depends_and_exception:app --reload
+    uv run uvicorn example.python.fastapi.depends_and_exception:app --reload
 
 要点：
 - Depends(fn) 把 fn 的返回值注入到路由参数

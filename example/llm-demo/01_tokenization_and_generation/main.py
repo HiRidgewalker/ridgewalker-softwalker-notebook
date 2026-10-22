@@ -10,8 +10,8 @@
 对应笔记：Hub/01_大语言模型笔记.md（§2 Tokenization、§7.1 推理循环、§7.2 KV cache、§7.3 Sampling）
 
 运行：
-    uv pip install --python workspace/.venv/bin/python -r workspace/llm-demo/01_tokenization_and_generation/requirements.txt
-    workspace/.venv/bin/python workspace/llm-demo/01_tokenization_and_generation/main.py
+    uv pip install --python example/.venv/bin/python -r example/llm-demo/01_tokenization_and_generation/requirements.txt
+    example/.venv/bin/python example/llm-demo/01_tokenization_and_generation/main.py
 
 首次运行会从 HuggingFace 下载 GPT-2 (~500MB)，请确保网络可用。
 """
@@ -255,7 +255,7 @@ def main() -> None:
     demo_sampling_strategies()
 
     print("\n" + "=" * 60)
-    print("demo 跑完，参考 workspace/llm-demo/01_tokenization_and_generation/README.md")
+    print("demo 跑完，参考 example/llm-demo/01_tokenization_and_generation/README.md")
     print("=" * 60)
 
 

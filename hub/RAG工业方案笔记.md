@@ -8,7 +8,7 @@ type: hub
 
 > **本文目的**：替换 `RAG` 原笔记（原 旧稿 只有 64 行文章链接，严重过时，已删除）。覆盖 2026 年工业级 RAG 全栈：范式演进、开源框架对比、文档解析、Embedding、向量数据库、评测体系、完整工业链路、场景化选型决策树。
 > 配套笔记：[[Prompt工程笔记]]、[[Rerank笔记]]、[[上下文工程与Agent笔记]]
-> 配套 demo：[workspace/llm-demo/04_rag_evaluation](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/workspace/llm-demo/04_rag_evaluation)
+> 配套 demo：[example/llm-demo/04_rag_evaluation](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/llm-demo/04_rag_evaluation)
 
 ## 阅读地图
 

@@ -12,8 +12,8 @@ RabbitMQ 生产级 Producer 示例。
 
 启动：
     docker compose --profile dev up -d rabbitmq
-    uv pip install --python workspace/.venv/bin/python pika
-    workspace/.venv/bin/python workspace/mq/rabbitmq_producer.py
+    uv pip install --python example/.venv/bin/python pika
+    example/.venv/bin/python example/mq/rabbitmq_producer.py
 """
 from __future__ import annotations
 

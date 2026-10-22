@@ -33,7 +33,7 @@
 
 ## 3. 在 K3s 上装 Jenkins
 
-> 推荐用 Helm chart `jenkinsci/jenkins`，详细 values 见 `workspace/cicd/04_helm_values/jenkins-values.yaml`。
+> 推荐用 Helm chart `jenkinsci/jenkins`，详细 values 见 `example/cicd/04_helm_values/jenkins-values.yaml`。
 
 ### 3.1 添加 Helm repo
 
@@ -65,7 +65,7 @@ EOF
 ```bash
 helm install jenkins jenkins/jenkins \
   -n jenkins \
-  -f workspace/cicd/04_helm_values/jenkins-values.yaml
+  -f example/cicd/04_helm_values/jenkins-values.yaml
 ```
 
 ### 3.4 关键 values（部分）

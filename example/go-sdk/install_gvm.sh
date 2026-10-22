@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # 安装 gvm + Go 1.23.4
-# 用法：bash workspace/go-sdk/install_gvm.sh
+# 用法：bash example/go-sdk/install_gvm.sh
 #
 # 前提：
 #   - Ubuntu / Debian 系：sudo apt install -y bison
@@ -34,4 +34,4 @@ go version
 
 echo ""
 echo "==> 下一步：新开一个 shell，启用 Go"
-echo "    source workspace/go-sdk/use_go.sh"
+echo "    source example/go-sdk/use_go.sh"

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # 启用 gvm 管理的 Go
-# 用法：source workspace/go-sdk/use_go.sh
+# 用法：source example/go-sdk/use_go.sh
 #
 # 配合 gvm 的 go.mod 项目级版本控制：
 #   - 项目里 go.mod 写 go 1.23.4

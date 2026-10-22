@@ -2,7 +2,7 @@
 DRF Serializer 演示：Serializer vs ModelSerializer + 嵌套 + 校验
 
 跑：
-    uv run python workspace/python/django/drf_serializer_demo.py
+    uv run python example/python/django/drf_serializer_demo.py
 """
 import django
 from django.conf import settings

@@ -2,7 +2,7 @@
 
 > 本篇覆盖盒模型结构、`box-sizing`、margin 折叠（同级/父子/脱离文档流）、padding、border。
 > 详细规范：[MDN 盒模型](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model)
-> 配套 demo：[01_box_model.html](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/css/01_box_model.html)（浏览器打开看效果）
+> 配套 demo：[01_box_model.html](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/css/01_box_model.html)（浏览器打开看效果）
 
 ---
 

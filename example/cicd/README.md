@@ -1,11 +1,11 @@
-# workspace/cicd
+# example/cicd
 
 CI/CD 相关模板与示例，对应 [[I_Jenkins基础笔记]]、[[II_Jenkins_CICD实战笔记]]、[[05_Harbor笔记]]。
 
 ## 目录
 
 ```
-workspace/cicd/
+example/cicd/
 ├── README.md                       ← 本文件
 ├── 01_jenkinsfile/
 │   ├── python_app.Jenkinsfile      ← Python/Flask 流水线

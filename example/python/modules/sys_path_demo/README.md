@@ -6,7 +6,7 @@
 
 ```bash
 # 在 sys_path_demo 目录下执行 demo1.py
-cd workspace/python/modules/sys_path_demo
+cd example/python/modules/sys_path_demo
 python demo1.py
 
 # 在 sys_path_demo 目录下执行 subdir/demo2.py

@@ -6,7 +6,7 @@
 - 返回模拟用户数据
 - 根据 X-User-Id 做"已登录用户只能改自己"的最简权限检查
 
-启动：.venv/bin/python workspace/gateway/service_users.py
+启动：.venv/bin/python example/gateway/service_users.py
 """
 from __future__ import annotations
 

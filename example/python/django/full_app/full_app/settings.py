@@ -2,7 +2,7 @@
 Django settings for full_app project.
 
 跑：
-    cd workspace/python/django/full_app
+    cd example/python/django/full_app
     uv run python manage.py migrate
     uv run python manage.py loaddata seed      # 可选：加载种子数据
     uv run python manage.py runserver

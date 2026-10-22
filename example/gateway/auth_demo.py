@@ -9,16 +9,16 @@
 
 运行：
     # 1. 颁发 alice 的 token
-    .venv/bin/python workspace/gateway/auth_demo.py issue alice
+    .venv/bin/python example/gateway/auth_demo.py issue alice
 
     # 2. 验证 token
-    .venv/bin/python workspace/gateway/auth_demo.py verify <token>
+    .venv/bin/python example/gateway/auth_demo.py verify <token>
 
     # 3. 撤销
-    .venv/bin/python workspace/gateway/auth_demo.py revoke <jti>
+    .venv/bin/python example/gateway/auth_demo.py revoke <jti>
 
     # 4. Casbin enforce（带角色继承 + RESTful 路径）
-    .venv/bin/python workspace/gateway/auth_demo.py enforce alice /api/users/123 GET
+    .venv/bin/python example/gateway/auth_demo.py enforce alice /api/users/123 GET
 """
 from __future__ import annotations
 

@@ -6,7 +6,7 @@
 - 一行命令启服务
 
 启动：
-    uv run uvicorn workspace.python.fastapi.full_app.main:app --reload
+    uv run uvicorn example.python.fastapi.full_app.main:app --reload
 
 curl 测：
 

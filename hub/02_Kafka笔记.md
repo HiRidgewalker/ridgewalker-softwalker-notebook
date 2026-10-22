@@ -16,7 +16,7 @@ sources:
 
 > 工业生产环境下的 Kafka 使用：架构 / KRaft / Producer+Consumer 生产配置 / EOS / HA / Docker 部署 / 监控与常见生产坑。
 > 配套笔记：[[01_RabbitMQ笔记]] · [[03_消息队列对比与选型笔记]]。
-> Demo 代码示例在 `workspace/mq/`（docker-compose + 生产级 Producer/Consumer + 事务示例）。
+> Demo 代码示例在 `example/mq/`（docker-compose + 生产级 Producer/Consumer + 事务示例）。
 
 ## 目录
 
@@ -194,7 +194,7 @@ services:
       KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE: "true"
 ```
 
-**3 节点 KRaft 集群**见 `workspace/mq/docker-compose.yml`。
+**3 节点 KRaft 集群**见 `example/mq/docker-compose.yml`。
 
 ---
 
@@ -558,4 +558,4 @@ consumer.commit()  # 整批处理完一次性提交
 
 - RabbitMQ 详情：[[01_RabbitMQ笔记]]
 - 消息队列对比：[[03_消息队列对比与选型笔记]]
-- Demo：`workspace/mq/`（docker-compose + 生产级 Producer/Consumer + 事务示例）
+- Demo：`example/mq/`（docker-compose + 生产级 Producer/Consumer + 事务示例）

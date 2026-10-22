@@ -33,30 +33,30 @@
 
 ```bash
 # 装依赖（mock 模式无需任何包；live 模式需要 ragas + datasets + openai）
-# uv pip install --python workspace/.venv/bin/python -r workspace/llm-demo/04_rag_evaluation/requirements.txt
+# uv pip install --python .venv/bin/python -r example/llm-demo/04_rag_evaluation/requirements.txt
 
 # 跑全部 demo（mock 模式）
-workspace/.venv/bin/python workspace/llm-demo/04_rag_evaluation/main.py
+.venv/bin/python example/llm-demo/04_rag_evaluation/main.py
 
 # 跑单个 demo
-workspace/.venv/bin/python workspace/llm-demo/04_rag_evaluation/main.py --demo pipeline
-workspace/.venv/bin/python workspace/llm-demo/04_rag_evaluation/main.py --demo metrics
-workspace/.venv/bin/python workspace/llm-demo/04_rag_evaluation/main.py --demo flow
-workspace/.venv/bin/python workspace/llm-demo/04_rag_evaluation/main.py --demo tuning
+.venv/bin/python example/llm-demo/04_rag_evaluation/main.py --demo pipeline
+.venv/bin/python example/llm-demo/04_rag_evaluation/main.py --demo metrics
+.venv/bin/python example/llm-demo/04_rag_evaluation/main.py --demo flow
+.venv/bin/python example/llm-demo/04_rag_evaluation/main.py --demo tuning
 ```
 
 ### 切到 live 模式（可选）
 
 ```bash
 # 1. 装依赖
-uv pip install --python workspace/.venv/bin/python ragas datasets openai
+uv pip install --python .venv/bin/python ragas datasets openai
 
 # 2. 设置环境变量
 export EVAL_MODE=live
 export OPENAI_API_KEY=sk-xxx
 
 # 3. 跑（注意：live 模式需要联网 + OpenAI API）
-workspace/.venv/bin/python workspace/llm-demo/04_rag_evaluation/main.py
+.venv/bin/python example/llm-demo/04_rag_evaluation/main.py
 ```
 
 环境变量：

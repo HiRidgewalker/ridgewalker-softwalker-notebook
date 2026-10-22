@@ -27,11 +27,11 @@
 - Hub/评测框架对比笔记.md
 
 运行：
-    workspace/.venv/bin/python workspace/llm-demo/03_eval_frameworks/main.py
+    example/.venv/bin/python example/llm-demo/03_eval_frameworks/main.py
     # 或指定 demo：
-    workspace/.venv/bin/python workspace/llm-demo/03_eval_frameworks/main.py --demo custom_dataset
+    example/.venv/bin/python example/llm-demo/03_eval_frameworks/main.py --demo custom_dataset
     # 或指定 backend：
-    EVAL_BACKEND=evalscope workspace/.venv/bin/python workspace/llm-demo/03_eval_frameworks/main.py
+    EVAL_BACKEND=evalscope example/.venv/bin/python example/llm-demo/03_eval_frameworks/main.py
 
 特点：全程不联网、不需要 GPU、不需要真实模型 / API。
 """

@@ -13,12 +13,12 @@ answer_relevancy）+ mock RAG pipeline + 阈值调优。
   OPENAI_API_KEY : live 模式必需
 
 运行：
-  workspace/.venv/bin/python workspace/llm-demo/04_rag_evaluation/main.py
-  workspace/.venv/bin/python workspace/llm-demo/04_rag_evaluation/main.py --demo pipeline
-  workspace/.venv/bin/python workspace/llm-demo/04_rag_evaluation/main.py --demo metrics
-  workspace/.venv/bin/python workspace/llm-demo/04_rag_evaluation/main.py --demo flow
-  workspace/.venv/bin/python workspace/llm-demo/04_rag_evaluation/main.py --demo tuning
-  workspace/.venv/bin/python workspace/llm-demo/04_rag_evaluation/main.py --help
+  example/.venv/bin/python example/llm-demo/04_rag_evaluation/main.py
+  example/.venv/bin/python example/llm-demo/04_rag_evaluation/main.py --demo pipeline
+  example/.venv/bin/python example/llm-demo/04_rag_evaluation/main.py --demo metrics
+  example/.venv/bin/python example/llm-demo/04_rag_evaluation/main.py --demo flow
+  example/.venv/bin/python example/llm-demo/04_rag_evaluation/main.py --demo tuning
+  example/.venv/bin/python example/llm-demo/04_rag_evaluation/main.py --help
 
 Author: 知识库 demo
 """
@@ -723,9 +723,9 @@ def main() -> int:
     else:
         print("Mock 模式：未联网、未使用真实模型/API")
         print("如需切到 live 模式：")
-        print("  1) uv pip install --python workspace/.venv/bin/python ragas datasets openai")
+        print("  1) uv pip install --python example/.venv/bin/python ragas datasets openai")
         print("  2) export EVAL_MODE=live OPENAI_API_KEY=sk-xxx")
-        print("  3) python workspace/llm-demo/04_rag_evaluation/main.py")
+        print("  3) python example/llm-demo/04_rag_evaluation/main.py")
 
     return 0
 

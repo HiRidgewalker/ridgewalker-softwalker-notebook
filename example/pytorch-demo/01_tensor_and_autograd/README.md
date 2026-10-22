@@ -21,10 +21,10 @@
 
 ```bash
 # 装 torch（CPU 版即可）
-uv pip install --python workspace/.venv/bin/python -r workspace/pytorch-demo/01_tensor_and_autograd/requirements.txt
+uv pip install --python .venv/bin/python -r example/pytorch-demo/01_tensor_and_autograd/requirements.txt
 
 # 跑
-workspace/.venv/bin/python workspace/pytorch-demo/01_tensor_and_autograd/main.py
+.venv/bin/python example/pytorch-demo/01_tensor_and_autograd/main.py
 ```
 
 ## 关键观察点

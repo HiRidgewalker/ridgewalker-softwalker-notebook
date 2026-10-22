@@ -12,8 +12,8 @@
 对应笔记：Hub/02_PyTorch笔记.md（nn.Module、优化器、完整训练范式）
 
 运行：
-    uv pip install --python workspace/.venv/bin/python -r workspace/pytorch-demo/02_nn_module_training/requirements.txt
-    workspace/.venv/bin/python workspace/pytorch-demo/02_nn_module_training/main.py
+    uv pip install --python example/.venv/bin/python -r example/pytorch-demo/02_nn_module_training/requirements.txt
+    example/.venv/bin/python example/pytorch-demo/02_nn_module_training/main.py
 """
 
 import torch
@@ -299,7 +299,7 @@ def main() -> None:
     demo_train_eval_mode()
 
     print("\n" + "=" * 60)
-    print("demo 跑完，参考 workspace/pytorch-demo/02_nn_module_training/README.md")
+    print("demo 跑完，参考 example/pytorch-demo/02_nn_module_training/README.md")
     print("=" * 60)
 
 

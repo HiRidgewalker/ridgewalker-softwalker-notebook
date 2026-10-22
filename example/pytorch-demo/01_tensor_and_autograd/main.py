@@ -12,8 +12,8 @@
 对应笔记：Hub/02_PyTorch笔记.md（Tensor 基础、autograd）
 
 运行：
-    uv pip install --python workspace/.venv/bin/python -r workspace/pytorch-demo/01_tensor_and_autograd/requirements.txt
-    workspace/.venv/bin/python workspace/pytorch-demo/01_tensor_and_autograd/main.py
+    uv pip install --python example/.venv/bin/python -r example/pytorch-demo/01_tensor_and_autograd/requirements.txt
+    example/.venv/bin/python example/pytorch-demo/01_tensor_and_autograd/main.py
 """
 
 import torch
@@ -219,7 +219,7 @@ def main() -> None:
     demo_no_grad_and_detach()
 
     print("\n" + "=" * 60)
-    print("demo 跑完，参考 workspace/pytorch-demo/01_tensor_and_autograd/README.md")
+    print("demo 跑完，参考 example/pytorch-demo/01_tensor_and_autograd/README.md")
     print("=" * 60)
 
 

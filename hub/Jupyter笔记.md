@@ -105,7 +105,7 @@ jupyter lab
 
 `nbformat` 是操作 notebook 文件的标准库，方便做模板化生成、批量处理、CI 中的 notebook 校验。
 
-完整可运行示例：[workspace/python/jupyter/nbformat_demo.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/workspace/python/jupyter/nbformat_demo.py)
+完整可运行示例：[example/python/jupyter/nbformat_demo.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/jupyter/nbformat_demo.py)
 
 ## 生态对比：Notebook vs Lab vs Hub
 
@@ -127,4 +127,4 @@ VS Code 内置的 notebook 支持现在体验已经很好，多数情况下可�
 
 ## 运行约定
 
-所有 demo 使用 `workspace/.venv/` 下的 Python 3.12，详见 [rules/04-python虚拟环境.md](04-python虚拟环境.md)。
+所有 demo 使用 `example/.venv/` 下的 Python 3.12，详见 [rules/04-python虚拟环境.md](04-python虚拟环境.md)。

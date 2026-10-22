@@ -113,7 +113,7 @@ def main() -> None:
         client.list_collections()  # 探活
     except Exception as e:
         print(f"[error] 连不上 Milvus：{e}")
-        print("提示：在 workspace/vector-db/ 目录下运行 docker compose up -d milvus")
+        print("提示：在 example/vector-db/ 目录下运行 docker compose up -d milvus")
         return
 
     build_collection(client)

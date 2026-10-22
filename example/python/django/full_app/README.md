@@ -5,7 +5,7 @@
 ## 跑起来
 
 ```bash
-cd workspace/python/django/full_app
+cd example/python/django/full_app
 
 # 1. 迁移
 uv run python manage.py migrate
