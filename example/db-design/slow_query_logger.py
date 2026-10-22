@@ -7,7 +7,7 @@ FastAPI + SQLAlchemy 慢查询埋点示例。
 - ORM 2.0 的 do_orm_execute 补充拿 statement 对象
 - 阈值（200ms）+ logging.warning 输出（生产替换为结构化日志）
 
-对应笔记：[[01_数据库设计相关笔记]]
+对应笔记：[[数据库设计与索引优化笔记]]
 
 注意：本文件是「代码片段示例」，不需要真连数据库；如要实跑：
     uv pip install --python example/.venv/bin/python sqlalchemy

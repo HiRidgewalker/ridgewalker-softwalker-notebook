@@ -1,6 +1,6 @@
 # 03_eval_frameworks · OpenCompass + EvalScope 双框架 Mock 演示
 
-演示 [[OpenCompass笔记]] / [[EvalScope笔记]] / [[评测框架对比笔记]] 中**评测流程侧**的可执行部分，**全程不联网、不需要 GPU、不需要真实模型或 API**。
+演示 [[OpenCompass笔记]] / [[EvalScope笔记]] / [[LLM评测框架对比笔记]] 中**评测流程侧**的可执行部分，**全程不联网、不需要 GPU、不需要真实模型或 API**。
 
 ## Demo 列表
 
@@ -130,4 +130,4 @@ custom_math,report-mock-gpt-4o,0.8000,12.30,63.20,5
 
 - [[OpenCompass笔记]] — 完整 OpenCompass v0.5.3 笔记（架构 / 本地 / 远程 / 60+ 数据集 / 自定义 / 指标 / 生产特性）
 - [[EvalScope笔记]] — 完整 EvalScope v1.8.1 笔记（四大后端 / 本地 / 远程 / 191 benchmark / CollectionSchema / Arena / 压测 / service）
-- [[评测框架对比笔记]] — 选型决策树 + 10 维度差异表 + 7 步标准生产流程 + 8 项报告指标 + 6 类踩坑 + 业界实践
+- [[LLM评测框架对比笔记]] — 选型决策树 + 10 维度差异表 + 7 步标准生产流程 + 8 项报告指标 + 6 类踩坑 + 业界实践

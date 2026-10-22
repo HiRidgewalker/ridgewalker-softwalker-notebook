@@ -1,6 +1,6 @@
 # example/devops
 
-DevOps 配套演示，对应 [[01_DevOps基础与文化笔记]] / [[02_小企业DevOps方案笔记]] / [[03_DevOps工具链对比笔记]]。
+DevOps 配套演示，对应 [[DevOps基础与文化笔记]] / [[小企业DevOps方案笔记]] / [[DevOps工具链选型对比笔记]]。
 
 ## 目录
 

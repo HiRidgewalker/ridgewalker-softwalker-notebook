@@ -11,7 +11,7 @@
     # 把本文件的 upgrade / downgrade 粘进去
     alembic upgrade head
 
-对应笔记：[[01_数据库设计相关笔记]]
+对应笔记：[[数据库设计与索引优化笔记]]
 """
 
 from __future__ import annotations

@@ -1,7 +1,7 @@
 """
 FastAPI 网关 Demo（生产级中间件链）。
 
-演示（对应 [[API网关笔记]] §5-6）：
+演示（对应 [[API网关原理与选型笔记]] §5-6）：
 - TrustedHostMiddleware：防 Host 注入
 - RequestContextMiddleware：生成 X-Request-ID + 耗时日志
 - RateLimitMiddleware：滑动窗口限流（单进程内存版）

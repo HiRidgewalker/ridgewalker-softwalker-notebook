@@ -1,6 +1,6 @@
 # Trunk-Based Development 实践指南
 
-> 对应 [[02_小企业DevOps方案笔记]] 的 5.1 分支策略。
+> 对应 [[小企业DevOps方案笔记]] 的 5.1 分支策略。
 > 配合持续交付 / GitOps 较好。
 
 ## 核心思想

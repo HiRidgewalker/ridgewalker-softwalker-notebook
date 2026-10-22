@@ -44,7 +44,7 @@ python3 example/llm-demo/04_rag_evaluation/main.py --demo pipeline
 - [[II_推理部署笔记]] — vLLM / SGLang 生产环境的显存/并发/指标/日志/选型对比
 - [[OpenCompass笔记]] — OpenCompass v0.5.3 评测框架（架构 / 本地 / 远程 / 60+ 数据集 / 自定义 / 指标）
 - [[EvalScope笔记]] — EvalScope v1.8.1 评测框架（四大后端 / 191 benchmark / CollectionSchema / Arena / 压测）
-- [[评测框架对比笔记]] — 选型决策树 + 10 维度差异表 + 7 步标准生产流程 + 8 项报告指标
+- [[LLM评测框架对比笔记]] — 选型决策树 + 10 维度差异表 + 7 步标准生产流程 + 8 项报告指标
 - [[RAG工业方案笔记]] — RAG 范式、9 大框架、文档解析、Embedding、向量库、评测体系
 - [[Rerank笔记]] — 4 种重排序范式、5 大模型系列、LLM-based 重排序、工业部署
 - [[Prompt工程笔记]] — Anthropic 原则、DSPy 编译器范式、结构化输出、模板管理
