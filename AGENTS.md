@@ -1,62 +1,35 @@
-# attention: following the rules
-- hiduck/general-rule/03-example演示模式
-- hiduck/general-rule/04-python虚拟环境
-- hiduck/general-rule/05-笔记重构默认模式
-- hiduck/general-rule/06-mermaid可视化表达规范
+# 基本能力
 
-# AGENTS.md
+@hiduck/general-rule/直面需求编写笔记
+@hiduck/general-rule/快速上手优先
+@hiduck/general-rule/常用特性优先
+@hiduck/general-rule/跳跃知识点简要解释
+@hiduck/general-rule/mermaid可视化表达规范
 
-本文件是当前知识库的项目级记忆总入口，供支持 AGENTS.md 规范的 agent 使用。支持 CLAUDE.md 规范的 agent 读取根目录 `CLAUDE.md`；两个总文件应保持同等含义。
+## 仓库定位
 
-## 项目背景
+本仓库是记录 software technology 的个人技术笔记本（Obsidian vault），用于沉淀各技术栈的学习笔记。核心知识入口位于 `hub/`，不参与技术分类的笔记位于 `未归类/`。
 
-- 当前项目是 obsidian 结构的个人知识库
-- 当前主要任务：帮助用户重新整理知识库
-- 目录导航使用裸文件名 wiki 链接；核心知识入口位于 `hub/`，不参与技术分类的笔记位于 `未归类/`
-- 引用格式遵循 obsidian 官方格式（即 `[[文件名]]` 这种双中括号 wiki 链接形式）
+## 如何辅助记录技术
+
+当用户想记录一个技术栈、学习一个技术组件或编写一篇技术文章时，直接基于该技术组件编写完整的学习文档笔记，不逐步追问大纲和素材。笔记以实用为主：快速上手优先、常用特性优先、原理简要说明并附在线详解链接、必要时用 Mermaid 图示辅助理解。
+
+- 写作姿态：[直面需求编写笔记.md](hiduck/general-rule/直面需求编写笔记.md)
+- 内容取舍：[快速上手优先.md](hiduck/general-rule/快速上手优先.md) · [常用特性优先.md](hiduck/general-rule/常用特性优先.md) · [跳跃知识点简要解释.md](hiduck/general-rule/跳跃知识点简要解释.md)
+- 表达方式：[mermaid可视化表达规范.md](hiduck/general-rule/mermaid可视化表达规范.md)
 
 ## 语言偏好
 
 - 后续所有描述性内容、非技术名词，全部使用中文描述
-
-## 记忆组织方式
-
-- 根目录 `AGENTS.md` 与 `CLAUDE.md` 是项目记忆总文件，面向不同 agent 规范保持同步
-- `rules/` 中的文档是扩展记忆文件或详细规则文件
-- 新增项目级总规则时，同步更新 `AGENTS.md` 与 `CLAUDE.md`
-- 新增细化规则时，写入 `rules/`，并在两个总文件中添加引用
 
 ## 代码演示外置 example 模式
 
 - 可运行代码示例从笔记中提炼到 `example/` 目录下作为可执行 demo
 - 原文通过 git 远程链接引用 demo，不保留大段代码块
 - 合并后的精炼总览文件放在 `hub/` 下
-- 详细规范见 [rules/03-example演示模式.md](03-example演示模式.md)
+- 各子项目的目录结构与约定见 [example/README.md](example/README.md)
 
-## Python 虚拟环境（uv）
+## Catalog 索引维护
 
-- `example/` 下的每个 Python 项目是独立项目，各自维护 `requirements.txt` 与 `.venv/`
-- 运行 demo 使用该项目目录下的 `.venv/bin/python`，禁止系统全局 Python
-- 安装依赖用 `uv pip install --python .venv/bin/python <pkg>`
-- `.venv/`、`__pycache__/` 等安装产物不纳入版本控制
-- 详细规范见 [rules/04-python虚拟环境.md](04-python虚拟环境.md)
-
-## 笔记重构默认模式
-
-- 重构 / 重新整理 / 合并 / 提炼 / 完善笔记时：提炼 + 完善 + 总结后写入目标入口目录；技术与通用主题默认写入 `hub/`
-- `Catalog.md` 采用平铺主题索引，章节标题统一英文；新增笔记按技术名追加到对应 `##` 章节，无对应主题时新增英文标题章节
-- 同步更新 `Catalog.md` 中的引用链接，让导航指向新的 hub/ 笔记
-- 详细规范见 [rules/05-笔记重构默认模式.md](05-笔记重构默认模式.md)
-
-## Mermaid 可视化表达规范
-
-- 需要流程图、架构图等可视化内容时，默认优先使用 Mermaid 语法表达
-- 不用纯文本字符串、ASCII 字符画、手写箭头缩进等方式模拟图形
-- 详细规范见 [rules/06-mermaid可视化表达规范.md](06-mermaid可视化表达规范.md)
-
-## 记忆系统
-
-- 项目级显式记忆：写入根目录 `AGENTS.md` / `CLAUDE.md` 或 `rules/`，随项目仓库版本管理
-- 扩展规则：写入 `rules/`，并从 `AGENTS.md` / `CLAUDE.md` 引用
-- 用户级 / 全局偏好：只有用户明确要求“全局记忆”“Codex 用户级记忆”等跨项目偏好时，才写入用户级位置
-- 不把当前项目规则写到外部 memory 目录
+- `Catalog.md` 采用平铺主题索引，章节标题统一英文
+- 新增笔记按技术名追加到对应 `##` 章节，无对应主题时新增英文标题章节
