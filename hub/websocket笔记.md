@@ -503,7 +503,7 @@ location /ws/ {
 
 - 协议分层（WebSocket 在哪一层）：`[[TCP_IP四层网络模型笔记]]`
 - 反向代理 / nginx 终止 TLS：`[[nginx]]`（如已收录）
-- 实时数据流（与消息队列对比）：`[[01_RabbitMQ笔记]]` / `[[02_Kafka笔记]]`
+- 实时数据流（与消息队列对比）：`[[RabbitMQ笔记]]` / `[[Kafka笔记]]`
 - Python 异步运行时：`[[Python异步编程（asyncio）]]`
 - FastAPI 应用：`[[FastAPI笔记]]`
 

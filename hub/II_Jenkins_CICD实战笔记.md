@@ -429,7 +429,7 @@ spec:
 kubectl patch serviceaccount default -n myapp -p '{"imagePullSecrets":[{"name":"harbor-pull"}]}'
 ```
 
-详细见 [[05_Harbor笔记]] 的 6.3。
+详细见 [[Harbor笔记]] 的 6.3。
 
 ---
 

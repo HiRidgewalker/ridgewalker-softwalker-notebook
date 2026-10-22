@@ -1,7 +1,7 @@
 """
 sqlite3 demo —— 不需要任何服务，直接跑。
 
-对应笔记：[[03_SQLite笔记]]
+对应笔记：[[SQLite笔记]]
 """
 import sqlite3
 from pathlib import Path

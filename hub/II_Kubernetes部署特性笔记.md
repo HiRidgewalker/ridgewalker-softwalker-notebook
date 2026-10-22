@@ -433,7 +433,7 @@ spec:
     - name: harbor-pull-secret
 ```
 
-> 详细见 [[05_Harbor笔记]]。
+> 详细见 [[Harbor笔记]]。
 
 ---
 

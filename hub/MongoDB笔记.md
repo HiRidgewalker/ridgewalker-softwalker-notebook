@@ -8,7 +8,7 @@ source: legacy-note
 # MongoDB 笔记
 
 > 由旧稿重新整理版本（原文件只有一行对比文字 + GUI 工具名，本笔记在其基础上**完善**）。
-> 关系型数据库选型见 [[关系型数据库选型对比笔记]]，Redis 见 [[02_Redis笔记]]。
+> 关系型数据库选型见 [[关系型数据库选型对比笔记]]，Redis 见 [[Redis笔记]]。
 > 旧稿目录已清理，当前以本文为准。
 
 ## 目录
@@ -304,7 +304,7 @@ with client.start_session() as s:
 
 ## 关联笔记
 
-- Redis：[[02_Redis笔记]]
+- Redis：[[Redis笔记]]
 - 关系型对比与选型：[[关系型数据库选型对比笔记]]
-- 向量检索：[[02_Qdrant笔记]]
+- 向量检索：[[Qdrant笔记]]
 - Demo：`example/db/mongodb_demo.py`

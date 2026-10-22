@@ -508,6 +508,6 @@ rabbitmq-plugins enable rabbitmq_prometheus
 
 ## 关联笔记
 
-- Kafka 详情：[[02_Kafka笔记]]
+- Kafka 详情：[[Kafka笔记]]
 - 消息队列对比：[[消息队列选型对比笔记]]
 - Demo：`example/mq/`（docker-compose + Publisher Confirms + Consumer Acks + DLX 重试）

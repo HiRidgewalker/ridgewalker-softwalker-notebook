@@ -112,47 +112,47 @@
 
 ## MySQL
 
-- [[01_MySQL笔记]]
+- [[MySQL笔记]]
 
 ## PostgreSQL
 
-- [[02_PostgreSQL笔记]]
+- [[PostgreSQL笔记]]
 
 ## SQLite
 
-- [[03_SQLite笔记]]
+- [[SQLite笔记]]
 
 ## MongoDB
 
-- [[01_MongoDB笔记]]
+- [[MongoDB笔记]]
 
 ## Redis
 
-- [[02_Redis笔记]]
+- [[Redis笔记]]
 
 ---
 
 ## Milvus
 
-- [[01_Milvus笔记]]
+- [[Milvus笔记]]
 
 ## Qdrant
 
-- [[02_Qdrant笔记]]
+- [[Qdrant笔记]]
 
 ## zvec
 
-- [[03_zvec笔记]]
+- [[zvec笔记]]
 
 ---
 
 ## RabbitMQ
 
-- [[01_RabbitMQ笔记]]
+- [[RabbitMQ笔记]]
 
 ## Kafka
 
-- [[02_Kafka笔记]]
+- [[Kafka笔记]]
 
 ---
 
@@ -173,7 +173,7 @@
 
 ## Harbor
 
-- [[05_Harbor笔记]] — 企业级镜像仓库
+- [[Harbor笔记]] — 企业级镜像仓库
 
 ## Jenkins
 

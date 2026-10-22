@@ -1,6 +1,6 @@
 # =============================================================================
 # 单机 Harbor（demo 环境）docker-compose 部署参考
-# 对应：Hub/05_Harbor笔记.md 的 3.2
+# 对应：Hub/Harbor笔记.md 的 3.2
 # =============================================================================
 # 实际生产推荐用 Helm chart：
 #   helm install harbor harbor/harbor --namespace harbor ...

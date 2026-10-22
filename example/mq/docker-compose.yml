@@ -5,8 +5,8 @@
 #   2. Kafka 4.x KRaft 模式（无 Zookeeper）
 #
 # 对应笔记：
-#   - [[01_RabbitMQ笔记]]
-#   - [[02_Kafka笔记]]
+#   - [[RabbitMQ笔记]]
+#   - [[Kafka笔记]]
 #   - [[消息队列选型对比笔记]]
 
 version: "3.9"

@@ -2,8 +2,8 @@
 
 对应笔记：
 
-- 关系型：[[01_MySQL笔记]] · [[02_PostgreSQL笔记]] · [[03_SQLite笔记]] · [[关系型数据库选型对比笔记]]
-- NoSQL：[[01_MongoDB笔记]] · [[02_Redis笔记]]
+- 关系型：[[MySQL笔记]] · [[PostgreSQL笔记]] · [[SQLite笔记]] · [[关系型数据库选型对比笔记]]
+- NoSQL：[[MongoDB笔记]] · [[Redis笔记]]
 
 每种数据库一个最小 Python demo，演示「连接 + 建表/建集 + 插入 + 查询 + 关键差异点」。
 
@@ -11,11 +11,11 @@
 
 | Demo | 驱动 | 需要本地服务 | 对应笔记 |
 |---|---|---|---|
-| `sqlite_demo.py` | `sqlite3`（标准库） | ❌ | [[03_SQLite笔记]] |
-| `mysql_demo.py` | `pymysql` | ✅ MySQL 3306 | [[01_MySQL笔记]] |
-| `postgres_demo.py` | `psycopg`（v3） | ✅ PostgreSQL 5432 | [[02_PostgreSQL笔记]] |
-| `mongodb_demo.py` | `pymongo` | ✅ MongoDB 27017 | [[01_MongoDB笔记]] |
-| `redis_demo.py` | `redis-py` | ✅ Redis 6379 | [[02_Redis笔记]] |
+| `sqlite_demo.py` | `sqlite3`（标准库） | ❌ | [[SQLite笔记]] |
+| `mysql_demo.py` | `pymysql` | ✅ MySQL 3306 | [[MySQL笔记]] |
+| `postgres_demo.py` | `psycopg`（v3） | ✅ PostgreSQL 5432 | [[PostgreSQL笔记]] |
+| `mongodb_demo.py` | `pymongo` | ✅ MongoDB 27017 | [[MongoDB笔记]] |
+| `redis_demo.py` | `redis-py` | ✅ Redis 6379 | [[Redis笔记]] |
 
 > `sqlite_demo.py` 在 `example/db/sql-tools-demo/` 子目录下，其他 demo 直接在 `example/db/` 下。
 

@@ -1,7 +1,7 @@
 """
 psycopg (v3) demo —— 需要本地 PostgreSQL 服务（默认 localhost:5432, user=postgres, pass=postgres, db=demo）。
 
-对应笔记：[[02_PostgreSQL笔记]]
+对应笔记：[[PostgreSQL笔记]]
 """
 import psycopg
 

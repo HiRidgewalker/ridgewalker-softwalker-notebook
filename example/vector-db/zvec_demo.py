@@ -7,7 +7,7 @@ zvec demo —— 进程内（in-process）向量库，不需要 docker 服务。
 - 单向量查询
 - 多向量查询（MultiQuery）+ WeightedReRanker
 
-对应笔记：[[03_zvec笔记]]
+对应笔记：[[zvec笔记]]
 
 注意：zvec 仍在快速迭代（v0.5.x），API 细节以官方 https://zvec.org/en/docs/db/ 当期为准。
 本 demo 演示 API 的整体形态；如遇小版本 API 调整请参考官方文档修正。

@@ -1,6 +1,6 @@
 # Kubernetes 基础笔记
 
-> 由旧稿重新整理版本。K8s 系列新笔记共 8 篇：本文是**基础与速查**；[[II_Kubernetes部署特性笔记]] 是**部署相关对象**（Deployment/StatefulSet/Ingress/PV/HPA/RBAC 等）；[[III_K3s笔记]] 是**K3s 实战**；[[IV_Rancher笔记]] 是**集群管理 UI**；[[05_Harbor笔记]] 是**镜像仓库**；[[I_Jenkins基础笔记]] 是**CI 引擎基础**；[[II_Jenkins_CICD实战笔记]] 是**全链路流水线**；[[小企业运维生产方案总览]] 是**架构师视角总览**。旧稿目录已清理，当前以本文为准。
+> 由旧稿重新整理版本。K8s 系列新笔记共 8 篇：本文是**基础与速查**；[[II_Kubernetes部署特性笔记]] 是**部署相关对象**（Deployment/StatefulSet/Ingress/PV/HPA/RBAC 等）；[[III_K3s笔记]] 是**K3s 实战**；[[IV_Rancher笔记]] 是**集群管理 UI**；[[Harbor笔记]] 是**镜像仓库**；[[I_Jenkins基础笔记]] 是**CI 引擎基础**；[[II_Jenkins_CICD实战笔记]] 是**全链路流水线**；[[小企业运维生产方案总览]] 是**架构师视角总览**。旧稿目录已清理，当前以本文为准。
 
 ---
 

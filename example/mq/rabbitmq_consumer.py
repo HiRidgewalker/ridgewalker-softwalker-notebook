@@ -8,7 +8,7 @@ RabbitMQ 生产级 Consumer 示例。
 - 不可重试 → DLX 兜底
 - 幂等处理（演示用订单 ID 去重）
 
-对应笔记：[[01_RabbitMQ笔记]] 6、7 节
+对应笔记：[[RabbitMQ笔记]] 6、7 节
 
 启动：
     example/.venv/bin/python example/mq/rabbitmq_consumer.py

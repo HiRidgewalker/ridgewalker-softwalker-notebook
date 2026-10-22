@@ -8,7 +8,7 @@ source: legacy-note
 # SQLite 笔记
 
 > 由旧稿重新整理版本。聚焦 SQLite 嵌入式特点、命令与语法、数据类型。
-> 对比与选型见 [[关系型数据库选型对比笔记]]，MySQL 见 [[01_MySQL笔记]]，PostgreSQL 见 [[02_PostgreSQL笔记]]。
+> 对比与选型见 [[关系型数据库选型对比笔记]]，MySQL 见 [[MySQL笔记]]，PostgreSQL 见 [[PostgreSQL笔记]]。
 > 旧稿目录已清理，当前以本文为准。
 
 ## 目录
@@ -159,6 +159,6 @@ conn.close()
 
 ## 关联笔记
 
-- MySQL：[[01_MySQL笔记]]
-- PostgreSQL：[[02_PostgreSQL笔记]]
+- MySQL：[[MySQL笔记]]
+- PostgreSQL：[[PostgreSQL笔记]]
 - 横向对比与选型：[[关系型数据库选型对比笔记]]

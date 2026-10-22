@@ -100,7 +100,7 @@
 
 | 工具 | 类型 | 简介 | 适用 |
 | --- | --- | --- | --- |
-| **Harbor** | 开源/CNCF | 容器镜像 + 漏洞扫描 + 复制 | **首选**（见 [[05_Harbor笔记]]） |
+| **Harbor** | 开源/CNCF | 容器镜像 + 漏洞扫描 + 复制 | **首选**（见 [[Harbor笔记]]） |
 | **AWS ECR** | 商业 | AWS 容器镜像 | AWS 单云 |
 | **Azure ACR** | 商业 | Azure 容器镜像 | Azure 单云 |
 | **GCP Artifact Registry** | 商业 | GCP 镜像 | GCP 单云 |
