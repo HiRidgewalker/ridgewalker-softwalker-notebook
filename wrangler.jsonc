@@ -1,0 +1,8 @@
+{
+  "name": "software-tech-notebook",
+  "compatibility_date": "2026-11-06",
+  "assets": {
+    "directory": "./build",
+    "not_found_handling": "404-page"
+  }
+}

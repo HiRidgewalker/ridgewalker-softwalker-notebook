@@ -119,7 +119,7 @@ ArgoCD               ← K8s GitOps
 K8s
 ```
 
-> 详细配置见前面 [I_Jenkins基础笔记](/jenkins/I_Jenkins基础笔记) ~ [小企业运维生产方案总览](./小企业运维生产方案总览.md)。
+> 详细配置见前面 [I_Jenkins基础笔记](/jenkins/01-jenkins-basics) ~ [小企业运维生产方案总览](./小企业运维生产方案总览.md)。
 
 ---
 

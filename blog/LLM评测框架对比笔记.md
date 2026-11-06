@@ -7,7 +7,7 @@ tags: ["OpenCompass","EvalScope"]
 
 # LLM 评测框架对比笔记（OpenCompass vs EvalScope）
 
-> **本文目的**：作为 [OpenCompass笔记](/llm-evaluation/OpenCompass笔记) 和 [EvalScope笔记](/llm-evaluation/EvalScope笔记) 的对比与汇总文档，避免内容重复。本笔记专注于**横向对比 + 选型决策 + 生产流程模板**。
+> **本文目的**：作为 [OpenCompass笔记](/llm-evaluation/opencompass) 和 [EvalScope笔记](/llm-evaluation/evalscope) 的对比与汇总文档，避免内容重复。本笔记专注于**横向对比 + 选型决策 + 生产流程模板**。
 > 单框架细节请直接查阅两份单框架笔记。
 
 ## 阅读地图

@@ -2,9 +2,9 @@
 /**
  * 把文件名前缀转换为 frontmatter sidebar_position。
  *
- *   I_Go笔记.md            -> sidebar_position: 1
- *   IV_React Router笔记.md -> sidebar_position: 4
- *   01_进程与服务管理笔记.md -> sidebar_position: 1
+ *   01-go-overview.md   -> sidebar_position: 1
+ *   04-react-router.md  -> sidebar_position: 4
+ *   01-docker-overview.md -> sidebar_position: 1
  *
  * 已有 sidebar_position 的文件跳过；无前缀文件不写入。
  */

@@ -11,6 +11,8 @@ import path from 'node:path';
 const CATALOG = path.resolve('Catalog.md');
 const DOCS = path.resolve('docs');
 const OUT = path.join(DOCS, 'index.md');
+// 跨技术文章在 Tech Blog 中展示，首页只列 docs 下的技术笔记
+const BLOG_SECTION = 'Cross-cutting Topics';
 
 function scanDocs(dir) {
   const map = new Map();
@@ -66,9 +68,11 @@ for (const line of lines) {
   const item = line.match(/^-\s+\[\[([^\]]+)\]\](.*)$/);
   if (item && current) {
     const name = item[1].trim();
-    const target = name.split('#')[0].split('|')[0].trim();
+    const [targetPart, alias] = name.split('|');
+    const target = targetPart.split('#')[0].trim();
+    const label = (alias ?? targetPart).trim();
     const rest = item[2].replace(/^\s*[—–-]\s*/, '').trim();
-    current.items.push({target, label: name, desc: rest});
+    current.items.push({target, label, desc: rest});
   }
 }
 
@@ -87,10 +91,13 @@ out.push('>');
 out.push('> 索引源为仓库根目录的 `Catalog.md`；本页由 `scripts/gen-index.mjs` 生成。');
 out.push('');
 
+const docSections = sections.filter(
+  (sec) => sec.title !== BLOG_SECTION && sec.items.length,
+);
+
 let total = 0;
 let missing = 0;
-for (const sec of sections) {
-  if (!sec.items.length) continue;
+for (const sec of docSections) {
   out.push(`## ${sec.title}`);
   out.push('');
   for (const it of sec.items) {
@@ -109,7 +116,7 @@ for (const sec of sections) {
 
 fs.writeFileSync(OUT, out.join('\n'), 'utf8');
 console.log(
-  `已生成 ${path.relative(process.cwd(), OUT)}：${sections.length} 个主题，${total} 篇笔记` +
-    (blogFiles.size ? `（其中 ${blogFiles.size} 篇为博客文章）` : '') +
+  `已生成 ${path.relative(process.cwd(), OUT)}：${docSections.length} 个主题，${total} 篇笔记` +
+    (blogFiles.size ? `（${blogFiles.size} 篇博客文章已排除，见 Tech Blog）` : '') +
     (missing ? `（${missing} 条未找到）` : '')
 );

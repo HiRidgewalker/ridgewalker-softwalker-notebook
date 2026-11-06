@@ -31,18 +31,20 @@ npm run serve      # 预览构建产物
 目录结构严格对应 `Catalog.md`：`##` 主题即 `docs/` 下的一级目录，主题下的 `[[笔记]]` 为文章；`# Catalog` 只是文档标题，不生成目录。
 
 ```
-Catalog.md                 站点目录
-─────────────────────────  ──────────────────────────────
-## Go                 →    Go          docs/go/
-- [[I_Go笔记]]        →      I_Go笔记
+Catalog.md                站点目录
+────────────────────────  ──────────────────────────────
+## Go                →    Go          docs/go/
+- [[01-go-overview]] →      01-go-overview
 ```
 
 1. 在 `Catalog.md` 新增或调整 `##` 主题
 2. 在 `docs/<主题 slug>/` 新增或修改笔记
-3. 在 `Catalog.md` 对应主题下加入 `[[笔记名]]`
-4. 运行 `npm start` / `npm run build`，自动生成 `docs/index.md`
+3. 在 `Catalog.md` 对应主题下加入 `[[文件名]]`
+4. 运行 `npm start` / `npm run build`，自动生成 `docs/index.md`（只列 `docs/` 下的技术笔记，`Cross-cutting Topics` 的文章在 Tech Blog 中查看）
 
 主题目录名 = 章节标题转 slug：`Go` → `go`、`Next.js` → `nextjs`、`AI Coding Assistants` → `ai-coding-assistants`。
+
+笔记文件名统一为英文小写 kebab-case（`01-go-overview.md`、`markdown-latex-syntax.md`），系列文章用 `01-`、`02-` 前缀排序；`Catalog.md` 直接以文件名为条目，目录树与首页都显示英文文件名。
 
 Tech Blog 文章（跨技术选型、方案总览、跨栈整合）放在 `blog/`；其余单技术笔记放在 `docs/`。
 
@@ -58,12 +60,24 @@ npm run gen:tags    # 从 Catalog.md 同步 blog/*.md 的 tags
 
 - 目录层级：主题（48 个）→ 文章
 - 主题显示名与顺序：`docs/<slug>/_category_.json`
+- 文章条目标签：取源文件名（不含 `.md`），由 `docusaurus.config.ts` 的 `sidebarItemsGenerator` 自动同步；显式 `sidebar_label` 的文档（如首页）优先
 - 文章顺序：frontmatter `sidebar_position`；未设置时按文件名排序
+- 主题目录始终以分组展示；目录内只有一篇与目录同名的笔记时（如 `docs/wsl/wsl.md`），需在该目录 `_category_.json` 写 `"link": null`，否则 Docusaurus 会把它当作分类索引，侧边栏退化为一级链接
 
 笔记间引用使用标准 markdown 链接：
 
-- 同主题：`[标题](./笔记名.md)`
-- 跨主题：`[标题](../wsl/WSL笔记.md)`
+- 同主题：`[标题](./note-name.md)`
+- 跨主题：`[标题](../wsl/wsl.md)`
+
+## 渲染能力
+
+| 能力 | 写法 | 说明 |
+| --- | --- | --- |
+| Mermaid | ```` ```mermaid ```` 代码块 | 浏览器端渲染，支持 flowchart / sequenceDiagram 等 |
+| 行内公式 | `$E=mc^2$` | KaTeX 渲染 |
+| 块级公式 | `$$ ... $$` | 支持 `\begin{align}`、`\begin{equation}` 等环境 |
+
+正文中表示价格的美元符号要转义为 `\$`（如 `\$0.025`），否则会与行内公式配对。
 
 ## Agent 使用
 

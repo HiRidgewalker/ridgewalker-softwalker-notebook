@@ -8,7 +8,7 @@ tags: ["Agent","MCP","Prompt Engineering"]
 # 上下文工程与 Agent 笔记
 
 > **本文目的**：替换 `上下文工程异常问题总结` 原笔记（原 557 行 20 类问题，内容质量尚可但缺 Prompt Engineering vs Context Engineering 边界、Manus 经验、Agent 框架对比、Memory 系统、MCP，已删除）。覆盖 2026 年工业级 Context Engineering + Agent 全栈。
-> 配套笔记：[RAG工业方案笔记](/rag/RAG工业方案笔记)、[Prompt工程笔记](/prompt-engineering/Prompt工程笔记)、[Rerank笔记](/rag/Rerank笔记)
+> 配套笔记：[RAG工业方案笔记](/rag/rag-industrial-solutions)、[Prompt工程笔记](/prompt-engineering)、[Rerank笔记](/rag/rerank)
 > 配套 demo：[example/llm-demo/04_rag_evaluation](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/llm-demo/04_rag_evaluation)
 
 ## 阅读地图

@@ -6,266 +6,266 @@
 
 常用速查。
 
-- [[markdown latex语法大全]]
-- [[常用速查手册]]
+- [[markdown-latex-syntax]]
+- [[common-cheatsheet]]
 
 ## Temporary Storage
 
 暂存区，未完成的内容先放这里。
 
-- [[语音识别]]
+- [[speech-recognition]]
 
 ---
 
 ## Python
 
-- [[Python基础]]
-- [[Python异步编程（asyncio）]]
+- [[python-basics]]
+- [[python-async-asyncio]]
 
 ## uv
 
-- [[UV笔记]]
+- [[uv]]
 
 ## Anaconda
 
-- [[Anaconda笔记]]
+- [[anaconda]]
 
 ## Jupyter
 
-- [[Jupyter笔记]]
+- [[jupyter]]
 
 ## Go
 
-- [[I_Go笔记]]
-- [[II_Go基础语法笔记]]
-- [[III_Go复合类型笔记]]
-- [[IV_Go函数笔记]]
-- [[V_Go面向对象笔记]]
-- [[VI_Go包与工程笔记]]
-- [[VII_Go常见问题笔记]]
+- [[01-go-overview]]
+- [[02-go-basic-syntax]]
+- [[03-go-composite-types]]
+- [[04-go-functions]]
+- [[05-go-oop]]
+- [[06-go-packages-and-projects]]
+- [[07-go-faq]]
 
 ## JavaScript
 
-- [[I_JavaScript笔记]] — 基础与 ES6+（语法 / 数据类型 / 运算符 / 数组方法 / 解构 / 模板字符串 / Set Map）
-- [[II_JavaScript进阶笔记]] — 作用域 / 闭包 / this / 构造函数 / 原型链 / class
-- [[III_JavaScript异步与模块笔记]] — 回调函数 / Promise / async-await / 事件循环 + ES Module
+- [[01-javascript-basics]] — 基础与 ES6+（语法 / 数据类型 / 运算符 / 数组方法 / 解构 / 模板字符串 / Set Map）
+- [[02-javascript-advanced]] — 作用域 / 闭包 / this / 构造函数 / 原型链 / class
+- [[03-javascript-async-and-modules]] — 回调函数 / Promise / async-await / 事件循环 + ES Module
 
 ## TypeScript
 
-- [[TypeScript类型标注与React类型笔记]]
+- [[typescript-types-and-react-types]]
 
 ## CSS
 
-- [[I_CSS笔记]]
-- [[II_CSS选择器与继承笔记]]
-- [[III_CSS盒模型笔记]]
-- [[IV_CSS布局笔记]]
-- [[V_CSS单位与值笔记]]
-- [[VI_CSS常见问题笔记]]
+- [[01-css-overview]]
+- [[02-css-selectors-and-inheritance]]
+- [[03-css-box-model]]
+- [[04-css-layout]]
+- [[05-css-units-and-values]]
+- [[06-css-faq]]
 
 ## React
 
-- [[I_React笔记]]
-- [[II_React Hooks笔记]]
-- [[III_Zustand状态管理笔记]]
-- [[IV_React Router笔记]]
+- [[01-react-overview]]
+- [[02-react-hooks]]
+- [[03-zustand-state-management]]
+- [[04-react-router]]
 
 ## Next.js
 
-- [[I_Next.js 笔记]]
-- [[II_Next.js 路由笔记]]
-- [[III_Next.js Server与Client组件笔记]]
-- [[IV_Next.js 数据获取与Server Actions笔记]]
-- [[V_Next.js 渲染模式笔记]]
-- [[VI_Next.js 常见问题笔记]]
+- [[01-nextjs-overview]]
+- [[02-nextjs-routing]]
+- [[03-nextjs-server-and-client-components]]
+- [[04-nextjs-data-fetching-and-server-actions]]
+- [[05-nextjs-rendering-modes]]
+- [[06-nextjs-faq]]
 
 ---
 
 ## FastAPI
 
-- [[FastAPI笔记]]
+- [[fastapi]]
 
 ## Django
 
-- [[Django笔记]]
+- [[django]]
 
 ## Celery
 
-- [[Celery笔记]]
+- [[celery]]
 
 ## Pydantic
 
-- [[Pydantic笔记]]
+- [[pydantic]]
 
 ---
 
 ## Git
 
-- [[I_Git笔记]]
-- [[II_Git命令速查笔记]]
-- [[III_Git回滚决策笔记]]
-- [[Git Worktree 笔记]]
+- [[01-git-overview]]
+- [[02-git-command-cheatsheet]]
+- [[03-git-rollback-decision]]
+- [[04-git-worktree]]
 
 ---
 
 ## MySQL
 
-- [[MySQL笔记]]
+- [[mysql]]
 
 ## PostgreSQL
 
-- [[PostgreSQL笔记]]
+- [[postgresql]]
 
 ## SQLite
 
-- [[SQLite笔记]]
+- [[sqlite]]
 
 ## MongoDB
 
-- [[MongoDB笔记]]
+- [[mongodb]]
 
 ## Redis
 
-- [[Redis笔记]]
+- [[redis]]
 
 ---
 
 ## Milvus
 
-- [[Milvus笔记]]
+- [[milvus]]
 
 ## Qdrant
 
-- [[Qdrant笔记]]
+- [[qdrant]]
 
 ## zvec
 
-- [[zvec笔记]]
+- [[zvec]]
 
 ---
 
 ## RabbitMQ
 
-- [[RabbitMQ笔记]]
+- [[rabbitmq]]
 
 ## Kafka
 
-- [[Kafka笔记]]
+- [[kafka]]
 
 ---
 
 ## Docker
 
-- [[I_Docker笔记]] — 总览与 CLI 速查
-- [[II_Docker镜像与容器笔记]] — 镜像/容器/网络命令详解
-- [[III_Docker数据卷与挂载笔记]] — bind / volume / tmpfs 挂载专题
-- [[IV_Dockerfile笔记]] — Dockerfile 编写
-- [[V_Docker Compose笔记]] — Compose 多服务编排
+- [[01-docker-overview]] — 总览与 CLI 速查
+- [[02-docker-images-and-containers]] — 镜像/容器/网络命令详解
+- [[03-docker-volumes-and-mounts]] — bind / volume / tmpfs 挂载专题
+- [[04-dockerfile]] — Dockerfile 编写
+- [[05-docker-compose]] — Compose 多服务编排
 
 ## Kubernetes
 
-- [[I_Kubernetes基础笔记]] — 概念、角色、kubectl 速查
-- [[II_Kubernetes部署特性笔记]] — Deployment/StatefulSet/Ingress/PV/HPA/RBAC/NetworkPolicy
-- [[III_K3s笔记]] — K3s 单节点/HA 集群、内置组件
-- [[IV_Rancher笔记]] — Rancher 部署与多集群管理
+- [[01-kubernetes-basics]] — 概念、角色、kubectl 速查
+- [[02-kubernetes-deployment-features]] — Deployment/StatefulSet/Ingress/PV/HPA/RBAC/NetworkPolicy
+- [[03-k3s]] — K3s 单节点/HA 集群、内置组件
+- [[04-rancher]] — Rancher 部署与多集群管理
 
 ## Harbor
 
-- [[Harbor笔记]] — 企业级镜像仓库
+- [[harbor]] — 企业级镜像仓库
 
 ## Jenkins
 
-- [[I_Jenkins基础笔记]] — Jenkins 声明式 Pipeline
-- [[II_Jenkins_CICD实战笔记]] — Git+Jenkins+Harbor+K3s 全链路
+- [[01-jenkins-basics]] — Jenkins 声明式 Pipeline
+- [[02-jenkins-cicd-practice]] — Git+Jenkins+Harbor+K3s 全链路
 
 ## Linux
 
-- [[I_Linux基础与文件管理笔记]] — 目录约定、文件操作、vim、帮助命令
-- [[II_Linux用户权限与组管理笔记]] — user/group、rwx、chmod/chown/chgrp
-- [[III_Linux进程服务与系统管理笔记]] — 进程、systemd、防火墙、网络监控
-- [[IV_Linux磁盘网络与软件包管理笔记]] — 磁盘挂载、网络配置、rpm/yum/apt
-- [[V_Linux定时任务笔记]] — crontab / at / systemd timer
+- [[01-linux-basics-and-file-management]] — 目录约定、文件操作、vim、帮助命令
+- [[02-linux-users-permissions-and-groups]] — user/group、rwx、chmod/chown/chgrp
+- [[03-linux-processes-services-and-system]] — 进程、systemd、防火墙、网络监控
+- [[04-linux-disk-network-and-packages]] — 磁盘挂载、网络配置、rpm/yum/apt
+- [[05-linux-scheduled-tasks]] — crontab / at / systemd timer
 
 ## WSL
 
-- [[WSL笔记]] — WSL1 vs WSL2、wsl CLI、wsl.conf/.wslconfig、systemd
+- [[wsl]] — WSL1 vs WSL2、wsl CLI、wsl.conf/.wslconfig、systemd
 
 ## Process Management
 
-- [[01_进程与服务管理笔记]]
+- [[process-and-service-management]]
 
 ---
 
 ## Machine Learning
 
-- [[I_ML与DL基础概念笔记]]
-- [[II_深度学习环境安装笔记]]
+- [[01-ml-and-dl-basics]]
+- [[02-deep-learning-environment-setup]]
 
 ## PyTorch
 
-- [[02_PyTorch笔记]]
+- [[pytorch]]
 
 ## Large Language Models
 
-- [[I_大语言模型笔记]]
-- [[II_推理部署笔记]] — vLLM + SGLang 显存/并发/Prometheus 指标/Grafana/日志全套生产调优
+- [[01-large-language-models]]
+- [[02-inference-deployment]] — vLLM + SGLang 显存/并发/Prometheus 指标/Grafana/日志全套生产调优
 
 ## LLM Evaluation
 
-- [[OpenCompass笔记]] — 上海 AI Lab / 书生·浦语，学术榜单权威，60+ 内置数据集
-- [[EvalScope笔记]] — 阿里魔搭，一站式：评测 + 压测 + Arena + 可视化 + 训练集成，191 个内置 benchmark
+- [[opencompass]] — 上海 AI Lab / 书生·浦语，学术榜单权威，60+ 内置数据集
+- [[evalscope]] — 阿里魔搭，一站式：评测 + 压测 + Arena + 可视化 + 训练集成，191 个内置 benchmark
 
 ## Prompt Engineering
 
-- [[Prompt工程笔记]] — Anthropic 官方原则 + DSPy 编译器范式 + 结构化输出 + 模板管理
+- [[prompt-engineering]] — Anthropic 官方原则 + DSPy 编译器范式 + 结构化输出 + 模板管理
 
 ## RAG
 
-- [[RAG工业方案笔记]] — 2026 最新 RAG 框架、文档解析、Embedding、向量库、评测体系
-- [[Rerank笔记]] — Cross-encoder / LLM-based 重排序 + BGE v2/v3 + Cohere / Jina / Qwen3-Reranker
+- [[rag-industrial-solutions]] — 2026 最新 RAG 框架、文档解析、Embedding、向量库、评测体系
+- [[rerank]] — Cross-encoder / LLM-based 重排序 + BGE v2/v3 + Cohere / Jina / Qwen3-Reranker
 
 ## Agent
 
-- [[Agent总览笔记]]
-- [[Agent开源项目笔记]]
-- [[mini-agent学习笔记]]
+- [[agent-overview]]
+- [[agent-open-source-projects]]
+- [[mini-agent-study-notes]]
 
 ## MCP
 
-- [[MCP笔记]]
+- [[mcp]]
 
 ## Skills
 
-- [[Skills笔记]]
+- [[skills]]
 
 ## AI Coding Assistants
 
-- [[ClaudeCode笔记]]
-- [[Codex笔记]]
-- [[OpenCode笔记]]
-- [[Openclaw笔记]]
+- [[claude-code]]
+- [[codex]]
+- [[opencode]]
+- [[openclaw]]
 
 ## Model & Inference Platform
 
-- [[HuggingFaceTransformers笔记]]
-- [[Ollama笔记]]
+- [[huggingface-transformers]]
+- [[ollama]]
 
 ---
 
 ## Figma
 
-- [[Figma笔记]]
+- [[figma]]
 
 ## UI/UX Design
 
-- [[UI术语与设计风格笔记]]
+- [[ui-terms-and-design-styles]]
 
 ---
 
 ## Computer Networks
 
-- [[websocket笔记]]
-- [[TCP_IP四层网络模型笔记]]
+- [[websocket]]
+- [[tcp-ip-four-layer-model]]
 
 ---
 
