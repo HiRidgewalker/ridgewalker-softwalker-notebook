@@ -10,3 +10,12 @@ __pycache__/
 
 # LLM demo outputs (demo 跑出来的临时 JSONL / 报告)
 example/llm-demo/**/_outputs/
+
+# Docusaurus 站点
+node_modules/
+build/
+.docusaurus/
+.cache-loader/
+
+# 生成物：由 scripts/gen-index.mjs 从 Catalog.md 生成
+docs/index.md
