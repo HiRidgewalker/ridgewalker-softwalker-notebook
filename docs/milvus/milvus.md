@@ -6,7 +6,7 @@ title: "Milvus 笔记"
 
 > 本笔记基于 Milvus 官方文档（standalone docker、hybrid search、reranking、index 章节）整理。
 > 对比见 [Qdrant笔记](../qdrant/qdrant.md) 和 [zvec笔记](../zvec/zvec.md)。
-> 配套 demo：[example/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/vector-db)
+> 配套 demo：[example/vector-db/](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/vector-db)
 
 ## 目录
 

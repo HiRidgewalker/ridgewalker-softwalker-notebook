@@ -303,11 +303,11 @@ class ArticleFilter(df_filters.FilterSet):
 
 | Demo | 涵盖 | 链接 |
 | --- | --- | --- |
-| `models_demo.py` | 字段类型 + 关系字段 + Meta + on_delete 决策 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/django/models_demo.py) |
-| `queryset_demo.py` | filter / 聚合 / F / Q / select_related / N+1 修复 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/django/queryset_demo.py) |
-| `drf_serializer_demo.py` | Serializer / ModelSerializer / 嵌套 / 校验三层次 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/django/drf_serializer_demo.py) |
-| `drf_viewset_demo.py` | ModelViewSet / Router / 权限 / @action | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/django/drf_viewset_demo.py) |
-| `full_app/` | 完整 Django+DRF 项目（可 runserver / 6 个测试用例） | [目录](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/python/django/full_app/) |
+| `models_demo.py` | 字段类型 + 关系字段 + Meta + on_delete 决策 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/django/models_demo.py) |
+| `queryset_demo.py` | filter / 聚合 / F / Q / select_related / N+1 修复 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/django/queryset_demo.py) |
+| `drf_serializer_demo.py` | Serializer / ModelSerializer / 嵌套 / 校验三层次 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/django/drf_serializer_demo.py) |
+| `drf_viewset_demo.py` | ModelViewSet / Router / 权限 / @action | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/django/drf_viewset_demo.py) |
+| `full_app/` | 完整 Django+DRF 项目（可 runserver / 6 个测试用例） | [目录](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/python/django/full_app/) |
 
 ### 3.1 完整项目的 curl 流程
 

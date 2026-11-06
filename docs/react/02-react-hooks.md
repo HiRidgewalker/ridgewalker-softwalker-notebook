@@ -316,7 +316,7 @@ export default function Demo() {
 }
 ```
 
-完整可运行 demo 见 [example/react/hooks-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/react/hooks-demo)。
+完整可运行 demo 见 [example/react/hooks-demo/](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/react/hooks-demo)。
 
 ---
 

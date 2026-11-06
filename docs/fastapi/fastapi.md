@@ -51,7 +51,7 @@ uv run uvicorn main:app --reload
 # Swagger: http://127.0.0.1:8000/docs
 ```
 
-完整 hello world（带路径/查询/请求体识别）：[hello_world.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/fastapi/hello_world.py)
+完整 hello world（带路径/查询/请求体识别）：[hello_world.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/fastapi/hello_world.py)
 
 ---
 
@@ -153,13 +153,13 @@ client.get("/") / client.post("/x", json={...})     # in-process 测，免启服
 
 | Demo | 涵盖 | 链接 |
 | --- | --- | --- |
-| `hello_world.py` | 路径/查询/请求体识别规则 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/fastapi/hello_world.py) |
-| `params_demo.py` | Path/Query/Body 校验 + 多请求体 + Field | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/fastapi/params_demo.py) |
-| `depends_and_exception.py` | Depends 基础、yield 依赖、HTTPException、自定义 handler | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/fastapi/depends_and_exception.py) |
-| `middleware_cors.py` | 自定义 HTTP 中间件、CORS、GZip | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/fastapi/middleware_cors.py) |
-| `jwt_auth.py` | OAuth2PasswordBearer + JWT 签发/校验 + bcrypt 哈希 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/fastapi/jwt_auth.py) |
-| `test_client.py` | TestClient 单元测试（含 pytest） | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/fastapi/test_client.py) |
-| `full_app/main.py` | 完整小型 API（注册/登录/items CRUD + curl 测试用例） | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/fastapi/full_app/main.py) |
+| `hello_world.py` | 路径/查询/请求体识别规则 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/fastapi/hello_world.py) |
+| `params_demo.py` | Path/Query/Body 校验 + 多请求体 + Field | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/fastapi/params_demo.py) |
+| `depends_and_exception.py` | Depends 基础、yield 依赖、HTTPException、自定义 handler | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/fastapi/depends_and_exception.py) |
+| `middleware_cors.py` | 自定义 HTTP 中间件、CORS、GZip | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/fastapi/middleware_cors.py) |
+| `jwt_auth.py` | OAuth2PasswordBearer + JWT 签发/校验 + bcrypt 哈希 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/fastapi/jwt_auth.py) |
+| `test_client.py` | TestClient 单元测试（含 pytest） | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/fastapi/test_client.py) |
+| `full_app/main.py` | 完整小型 API（注册/登录/items CRUD + curl 测试用例） | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/fastapi/full_app/main.py) |
 
 ### 3.1 跑起来看效果
 

@@ -94,11 +94,11 @@ go build -o hello main.go  # 编译成二进制
 
 | Demo | 主题 | 链接 |
 | --- | --- | --- |
-| `01_basics/` | 变量声明 6 种 / 基本类型 / fmt / 类型转换 / 常量 / 流程控制 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/go/demos/01_basics/main.go) |
-| `02_composite/` | 数组 / 切片 / map / 指针 / 类型别名 vs 新类型 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/go/demos/02_composite/main.go) |
-| `03_functions/` | 函数定义 / 多返回值 / 命名返回值 / 不定参数 / 闭包 / defer / panic-recover | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/go/demos/03_functions/main.go) |
-| `04_oop/` | struct / 6 种实例化 / 方法（值/指针接收器）/ interface / 嵌入 / 类型断言 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/go/demos/04_oop/main.go) |
-| `05_packages/` | import 写法 / init() / strings / strconv / time / error 包装 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/go/demos/05_packages/main.go) |
+| `01_basics/` | 变量声明 6 种 / 基本类型 / fmt / 类型转换 / 常量 / 流程控制 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/go/demos/01_basics/main.go) |
+| `02_composite/` | 数组 / 切片 / map / 指针 / 类型别名 vs 新类型 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/go/demos/02_composite/main.go) |
+| `03_functions/` | 函数定义 / 多返回值 / 命名返回值 / 不定参数 / 闭包 / defer / panic-recover | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/go/demos/03_functions/main.go) |
+| `04_oop/` | struct / 6 种实例化 / 方法（值/指针接收器）/ interface / 嵌入 / 类型断言 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/go/demos/04_oop/main.go) |
+| `05_packages/` | import 写法 / init() / strings / strconv / time / error 包装 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/go/demos/05_packages/main.go) |
 
 跑 demo：
 
@@ -158,11 +158,11 @@ go tool pprof cpu.prof              # 看 profile
 
 ## 4. 学习路径建议
 
-1. **第 1 步**：[基础语法](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/go/demos/01_basics/main.go) — 跑一遍 `01_basics`
-2. **第 2 步**：[复合类型](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/go/demos/02_composite/main.go) — 切片和 map 是日常主力
-3. **第 3 步**：[函数](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/go/demos/03_functions/main.go) — defer 和错误处理是 Go 风格的核心
-4. **第 4 步**：[面向对象](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/go/demos/04_oop/main.go) — interface + 嵌入是 Go 的精髓
-5. **第 5 步**：[包与工程](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/go/demos/05_packages/main.go) — 学会组织项目
+1. **第 1 步**：[基础语法](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/go/demos/01_basics/main.go) — 跑一遍 `01_basics`
+2. **第 2 步**：[复合类型](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/go/demos/02_composite/main.go) — 切片和 map 是日常主力
+3. **第 3 步**：[函数](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/go/demos/03_functions/main.go) — defer 和错误处理是 Go 风格的核心
+4. **第 4 步**：[面向对象](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/go/demos/04_oop/main.go) — interface + 嵌入是 Go 的精髓
+5. **第 5 步**：[包与工程](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/go/demos/05_packages/main.go) — 学会组织项目
 6. **第 6 步**：上手小项目（CLI / HTTP API）
 
 ---

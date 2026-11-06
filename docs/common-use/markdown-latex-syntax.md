@@ -5,16 +5,17 @@ sidebar_position: 1
 
 # LaTeX语法
 
-## 行内数学公式
+#### 行内数学公式
 
 这里$E=mc^2$
 
-## 独立的数学公式
+#### 独立的数学公式
 
 $$
 E=mc^2
 $$
-## 带编号的数学公式
+
+#### 带编号的数学公式
 
 $$
 \begin{equation}
@@ -28,7 +29,7 @@ $$
 \end{align}
 $$
 
-## 希腊字母
+#### 希腊字母
 
 $$
 \begin{align}
@@ -65,7 +66,8 @@ $$
 
 \end{align}
 $$
-## 大写希腊字母
+
+#### 大写希腊字母
 
 $$
 \begin{align}
@@ -82,7 +84,8 @@ $$
 &欧米伽（大写，数学物理常用）:\Omega
 \end{align}
 $$
-## 二元运算符
+
+#### 二元运算符
 
 $$
 \begin{align}
@@ -97,7 +100,7 @@ $$
 \end{align}
 $$
 
-## 二元关系
+#### 二元关系
 
 $$
 \begin{align}
@@ -114,7 +117,8 @@ $$
 成比例: \propto
 \end{align}
 $$
-## 分数
+
+#### 分数
 
 $$
 \begin{align}
@@ -123,15 +127,17 @@ $$
 小型分数: \tfrac{a}{b} \\
 \end{align}
 $$
-## 根式
+
+#### 根式
 
 $$
 \begin{align}
-\sqrt{x} \\ 
+\sqrt{x} \\
 \sqrt[n]{x}
 \end{align}
 $$
-## 指数和对数
+
+#### 指数和对数
 
 $$
 \begin{align}
@@ -142,7 +148,8 @@ e^x \\
 以a为底b的对数: \log_a b
 \end{align}
 $$
-## 微分与导数
+
+#### 微分与导数
 
 $$
 \begin{align}
@@ -153,7 +160,8 @@ $$
 拉普拉斯算子: \Delta f
 \end{align}
 $$
-## 极限
+
+#### 极限
 
 $$
 \begin{align}
@@ -161,7 +169,8 @@ $$
 无穷极限: \lim_{x \to \infty} f(x)
 \end{align}
 $$
-## 积分
+
+#### 积分
 
 $$
 不定积分: \int f(x)dx \\
@@ -169,7 +178,8 @@ $$
 二重积分: \iint f(x, y)dxdy \\
 三重积分: \iiint f(x, y, z)dxdydz
 $$
-## 矩阵
+
+#### 矩阵
 
 $$
 方括号矩阵:
@@ -177,13 +187,14 @@ $$
 x & y \\
 z & w
 \end{bmatrix} \\
-圆括号矩阵: 
+圆括号矩阵:
 \begin{pmatrix}
 a & b \\
 c & d
 \end{pmatrix} \\
 $$
-## 向量的箭头表示
+
+#### 向量的箭头表示
 
 $$
 向量符号: \vec{v} \\
@@ -191,7 +202,7 @@ $$
 表示从向量B到向量A: \overleftarrow{AB}
 $$
 
-## 单位向量
+#### 单位向量
 
 > 单位向量表示方向向量，通常用`加帽符号`
 
@@ -200,14 +211,14 @@ $$
 直角坐标系中的标准基向量: \hat{i}, \hat{j}, \hat{k}
 $$
 
-## 向量的点积和插集
+#### 向量的点积和插集
 
 $$
 向量的点积: \mathbf{a} \cdot \mathbf{b} \\
 向量的叉积: \mathbf{a} \times \mathbf{b}
 $$
 
-## 方程和方程组
+#### 方程和方程组
 
 $$
 \begin{align}
@@ -218,10 +229,10 @@ x - y &= 0
 \end{align}
 $$
 
-## 空格和换行
+#### 空格和换行
 
 $$
-小空格：a\ b 
+小空格：a\ b
 \\
 大空格：a\quad b
 \\
@@ -235,8 +246,6 @@ $$
 \\
 硬空格：\text{This is a~test}
 $$
-
-
 
 processOn latex语法 (最全)
 

@@ -401,7 +401,7 @@ input ?? '默认值'            // 仅在 null/undefined 时用默认值（比 |
 
 ## 十三、字符串 / 数组 / 对象常用方法速查表
 
-详见配套 demo：[example/js-demo/01_basics/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/js-demo/01_basics)
+详见配套 demo：[example/js-demo/01_basics/](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/js-demo/01_basics)
 
 ---
 

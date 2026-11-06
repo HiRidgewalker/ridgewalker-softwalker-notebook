@@ -10,11 +10,9 @@
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
     "typecheck": "tsc",
-    "gen": "node scripts/gen-index.mjs",
-    "gen:index": "node scripts/gen-index.mjs",
-    "gen:tags": "node scripts/set-blog-tags.mjs",
-    "prestart": "npm run gen",
-    "prebuild": "npm run gen"
+    "prestart": "npm run gen:index",
+    "prebuild": "npm run gen:index",
+    "gen:index": "node scripts/gen-index.mjs"
   },
   "engines": {
     "node": ">=20.0"

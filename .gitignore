@@ -17,5 +17,5 @@ build/
 .docusaurus/
 .cache-loader/
 
-# 生成物：由 scripts/gen-index.mjs 从 Catalog.md 生成
-docs/index.md
+# 生成物：由 scripts/gen-index.mjs 扫描 docs/ 生成
+docs/intro.md

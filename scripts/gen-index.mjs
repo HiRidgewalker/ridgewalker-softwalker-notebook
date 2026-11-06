@@ -1,81 +1,69 @@
 #!/usr/bin/env node
 /**
- * 从 Catalog.md 生成 docs/index.md（站点首页）。
+ * 扫描 docs/ 目录生成 docs/intro.md（站点首页）。
  *
- * Catalog.md 是唯一索引源，index.md 是生成物，不要手工编辑。
- * 链接按笔记在 docs/ 下的实际子目录换算。
+ * 目录结构是唯一索引源：
+ *   docs/<slug>/_category_.json -> 主题显示名与顺序
+ *   docs/<slug>/*.md            -> 主题下的文章，frontmatter sidebar_position 或文件名排序
+ * intro.md 是生成物，不要手工编辑。
  */
 import fs from 'node:fs';
 import path from 'node:path';
 
-const CATALOG = path.resolve('Catalog.md');
 const DOCS = path.resolve('docs');
-const OUT = path.join(DOCS, 'index.md');
-// 跨技术文章在 Tech Blog 中展示，首页只列 docs 下的技术笔记
-const BLOG_SECTION = 'Cross-cutting Topics';
+const OUT = path.join(DOCS, 'intro.md');
 
-function scanDocs(dir) {
-  const map = new Map();
-  for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
-    const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      for (const [name, file] of scanDocs(full)) map.set(name, file);
-    } else if (entry.name.endsWith('.md') && entry.name !== 'index.md') {
-      map.set(path.basename(entry.name, '.md'), full);
-    }
+function readFrontmatter(text) {
+  const match = text.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (!match) return {};
+  const fm = {};
+  for (const line of match[1].split(/\r?\n/)) {
+    const m = line.match(/^([\w-]+)\s*:\s*(.*)$/);
+    if (m) fm[m[1]] = m[2].trim().replace(/^["']|["']$/g, '');
   }
-  return map;
+  return fm;
 }
 
-function scanBlog(dir) {
-  const map = new Map();
-  if (!fs.existsSync(dir)) return map;
-  for (const entry of fs.readdirSync(dir)) {
-    if (!entry.endsWith('.md')) continue;
-    const name = path.basename(entry, '.md');
-    map.set(name, `/blog/${name}`);
+function listThemes() {
+  const themes = [];
+  for (const entry of fs.readdirSync(DOCS, {withFileTypes: true})) {
+    if (!entry.isDirectory()) continue;
+    const dir = path.join(DOCS, entry.name);
+    const metaFile = path.join(dir, '_category_.json');
+    const meta = fs.existsSync(metaFile)
+      ? JSON.parse(fs.readFileSync(metaFile, 'utf8'))
+      : {};
+    const notes = fs
+      .readdirSync(dir)
+      .filter((f) => f.endsWith('.md'))
+      .map((file) => {
+        const fm = readFrontmatter(fs.readFileSync(path.join(dir, file), 'utf8'));
+        const position = Number.parseInt(fm.sidebar_position, 10);
+        return {
+          name: path.basename(file, '.md'),
+          href: `./${entry.name}/${file}`,
+          position: Number.isNaN(position) ? null : position,
+          description: fm.description ?? '',
+        };
+      })
+      .sort(
+        (a, b) =>
+          (a.position ?? Infinity) - (b.position ?? Infinity) ||
+          a.name.localeCompare(b.name),
+      );
+    themes.push({
+      slug: entry.name,
+      label: meta.label ?? entry.name,
+      position: meta.position ?? Infinity,
+      notes,
+    });
   }
-  return map;
+  return themes.sort(
+    (a, b) => a.position - b.position || a.label.localeCompare(b.label),
+  );
 }
 
-const docFiles = scanDocs(DOCS);
-const blogFiles = scanBlog(path.resolve('blog'));
-
-function toHref(name) {
-  const full = docFiles.get(name);
-  if (full) {
-    const rel = path.relative(DOCS, full).split(path.sep).join('/');
-    return `./${rel.replace(/ /g, '%20')}`;
-  }
-  const blogHref = blogFiles.get(name);
-  if (blogHref) return blogHref.replace(/ /g, '%20');
-  return null;
-}
-
-const raw = fs.readFileSync(CATALOG, 'utf8');
-const lines = raw.split(/\r?\n/);
-
-const sections = [];
-let current = null;
-
-for (const line of lines) {
-  const h2 = line.match(/^##\s+(.+?)\s*$/);
-  if (h2) {
-    current = {title: h2[1].trim(), items: []};
-    sections.push(current);
-    continue;
-  }
-  const item = line.match(/^-\s+\[\[([^\]]+)\]\](.*)$/);
-  if (item && current) {
-    const name = item[1].trim();
-    const [targetPart, alias] = name.split('|');
-    const target = targetPart.split('#')[0].trim();
-    const label = (alias ?? targetPart).trim();
-    const rest = item[2].replace(/^\s*[—–-]\s*/, '').trim();
-    current.items.push({target, label, desc: rest});
-  }
-}
-
+const themes = listThemes();
 const out = [];
 out.push('---');
 out.push('slug: /');
@@ -88,35 +76,23 @@ out.push('# Software Tech Notebook');
 out.push('');
 out.push('> Software Tech Notebook —— 个人软件技术笔记。左侧边栏按技术域分类，右上角可全文搜索。');
 out.push('>');
-out.push('> 索引源为仓库根目录的 `Catalog.md`；本页由 `scripts/gen-index.mjs` 生成。');
+out.push('> 索引源为 `docs/` 目录结构与 `_category_.json`；本页由 `scripts/gen-index.mjs` 生成。');
 out.push('');
 
-const docSections = sections.filter(
-  (sec) => sec.title !== BLOG_SECTION && sec.items.length,
-);
-
 let total = 0;
-let missing = 0;
-for (const sec of docSections) {
-  out.push(`## ${sec.title}`);
+for (const theme of themes) {
+  if (!theme.notes.length) continue;
+  out.push(`## ${theme.label}`);
   out.push('');
-  for (const it of sec.items) {
-    const href = toHref(it.target);
-    if (!href) {
-      console.warn(`  [跳过] 找不到笔记：${it.target}`);
-      missing++;
-      continue;
-    }
+  for (const note of theme.notes) {
     total++;
-    const desc = it.desc ? ` — ${it.desc}` : '';
-    out.push(`- [${it.label}](${href})${desc}`);
+    const desc = note.description ? ` — ${note.description}` : '';
+    out.push(`- [${note.name}](${note.href})${desc}`);
   }
   out.push('');
 }
 
 fs.writeFileSync(OUT, out.join('\n'), 'utf8');
 console.log(
-  `已生成 ${path.relative(process.cwd(), OUT)}：${docSections.length} 个主题，${total} 篇笔记` +
-    (blogFiles.size ? `（${blogFiles.size} 篇博客文章已排除，见 Tech Blog）` : '') +
-    (missing ? `（${missing} 条未找到）` : '')
+  `已生成 ${path.relative(process.cwd(), OUT)}：${themes.filter((t) => t.notes.length).length} 个主题，${total} 篇笔记`,
 );

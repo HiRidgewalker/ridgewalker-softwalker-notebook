@@ -109,7 +109,7 @@ jupyter lab
 
 `nbformat` 是操作 notebook 文件的标准库，方便做模板化生成、批量处理、CI 中的 notebook 校验。
 
-完整可运行示例：[example/python/jupyter/nbformat_demo.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/jupyter/nbformat_demo.py)
+完整可运行示例：[example/python/jupyter/nbformat_demo.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/jupyter/nbformat_demo.py)
 
 ## 生态对比：Notebook vs Lab vs Hub
 

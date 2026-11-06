@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # React Router 笔记
 
-> 基础版（基于通用知识）。完整可运行 demo 见 [example/react/router-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/react/router-demo)。
+> 基础版（基于通用知识）。完整可运行 demo 见 [example/react/router-demo/](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/react/router-demo)。
 >
 > 当前主流使用 **React Router v6+**，本笔记以 v6 为主。
 

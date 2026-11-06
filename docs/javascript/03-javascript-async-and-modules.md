@@ -404,8 +404,8 @@ p.#age                // ❌ 外部无法访问
 ## 九、配套 demo
 
 详见：
-- [example/js-demo/05_async/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/js-demo/05_async)（回调 / Promise / async-await / 事件循环）
-- [example/js-demo/06_module/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/js-demo/06_module)（ES Module 导入导出 + 类访问控制）
+- [example/js-demo/05_async/](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/js-demo/05_async)（回调 / Promise / async-await / 事件循环）
+- [example/js-demo/06_module/](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/js-demo/06_module)（ES Module 导入导出 + 类访问控制）
 
 ---
 

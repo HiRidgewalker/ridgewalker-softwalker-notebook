@@ -6,7 +6,7 @@ sidebar_position: 3
 # Go 复合类型笔记
 
 > 本篇覆盖 Go 的复合类型：数组、切片、map、指针、类型别名 vs 新类型。
-> 对应 demo：[02_composite](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/go/demos/02_composite/main.go)
+> 对应 demo：[02_composite](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/go/demos/02_composite/main.go)
 
 ---
 

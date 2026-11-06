@@ -103,4 +103,4 @@ print(tokenizer.decode(outputs[0]))
 
 ## 七、配套 demo
 
-[example/ai-assistant/huggingface-pipeline-demo/pipeline_demo.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/ai-assistant/huggingface-pipeline-demo/pipeline_demo.py) —— pipeline 最小推理示例（情感分析 + 文本生成）。
+[example/ai-assistant/huggingface-pipeline-demo/pipeline_demo.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/ai-assistant/huggingface-pipeline-demo/pipeline_demo.py) —— pipeline 最小推理示例（情感分析 + 文本生成）。

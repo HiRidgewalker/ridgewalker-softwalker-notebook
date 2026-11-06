@@ -33,7 +33,7 @@ asyncio 是 Python 内置的 **单线程协作式并发** 框架，由三部分�
 | **Task** | `asyncio.create_task` 包装的协程 | 高 |
 | **Future** | 底层异步结果占位符 | 低，一般作为库作者接口 |
 
-完整可运行示例：[example/python/asyncio/coroutines_basics.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/asyncio/coroutines_basics.py)
+完整可运行示例：[example/python/asyncio/coroutines_basics.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/asyncio/coroutines_basics.py)
 
 ## 关键字使用场景
 
@@ -67,7 +67,7 @@ asyncio 是 Python 内置的 **单线程协作式并发** 框架，由三部分�
 | 异步上下文管理器 | `async with ...:` | `with ...:` | 同步 `with` 不能管理异步对象 |
 | 异步迭代 | `async for x in ...:` | `for x in ...:` | 无法迭代异步生成器 |
 
-完整可运行示例：[example/python/asyncio/coroutines_basics.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/asyncio/coroutines_basics.py)
+完整可运行示例：[example/python/asyncio/coroutines_basics.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/asyncio/coroutines_basics.py)
 
 ## 常用 API
 
@@ -88,7 +88,7 @@ asyncio 是 Python 内置的 **单线程协作式并发** 框架，由三部分�
 - `await asyncio.sleep(n)`：异步睡眠，让出控制权
 - `asyncio.Queue`：异步队列，用于生产者/消费者
 
-完整可运行示例：[example/python/asyncio/concurrency.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/asyncio/concurrency.py)
+完整可运行示例：[example/python/asyncio/concurrency.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/asyncio/concurrency.py)
 
 ## 异步上下文与异步迭代
 
@@ -110,7 +110,7 @@ asyncio 是 Python 内置的 **单线程协作式并发** 框架，由三部分�
 - 异步分页 API 拉取
 - 异步文件逐行读取
 
-完整可运行示例：[example/python/asyncio/async_with_for.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/asyncio/async_with_for.py)
+完整可运行示例：[example/python/asyncio/async_with_for.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/asyncio/async_with_for.py)
 
 ## 异步生成器
 
@@ -118,7 +118,7 @@ asyncio 是 Python 内置的 **单线程协作式并发** 框架，由三部分�
 
 与普通生成器的区别：**每次 yield 之前可以 `await` 异步操作**，因此特别适合分页拉取、消息推送等流式场景。
 
-完整可运行示例：[example/python/asyncio/async_generators.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/asyncio/async_generators.py)
+完整可运行示例：[example/python/asyncio/async_generators.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/asyncio/async_generators.py)
 
 ## 串行 vs 并发对比
 

@@ -6,7 +6,7 @@ sidebar_position: 3
 # Next.js 笔记 · Server 与 Client 组件
 
 > App Router 最核心的概念就是 **Server Component vs Client Component** 的划分。
-> 配套 demo：[02_server_client_components](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/02_server_client_components)
+> 配套 demo：[02_server_client_components](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/nextjs-demo/02_server_client_components)
 
 ## 一、为什么会有这种划分
 
@@ -279,7 +279,7 @@ export default function ClientThing() {
 
 ## 十一、对应 demo
 
-- [02_server_client_components](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/02_server_client_components)
+- [02_server_client_components](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/nextjs-demo/02_server_client_components)
   - Server 页面 + Client 子组件组合
   - `children` 模式：把 Server 组件传给 Client 容器
   - 错误示例的对照（"use client 误用"）

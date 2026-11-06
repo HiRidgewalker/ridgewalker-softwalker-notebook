@@ -6,7 +6,7 @@ sidebar_position: 2
 # Go 基础语法笔记
 
 > 本篇覆盖 Go 的基础语法：变量声明、基本类型、`fmt` 占位符、常量、类型转换、流程控制。
-> 对应 demo：[01_basics](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/go/demos/01_basics/main.go)
+> 对应 demo：[01_basics](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/go/demos/01_basics/main.go)
 
 ---
 

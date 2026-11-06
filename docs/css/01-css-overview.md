@@ -54,9 +54,9 @@ CSS（Cascading Style Sheets，**层叠样式表**）是给 HTML 页面"穿衣�
 
 | Demo | 涵盖 | 链接 |
 | --- | --- | --- |
-| `01_box_model.html` | 盒模型结构 / margin 折叠（同级/父子/阻止折叠）/ `box-sizing` | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/css/01_box_model.html) |
-| `02_flex.html` | Flex 速查：`flex-direction` / `flex-wrap` / `justify-content` / `align-items` 各种值对比 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/css/02_flex.html) |
-| `03_units.html` | px / em / rem / vh / vw / svh / dvh / lvh 视觉对比 + 移动端地址栏场景 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/css/03_units.html) |
+| `01_box_model.html` | 盒模型结构 / margin 折叠（同级/父子/阻止折叠）/ `box-sizing` | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/css/01_box_model.html) |
+| `02_flex.html` | Flex 速查：`flex-direction` / `flex-wrap` / `justify-content` / `align-items` 各种值对比 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/css/02_flex.html) |
+| `03_units.html` | px / em / rem / vh / vw / svh / dvh / lvh 视觉对比 + 移动端地址栏场景 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/css/03_units.html) |
 
 打开方式：浏览器（Chrome / Firefox / Safari）双击 .html 文件即可，**不需要任何环境**。
 

@@ -8,7 +8,7 @@ sidebar_position: 2
 
 > **本文目的**：替换 `Rerank` 原笔记（原 旧稿 仅 38 行 + 一段 Claude 回答，缺主流模型，已删除）。覆盖 2026 年工业级 Rerank：4 种范式对比、5 大模型系列对比、LLM-based 重排序、工业部署、选型决策树。
 > 配套笔记：[RAG工业方案笔记](rag-industrial-solutions.md)、[Prompt工程笔记](../prompt-engineering/prompt-engineering.md)、[上下文工程与Agent笔记](/blog/上下文工程与Agent笔记)
-> 配套 demo：[example/llm-demo/04_rag_evaluation](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/llm-demo/04_rag_evaluation)
+> 配套 demo：[example/llm-demo/04_rag_evaluation](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/llm-demo/04_rag_evaluation)
 
 ## 阅读地图
 

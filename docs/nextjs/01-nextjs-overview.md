@@ -10,11 +10,11 @@ sidebar_position: 1
 
 ## 配套 demo
 
-- [example/nextjs-demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo) — 4 个独立可运行子项目
-  - [01_routing_basic](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/01_routing_basic) — App Router 文件式路由
-  - [02_server_client_components](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/02_server_client_components) — Server / Client 组件边界
-  - [03_data_fetching](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/03_data_fetching) — Server Component 数据获取
-  - [04_server_actions](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/nextjs-demo/04_server_actions) — Server Actions 表单变更
+- [example/nextjs-demo/](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/nextjs-demo) — 4 个独立可运行子项目
+  - [01_routing_basic](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/nextjs-demo/01_routing_basic) — App Router 文件式路由
+  - [02_server_client_components](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/nextjs-demo/02_server_client_components) — Server / Client 组件边界
+  - [03_data_fetching](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/nextjs-demo/03_data_fetching) — Server Component 数据获取
+  - [04_server_actions](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/nextjs-demo/04_server_actions) — Server Actions 表单变更
 
 ## 目录结构
 

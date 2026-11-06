@@ -8,7 +8,7 @@
 
 ## 仓库定位
 
-本仓库是 Software Tech Notebook，用于记录 software technology 的个人技术笔记。源文件为纯 markdown，不绑定任何笔记软件；同时通过 Docusaurus 提供本地可运行的静态站点。核心知识入口位于 `docs/`，按 `Catalog.md` 的 48 个主题分子目录。
+本仓库是 Software Tech Notebook，用于记录 software technology 的个人技术笔记。源文件为纯 markdown，不绑定任何笔记软件；同时通过 Docusaurus 提供本地可运行的静态站点。核心知识入口位于 `docs/`，按 48 个主题分子目录。
 
 ## 如何辅助记录技术
 
@@ -29,12 +29,10 @@
 - 合并后的精炼总览文件放在 `docs/<对应主题 slug>/` 下
 - 各子项目的目录结构与约定见 [example/README.md](example/README.md)
 
-## Catalog 索引维护
+## 目录与索引维护
 
-- `Catalog.md` 保留在仓库根目录，采用平铺主题索引，章节标题统一英文
-- 新增笔记按技术名追加到对应 `##` 章节，无对应主题时新增英文标题章节
-- 它是站点首页与 agent 导航的索引源，**不是**侧边栏来源
-- `Cross-cutting Topics` 章节的文章在 Tech Blog 中展示，生成首页时会排除该章节
+- 索引源就是 `docs/` 目录结构本身：主题即 `docs/` 下的一级目录，主题内笔记即目录下的 `.md` 文件
+- 新增笔记直接放入对应 `docs/<slug>/`；无对应主题时新建目录与 `_category_.json`
 
 ## 笔记渲染约定
 
@@ -46,16 +44,16 @@
 ## Web 站点
 
 - 浏览：`npm start`（开发服务器）或 `npm run build && npm run serve`（静态产物）
-- 目录结构严格对应 `Catalog.md`：`## 主题` 直接作为 `docs/` 下的一级目录，主题下的 `[[链接]]` 为文章；`# Catalog` 只是文档标题，不生成目录
+- 目录结构即站点目录：`docs/<slug>/` 一级目录为主题，目录下的 `.md` 文件为文章
 - 主题目录名为章节标题转 slug：`Go` → `go`、`Next.js` → `nextjs`、`AI Coding Assistants` → `ai-coding-assistants`
 - 笔记文件名统一英文小写 kebab-case：`01-go-overview.md`、`markdown-latex-syntax.md`；系列文章用 `01-`、`02-` 前缀排序
-- `Catalog.md` 直接以新文件名为条目，例如 `[[01-go-overview]]`；目录树、首页与侧边栏条目统一显示英文文件名
+- 目录树、首页与侧边栏条目统一显示英文文件名
 - 侧边栏文档标签由 `docusaurus.config.ts` 的 `sidebarItemsGenerator` 取文件名（去掉 `.md`）生成，与源文件名自动同步；显式设置 `sidebar_label` 的文档（如首页）优先
 - 单技术笔记放 `docs/<slug>/`；Tech Blog 文章（跨技术选型、方案总览、跨栈整合）放 `blog/`
-- Tech Blog 文章 frontmatter 必须带 `tags`：技术栈标签，最多 5 个，取自 `Catalog.md` 该条目后的括号标注；新增或调整后在仓库根目录执行 `npm run gen:tags` 生成
+- Tech Blog 文章 frontmatter 必须带 `tags`：技术栈标签，最多 5 个，直接在文章 frontmatter 维护
 - 标签渲染在文章标题下方，颜色由 `src/theme/Tag` 按标签名稳定取色，点标签进入 `/blog/tags/<slug>` 聚合页
 - 侧边栏由目录结构与 `_category_.json` 决定，不手工维护
 - 主题目录始终显示为分组：目录内只有一篇与目录同名的笔记时（如 `docs/wsl/wsl.md`），在该目录 `_category_.json` 写 `"link": null`，否则 Docusaurus 会把它当作分类索引，侧边栏退化成一个链接
-- `docs/index.md` 由 `Catalog.md` 生成，属于生成物，**不要手工编辑**
+- `docs/intro.md`（站点首页）由 `scripts/gen-index.mjs` 扫描 `docs/` 生成，属于生成物，**不要手工编辑**
 - 笔记间引用使用标准 markdown 链接：同主题 `[标题](./note-name.md)`，跨主题 `[标题](../wsl/wsl.md)`
-- 新增主题时：在 `Catalog.md` 增加 `## 章节`，创建 `docs/<slug>/` 与 `_category_.json`
+- 新增主题时：创建 `docs/<slug>/` 与 `_category_.json`，首页与侧边栏自动收录

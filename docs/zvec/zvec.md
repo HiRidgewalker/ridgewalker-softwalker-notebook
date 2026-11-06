@@ -6,7 +6,7 @@ title: "zvec 笔记"
 
 > 本笔记基于 zvec 官方仓库与文档整理。**zvec 是进程内（in-process）向量数据库**，设计目标与 Milvus / Qdrant 不同——它不是一个独立服务，而是像 SQLite 一样嵌入到应用进程里运行。
 > 对比见 [Milvus笔记](../milvus/milvus.md) 和 [Qdrant笔记](../qdrant/qdrant.md)。
-> 配套 demo：[example/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/vector-db)
+> 配套 demo：[example/vector-db/](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/vector-db)
 
 ## 目录
 

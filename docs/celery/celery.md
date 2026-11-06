@@ -193,10 +193,10 @@ print(r.get(timeout=10))      # 3
 
 | Demo | 涵盖 | 链接 |
 | --- | --- | --- |
-| `celery_basics.py` | 任务定义、调用（delay / apply_async / countdown / eta / expires）、状态机、`self.request` 链路追踪 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/celery/celery_basics.py) |
-| `celery_canvas.py` | chain / group / chord / 嵌套 / chord_error | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/celery/celery_canvas.py) |
-| `celery_robustness.py` | acks_late、软/硬超时、自动重试 + 退避 + 抖动、手动重试、过期、限速、信号系统 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/celery/celery_robustness.py) |
-| `celery_fastapi_integration.py` | FastAPI 提交任务 + 查状态端点、生产配置、`lru_cache` 单例 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/celery/celery_fastapi_integration.py) |
+| `celery_basics.py` | 任务定义、调用（delay / apply_async / countdown / eta / expires）、状态机、`self.request` 链路追踪 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/celery/celery_basics.py) |
+| `celery_canvas.py` | chain / group / chord / 嵌套 / chord_error | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/celery/celery_canvas.py) |
+| `celery_robustness.py` | acks_late、软/硬超时、自动重试 + 退避 + 抖动、手动重试、过期、限速、信号系统 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/celery/celery_robustness.py) |
+| `celery_fastapi_integration.py` | FastAPI 提交任务 + 查状态端点、生产配置、`lru_cache` 单例 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/celery/celery_fastapi_integration.py) |
 
 > 4 个 demo 全部默认 Eager 模式（`task_always_eager=True`），不需要真起 broker，`uv run python` 即可跑通；生产部署把这一行删掉。
 
@@ -219,7 +219,7 @@ def long_task(self):
     print(self.request.retries)  # 已重试次数
 ```
 
-完整 demo：<https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/celery/celery_basics.py>
+完整 demo：<https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/celery/celery_basics.py>
 
 ### 2.2 任务调用（三种姿势）
 
@@ -346,7 +346,7 @@ chain(
 )()
 ```
 
-完整 demo（含 `chord.on_error` 失败回调）：<https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/celery/celery_canvas.py>
+完整 demo（含 `chord.on_error` 失败回调）：<https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/celery/celery_canvas.py>
 
 ### 2.9 信号系统（生产告警 / 监控的关键钩子）
 
@@ -375,7 +375,7 @@ def _ready(sender=None, **kw):
     print(f"worker {sender} ready")
 ```
 
-完整 demo：<https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/celery/celery_robustness.py>
+完整 demo：<https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/celery/celery_robustness.py>
 
 ### 2.10 消息路由（多队列）
 
@@ -429,7 +429,7 @@ app.conf.task_reject_on_worker_lost = True      # worker 崩溃时把任务放�
 - 只开 `acks_late`：崩溃后任务还在"已 ack 之前"状态，broker 不会重发。
 - 只开 `reject_on_worker_lost`：默认"拿到就 ack"，崩溃时已经 ack 了，broker 不知道要重发。
 
-完整 demo：<https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/celery/celery_robustness.py>
+完整 demo：<https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/celery/celery_robustness.py>
 
 ### 3.2 超时控制：软超时 + 硬超时
 

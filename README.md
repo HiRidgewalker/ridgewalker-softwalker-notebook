@@ -15,10 +15,10 @@ npm run serve      # 预览构建产物
 
 | 路径 | 说明 |
 | --- | --- |
-| `docs/<slug>/` | 技术笔记，`Catalog.md` 的 48 个主题即 `docs/` 下的一级目录 |
+| `docs/<slug>/` | 技术笔记，48 个主题即 `docs/` 下的一级目录 |
 | `docs/<slug>/_category_.json` | 主题显示名、顺序、折叠状态 |
+| `docs/intro.md` | 站点首页，由 `scripts/gen-index.mjs` 扫描 `docs/` 生成 |
 | `blog/` | Tech Blog 文章（跨技术选型、方案总览等），日期统一为 2026-11-06 |
-| `Catalog.md` | 跨技术逻辑索引，首页与 agent 导航的索引入口 |
 | `example/` | 可运行代码 demo（仓库静态资源，笔记通过 GitHub 链接引用） |
 | `hiduck/` | 写作规则、计划与 PRD |
 | `scripts/` | 构建与生成脚本 |
@@ -28,33 +28,24 @@ npm run serve      # 预览构建产物
 
 ## 内容维护
 
-目录结构严格对应 `Catalog.md`：`##` 主题即 `docs/` 下的一级目录，主题下的 `[[笔记]]` 为文章；`# Catalog` 只是文档标题，不生成目录。
+目录结构即站点目录：`docs/<slug>/` 一级目录为主题，目录下的 `.md` 文件为文章。
 
 ```
-Catalog.md                站点目录
+docs/                        站点
 ────────────────────────  ──────────────────────────────
-## Go                →    Go          docs/go/
-- [[01-go-overview]] →      01-go-overview
+docs/go/                 →    Go（侧边栏分组，_category_.json）
+  01-go-overview.md      →      01-go-overview
+  02-go-basic-syntax.md  →      02-go-basic-syntax
 ```
 
-1. 在 `Catalog.md` 新增或调整 `##` 主题
-2. 在 `docs/<主题 slug>/` 新增或修改笔记
-3. 在 `Catalog.md` 对应主题下加入 `[[文件名]]`
-4. 运行 `npm start` / `npm run build`，自动生成 `docs/index.md`（只列 `docs/` 下的技术笔记，`Cross-cutting Topics` 的文章在 Tech Blog 中查看）
+1. 在 `docs/<主题 slug>/` 新增或修改笔记（无对应主题时新建目录与 `_category_.json`）
+2. 运行 `npm start` / `npm run build`，自动扫描 `docs/` 生成首页 `docs/intro.md`
 
 主题目录名 = 章节标题转 slug：`Go` → `go`、`Next.js` → `nextjs`、`AI Coding Assistants` → `ai-coding-assistants`。
 
-笔记文件名统一为英文小写 kebab-case（`01-go-overview.md`、`markdown-latex-syntax.md`），系列文章用 `01-`、`02-` 前缀排序；`Catalog.md` 直接以文件名为条目，目录树与首页都显示英文文件名。
+笔记文件名统一为英文小写 kebab-case（`01-go-overview.md`、`markdown-latex-syntax.md`），系列文章用 `01-`、`02-` 前缀排序；目录树、首页与侧边栏都显示英文文件名。
 
-Tech Blog 文章（跨技术选型、方案总览、跨栈整合）放在 `blog/`；其余单技术笔记放在 `docs/`。
-
-Tech Blog 的技术栈标签来自 `Catalog.md` 条目后的括号标注，最多 5 个，写入 frontmatter 的 `tags`：
-
-```bash
-npm run gen:tags    # 从 Catalog.md 同步 blog/*.md 的 tags
-```
-
-标签显示在文章标题下方，按技术名稳定取色，点击可进入 `/blog/tags/<slug>` 聚合页。样式与取色逻辑在 `src/theme/Tag/`。
+Tech Blog 文章（跨技术选型、方案总览、跨栈整合）放在 `blog/`；其余单技术笔记放在 `docs/`。Tech Blog 的技术栈标签（最多 5 个）直接维护在文章 frontmatter 的 `tags`。标签显示在文章标题下方，按技术名稳定取色，点击可进入 `/blog/tags/<slug>` 聚合页，样式与取色逻辑在 `src/theme/Tag/`。
 
 侧边栏由目录结构自动生成：
 
@@ -81,7 +72,7 @@ npm run gen:tags    # 从 Catalog.md 同步 blog/*.md 的 tags
 
 ## Agent 使用
 
-- 索引入口：`Catalog.md`
-- 笔记目录：`docs/<slug>/`（主题划分见 `Catalog.md`）
+- 索引入口：`docs/` 目录结构（主题 = 一级目录，笔记 = 目录内 `.md`）
+- 首页 `docs/intro.md` 是扫描生成的只读索引，可作快速导航
 - 全部为标准 markdown，可直接全文读取或 grep
 - 代码示例在 `example/`，每个子项目有独立 README

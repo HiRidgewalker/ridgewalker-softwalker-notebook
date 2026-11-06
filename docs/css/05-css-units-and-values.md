@@ -7,7 +7,7 @@ sidebar_position: 5
 
 > 本篇覆盖长度单位（px/em/rem/vh/vw/svh/dvh/lvh/百分比）、颜色（hex/rgb/hsl/命名色）、关键字、响应式适配。
 > 详细规范：[MDN 长度单位](https://developer.mozilla.org/zh-CN/docs/Web/CSS/length)、[MDN 颜色](https://developer.mozilla.org/zh-CN/docs/Web/CSS/color_value)
-> 配套 demo：[03_units.html](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/css/03_units.html)
+> 配套 demo：[03_units.html](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/css/03_units.html)
 
 ---
 

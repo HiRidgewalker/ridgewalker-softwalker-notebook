@@ -128,7 +128,7 @@ isinstance(dog, Animal)  # True
 - **隐式**：低类型自动转高类型（如 `int + float` 得 `float`）
 - **显式**：使用 `int()`、`float()`、`str()`、`bool()` 等内置函数
 
-完整可运行示例：[example/python/basics/data_types.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/basics/data_types.py)
+完整可运行示例：[example/python/basics/data_types.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/basics/data_types.py)
 
 ## 运算符、math 库、random 库
 
@@ -171,7 +171,7 @@ else:
 
 ### match...case（Python 3.10+）
 
-完整可运行示例：[example/python/basics/match_case.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/basics/match_case.py)
+完整可运行示例：[example/python/basics/match_case.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/basics/match_case.py)
 
 ## 循环语句
 
@@ -197,14 +197,14 @@ while b < 1000:
 
 四种推导式：列表、字典、集合、元组。**注意：元组推导式返回的是生成器对象**，需用 `tuple()` 转换。
 
-完整可运行示例：[example/python/basics/comprehensions.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/basics/comprehensions.py)
+完整可运行示例：[example/python/basics/comprehensions.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/basics/comprehensions.py)
 
 ## 迭代器与生成器
 
 - **迭代器**：`iter()` 创建，`next()` 读取，只能往前不能后退
 - **生成器**：使用 `yield` 的函数，返回一个迭代器，逐步产生值而非一次性返回
 
-完整可运行示例：[example/python/basics/iterators_generators.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/basics/iterators_generators.py)
+完整可运行示例：[example/python/basics/iterators_generators.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/basics/iterators_generators.py)
 
 ## 函数
 
@@ -241,7 +241,7 @@ print("你输入的内容是:", s)
 - `f.tell()`、`f.seek()`：位置操作
 - `f.close()`：关闭文件释放资源
 
-完整可运行示例：[example/python/basics/file_io.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/basics/file_io.py)
+完整可运行示例：[example/python/basics/file_io.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/basics/file_io.py)
 
 参考：[Python3 File 方法](https://www.runoob.com/python3/python3-file-methods.html)、[Python3 OS 文件/目录方法](https://www.runoob.com/python3/python3-os-file-methods.html)
 
@@ -253,7 +253,7 @@ print("你输入的内容是:", s)
 
 继承与构造方法示例：
 
-完整可运行示例：[example/python/basics/oop_inherit.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/basics/oop_inherit.py)
+完整可运行示例：[example/python/basics/oop_inherit.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/basics/oop_inherit.py)
 
 ## 命名空间与作用域
 
@@ -276,7 +276,7 @@ print("你输入的内容是:", s)
 - `global`：在函数内声明要使用全局变量
 - `nonlocal`：在嵌套函数内声明要使用外层（非全局）变量
 
-完整可运行示例：[example/python/basics/namespaces_scope.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/basics/namespaces_scope.py)
+完整可运行示例：[example/python/basics/namespaces_scope.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/basics/namespaces_scope.py)
 
 ## 类与对象
 
@@ -288,7 +288,7 @@ print("你输入的内容是:", s)
 | 类方法 | `@classmethod` | `cls` | 类变量、类方法（不可访问实例） |
 | 静态方法 | `@staticmethod` | 无 | 任何类信息都不能访问，相当于寄居在类上的普通函数 |
 
-完整可运行示例：[example/python/class_methods/instance_class_static.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/class_methods/instance_class_static.py)
+完整可运行示例：[example/python/class_methods/instance_class_static.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/class_methods/instance_class_static.py)
 
 ## 内置函数
 
@@ -365,7 +365,7 @@ pip install -r requirements.txt
 - 同一个项目，不同入口文件，第一个路径会不同
 - 这就是为什么"包名与模块名同名"会产生导入冲突
 
-可运行演示：[example/python/modules/sys_path_demo/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/python/modules/sys_path_demo)
+可运行演示：[example/python/modules/sys_path_demo/](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/python/modules/sys_path_demo)
 
 ### import 与 from...import 的语义区别
 
@@ -373,7 +373,7 @@ pip install -r requirements.txt
 - `from module import name`：**不导入整个模块**，只把 `name` 导入到当前命名空间
 - `from module import *`：导入模块全部内容到当前命名空间
 
-可运行演示：[example/python/modules/import_vs_from.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/modules/import_vs_from.py)
+可运行演示：[example/python/modules/import_vs_from.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/modules/import_vs_from.py)
 
 ### __name__ 属性
 
@@ -385,7 +385,7 @@ pip install -r requirements.txt
 - 不带参数：罗列当前文件定义的所有名称（独立符号表）
 - 带参数：列出指定模块的所有名称
 
-可运行演示：[example/python/modules/dir_demo.py](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/modules/dir_demo.py)
+可运行演示：[example/python/modules/dir_demo.py](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/modules/dir_demo.py)
 
 ### 包（package）
 
@@ -398,7 +398,7 @@ pip install -r requirements.txt
 - `import item` 先把 `item` 当作包定义的名称，找不到再按模块导入
 - `from package import item` 中，`item` 可以是子模块、子包、函数、类或变量
 
-可运行演示：[example/python/modules/package_init/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/python/modules/package_init)
+可运行演示：[example/python/modules/package_init/](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/python/modules/package_init)
 
 ### 同名包冲突（重要经验）
 
@@ -412,7 +412,7 @@ pip install -r requirements.txt
 - 同一目录下避免同名模块/包
 - 功能层面相同、业务不同的类放在不同包中（如 Java 的 controller、service 分包）
 
-可运行复现：[example/python/modules/name_collision/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/python/modules/name_collision)
+可运行复现：[example/python/modules/name_collision/](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/python/modules/name_collision)
 
 ### 作用域补充
 

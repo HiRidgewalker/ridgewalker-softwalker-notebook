@@ -7,7 +7,7 @@ title: "Qdrant 笔记"
 > 由旧稿重新整理版本（原文件只有一行 dashboard URL，本笔记**大幅完善**）。
 > 本笔记基于 Qdrant 官方文档（quickstart、hybrid-queries、indexing、quantization 章节）整理。
 > 对比见 [Milvus笔记](../milvus/milvus.md) 和 [zvec笔记](../zvec/zvec.md)。
-> 配套 demo：[example/vector-db/](https://gitee.com/solowalker-limber/personal-knowledge-base/tree/master/example/vector-db)
+> 配套 demo：[example/vector-db/](https://github.com/HiRidgewalker/soft-tech-notebook/tree/main/example/vector-db)
 > 旧稿目录已清理，当前以本文为准。
 
 ## 目录

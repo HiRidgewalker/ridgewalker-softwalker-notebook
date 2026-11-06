@@ -307,9 +307,9 @@ settings = Settings()
 
 | Demo | 涵盖 | 链接 |
 | --- | --- | --- |
-| `pydantic_basics.py` | BaseModel / 字段类型 / 校验 / 嵌套 / 序列化 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/pydantic/pydantic_basics.py) |
-| `pydantic_fastapi_demo.py` | **重点**：请求体 / 响应模型 / 字段过滤 / 多态 / 字段别名 / 错误格式 / 嵌套 body | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/pydantic/pydantic_fastapi_demo.py) |
-| `pydantic_settings_demo.py` | BaseSettings 加载 .env / 嵌套 settings / lru_cache 单例 | [查看](https://gitee.com/solowalker-limber/personal-knowledge-base/blob/master/example/python/pydantic/pydantic_settings_demo.py) |
+| `pydantic_basics.py` | BaseModel / 字段类型 / 校验 / 嵌套 / 序列化 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/pydantic/pydantic_basics.py) |
+| `pydantic_fastapi_demo.py` | **重点**：请求体 / 响应模型 / 字段过滤 / 多态 / 字段别名 / 错误格式 / 嵌套 body | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/pydantic/pydantic_fastapi_demo.py) |
+| `pydantic_settings_demo.py` | BaseSettings 加载 .env / 嵌套 settings / lru_cache 单例 | [查看](https://github.com/HiRidgewalker/soft-tech-notebook/blob/main/example/python/pydantic/pydantic_settings_demo.py) |
 
 ### 3.1 跑 FastAPI demo
 
