@@ -1,9 +1,5 @@
 ---
 title: "SQLite 笔记"
-type: hub
-topic: SQLite
-status: refactored
-source: legacy-note
 ---
 
 # SQLite 笔记

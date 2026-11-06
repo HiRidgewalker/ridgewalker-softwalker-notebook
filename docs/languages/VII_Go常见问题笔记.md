@@ -1,10 +1,8 @@
 ---
 sidebar_position: 7
----
-
----
 title: "Go 常见问题笔记"
 ---
+
 
 # Go 常见问题笔记
 

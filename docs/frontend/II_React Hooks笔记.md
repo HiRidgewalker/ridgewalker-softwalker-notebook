@@ -1,11 +1,5 @@
 ---
 title: "React Hooks 笔记"
-type: hub
-topic: React Hooks
-status: refactored
-source:
-  - 旧稿 (hooks 列表)
-  - 旧稿 hooks useTransition() and useDeferredValue().md
 sidebar_position: 2
 ---
 

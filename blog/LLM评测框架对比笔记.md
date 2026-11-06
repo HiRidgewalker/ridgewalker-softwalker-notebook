@@ -1,7 +1,6 @@
 ---
 title: LLM 评测框架对比笔记（OpenCompass vs EvalScope）
 description: 场景化选型决策树 + 标准生产评测流程 + 自定义数据集流程 + 报告指标清单 + 常见踩坑。覆盖两框架差异、共同点、互操作，以及业界最佳实践。
-type: hub
 date: 2026-11-06
 ---
 

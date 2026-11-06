@@ -1,9 +1,5 @@
 ---
 title: "WebSocket 笔记"
-type: hub
-topic: WebSocket
-status: refactored
-source: legacy-note
 ---
 
 # WebSocket 笔记

@@ -1,7 +1,6 @@
 ---
 title: 推理部署（vLLM + SGLang）生产笔记
 description: vLLM 与 SGLang 在生产环境的完整使用方法：显存优化参数、并发机制、Prometheus 指标、token 吞吐率量化、Grafana 面板、日志配置；附 vLLM vs SGLang 选型对比。所有结论来自公开文档与官方博客。
-type: hub
 sidebar_position: 2
 ---
 

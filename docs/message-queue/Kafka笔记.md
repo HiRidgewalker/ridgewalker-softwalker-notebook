@@ -1,16 +1,5 @@
 ---
 title: "Kafka 笔记（生产级）"
-type: hub
-topic: Kafka 生产级
-status: created
-sources:
-  - https://kafka.apache.org/43/operations/kraft/
-  - https://kafka.apache.org/43/configuration/consumer-configs/
-  - https://kafka.apache.org/43/configuration/producer-configs/
-  - https://kafka.apache.org/documentation/#semantics
-  - https://kafka.apache.org/documentation/#kraft
-  - https://kafka.apache.org/documentation/#basic_ops
-  - https://docs.confluent.io/platform/current/installation/docker/config-reference.html
 ---
 
 # Kafka 笔记（生产级）

@@ -1,9 +1,5 @@
 ---
 title: "MySQL 笔记"
-type: hub
-topic: MySQL
-status: refactored
-source: legacy-note
 ---
 
 # MySQL 笔记

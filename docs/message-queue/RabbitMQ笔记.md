@@ -1,17 +1,5 @@
 ---
 title: "RabbitMQ 笔记（生产级）"
-type: hub
-topic: RabbitMQ 生产级
-status: created
-sources:
-  - 旧稿
-  - https://www.rabbitmq.com/docs/quorum-queues
-  - https://www.rabbitmq.com/docs/dlx
-  - https://www.rabbitmq.com/docs/confirms
-  - https://www.rabbitmq.com/streams.html
-  - https://www.rabbitmq.com/docs/parameters
-  - https://www.rabbitmq.com/docs/clustering
-  - https://www.rabbitmq.com/docs/management
 ---
 
 # RabbitMQ 笔记（生产级）

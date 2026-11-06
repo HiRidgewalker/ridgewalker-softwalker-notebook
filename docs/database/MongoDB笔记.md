@@ -1,9 +1,5 @@
 ---
 title: "MongoDB 笔记"
-type: hub
-topic: MongoDB
-status: refactored
-source: legacy-note
 ---
 
 # MongoDB 笔记

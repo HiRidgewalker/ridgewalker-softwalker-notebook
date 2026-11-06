@@ -1,7 +1,6 @@
 ---
 title: 上下文工程与 Agent 笔记
 description: 2026 年工业级 Context Engineering + Agent 系统：Prompt Engineering vs Context Engineering 边界、四大策略（Write/Select/Compress/Isolate）、Manus 六条工程经验、Anthropic Building Effective Agents 五种 Workflow、8 大 Agent 框架对比（LangGraph / CrewAI / AutoGen / Smolagents / Letta / Pydantic AI / Mastra / Agno）、Memory 系统（Mem0 / Letta / Zep）、MCP 生态、20 类上下文工程常见问题精炼。
-type: hub
 date: 2026-11-06
 ---
 

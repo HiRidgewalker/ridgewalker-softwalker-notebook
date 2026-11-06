@@ -1,7 +1,6 @@
 ---
 title: 大语言模型（LLM）笔记
 description: LLM 从原始世界知识到可对话服务的完整工业流程：数据工程 → 预训练 → 后训练（SFT + 偏好对齐）→ 推理部署 → 模型压缩。所有阶段用具体技术栈描述，避免抽象/比喻。
-type: hub
 sidebar_position: 1
 ---
 

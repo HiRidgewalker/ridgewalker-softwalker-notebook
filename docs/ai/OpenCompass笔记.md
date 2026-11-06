@@ -1,7 +1,6 @@
 ---
 title: OpenCompass 评测框架笔记
 description: 上海 AI Lab / 书生·浦语出品的大模型评测框架：架构、本地 / 远程模型测试、60+ 内置数据集、自定义数据集、评测指标、生产环境特性。覆盖 v0.5.3。
-type: hub
 ---
 
 # OpenCompass 评测框架笔记

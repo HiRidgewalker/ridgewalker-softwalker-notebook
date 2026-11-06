@@ -1,8 +1,5 @@
 ---
 title: "React Router 笔记"
-type: hub
-topic: React Router
-status: created
 sidebar_position: 4
 ---
 

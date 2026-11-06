@@ -1,13 +1,5 @@
 ---
 title: "Milvus 笔记"
-type: hub
-topic: Milvus
-status: created
-sources:
-  - https://milvus.io/docs/install_standalone-docker.md
-  - https://milvus.io/docs/hybrid_search_with_milvus.md
-  - https://milvus.io/docs/reranking.md
-  - https://milvus.io/docs/index.md
 ---
 
 # Milvus 笔记

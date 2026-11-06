@@ -1,13 +1,5 @@
 ---
 title: "zvec 笔记"
-type: hub
-topic: zvec
-status: created
-sources:
-  - https://github.com/alibaba/zvec
-  - https://zvec.org/en/docs/
-  - https://zvec.org/en/docs/db/concepts/vector-index/hnsw-index/
-  - https://zvec.org/en/docs/db/data-operations/query/multi-vector
 ---
 
 # zvec 笔记

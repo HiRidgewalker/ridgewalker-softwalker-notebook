@@ -1,7 +1,6 @@
 ---
 title: Rerank 重排序笔记
 description: 2026 年工业级重排序：4 种范式对比（Cross-encoder / Bi-encoder / Late Interaction / LLM-based）、主流模型（BGE v2/v3 / Cohere v3.5 / Jina m0 / Qwen3-Reranker / gte-rerank）、LLM-based 重排序（RankGPT / RankZephyr / PRP / RankT5）、工业级部署（TEI / vLLM / SGLang / TensorRT-LLM）、场景化选型决策树。
-type: hub
 ---
 
 # Rerank 重排序笔记

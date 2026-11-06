@@ -1,14 +1,5 @@
 ---
 title: "Qdrant 笔记"
-type: hub
-topic: Qdrant
-status: refactored
-source: legacy-note
-sources:
-  - https://qdrant.tech/documentation/quickstart/
-  - https://qdrant.tech/documentation/search/hybrid-queries/
-  - https://qdrant.tech/documentation/concepts/indexing/
-  - https://qdrant.tech/documentation/guides/quantization/
 ---
 
 # Qdrant 笔记

@@ -1,7 +1,6 @@
 ---
 title: RAG 工业方案笔记
 description: 2026 年最新 RAG 工业级方案选型：范式演进（Naive → Advanced → Modular + Agentic RAG）、9 大开源框架（RAGFlow / LightRAG / GraphRAG / Dify / FastGPT / MaxKB / LangChain / LlamaIndex / Haystack）、文档解析、Embedding、向量库、评测体系（RAGAS）、完整工业链路、场景化选型决策树。
-type: hub
 ---
 
 # RAG 工业方案笔记

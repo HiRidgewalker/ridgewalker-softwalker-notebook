@@ -1,7 +1,6 @@
 ---
 title: EvalScope 评测框架笔记
 description: 阿里魔搭出品的一站式大模型评测框架：四大后端、本地 / 远程模型测试、191 个内置 benchmark、CollectionSchema 权重采样、LLM-as-Judge、Arena 对战、推理压测、Web Dashboard。覆盖 v1.8.1。
-type: hub
 ---
 
 # EvalScope 评测框架笔记

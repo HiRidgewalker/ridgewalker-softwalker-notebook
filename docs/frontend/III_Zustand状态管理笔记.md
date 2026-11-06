@@ -1,8 +1,5 @@
 ---
 title: "Zustand 状态管理笔记"
-type: hub
-topic: React 状态管理 (Zustand)
-status: created
 sidebar_position: 3
 ---
 

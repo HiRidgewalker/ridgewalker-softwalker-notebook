@@ -1,9 +1,5 @@
 ---
 title: "Redis 笔记"
-type: hub
-topic: Redis
-status: refactored
-source: legacy-note
 ---
 
 # Redis 笔记

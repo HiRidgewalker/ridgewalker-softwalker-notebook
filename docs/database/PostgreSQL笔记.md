@@ -1,9 +1,5 @@
 ---
 title: "PostgreSQL 笔记"
-type: hub
-topic: PostgreSQL
-status: created
-source: legacy-note
 ---
 
 # PostgreSQL 笔记

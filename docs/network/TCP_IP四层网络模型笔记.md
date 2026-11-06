@@ -1,9 +1,5 @@
 ---
 title: "TCP/IP 四层网络模型笔记"
-type: hub
-topic: TCP/IP 四层网络模型
-status: refactored
-source: legacy-note
 ---
 
 # TCP/IP 四层网络模型笔记

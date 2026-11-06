@@ -1,9 +1,5 @@
 ---
 title: "权限模型笔记"
-type: hub
-topic: 权限模型
-status: refactored
-source: legacy-note
 date: 2026-11-06
 ---
 

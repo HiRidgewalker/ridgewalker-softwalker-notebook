@@ -1,9 +1,5 @@
 ---
 title: "React 笔记"
-type: hub
-topic: React
-status: refactored
-source: legacy-note
 sidebar_position: 1
 ---
 

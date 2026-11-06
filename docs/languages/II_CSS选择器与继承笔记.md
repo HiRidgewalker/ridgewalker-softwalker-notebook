@@ -1,10 +1,8 @@
 ---
 sidebar_position: 2
----
-
----
 title: "CSS 选择器与继承笔记"
 ---
+
 
 # CSS 选择器与继承笔记
 

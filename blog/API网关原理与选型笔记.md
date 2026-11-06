@@ -1,9 +1,5 @@
 ---
 title: "API 网关笔记"
-type: hub
-topic: API 网关
-status: refactored
-source: legacy-note
 date: 2026-11-06
 ---
 

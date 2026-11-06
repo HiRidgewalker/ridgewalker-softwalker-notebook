@@ -1,7 +1,6 @@
 ---
 title: Prompt 工程笔记
 description: 2026 年工业级 Prompt 工程：Anthropic 官方 7 大原则、DSPy 编译器范式（35.7k stars）、结构化输出四件套（Instructor / Outlines / TypeChat / Prompty）、Prompt 优化工具、模板管理三件套（LangSmith / Helicone / PromptLayer）、注入防护（NeMo Guardrails）、Few-shot/CoT/ReAct 现状、完整工业流程。
-type: hub
 ---
 
 # Prompt 工程笔记
