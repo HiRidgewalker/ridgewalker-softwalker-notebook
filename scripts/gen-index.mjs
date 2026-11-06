@@ -74,10 +74,6 @@ out.push('---');
 out.push('');
 out.push('# Software Tech Notebook');
 out.push('');
-out.push('> Software Tech Notebook —— 个人软件技术笔记。左侧边栏按技术域分类，右上角可全文搜索。');
-out.push('>');
-out.push('> 索引源为 `docs/` 目录结构与 `_category_.json`；本页由 `scripts/gen-index.mjs` 生成。');
-out.push('');
 
 let total = 0;
 for (const theme of themes) {
