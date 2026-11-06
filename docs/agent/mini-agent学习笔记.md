@@ -132,5 +132,5 @@ class OpenAIClient(LLMClientBase):
 
 - Agent 能力模型与系统结构：[Agent总览笔记](./Agent总览笔记.md)
 - 代表开源项目对比：[Agent开源项目笔记](./Agent开源项目笔记.md)
-- Skills 概念与构建：[Skills笔记](./Skills笔记.md)
-- MCP 协议：[MCP笔记](./MCP笔记.md)
+- Skills 概念与构建：[Skills笔记](../skills/Skills笔记.md)
+- MCP 协议：[MCP笔记](../mcp/MCP笔记.md)

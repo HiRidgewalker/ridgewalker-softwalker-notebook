@@ -75,14 +75,14 @@ for (const line of lines) {
 const out = [];
 out.push('---');
 out.push('slug: /');
-out.push('title: 技术知识库');
+out.push('title: Software Tech Notebook');
 out.push('sidebar_label: 首页');
 out.push('sidebar_position: 0');
 out.push('---');
 out.push('');
-out.push('# 技术知识库');
+out.push('# Software Tech Notebook');
 out.push('');
-out.push('> 个人软件技术知识库。左侧边栏按技术域分类，右上角可全文搜索。');
+out.push('> Software Tech Notebook —— 个人软件技术笔记。左侧边栏按技术域分类，右上角可全文搜索。');
 out.push('>');
 out.push('> 索引源为仓库根目录的 `Catalog.md`；本页由 `scripts/gen-index.mjs` 生成。');
 out.push('');

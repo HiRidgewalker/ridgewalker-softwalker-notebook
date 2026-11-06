@@ -210,6 +210,27 @@ flowchart LR
 
 遗留：`showLastUpdateTime` 对未纳入 git 的 `docs/index.md` 会输出一条警告，不影响构建。
 
+## 后续调整：Catalog 驱动的目录结构
+
+落地后用户追加要求：目录严格以 `Catalog.md` 为唯一来源——`# Catalog` 为一级、`## 主题` 为二级目录、主题下的 `[[笔记]]` 为文章，目录名与章节名保持一致。
+
+- 新增 `scripts/lib/theme-map.mjs`：解析 `Catalog.md`，主题标题转 slug（`Next.js` → `nextjs`、`AI Coding Assistants` → `ai-coding-assistants`），校验 slug 冲突与未归类笔记
+- 新增 `scripts/migrate-to-catalog.mjs`：97 篇 docs 笔记迁入 `docs/catalog/<slug>/`，删除原 15 个分类目录，生成 49 个 `_category_.json`（Catalog 根 + 48 个主题）
+- 新增 `scripts/rewrite-catalog-links.mjs`：改写 259 条 docs 内部链接、35 条 blog 站内路由为 `/catalog/<slug>/<name>`，0 条未解析
+- 侧边栏变为三级：Catalog → 主题（48 个）→ 文章
+- 移除已失效的旧迁移脚本：`lib/catalog-map.mjs`、`gen-category-meta.mjs`、`migrate-layout.mjs`、`migrate-links.mjs`、`migrate-to-blog.mjs`
+- README.md 与 AGENTS.md 同步为 `docs/catalog/<slug>/` 结构
+- 验证：`npm run build` 成功，`build/catalog/` 下 48 个主题目录，`build/catalog/go`、`build/catalog/nextjs` 等路由可访问
+
+追加修正：用户要求取消 `Catalog` 包装层——`# Catalog` 只是文档标题，`##` 主题直接作为 `docs/` 下的一级目录。
+
+- 48 个主题目录由 `docs/catalog/<slug>/` 上移到 `docs/<slug>/`，删除 `docs/catalog/_category_.json`
+- 路由由 `/catalog/<slug>/<name>` 变为 `/<slug>/<name>`；35 条 blog 站内链接同步去掉 `/catalog` 前缀
+- docs 内部相对链接不受影响（同级目录整体上移，相对关系不变）
+- 侧边栏两级：首页 + 48 个主题 → 文章，无 Catalog 节点
+- `scripts/lib/theme-map.mjs` 默认目标目录改为 `docs`；`migrate-to-catalog.mjs`、`rewrite-catalog-links.mjs` 随旧布局一并移除
+- 验证：`npm run build` 成功，`build/go`、`build/nextjs` 等 48 个主题路由可访问，侧边栏顶层 49 项（首页 + 48 主题）
+
 ## 计划落地确认点
 
 - 实施范围：`hub/` → `docs/` 15 个子目录；侧边栏改为自动生成；`Catalog.md` 保留；`example/` 改为新仓库链接；移除 `static/example` 同步

@@ -1,6 +1,7 @@
 ---
 title: "Django + FastAPI 秒杀系统课程"
 date: 2026-11-06
+tags: ["Django","FastAPI","Redis","Celery"]
 ---
 
 # Django + FastAPI 秒杀系统课程

@@ -1,6 +1,7 @@
 ---
 title: "DevOps 工具链对比笔记"
 date: 2026-11-06
+tags: ["Git","Docker","Kubernetes","Jenkins"]
 ---
 
 # DevOps 工具链对比笔记
@@ -105,7 +106,7 @@ date: 2026-11-06
 
 | 工具 | 类型 | 简介 | 适用 |
 | --- | --- | --- | --- |
-| **Harbor** | 开源/CNCF | 容器镜像 + 漏洞扫描 + 复制 | **首选**（见 [Harbor笔记](/devops/Harbor笔记)） |
+| **Harbor** | 开源/CNCF | 容器镜像 + 漏洞扫描 + 复制 | **首选**（见 [Harbor笔记](/harbor/Harbor笔记)） |
 | **AWS ECR** | 商业 | AWS 容器镜像 | AWS 单云 |
 | **Azure ACR** | 商业 | Azure 容器镜像 | Azure 单云 |
 | **GCP Artifact Registry** | 商业 | GCP 镜像 | GCP 单云 |
@@ -287,7 +288,7 @@ date: 2026-11-06
 
 | 工具 | 类型 | 简介 |
 | --- | --- | --- |
-| **Rancher** | 开源/商业 | 见 [IV_Rancher笔记](/devops/IV_Rancher笔记) |
+| **Rancher** | 开源/商业 | 见 [IV_Rancher笔记](/kubernetes/IV_Rancher笔记) |
 | **Cluster API** | 开源/K8s sig | 声明式 K8s 集群生命周期 |
 | **Clusterpedia** | 开源 | 跨集群查询 |
 | **ArgoCD ApplicationSet** | 开源 | ArgoCD 多集群部署 |

@@ -1,6 +1,7 @@
 ---
 title: "直出设计图的UI工具"
 date: 2026-11-06
+tags: ["AI Coding Assistants","Model & Inference Platform"]
 ---
 
 # 直出设计图的UI工具

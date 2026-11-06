@@ -1,0 +1,50 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.12rem 0.6rem 0.16rem;
+  border: 1px solid hsl(var(--tag-hue), 60%, 80%);
+  border-radius: 999px;
+  background: hsl(var(--tag-hue), 90%, 96%);
+  color: hsl(var(--tag-hue), 65%, 30%);
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1.45;
+  white-space: nowrap;
+  transition:
+    background 150ms ease,
+    border-color 150ms ease,
+    transform 150ms ease;
+}
+
+.tag:hover {
+  border-color: hsl(var(--tag-hue), 60%, 62%);
+  background: hsl(var(--tag-hue), 85%, 92%);
+  color: hsl(var(--tag-hue), 65%, 26%);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+[data-theme='dark'] .tag {
+  border-color: hsl(var(--tag-hue), 45%, 32%);
+  background: hsl(var(--tag-hue), 45%, 18%);
+  color: hsl(var(--tag-hue), 85%, 78%);
+}
+
+[data-theme='dark'] .tag:hover {
+  border-color: hsl(var(--tag-hue), 55%, 45%);
+  background: hsl(var(--tag-hue), 45%, 23%);
+  color: hsl(var(--tag-hue), 85%, 85%);
+}
+
+.count {
+  padding: 0 0.35rem;
+  border-radius: 999px;
+  background: hsl(var(--tag-hue), 60%, 88%);
+  font-size: 0.68rem;
+  font-weight: 500;
+}
+
+[data-theme='dark'] .count {
+  background: hsl(var(--tag-hue), 40%, 28%);
+}

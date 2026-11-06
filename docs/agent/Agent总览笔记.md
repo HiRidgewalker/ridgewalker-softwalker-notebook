@@ -192,7 +192,7 @@ Agent 不是无限资源的。需要平衡：
 
 - **检索部分**：RAG、GraphRAG、多路召回
 - **设计模式**：ReAct、ReWOO、Reflexion
-- **工具调用**：Tool、Skills（见 [Skills笔记](./Skills笔记.md)）
+- **工具调用**：Tool、Skills（见 [Skills笔记](../skills/Skills笔记.md)）
 - **记忆**：MemoryBank、Mem0
 
 ---

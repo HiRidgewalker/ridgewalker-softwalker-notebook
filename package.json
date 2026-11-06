@@ -2,7 +2,7 @@
   "name": "software-tech-notebook",
   "version": "0.0.0",
   "private": true,
-  "description": "个人技术知识库：markdown 源文件 + Docusaurus 静态站点",
+  "description": "Software Tech Notebook：个人技术笔记，markdown 源文件 + Docusaurus 静态站点",
   "scripts": {
     "dev": "docusaurus start",
     "start": "docusaurus start",
@@ -12,6 +12,7 @@
     "typecheck": "tsc",
     "gen": "node scripts/gen-index.mjs",
     "gen:index": "node scripts/gen-index.mjs",
+    "gen:tags": "node scripts/set-blog-tags.mjs",
     "prestart": "npm run gen",
     "prebuild": "npm run gen"
   },

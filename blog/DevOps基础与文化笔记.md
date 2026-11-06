@@ -1,6 +1,7 @@
 ---
 title: "DevOps 基础与文化"
 date: 2026-11-06
+tags: ["Docker","Kubernetes","Jenkins","Git"]
 ---
 
 # DevOps 基础与文化
@@ -171,7 +172,7 @@ CALMS 是 Damon Edwards 提出的 DevOps 文化框架：
 - **Continuous Deployment**：自动化通过所有测试后**自动发布**到生产
 - 与 CI 是同源概念
 
-### 6.5 GitOps（详见 [II_Jenkins_CICD实战笔记](/devops/II_Jenkins_CICD实战笔记) / [小企业DevOps方案笔记](./小企业DevOps方案笔记.md)）
+### 6.5 GitOps（详见 [II_Jenkins_CICD实战笔记](/jenkins/II_Jenkins_CICD实战笔记) / [小企业DevOps方案笔记](./小企业DevOps方案笔记.md)）
 
 - 以 Git 为单一真相源
 - 通过 PR/MR 改动生产环境

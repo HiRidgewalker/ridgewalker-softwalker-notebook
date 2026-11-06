@@ -1,0 +1,8 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 var(--ifm-paragraph-margin-bottom);
+  padding: 0;
+  list-style: none;
+}

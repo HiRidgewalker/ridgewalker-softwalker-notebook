@@ -1,6 +1,7 @@
 ---
 title: "小企业 DevOps 方案笔记（50~500 技术人员）"
 date: 2026-11-06
+tags: ["Docker","Kubernetes","Jenkins"]
 ---
 
 # 小企业 DevOps 方案笔记（50~500 技术人员）
@@ -118,7 +119,7 @@ ArgoCD               ← K8s GitOps
 K8s
 ```
 
-> 详细配置见前面 [I_Jenkins基础笔记](/devops/I_Jenkins基础笔记) ~ [小企业运维生产方案总览](./小企业运维生产方案总览.md)。
+> 详细配置见前面 [I_Jenkins基础笔记](/jenkins/I_Jenkins基础笔记) ~ [小企业运维生产方案总览](./小企业运维生产方案总览.md)。
 
 ---
 

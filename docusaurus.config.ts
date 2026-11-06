@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Software Tech Notebook',
-  tagline: '个人软件技术知识库',
+  tagline: 'Personal software technology notebook',
   favicon: 'img/favicon.svg',
 
   url: 'https://notebook.local',
@@ -58,7 +58,7 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
-          blogTitle: '跨技术主题',
+          blogTitle: 'Tech Blog',
           blogDescription: '跨技术选型、方案与架构笔记',
           postsPerPage: 10,
           blogSidebarTitle: '全部文章',
@@ -74,16 +74,16 @@ const config: Config = {
 
   themeConfig: {
     navbar: {
-      title: '技术知识库',
+      title: 'Software Tech Notebook',
       items: [
-        {to: '/', label: '全部笔记', position: 'left'},
-        {to: '/blog', label: '跨技术主题', position: 'left'},
+        {to: '/', label: 'Tech Notebook', position: 'left'},
+        {to: '/blog', label: 'Tech Blog', position: 'left'},
         {type: 'search', position: 'right'},
       ],
     },
     footer: {
       style: 'dark',
-      copyright: `技术知识库 · ${new Date().getFullYear()}`,
+      copyright: `Software Tech Notebook · ${new Date().getFullYear()}`,
     },
     prism: {
       theme: prismThemes.github,

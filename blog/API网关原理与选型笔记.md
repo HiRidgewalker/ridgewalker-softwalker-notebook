@@ -1,6 +1,7 @@
 ---
 title: "API 网关笔记"
 date: 2026-11-06
+tags: ["FastAPI","Nginx"]
 ---
 
 # API 网关笔记
